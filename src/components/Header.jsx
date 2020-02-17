@@ -30,7 +30,7 @@ function Header() {
       <figure className="Header__logoFigure">
         <img className="Header__logo" src="" alt="" />
       </figure>
-      <Nav />
+      <Nav className="Menu" />
       <span className="icon-menu" />
     </div>
   );

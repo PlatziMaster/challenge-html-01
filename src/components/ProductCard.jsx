@@ -6,7 +6,7 @@ function ProductCard({ product }) {
   return (
     <div className="ProductCard">
       <div className="ProductCard__head">
-        {product.tags.map((tag) => (
+        {product.tags.map(tag => (
           <span className="ProductCard__tag">{tag}</span>
         ))}
         <figure className="ProductCard__imageFigure">
