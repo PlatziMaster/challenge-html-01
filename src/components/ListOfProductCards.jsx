@@ -5,11 +5,11 @@ import ProductCard from './ProductCard';
 
 function ListOfProductCards({ products = [] }) {
   return (
-    <>
+    <div className="ListOfProductCards">
       {products.map((product) => (
         <ProductCard product={product} />
       ))}
-    </>
+    </div>
   );
 }
 
