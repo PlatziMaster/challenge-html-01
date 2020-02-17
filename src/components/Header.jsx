@@ -1,40 +1,17 @@
 import React from 'react';
 import '../styles/components/Header.styl';
+import './Nav'
 
 function Header() {
   return (
-    <div>
-      <figure>
-        <img src="" alt="" />
+    <div className ="Header">
+      <figure className="Header__logoFigure">
+        <img className="Header__logo" src="" alt="" />
       </figure>
-      <nav>
-        <ol>
-          <li>
-            <a href="">TECHNOLOGY</a>
-          </li>
-          <li>
-            <a href="">IDEAS</a>
-          </li>
-          <li>
-            <a href="">LEADERSHIP</a>
-          </li>
-          <li>
-            <a href="">VIDEO</a>
-          </li>
-          <li>
-            <a href="">NEWS</a>
-          </li>
-          <li>
-            <a href="">FINANCE</a>
-          </li>
-          <li>
-            <a href="">ENTERTAIMENT</a>
-          </li>
-        </ol>
-      </nav>
+      <Nav />
       <span className="icon-menu" />
     </div>
-  );
+  );y
 }
 
 export default Header;
