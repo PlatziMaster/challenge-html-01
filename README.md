@@ -7,6 +7,7 @@ Debes desarrollar todo el home de un blog usando html y css, se recomienda usar 
 - El sitio debe ser responsive con base a las imágenes que están abajo.
 - Se debe dividir y estructurar el proyecto usando componente de React.
 - Usar CSS Grid.
+- Usar BEM.
 
 ### Desktop
 
