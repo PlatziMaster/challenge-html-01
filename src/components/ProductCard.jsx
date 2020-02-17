@@ -8,7 +8,7 @@ function ProductCard({ product }) {
       <figure className="ProductCard__imageFigure">
         <img className="ProductCard__image" src={product.imgSrc} alt="" />
       </figure>
-      {product.tags.map(tag => (
+      {product.tags.map((tag) => (
         <span className="ProductCard__tag">{tag}</span>
       ))}
       <h1 className="ProductCard__title">{product.title}</h1>
