@@ -31,3 +31,13 @@ Debes desarrollar todo el home de un blog usando html y css, se recomienda usar 
 ## Recurso original
 
 https://www.invisionapp.com/inside-design/design-resources/card-ui-kit-deck/
+
+
+### Enviar solución de reto
+Debes hacer un "Fork" de este proyecto, darle permisos a tu compañefro de trabajo, revolver los problemas y crear un Pull Request hacia este repositorio.
+
+### Contribuir
+Si alguien quiere agregar o mejorar algo, lo invito a colaborar directamente en este repositorio: [challenge-html-01](https://github.com/platzimaster/challenge-html-01/)
+
+### Licencia
+challenge-html-01 se lanza bajo la licencia [MIT](https://opensource.org/licenses/MIT).
