@@ -5,12 +5,14 @@
     padding 20px
     grid-template-columns: 1fr
     grid-template-areas "Deck" "Social" "Nav"
+    position: absolute;
+    width: 100%;
+    z-index: -1;
     .Footer__Deck
         grid-area Deck
         display flex
         flex-flow column
         padding 20px 0px
-        
     .Footer__Social
         grid-area Social
         display: grid
@@ -79,7 +81,6 @@
             // grid-column: inicio / final
             // .Social__form
             //     .form__email
-                    
 
 @media screen and (min-width 1024px)
     .Footer
