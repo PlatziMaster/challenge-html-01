@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+
 import Logo from './logo';
 import Toggle from './toggle';
 
@@ -11,25 +13,25 @@ const Header = () => (
       <div className="menu-container">
         <ul id="top-menu">
           <li>
-            <a>TECHNOLOGY</a>
+            <Link to="/technology">TECHNOLOGY</Link>
           </li>
           <li>
-            <a>IDEAS</a>
+            <Link to="/ideas">IDEAS</Link>
           </li>
           <li>
-            <a>LEADERSHIP</a>
+            <Link to="/leadership">LEADERSHIP</Link>
           </li>
           <li>
-            <a>VIDEO</a>
+            <Link to="/video">VIDEO</Link>
           </li>
           <li>
-            <a>NEWS</a>
+            <Link to="/news">NEWS</Link>
           </li>
           <li>
-            <a>FINANCE</a>
+            <Link to="/finance">FINANCE</Link>
           </li>
           <li>
-            <a>ENTERTAINMENT</a>
+            <Link to="/entertainment">ENTERTAINMENT</Link>
           </li>
         </ul>
       </div>
