@@ -4,7 +4,7 @@ import '../styles/components/Nav2.styl';
 function Nav2() {
   return (
     <nav className="Nav2">
-      <ul className="Nav2__list">
+      <ol className="Nav2__list">
         <li className="Nav2_element">
           <a href="/">TECHNOLOGY</a>
         </li>
@@ -26,7 +26,7 @@ function Nav2() {
         <li className="Nav2_element">
           <a href="/">ENTERTAIMENT</a>
         </li>
-      </ul>
+      </ol>
     </nav>
   );
 }

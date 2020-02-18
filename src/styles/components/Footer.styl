@@ -15,6 +15,7 @@
         grid-area Social
         display: grid
         grid-template-columns: 180px 1fr
+        grid-gap 30px
         grid-template-areas: "Social""Network"
         .Social__form
             display flex
@@ -24,14 +25,15 @@
                 border 0px
                 background #FF565C
                 color white
+                font-weight: 500
+                font-size 12px
+                line-height: 18px
                 font-family "Oswald", sans-serif
                 padding: 10px 27px
                 letter-spacing 1.5px
             .form__email
                 border 0px
-                // height 94%
-                padding-left: 20px
-                padding: 10px 2vw
+                padding: 10px 3vw
             input 
                 width: 45vw 
         .Social__network
@@ -55,8 +57,29 @@
 
 @media screen and (min-width 767px)
     .Footer
-        grid-template-columns: 1fr 1fr
-        grid-template-areas "Deck Nav" "Social social"
+        grid-template-columns: 2fr 3fr 
+        grid-template-areas "Deck Nav" "Social Social"
+        .Footer__Social
+            grid-area Social
+            display grid
+            grid-template-columns: 1fr 1fr 1fr
+            grid-template-areas "Form Network ."
+            .Social__form
+                grid-area Form
+                height 35px
+                .form__email
+                    width 24vw
+
+
+            .Social__network
+                grid-area Network
+            //grid-template-areas "Social Network"
+            // grid-column-start: 1
+            // grid-column-end: 3
+            // grid-column: inicio / final
+            // .Social__form
+            //     .form__email
+                    
 
 @media screen and (min-width 1024px)
     .Footer
