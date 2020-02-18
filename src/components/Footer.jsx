@@ -1,18 +1,17 @@
 import React from 'react';
 import Nav2 from './Nav2';
 import '../styles/components/Footer.styl';
+import Logo from '../../images/Logo.png';
 
 function Footer() {
   return (
     <div className="Footer">
       <div className="Footer__Deck">
         <figure className="Deck__logoFigure">
-          <img className="Deck__logo" src="" alt="" />
+          <img className="Deck__logo" src={Logo} alt="" />
         </figure>
-        <div className="Deck__copyleft">
-          <span className="">© 2018 Deck</span>
-          <span>Component based UI Kit</span>
-        </div>
+        <span className="">© 2018 Deck</span>
+        <span>Component based UI Kit</span>
       </div>
 
       <div className="Footer__Social">
