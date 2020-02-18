@@ -11,13 +11,7 @@ function Header() {
     event.preventDefault();
     const element = document.querySelector('.Nav');
     element.classList.toggle('isActive');
-    // if (isActive) {
-    //   setIsActive(false)
-    // } else {
-    //   setIsActive(true)
-    // }
     setIsActive(!isActive);
-    // $nav.classList.toggle('isActive');
   };
 
   return (
