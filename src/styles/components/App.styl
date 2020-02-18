@@ -1,2 +1,118 @@
-body
+@import './styles.styl';
+@import url('https://fonts.googleapis.com/css?family=Lato|Oswald:500&display=swap');
+
+// 00. Layout
+* 
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+
+
+body 
+  background-color: $bg-color;
+  min-height: 100vh
+  font-family $font-family  
+
+#app
+  height 100vh
+  display: flex;
+  flex-direction: column;
+  justify-content space-between
+
+// 00.Menu
+.menu-container 
+  flex-grow: 3;
+  font-family: 'Oswald', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing 3px
+  padding-bottom: 4px;
+
+// 00. Header
+header 
+  background-color: $color-4;
+  border-bottom 1px solid $border-color
+
+  nav 
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .logo 
+      margin-left 20px
+      margin-right 40px
+    
+    #top-menu 
+      display none
+
+      li 
+        margin-right 60px
+
+        a 
+          color $color-1
+
+          &:hover 
+            color $color-2
+          
+
+    .toggle 
+      margin-right: 20px
+
+      label 
+        cursor pointer
+  
+  #toggle-checkbox
+    display none
+
+    &:checked
+      & + #top-menu
+        display block 
+
+
+@media $md 
+  header 
+    nav 
+      height: 90px;
+    
+
+@media $lg 
+  header 
+    nav 
+      .logo 
+        margin-left: 40px;
+        margin-right: 60px;
+
+      .menu-container 
+        #top-menu 
+          display: flex;
+        
+      .toogle 
+        margin-right: 40px;
+      
+    
+// 00. Footer
+
+footer 
+  background-color $color-2
+  padding 40px 20px
+  font-size 14px
+  line-height 18px
+  color $color-3
+
+  #bottom-menu 
+    li 
+      margin-right 60px
+
+      a 
+        color $color-4
+        line-height 21px
+
+        &:hover 
+          color $color-2
+
+// 00. Main
+main 
+  flex-grow 2
   background-color blue
