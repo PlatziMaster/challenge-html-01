@@ -3,11 +3,11 @@
   grid-area Nav
   ul
     font-family 'Oswald', sans-serif;
-    color white
-    display flex
     list-style none
-    display flex
-    flex-flow column    
+    display: grid
+    grid-template-columns: repeat(2,1fr)
+    grid-gap: 10px
+    z-index 20
     li
       margin-right: 10px
       a
@@ -17,3 +17,9 @@
         &:hover
           opacity: 1
           text-decoration underline
+
+    @media screen and (min-width 767px)
+      grid-template-columns: repeat(3,1fr)
+
+    @media screen and (min-width 1023px)
+      grid-template-columns: repeat(4,1fr)

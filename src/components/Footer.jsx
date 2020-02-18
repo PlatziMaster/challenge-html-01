@@ -1,7 +1,7 @@
 import React from 'react';
 import Nav2 from './Nav2';
 import '../styles/components/Footer.styl';
-import Logo from '../../images/Logo.png';
+import Logo from '../../images/Logo_gray.png';
 
 function Footer() {
   return (

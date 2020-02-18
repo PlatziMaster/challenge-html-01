@@ -14,8 +14,6 @@ function Nav2() {
         <li className="Nav2_element">
           <a href="/">LEADERSHIP</a>
         </li>
-      </ul>
-      <ul className="Nav2__list">
         <li className="Nav2_element">
           <a href="/">VIDEO</a>
         </li>

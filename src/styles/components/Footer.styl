@@ -8,28 +8,44 @@
     background #1d1f24
     display grid
     padding-left 20px
-    grid-column: 1fr
-    grid-template-areas "Deck"
-                        "Social"
-                        "Nav"
+    grid-template-columns: 1fr
+    grid-template-areas "Deck" "Social" "Nav"
     .Footer__Deck
         grid-area Deck
         display flex
         flex-flow column
     .Footer__Social
         grid-area Social
-    
+        display: grid
+        grid-template-columns: 180px 1fr
+        .form__buttom
+            // height 100%
+            border 0px
+            background #FF565C
+            color white
+            font-family "Oswald", sans-serif
+            padding: 10px 27px
+            letter-spacing: 1.5px;
+        .form__email
+            border 0px
+            // height 94%
+            padding-left: 20px
+            padding: 10px 27px
+
 
 
 @media screen and (min-width 767px)
     .Footer
-        grid-template-areas "Deck Nav"
-                            "Social social"
+        grid-template-columns: 1fr 1fr
+        grid-template-areas "Deck Nav" "Social social"
 
 @media screen and (min-width 1024px)
     .Footer
-        grid-template-areas "Deck Nav Social"
-
+        grid-template-columns: 200px 1fr 300px;
+        // grid-template-rows: 1fr
+        grid-template-areas "Deck Nav Social";
+        align-content: center
+        padding: 50px 0
 
 
 
