@@ -20,9 +20,10 @@ function Footer() {
           <span className="social__followUs"> Follow us:</span>
           <div className="social__iconsContainer">
             <i className="iconsContainer__fab fa-facebook" />
+          </div>
         </div>
+        <Nav />
       </div>
-      <Nav />
     </div>
   );
 }
