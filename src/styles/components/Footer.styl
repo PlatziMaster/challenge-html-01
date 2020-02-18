@@ -5,12 +5,14 @@
     padding 20px
     grid-template-columns: 1fr
     grid-template-areas "Deck" "Social" "Nav"
+    position: absolute;
+    width: 100%;
+    z-index: -1;
     .Footer__Deck
         grid-area Deck
         display flex
         flex-flow column
         padding 20px 0px
-        
     .Footer__Social
         grid-area Social
         display: grid
@@ -48,11 +50,6 @@
                 display flex
                 width 120px
                 justify-content: space-between
-                // i 
-                // width 16px
-                // height 16px
-
-
 
 
 @media screen and (min-width 767px)
@@ -69,17 +66,9 @@
                 height 35px
                 .form__email
                     width 24vw
-
-
             .Social__network
                 grid-area Network
-            //grid-template-areas "Social Network"
-            // grid-column-start: 1
-            // grid-column-end: 3
-            // grid-column: inicio / final
-            // .Social__form
-            //     .form__email
-                    
+
 
 @media screen and (min-width 1024px)
     .Footer
