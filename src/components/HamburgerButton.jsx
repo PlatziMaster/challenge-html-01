@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 
 const HamburgerButtonWrapper = styled.div`
@@ -31,18 +31,13 @@ const HamburgerButtonWrapper = styled.div`
 `;
 
 const HamburgerButton = (props) => {
-  const [isActive, setIsActive] = useState(false);
-  const { color, id, className } = props;
-
-  const handleHamburgerClick = (event) => {
-    event.preventDefault();
-    setIsActive(!isActive);
-  };
-
+  const {
+    color, id, className, isActive, onClick,
+  } = props;
   return (
     <HamburgerButtonWrapper
       isActive={isActive}
-      onClick={handleHamburgerClick}
+      onClick={onClick}
       color={color}
       id={id}
       className={className}
