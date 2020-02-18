@@ -16,9 +16,10 @@ function Footer() {
           <input type="text" placeholder="Your E-mail" id="email" />
           <button type="button">SUBSCRIBE</button>
         </form>
-        <div className="">
-          <span> Follow us:</span>
-          <div />
+        <div className="copyleft__social">
+          <span className="social__followUs"> Follow us:</span>
+          <div className="social__iconsContainer">
+            <i className="iconsContainer__fab fa-facebook" />
         </div>
       </div>
       <Nav />
