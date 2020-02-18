@@ -1,3 +1,6 @@
+# Reto desarrollado por:
+    - David Behar (@behagoras)
+    - Cristian Tovar (@crizy182)
 # Card-style UI kit
 
 Debes desarrollar todo el home de un blog usando html y css, se recomienda usar la técnica de css grid.
