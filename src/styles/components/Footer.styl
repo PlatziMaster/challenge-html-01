@@ -1,19 +1,16 @@
-// mobile: default
-// tablet y big-phones: min-width: 768px
-// desktop: min-width: 1024px
-
-
 .Footer
     color gray
     background #1d1f24
     display grid
-    padding-left 20px
+    padding 20px
     grid-template-columns: 1fr
     grid-template-areas "Deck" "Social" "Nav"
     .Footer__Deck
         grid-area Deck
         display flex
         flex-flow column
+        padding 20px 0px
+        
     .Footer__Social
         grid-area Social
         display: grid
@@ -29,18 +26,20 @@
                 color white
                 font-family "Oswald", sans-serif
                 padding: 10px 27px
-                letter-spacing: 1.5px;
+                letter-spacing 1.5px
             .form__email
                 border 0px
                 // height 94%
                 padding-left: 20px
-                padding: 10px 27px
+                padding: 10px 2vw
+            input 
+                width: 45vw 
         .Social__network
             grid-area Network
             display flex
             justify-content space-between
-            height: 40px;
-            align-items: center;
+            height 40px
+            align-items center
             .network__followUs
                 width 100px
             .network__iconsContainer
