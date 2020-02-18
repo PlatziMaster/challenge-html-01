@@ -18,19 +18,39 @@
         grid-area Social
         display: grid
         grid-template-columns: 180px 1fr
-        .form__buttom
-            // height 100%
-            border 0px
-            background #FF565C
-            color white
-            font-family "Oswald", sans-serif
-            padding: 10px 27px
-            letter-spacing: 1.5px;
-        .form__email
-            border 0px
-            // height 94%
-            padding-left: 20px
-            padding: 10px 27px
+        grid-template-areas: "Social""Network"
+        .Social__form
+            display flex
+            grid-area Social
+            .form__buttom
+                // height 100%
+                border 0px
+                background #FF565C
+                color white
+                font-family "Oswald", sans-serif
+                padding: 10px 27px
+                letter-spacing: 1.5px;
+            .form__email
+                border 0px
+                // height 94%
+                padding-left: 20px
+                padding: 10px 27px
+        .Social__network
+            grid-area Network
+            display flex
+            justify-content space-between
+            height: 40px;
+            align-items: center;
+            .network__followUs
+                width 100px
+            .network__iconsContainer
+                display flex
+                width 120px
+                justify-content: space-between
+                // i 
+                // width 16px
+                // height 16px
+
 
 
 

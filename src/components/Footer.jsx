@@ -15,7 +15,7 @@ function Footer() {
       </div>
 
       <div className="Footer__Social">
-        <form action="/subscribe/" className="social__form">
+        <form action="/subscribe/" className="Social__form">
           <input
             className="form__email"
             type="text"
