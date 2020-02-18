@@ -18,11 +18,8 @@ function Footer() {
         </form>
         <div className="">
           <span> Follow us:</span>
-          <div>
-
-          </div>
+          <div />
         </div>
-
       </div>
       <Nav />
     </div>

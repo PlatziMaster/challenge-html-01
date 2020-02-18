@@ -1,31 +1,32 @@
 import React from 'react';
+import '../styles/components/Nav.styl';
 
 function Nav() {
   return (
-    <nav className="menu">
-      <ol>
-        <li>
-          <a href="">TECHNOLOGY</a>
+    <nav className="Nav">
+      <ul className="Nav__list">
+        <li className="Nav_element">
+          <a href="/">TECHNOLOGY</a>
         </li>
-        <li>
-          <a href="">IDEAS</a>
+        <li className="Nav_element">
+          <a href="/">IDEAS</a>
         </li>
-        <li>
-          <a href="">LEADERSHIP</a>
+        <li className="Nav_element">
+          <a href="/">LEADERSHIP</a>
         </li>
-        <li>
-          <a href="">VIDEO</a>
+        <li className="Nav_element">
+          <a href="/">VIDEO</a>
         </li>
-        <li>
-          <a href="">NEWS</a>
+        <li className="Nav_element">
+          <a href="/">NEWS</a>
         </li>
-        <li>
-          <a href="">FINANCE</a>
+        <li className="Nav_element">
+          <a href="/">FINANCE</a>
         </li>
-        <li>
-          <a href="">ENTERTAIMENT</a>
+        <li className="Nav_element">
+          <a href="/">ENTERTAIMENT</a>
         </li>
-      </ol>
+      </ul>
     </nav>
   );
 }
