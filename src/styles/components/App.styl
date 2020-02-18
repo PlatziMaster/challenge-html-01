@@ -1,44 +1,52 @@
-@import './styles.styl';
-@import url('https://fonts.googleapis.com/css?family=Lato|Oswald:500&display=swap');
+@import './styles.styl'
+@import url('https://fonts.googleapis.com/css?family=Lato|Oswald:400,500&display=swap')
 
 // 00. Layout
 * 
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  text-decoration: none;
+  margin: 0
+  padding: 0
+  list-style: none
+  text-decoration: none
 
 
 body 
-  background-color: $bg-color;
+  background-color: $bg-color
   min-height: 100vh
   font-family $font-family  
 
+input
+  font-family $font-family 
+  font-size  14px
+  padding 0 16px 
+
 #app
   height 100vh
-  display: flex;
-  flex-direction: column;
+  display: flex
+  flex-direction: column
   justify-content space-between
 
 // 00.Menu
 .menu-container 
-  flex-grow: 3;
-  font-family: 'Oswald', sans-serif;
-  font-size: 14px;
-  font-weight: 500;
-  letter-spacing 3px
-  padding-bottom: 4px;
+  flex-grow 3
+  font-family $font-family-2 
+  font-size 14px
+  font-weight 400
+  letter-spacing 2px
+  padding-bottom 4px
+
+  li 
+    cursor pointer
 
 // 00. Header
 header 
-  background-color: $color-4;
+  background-color: $color-4
   border-bottom 1px solid $border-color
 
   nav 
-    height: 70px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    height: 70px
+    display: flex
+    align-items: center
+    justify-content: space-between
 
     .logo 
       margin-left 20px
@@ -74,43 +82,152 @@ header
 @media $md 
   header 
     nav 
-      height: 90px;
+      height: 90px
     
 
-@media $lg 
+@media $xl 
   header 
     nav 
       .logo 
-        margin-left: 40px;
-        margin-right: 60px;
+        margin-left: 40px
+        margin-right: 60px
 
       .menu-container 
         #top-menu 
-          display: flex;
+          display: flex
         
       .toogle 
-        margin-right: 40px;
+        margin-right: 40px
       
     
 // 00. Footer
 
 footer 
   background-color $color-2
-  padding 40px 20px
+  padding 40px 20px 60px
   font-size 14px
   line-height 18px
   color $color-3
 
-  #bottom-menu 
-    li 
-      margin-right 60px
+  .container
+    display grid
+    grid-template-columns 1fr
+    grid-template-areas "copyright" "form-subscribe" "social" "menu" 
 
-      a 
-        color $color-4
-        line-height 21px
+  .copyright
+    grid-area copyright
+    margin-top 8px
+    margin-bottom 20px
 
-        &:hover 
-          color $color-2
+    .logo
+      margin-bottom 8px
+
+  .form-container
+    grid-area form-subscribe
+    margin-bottom 24px
+
+    form 
+      display flex
+
+    input
+      height 35px
+      width 100%
+      max-width 148px
+      border none
+      
+      &::placeholder 
+        opacity .5
+
+    button 
+      height 35px
+      width 120px
+      border none
+      background-color $color-5
+      color $color-4
+      font-family $font-family-2 
+      font-size 12px
+      line-height 17px
+      letter-spacing 1.5px 
+
+
+  .social
+    grid-area social
+    margin-bottom 16px
+    display flex
+    align-items center
+    
+    span
+      margin-right 6px
+      white-space nowrap
+    
+
+    img
+      margin-left 12px
+      margin-right 12px
+
+  .menu-container 
+    grid-area menu
+
+    #bottom-menu
+      max-height 148px
+      display flex
+      flex-direction: column
+      flex-wrap wrap
+
+      li 
+        margin-top 16px
+
+        a 
+          color $color-4
+          line-height 21px
+
+          &:hover 
+            color $color-5
+
+@media $sm
+  footer 
+    padding-bottom 50px
+    .container
+      grid-template-columns 264px 86px 1fr
+      grid-template-areas "copyright menu menu" "form-subscribe form-subscribe social"
+
+    
+    .menu-container 
+      margin-bottom  45px
+
+      #bottom-menu
+        max-height 112px
+
+
+@media $lg
+  footer 
+    padding-bottom 40px
+
+    .container
+      grid-template 1fr 35px / 272px 1fr auto
+      grid-template-areas "copyright menu social" "copyright menu form-subscribe"
+
+      .copyright
+        margin-left 40px
+        margin-bottom  0
+
+      .social
+        justify-self end
+        margin-right 40px
+
+      .form-container
+        margin-right 40px
+
+      .menu-container 
+        margin-bottom  0
+
+        #bottom-menu
+          max-height 74px
+
+
+
+
+
 
 // 00. Main
 main 

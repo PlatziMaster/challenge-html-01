@@ -39,10 +39,10 @@ module.exports = {
         ],
       },
       {
-        test : /\.(png|jpe?g|gif|svg)$/,
+        test: /\.(png|jpe?g|gif|svg)$/,
         exclude: /(node_modules)/,
-        loader : 'file-loader'
-      }
+        loader: 'file-loader',
+      },
     ],
   },
   plugins: [
