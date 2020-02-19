@@ -2,9 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import '../styles/components/Card.styl';
 
-const Card = ({ img, tag, title, description }) => {
+const Card = ({ img, tag, title, description, height }) => {
   return (
-    <div className="card__container">
+    <div className={`card__container ${height}`}>
       <div className="card__img-container">
         <img className="card__img-container--img" alt="card_img" src={img} />
         <p className="card__img-container--tag">{tag}</p>

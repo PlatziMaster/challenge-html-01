@@ -1,0 +1,25 @@
+@import '../lib/vars.styl'
+
+.grid-container
+  display grid
+  grid-template-columns 260px
+  grid-gap 20px
+  justify-content center
+  width 100%
+  padding 20px
+  box-sizing border-box
+  background-color grid-background
+
+.level1
+  grid-row-start span 3
+
+.level2
+  grid-row-start span 2
+
+@media (min-width: 768px)
+  .grid-container
+    grid-template-columns repeat(2, 260px)
+  
+@media (min-width: 992px)
+  .grid-container
+    grid-template-columns repeat(3, 260px)

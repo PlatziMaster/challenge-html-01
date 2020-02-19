@@ -12,6 +12,7 @@ const cards = [
     description:
       'There is a lot of exciting stuff going on in the stars above us that make astronomy much fun.',
     id: '0',
+    height: 'level1',
   },
   {
     img: cellphone,
@@ -20,6 +21,7 @@ const cards = [
     description:
       'There is a lot of exciting stuff going on in the stars above us that make astronomy much fun.',
     id: '1',
+    height: 'level2',
   },
   {
     img: watch,
@@ -28,6 +30,7 @@ const cards = [
     description:
       'There is a lot of exciting stuff going on in the stars above us that make astronomy much fun.',
     id: '2',
+    height: 'level1',
   },
   {
     img: drone,
@@ -37,6 +40,7 @@ const cards = [
     description:
       'There is a lot of exciting stuff going on in the stars above us that make astronomy much fun.',
     id: '3',
+    height: 'level2',
   },
   {
     img: kitchenIpad,
@@ -45,6 +49,7 @@ const cards = [
     description:
       'There is a lot of exciting stuff going on in the stars above us that make astronomy much fun.',
     id: '4',
+    height: 'level1',
   },
   {
     img: camera,
@@ -53,6 +58,7 @@ const cards = [
     description:
       'There is a lot of exciting stuff going on in the stars above us that make astronomy much fun.',
     id: '5',
+    height: 'level1',
   },
   {
     img: kitchenIpad,
@@ -61,6 +67,7 @@ const cards = [
     description:
       'There is a lot of exciting stuff going on in the stars above us that make astronomy much fun.',
     id: '6',
+    height: 'level1',
   },
   {
     img: watch,
@@ -69,6 +76,7 @@ const cards = [
     description:
       'There is a lot of exciting stuff going on in the stars above us that make astronomy much fun.',
     id: '7',
+    height: 'level1',
   },
   {
     img: cellphone,
@@ -77,6 +85,7 @@ const cards = [
     description:
       'There is a lot of exciting stuff going on in the stars above us that make astronomy much fun.',
     id: '8',
+    height: 'level2',
   },
 ];
 
