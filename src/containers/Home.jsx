@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Item from '../components/Item';
+import '../styles/containers/Home.styl';
 
 const Home = () => {
   const initialState = {
@@ -85,9 +86,11 @@ const Home = () => {
 
   return (
     <div className="App">
-      {state.data.map(item => {
-        return <Item key={item.id} {...item} />;
-      })}
+      <div className="ItemList">
+        {state.data.map(item => {
+          return <Item key={item.id} {...item} />;
+        })}
+      </div>
     </div>
   );
 };
