@@ -12,8 +12,13 @@ const Item = () => {
         </figure>
       </div>
       <div className="Item__description">
-        <h2 className="Item__description--title">Titulo</h2>
-        <h3 className="Item__description--subtitle">Subitulo</h3>
+        <h2 className="Item__description--title">
+          Search Engine Optimization And Advertising
+        </h2>
+        <h3 className="Item__description--subtitle">
+          There us a lot of exciting stuff going on in the starts above us that
+          make astronomy so much fun.
+        </h3>
       </div>
     </div>
   );
