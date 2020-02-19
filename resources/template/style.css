@@ -1,0 +1,12 @@
+body {
+  margin: 28px;
+  background-color: #f9fafc;
+  font-family: 'Lato', sans-serif;
+}
+
+.container {
+  display: grid;
+  grid-gap: 57px 28px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 20px;
+}
