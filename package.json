@@ -19,6 +19,7 @@
     "@babel/core": "^7.7.2",
     "@babel/preset-env": "^7.7.1",
     "@babel/preset-react": "^7.7.0",
+    "axios": "^0.19.2",
     "babel-loader": "^8.0.6",
     "html-loader": "^0.5.5",
     "html-webpack-plugin": "^3.2.0",
@@ -38,13 +39,15 @@
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-prettier": "^3.1.1",
     "eslint-plugin-react": "^7.16.0",
+    "file-loader": "^5.0.2",
     "husky": "^2.7.0",
     "lint-staged": "^8.2.1",
     "mini-css-extract-plugin": "^0.7.0",
     "prettier": "^1.19.1",
     "style-loader": "^0.23.1",
     "stylus": "^0.54.7",
-    "stylus-loader": "^3.0.2"
+    "stylus-loader": "^3.0.2",
+    "webfont-webpack-plugin": "^1.0.0"
   },
   "husky": {
     "hooks": {

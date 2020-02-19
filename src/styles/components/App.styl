@@ -1,20 +1,216 @@
-body
-  background-color blue
+@font-face {
+  font-family: 'icomoon-2';
+  src: url('../../../resources/fonts/Oswald/Oswald-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
 
-.container
-  display: grid
-  grid-template-columns: repeat(auto-fill, 250px)
-  grid-gap: 5px
+@font-face {
+  font-family: 'icomoon-3';
+  src: url('../../../resources/fonts/Lato/Lato-Medium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+body
+  margin 0
+  padding 0 
+  background-color: #f9fafc
+
+p
+  font-family: 'icomoon-3'
+  color: #a7a7a7
+  margin: 0
+
+h2
+  font-family: 'icomoon-3'
+
+.container-section
+  display grid
+  grid-template-columns: repeat(auto-fill, 500px)
+  grid-gap: 10px
   justify-content: center
+  margin 30px 0 30px 0
 
 .item
   border-radius: 5px
-  padding: 10px
-  background: #f2f2f2
+  background: #f9fafc
+  margin: 0 auto
 
 .item img
   max-width: 100%
+  width: 100%
 
 .level-1
-  grid-row-end: span 1  
+  grid-row-end: span 2
+
+.level-2
+  grid-row-end: span 1
+
+.level-3
+  grid-row-end: span 2
+
+.level-4
+  grid-row-end: span 1
+
+.level-5
+  grid-row-end: span 2
+
+.Header__Main
+  padding 20px
+  background: #fff
+  display grid
+  grid-template-columns 1fr 9fr 1fr
+  border-bottom 1px solid #ddd  
+
+.Header__Menu ul
+  list-style none
+  display: flex
+  justify-content: flex-start
+  margin 0
+  padding 0
+  height 100%
+  align-items center
+  font-family: 'icomoon-2'
+
+.Header__Menu ul li
+  color: #EBEBEB
+  margin-right: 70px
+
+.Header__Responsive_menu
+  display flex
+  align-items: center
+  justify-content flex-end
+
+.span-category
+  background-color #FF565C
+  position absolute
+  left 0
+  bottom 20px
+  text-align center
+  width 25%
+  padding 10px 20px 10px 20px
+  font-family: 'icomoon-2'
+  color #fff
+
+.item-img
+  position relative
   
+.Footer__main
+  background-color: #1e1f24
+  display: grid
+  padding: 30px
+  grid-template-columns: 1fr 5fr
+
+.Footer__Logo
+  display: grid
+  justify-content flex-start
+
+.Footer__Menu
+  display grid
+
+.Footer__Menu ul
+  display grid
+  grid-template-columns: 1fr 1fr 1fr 1fr
+
+.Footer__Menu ul li
+  list-style none
+  color: #EBEBEB
+  padding: 5px
+  font-family: 'icomoon-2'
+
+.Footer__Social
+  display: flex
+  justify-content: space-around
+
+.Footer__Newsletter
+  display: grid
+
+.Footer__input
+  padding: 10px
+  outline: none
+  width: 53%
+  border none
+
+.Footer__subs
+  background-color: #FF565C
+  color: white
+  border: none
+  padding: 10px
+  width: 40%
+
+.Footer__text_icon
+  color: #a7a7a7
+  font-family: 'icomoon-3'
+
+.Footer__Reverse_Menu_Search
+  display: grid
+  grid-template-columns: 3fr 2fr
+
+@media screen and (max-width: 767px)
+
+  .Header__Responsive_menu
+    display: grid
+    justify-content: flex-end
+  
+  .item
+    margin: 10px 0 10px 0
+
+  .Header__Main
+    display: grid
+    grid-template-columns: 1fr 1fr
+
+  .container-section
+    display block
+    padding: 15px
+    margin: 5px 0 5px 0
+
+  .Header__Menu
+    display: none
+
+  .Footer__main
+    grid-template-columns: 1fr
+
+  .Footer__Menu ul
+    display: grid;
+    grid-template-columns: 1fr 1fr
+
+  .Footer__Newsletter
+    margin: 15px 0 15px 0
+
+  .Footer__Search
+    margin-top: 15px
+
+  .Footer__Reverse_Menu_Search
+    display flex
+    flex-direction: column-reverse
+
+@media (min-width: 768px) and (max-width: 1023px)
+
+  .Header__Menu
+    display: none
+
+  .Header__Main
+    display: grid
+    grid-template-columns: 1fr 1fr
+
+  .container-section
+    display grid
+    grid-template-columns: repeat(auto-fill, 350px)
+    grid-gap: 10px
+
+  .redes
+    margin-left: 30px
+
+  .Footer__Reverse_Menu_Search
+    display: inline-block
+
+  .Footer__Newsletter
+    display flex
+    flex-direction row-reverse
+    justify-content flex-end
+
+  .Footer__Logo
+    display: inline-block
