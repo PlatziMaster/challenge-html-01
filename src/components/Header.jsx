@@ -4,13 +4,17 @@ import '../assets/styles/components/Header.styl';
 const Header = () => {
   return (
     <header>
-      <div className="header__logo">
-        <span>Deck</span>
-        <span>.</span>
-      </div>
       <nav>
         <ul>
-          <li>TECHNOLOGY</li>
+          <li>
+            <div className="header__logo">
+              <span className="header__logo--color1">Deck</span>
+              <span className="header__logo--color2">.</span>
+            </div>
+          </li>
+          <li>
+            <a href="/">TECHNOLOGY</a>
+          </li>
           <li>IDEAS</li>
           <li>LEADERSHIP</li>
           <li>VIDEO</li>
@@ -18,9 +22,11 @@ const Header = () => {
           <li>FINANCE</li>
           <li>ENTERTAINMENT</li>
         </ul>
-        <div htmlFor="toggle">&#9776;</div>
-        <input type="checkbox" id="toggle" />
       </nav>
+      <div className="nav__icon" htmlFor="toggle">
+        &#9776;
+      </div>
+      <input type="checkbox" id="toggle" />
     </header>
   );
 };
