@@ -9,7 +9,7 @@
   color icons-background
 
   &__brand
-    margin-bottom 15px
+    margin-bottom 20px
 
     p
       margin 0
@@ -46,15 +46,26 @@
 
     &--list
       margin 0
-      padding 0
+      padding 20px 0
 
       li
         list-style-type none
         display inline-block
+        vertical-align middle
+
+        p
+          margin 0
+
+        /* span
+          display block
+          width 26px
+          height 26px
+          background-image url('../../assets/redes.jpg') */
 
   &__menu
     display grid
     grid-template-columns 1fr 1fr
+    grid-row-gap 15px
 
     &--item
       font-family oswald-font
@@ -63,7 +74,6 @@
       color light-font
       font-size 14px
       letter-spacing 2px
-      padding-bottom 20px
 
       &:hover
         color label-background
@@ -78,6 +88,7 @@
 
     &__social
       grid-area social
+      margin-top 20px
 
       &--form
       &--list
@@ -98,35 +109,40 @@
       grid-area brand
 
     &__social
+      margin-top 0
       grid-area social
-
-      &--form
-      &--list
-        display inline-block
-        vertical-align middle
-
-    &__menu
-      grid-area menu
-      grid-template-columns repeat(3, 1fr)
-
-    &__social
       display grid
       grid-template-columns 1fr
       grid-template-areas "list" "form"
       justify-items right
 
       &--form
+        display inline-block
+        vertical-align middle
         grid-area form
 
         button
           margin-right 0
 
       &--list
+        padding 0 0 20px 0
+        display inline-block
+        vertical-align middle
         grid-area list
+
+    &__menu
+      grid-area menu
+      grid-template-columns repeat(3, 1fr)
+      grid-row-gap 0px
 
 @media (min-width: 1200px)
   .footer
     &__menu
       grid-area menu
       grid-template-columns repeat(4, 1fr)
+      grid-template-rows 40px
+    
+    &__social
+      &--list
+        padding 0
     

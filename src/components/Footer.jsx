@@ -1,11 +1,13 @@
 import React from 'react';
 import '../styles/components/Footer.styl';
+import logoDark from '../assets/logo-dark.jpg';
+import insta from '../assets/insta.jpg';
 
 const Footer = ({ sections }) => {
   return (
     <footer className="footer">
       <div className="footer__brand">
-        <p>logo</p>
+        <img src={logoDark} alt="Logo" />
         <p>© 2018 Deck</p>
         <p>Component base UI kit</p>
       </div>
@@ -16,12 +18,28 @@ const Footer = ({ sections }) => {
         </form>
         <ul className="footer__social--list">
           <li>
-            <span>Follow us:</span>
+            <p>Follow us:</p>
           </li>
-          <li>i</li>
-          <li>p</li>
-          <li>t</li>
-          <li>f</li>
+          <li>
+            <span className="instagram">
+              <img src={insta} alt="" />
+            </span>
+          </li>
+          <li>
+            <span className="pinterest">
+              <img src={insta} alt="" />
+            </span>
+          </li>
+          <li>
+            <span className="twitter">
+              <img src={insta} alt="" />
+            </span>
+          </li>
+          <li>
+            <span className="facebook">
+              <img src={insta} alt="" />
+            </span>
+          </li>
         </ul>
       </div>
       <div className="footer__menu">
