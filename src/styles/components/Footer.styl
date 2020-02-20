@@ -1,0 +1,132 @@
+@import '../lib/vars.styl'
+
+.footer
+  display grid
+  grid-template-columns 1fr
+  padding 40px 25px
+  background-color footer-background
+  font-family lato-font
+  color icons-background
+
+  &__brand
+    margin-bottom 15px
+
+    p
+      margin 0
+
+  &__social
+    &--form
+      input
+        display inline
+        vertical-align top
+        width 180px
+        padding 10px 12px
+        border none
+        font-size 14px
+
+        &::placeholder
+          color icons-background
+
+      button
+        display inline
+        vertical-align top
+        background-color label-background
+        padding 10px 20px
+        margin-right 20px
+        border none
+        color white
+        font-family oswald-font
+        font-size 12px
+        letter-spacing 2px
+
+        &:hover
+          background-color icons-background
+          color white
+          cursor pointer
+
+    &--list
+      margin 0
+      padding 0
+
+      li
+        list-style-type none
+        display inline-block
+
+  &__menu
+    display grid
+    grid-template-columns 1fr 1fr
+
+    &--item
+      font-family oswald-font
+      text-transform uppercase
+      text-decoration none
+      color light-font
+      font-size 14px
+      letter-spacing 2px
+      padding-bottom 20px
+
+      &:hover
+        color label-background
+
+@media (min-width: 768px)
+  .footer
+    grid-template-columns 200px 1fr
+    grid-template-areas: "brand menu" "social social"
+  
+    &__brand
+      grid-area brand
+
+    &__social
+      grid-area social
+
+      &--form
+      &--list
+        display inline-block
+        vertical-align middle
+
+
+    &__menu
+      grid-area menu
+      grid-template-columns repeat(3, 1fr)
+
+@media (min-width: 992px)
+  .footer
+    grid-template-columns 220px 1fr 350px
+    grid-template-areas: "brand menu social"
+  
+    &__brand
+      grid-area brand
+
+    &__social
+      grid-area social
+
+      &--form
+      &--list
+        display inline-block
+        vertical-align middle
+
+    &__menu
+      grid-area menu
+      grid-template-columns repeat(3, 1fr)
+
+    &__social
+      display grid
+      grid-template-columns 1fr
+      grid-template-areas "list" "form"
+      justify-items right
+
+      &--form
+        grid-area form
+
+        button
+          margin-right 0
+
+      &--list
+        grid-area list
+
+@media (min-width: 1200px)
+  .footer
+    &__menu
+      grid-area menu
+      grid-template-columns repeat(4, 1fr)
+    
