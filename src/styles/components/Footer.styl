@@ -1,0 +1,161 @@
+@import '../lib/vars.styl'
+
+.footer
+  display grid
+  grid-template-columns 1fr
+  padding 40px 25px
+  background-color footer-background
+  font-family lato-font
+  color icons-background
+
+  &__brand
+    margin-bottom 20px
+
+    p
+      margin 0
+
+  &__social
+    &--form
+      input
+        display inline
+        vertical-align top
+        width 180px
+        padding 10px 12px
+        border none
+        font-size 14px
+
+        &::placeholder
+          color icons-background
+
+      button
+        display inline
+        vertical-align top
+        background-color label-background
+        padding 10px 20px
+        margin-right 20px
+        border none
+        color white
+        font-family oswald-font
+        font-size 12px
+        letter-spacing 2px
+
+        &:hover
+          background-color icons-background
+          color white
+          cursor pointer
+
+    &--list
+      margin 0
+      padding 20px 0
+
+      li
+        list-style-type none
+        display inline-block
+        vertical-align middle
+
+        p
+          margin 0
+
+        span
+          display block
+          width 26px
+          height 26px
+          margin-left 10px
+          background-image url('../../assets/redes.jpg')
+
+        .instagram
+          background-position -7px 25px
+
+        .pinterest
+          background-position -46px 25px
+
+        .twitter
+          background-position -82px 25px
+
+        .facebook
+          background-position -108px 25px
+
+  &__menu
+    display grid
+    grid-template-columns 1fr 1fr
+    grid-row-gap 15px
+
+    &--item
+      font-family oswald-font
+      text-transform uppercase
+      text-decoration none
+      color light-font
+      font-size 14px
+      letter-spacing 2px
+
+      &:hover
+        color label-background
+
+@media (min-width: 768px)
+  .footer
+    grid-template-columns 200px 1fr
+    grid-template-areas: "brand menu" "social social"
+  
+    &__brand
+      grid-area brand
+
+    &__social
+      grid-area social
+      margin-top 20px
+
+      &--form
+      &--list
+        display inline-block
+        vertical-align middle
+
+
+    &__menu
+      grid-area menu
+      grid-template-columns repeat(3, 1fr)
+
+@media (min-width: 992px)
+  .footer
+    grid-template-columns 220px 1fr 350px
+    grid-template-areas: "brand menu social"
+  
+    &__brand
+      grid-area brand
+
+    &__social
+      margin-top 0
+      grid-area social
+      display grid
+      grid-template-columns 1fr
+      grid-template-areas "list" "form"
+      justify-items right
+
+      &--form
+        display inline-block
+        vertical-align middle
+        grid-area form
+
+        button
+          margin-right 0
+
+      &--list
+        padding 0 0 20px 0
+        display inline-block
+        vertical-align middle
+        grid-area list
+
+    &__menu
+      grid-area menu
+      grid-template-columns repeat(3, 1fr)
+      grid-row-gap 0px
+
+@media (min-width: 1200px)
+  .footer
+    &__menu
+      grid-area menu
+      grid-template-columns repeat(4, 1fr)
+      grid-template-rows 40px
+    
+    &__social
+      &--list
+        padding 0
+    
