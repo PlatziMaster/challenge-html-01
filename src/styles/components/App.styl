@@ -68,8 +68,7 @@ header
 
     &:checked
       & + #top-menu
-        display block 
-
+        display block
 
 @media $md 
   header 
@@ -113,6 +112,49 @@ footer
           color $color-2
 
 // 00. Main
-main 
+main
   flex-grow 2
-  background-color blue
+  background: $bg-color
+  .container
+    display: flex
+    margin-top: 42px
+    grid-gap: 5px
+    grid-template-columns: repeat(auto-fill,minmax(432px,1fr))
+    justify-content: center
+    grid-auto-flow: row dense
+    &::before,
+    &::after
+      content ""
+      flex-basis 100%
+      width 0
+      order 2
+    .item
+      border-radius: 5px
+      padding: 10px
+      margin-right: 23px
+      grid-row: span 2
+      .item
+        &:nth-child(3n
+          & + 1)
+            order 1
+        & + 2)
+            order 2
+    &:nth-child(3n)
+        order 3
+      img
+        width: 100%
+      h2
+        margin: 19px 0
+        font-size: 26px
+      p
+        margin-top: 11px
+        opacity: 0.7
+        font-family: Lato
+        font-size: 18px
+        font-weight: normal
+        font-stretch: normal
+        font-style: normal
+        line-height: 1.56
+        letter-spacing: normal
+        color: $color-2
+        margin-bottom: 60px
