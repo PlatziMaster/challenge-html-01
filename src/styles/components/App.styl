@@ -101,37 +101,27 @@ h2
 .Footer__main
   background-color: #1e1f24
   display: grid
-  padding: 30px
-  grid-template-columns: 1fr 5fr
+  grid-template: 1fr 3fr 1fr
+  grid-template-areas: "Footer__Logo Footer__Menu Footer__Search"
+  padding: 20px
 
 .Footer__Logo
   display: grid
-  justify-content flex-start
-
-.Footer__Menu
-  display grid
+  align-items: center
 
 .Footer__Menu ul
-  display grid
+  display: grid
   grid-template-columns: 1fr 1fr 1fr 1fr
+  list-style none
+  font-family: 'icomoon-2'
+  color: #EBEBEB
 
 .Footer__Menu ul li
-  list-style none
-  color: #EBEBEB
   padding: 5px
-  font-family: 'icomoon-2'
-
-.Footer__Social
-  display: flex
-  justify-content: space-around
-
-.Footer__Newsletter
-  display: grid
 
 .Footer__input
   padding: 10px
   outline: none
-  width: 53%
   border none
 
 .Footer__subs
@@ -139,7 +129,6 @@ h2
   color: white
   border: none
   padding: 10px
-  width: 40%
 
 .Footer__text_icon
   color: #a7a7a7
@@ -148,6 +137,15 @@ h2
 .Footer__Reverse_Menu_Search
   display: grid
   grid-template-columns: 3fr 2fr
+
+.Footer__Newsletter
+  display flex
+  flex-direction column
+  align-items center
+  justify-content center
+
+.redes
+  margin-left: 20px
 
 @media screen and (max-width: 767px)
 
@@ -171,21 +169,25 @@ h2
     display: none
 
   .Footer__main
-    grid-template-columns: 1fr
+    display flex
+    flex-direction column
 
-  .Footer__Menu ul
-    display: grid;
-    grid-template-columns: 1fr 1fr
+  .second
+    order 2
 
   .Footer__Newsletter
-    margin: 15px 0 15px 0
-
-  .Footer__Search
-    margin-top: 15px
-
-  .Footer__Reverse_Menu_Search
-    display flex
+    display: flex
     flex-direction: column-reverse
+    align-items: flex-start
+    margin-top: 20px
+
+  .Footer__Menu ul
+    display: grid
+    grid-template-columns: 1fr 1fr
+    padding: 0
+
+  .Footer__Social
+    margin-top: 10px
 
 @media (min-width: 768px) and (max-width: 1023px)
 
@@ -204,13 +206,18 @@ h2
   .redes
     margin-left: 30px
 
-  .Footer__Reverse_Menu_Search
-    display: inline-block
+  .Footer__main
+    background-color: #1e1f24
+    display: grid
+    grid-template-areas:  "Footer__Logo Footer__Menu"\
+                          "Footer__Newsletter Footer__Newsletter"
+
+  .Footer__Newsletter 
+    display: flex
+    flex-direction: column-reverse
+    align-items: center
+    justify-content: center
+    margin-top: 15px
 
   .Footer__Newsletter
-    display flex
-    flex-direction row-reverse
-    justify-content flex-end
-
-  .Footer__Logo
-    display: inline-block
+    display: block
