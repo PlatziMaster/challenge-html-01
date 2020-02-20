@@ -1,0 +1,26 @@
+@import '../lib/vars.styl'
+
+.header__container
+    display flex
+    font-family oswald-font
+    align-items center
+    padding 10px 5vw
+    margin-bottom 30px
+
+    svg
+        cursor pointer
+        min-width 30px
+
+.header__section
+    color light-font
+    font-size 12px
+    text-decoration none
+    text-transform uppercase
+    margin 0 30px
+    letter-spacing 1px
+
+    @media (max-width: 1024px)
+        display none
+
+.header__flex-grow
+    flex 1
