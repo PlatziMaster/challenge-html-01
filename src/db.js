@@ -34,6 +34,15 @@ const db = {
       height: 'level1',
     },
     {
+      img: kitchenIpad,
+      tag: 'Entertainment',
+      title: '15 Tips To Increase Your Adwords Profits',
+      description:
+        'There is a lot of exciting stuff going on in the stars above us that make astronomy much fun.',
+      id: '4',
+      height: 'level1',
+    },
+    {
       img: drone,
       tag: 'Tecnology',
       title:
@@ -42,15 +51,6 @@ const db = {
         'There is a lot of exciting stuff going on in the stars above us that make astronomy much fun.',
       id: '3',
       height: 'level2',
-    },
-    {
-      img: kitchenIpad,
-      tag: 'Entertainment',
-      title: '15 Tips To Increase Your Adwords Profits',
-      description:
-        'There is a lot of exciting stuff going on in the stars above us that make astronomy much fun.',
-      id: '4',
-      height: 'level1',
     },
     {
       img: camera,
