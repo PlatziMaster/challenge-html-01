@@ -1,4 +1,4 @@
-.Header
+.header
   width 100%
   display grid
   grid-template-columns: 100px 50px
@@ -6,18 +6,17 @@
   align-content: center
   position fixed
   background white
-  padding 10px 0
+  padding 20px 0
   @media screen and (min-width 1024px)
     grid-template-columns: 100px 1fr
     justify-content: space-between
-  &__logoFigure
+  &__img
     display grid
     justify-content: center
     align-content: center
 
-.Nav
+.nav
   display block
-  transition: all 0.5s ease-in-out;
   right -100%
   position fixed
   top 0
@@ -55,7 +54,7 @@
     font-size 16px
     position initial
     ul
-      padding 15px
+      padding 5px
       display flex
       float left
       li
