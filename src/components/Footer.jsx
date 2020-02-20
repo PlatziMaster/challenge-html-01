@@ -1,7 +1,6 @@
 import React from 'react';
 import '../styles/components/Footer.styl';
 import logoDark from '../assets/logo-dark.jpg';
-import insta from '../assets/insta.jpg';
 
 const Footer = ({ sections }) => {
   return (
@@ -21,24 +20,16 @@ const Footer = ({ sections }) => {
             <p>Follow us:</p>
           </li>
           <li>
-            <span className="instagram">
-              <img src={insta} alt="" />
-            </span>
+            <span className="instagram" />
           </li>
           <li>
-            <span className="pinterest">
-              <img src={insta} alt="" />
-            </span>
+            <span className="pinterest" />
           </li>
           <li>
-            <span className="twitter">
-              <img src={insta} alt="" />
-            </span>
+            <span className="twitter" />
           </li>
           <li>
-            <span className="facebook">
-              <img src={insta} alt="" />
-            </span>
+            <span className="facebook" />
           </li>
         </ul>
       </div>
