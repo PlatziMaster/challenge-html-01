@@ -2,16 +2,17 @@
 
 header
   width 100%
-  display flex
-  align-items center
-  justify-content space-between
+  height 70px
+  display grid
+  grid-template-columns: auto 1fr 1fr
   color header-color
   padding-top 25px
-  font-family 'Oswald', sans-serif;
+  font-family 'Oswald', sans-serif
 
 .header__logo 
-  margin-right 20px
+  margin auto 20px auto 40px
   font-weight 700
+  font-size 24px
   font-family 'Lato', sans-serif
 
 .header__logo--color1
@@ -28,6 +29,8 @@ nav
 nav ul 
   display flex
   list-style none
+  margin 0
+  padding-left 30px
 
 nav ul li 
   margin-right 50px
@@ -37,14 +40,60 @@ nav ul li a
   color header-color
 
 
-.nav__icon {
-    margin: 0 30px 0 0;
-    font-size: 26px;
-    width: 26px;
-    float: right;
-    color footer-bgcolor
-}
-#toggle {
-    display: none;
-}
+.nav__icon
+  margin 0 30px 0 0
+  font-size 26px
+  width 26px
+  float right
+  color footer-bgcolor
+  margin auto 20px auto auto
+  cursor pointer
+
+#toggle
+  display none
+
+.header--button-close
+  display none
   
+@media only screen and (max-width 1024px)
+  header
+    display grid
+    grid-template-columns 1fr 1fr
+
+  .nav__icon 
+    display block
+    cursor pointer
+  
+  nav
+    display block
+    width 100%
+    text-align center
+    background-color white
+    & ul 
+      display block
+    & li 
+      border-bottom 1px solid #EAEAEB  
+  #toggle:checked + nav
+    display none
+
+  nav
+    display none
+    position absolute
+    width 100%
+    height 100%
+    text-align center
+    background-color white
+    color footer-bgcolor
+    & ul 
+      display block
+      & li a
+        text-decoration none
+        color footer-bgcolor
+    & li
+      border-bottom 1px solid #EAEAEB  
+      margin 20px 0
+      padding 20px 0 30px 0
+     
+  .header--button-close
+    display block
+    margin: auto 90%;
