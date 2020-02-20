@@ -39,13 +39,16 @@ module.exports = {
         ],
       },
       {
-        test: /\.jpg|png|gif|woff|eot|ttf|svg|mp4|webm$/,
-        use: {
-          loader: 'file-loader',
-          options: {
-            outputPath: 'assets/',
+        test: /\.(jpg|png|gif|woff|eot|ttf|svg|mp4|webm)$/i,
+        use: [
+          {
+            loader: 'url-loader',
+            options: {
+              limit: 8192,
+              outputPath: 'assets/',
+            },
           },
-        },
+        ],
       },
     ],
   },
