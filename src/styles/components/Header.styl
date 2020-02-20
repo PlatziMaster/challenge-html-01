@@ -1,0 +1,65 @@
+.Header
+  width 100%
+  display grid
+  grid-template-columns: 100px 50px
+  justify-content: space-between
+  align-content: center
+  position fixed
+  background white
+  padding 10px 0
+  @media screen and (min-width 1024px)
+    grid-template-columns: 100px 1fr
+    justify-content: space-between
+  &__logoFigure
+    display grid
+    justify-content: center
+    align-content: center
+
+.Nav
+  display block
+  transition: all 0.5s ease-in-out;
+  right -100%
+  position fixed
+  top 0
+  background #d58184
+  width: 100%
+  max-width 300px
+  height 100%
+  font-size 30px
+  z-index: 10
+  &.isActive
+    right 0
+  ul
+    float right
+    padding 30px
+    font-family 'Oswald', sans-serif;
+    color #1D1F24
+    list-style none
+    li
+      margin-bottom 30px
+      margin-right 10px
+      a
+
+        color white
+        text-align right
+        opacity: .8
+        text-decoration: none
+        &:hover
+          opacity: 1
+          text-decoration underline
+
+  @media screen and (min-width 1024px)
+    display block
+    position relative
+    background none
+    font-size 16px
+    position initial
+    ul
+      padding 15px
+      display flex
+      float left
+      li
+        margin-bottom 0
+        a
+          color: #1D1F24
+          opacity: .2
