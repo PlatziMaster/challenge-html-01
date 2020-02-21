@@ -1,23 +1,71 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import '../styles/components/Header.styl';
 
 const Header = () => {
+  let handler = false;
+  const [showClass, setClass] = useState('hide');
+
+  function showMenu(e) {
+    handler = !handler;
+    setClass(showClass === 'hide' ? 'show' : 'hide');
+    e.preventDefault();
+  }
+
   return (
     <header>
       <nav>
-        <menu>
+        <li className="logocolor logo">Deck</li>
+        <menu className={showClass}>
           <li>
-            <img src="" alt="" />
+            <Link className="item" to="/">
+              Technology
+            </Link>
           </li>
-          <li>Technology</li>
-          <li>Ideas</li>
-          <li>Leadership</li>
-          <li>Video</li>
-          <li>News</li>
-          <li>Finance</li>
-          <li>Entertainment</li>
+          <li>
+            <Link className="item" to="/">
+              Ideas
+            </Link>
+          </li>
+          <li>
+            <Link className="item" to="/">
+              Ideas
+            </Link>
+          </li>
+          <li>
+            <Link className="item" to="/">
+              Leadership
+            </Link>
+          </li>
+          <li>
+            <Link className="item" to="/">
+              Video
+            </Link>
+          </li>
+          <li>
+            <Link className="item" to="/">
+              News
+            </Link>
+          </li>
+          <li>
+            <Link className="item" to="/">
+              Finance
+            </Link>
+          </li>
+          <li>
+            <Link className="item" to="/">
+              Entertainment
+            </Link>
+          </li>
         </menu>
-        <span>&#9776;</span>
+        <button
+          type="button"
+          className="burger"
+          onClick={showMenu}
+          onKeyDown={showMenu}
+        >
+          &#9776;
+        </button>
       </nav>
     </header>
   );

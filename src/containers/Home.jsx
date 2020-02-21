@@ -85,7 +85,7 @@ const Home = () => {
   const [state] = useState(initialState);
 
   return (
-    <div className="App">
+    <div className="Home">
       <div className="ItemList">
         {state.data.map(item => {
           return <Item key={item.id} {...item} />;

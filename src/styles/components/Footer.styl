@@ -1,26 +1,109 @@
+
+.uppercase
+  text-transform: uppercase
+.lowcolor
+  color #bbbcbe
+.logocolor
+  color #494a4e
+.logocolor2
+  color: #ff565b
+
+.logo
+  font-size: 30px
+
+.logo-dot
+  width: 5px
+  height 5px
+  background-color: #ff565b
+
 .Footer
+  padding: 20px 30px
   background-color #1e1f24
   color #ffffff
-  display flex
-  justify-content space-around
-  align-items center
+  display grid
   height 200px
-  text-transform uppercase
-  &__item
-    text-align: center
+  align-items: center
+  grid-template-areas "info main social"\
+                      "info main form"
+  &__info
+    grid-area: info
+    text-transform: none
+
+  &__main
+    grid-area main
+    display flex
+    justify-content space-between
+    grid-gap: 20px
+
   &__social
-     display: flex
-     justify-content: space-between
-     text-transform:  none
-  &__btn
-     background-color #ff565b
-     color: #FFFFFF
-     padding 0 20px
-     border solid 1px #ff565b
+    &__menu
+      grid-area social
+      display: flex;
+      height: 100%
+      align-items: center
+      justify-content: flex-end
+
+    &__menu li
+      margin-right: 20px
+
   &__form
-     background-color #ffffff
-     height 35px
-  &__subscribe
-     height 35px
-     display: flex
-    
+    grid-area: form
+    width: 100%
+    height 30px
+    display: flex
+    justify-content: flex-end
+    height: 100%
+    align-items: flex-start
+    &__input
+      height: 30px
+      width: 40%
+    &__btn
+      height: 34px
+      width: 30%
+      background-color #ff565b
+      border solid 1px #ff565b
+      color: #ffffff
+
+  &__menu
+    display: flex
+    height 30px
+
+@media screen and (max-width: 1000px)
+  .Footer
+    grid-template-areas "info main"\
+                        "form social"
+    &__form
+      align-items: center
+      justify-content: flex-start
+
+    &__social
+      justify-content: center
+      align-items: center
+
+
+@media screen and (max-width: 850px)
+  .Footer
+    grid-template-areas "info"\
+                        "form"\
+                        "social"\
+                        "main"
+    grid-gap: 20px
+    height 100%
+
+    &__info
+      justify-content: center
+
+    &__form
+      display: block
+
+    &__social
+      &__menu
+        justify-content: flex-start  
+
+    &__main
+      flex-wrap: wrap
+      justify-content: flex-start
+
+    &__main h3
+      margin-right: 20px
+      margin-top: 20px
