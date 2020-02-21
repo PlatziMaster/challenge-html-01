@@ -5,20 +5,25 @@ import '../styles/components/Header.styl';
 
 import logo from '../assets/logo.png';
 
+const mobileNavOpenBurgerStyles = {
+  fill: 'white',
+  position: 'fixed',
+  right: '5vw',
+  top: '10px',
+};
+
+const mobileNavOpenHeaderStyles = { paddingTop: '15px', marginBottom: '35px' };
+
 const Header = ({ sections }) => {
   const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
 
   const isMobileNavOpenHandler = () => setIsMobileNavOpen(!isMobileNavOpen);
 
-  const mobileNavOpenBurgerStyles = {
-    fill: 'white',
-    position: 'fixed',
-    right: '5vw',
-    top: '10px',
-  };
-
   return (
-    <header className="header__container">
+    <header
+      className="header__container"
+      style={isMobileNavOpen ? mobileNavOpenHeaderStyles : null}
+    >
       <img className="header__img--logo" alt="Logo" src={logo} />
       {sections.map(section => (
         <a key={section} href="/" className="header__section">
