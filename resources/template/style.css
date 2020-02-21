@@ -11,6 +11,24 @@ body {
   grid-auto-rows: 20px;
 }
 
+@media (min-width: 768px) and (max-width: 1024px) {
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
 .card {
   background-color: #ffffff;
 }
