@@ -10,3 +10,29 @@ body {
   grid-template-columns: repeat(3, 1fr);
   grid-auto-rows: 20px;
 }
+
+.card {
+  background-color: #ffffff;
+}
+
+.card--content-img {
+  width: 100%;
+}
+
+.card--content__description {
+  padding: 0px 0px 5px 0px;
+}
+
+.description--title {
+  font-size: 26px;
+  font-weight: 600;
+  margin-top: 23px;
+  margin-bottom: 8px;
+  text-transform: capitalize;
+}
+
+.description--desc {
+  font-size: 18px;
+  color: rgba(29, 31, 36, 0.7);
+  padding: 0;
+}
