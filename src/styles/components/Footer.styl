@@ -1,0 +1,80 @@
+.Footer
+  width: 100%
+  padding: 2em
+  font-weight: bold
+  display: grid
+  align-items: center
+  grid-template-columns: 15% 60% 25%
+  background: #1f1f24
+
+  &__logo
+    color #45464a
+    display: flex
+    align-items: center
+    justify-content: flex-start
+    font-size: 1.5em
+    p 
+     color red
+  &__copyright 
+    font-size: .8em
+    color #8a8b8e
+
+    
+  &__navbar
+    font-size: .9em
+    
+    color #fefefe
+    text-transform: uppercase
+    ul 
+
+      display: grid
+      grid-template-rows: 1fr 1fr
+      grid-gap: 10px
+
+      grid-template-columns: repeat(4, 1fr)
+      li 
+        padding: 0 2em
+        transition: .3s
+        cursor pointer
+        letter-spacing: .1em
+      :hover
+        color #e7413e
+  
+  
+  
+  .Footer-followContainer
+    display: flex
+    flex-direction: column
+    align-items: flex-end
+  &__follow
+    justify-self: flex-end
+    width: 60%
+    margin-bottom: .5em
+    color: #8a8b8e
+    display: flex
+    align-items: center
+    justify-content: space-around
+    label 
+      cursor pointer
+  .submit
+    padding: .5em;
+    background: #fa555a;
+    border: none;
+    outline: none;
+    height: 100%;
+    color: #fefefe;
+    font-weight: bold;
+    letter-spacing: .1em;
+    cursor pointer
+  .input
+    padding: .5em;
+    border: none;
+    outline: none;
+
+    
+
+
+
+    
+   
+      
