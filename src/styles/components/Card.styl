@@ -1,0 +1,39 @@
+@import '../lib/vars.styl'
+
+.card__container
+    width calc(100% - 16px)
+    display inline-block
+    padding 8px
+
+.card__img-container
+    position relative
+
+.card__img-container--img
+    width 100%
+    user-select none
+
+.card__img-container--tag
+    position absolute
+    bottom 6px
+    background-color label-background
+    padding 6px 16px
+    left -2px
+    color white
+    text-transform uppercase
+    font-size 8px
+    font-family oswald-font
+    letter-spacing 2px
+
+.card__text-container
+    font-family lato-font
+
+.card__text-container--title
+    color footer-background
+    margin 6px 0
+    font-weight 600
+
+.card__text-container--description
+    font-size 11px
+    color card-light-font
+    margin 0
+    margin-bottom 12px

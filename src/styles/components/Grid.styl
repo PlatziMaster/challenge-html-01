@@ -1,0 +1,23 @@
+@import '../lib/vars.styl'
+
+.grid-container
+  display grid
+  grid-template-columns 90vw
+  justify-content center
+  width 100%
+  box-sizing border-box
+  background-color grid-background
+
+.level1
+  grid-row-start span 3
+
+.level2
+  grid-row-start span 2
+
+@media (min-width: tablet)
+  .grid-container
+    grid-template-columns repeat(2, 45vw)
+
+@media (min-width: desktop)
+  .grid-container
+    grid-template-columns repeat(3, 30vw)
