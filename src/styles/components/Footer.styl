@@ -4,7 +4,7 @@
   font-weight: bold
   display: grid
   align-items: center
-  grid-template-columns: 15% 60% 25%
+  grid-template-columns: auto auto auto
   background: #1f1f24
 
   &__logo
@@ -31,9 +31,15 @@
       grid-template-rows: 1fr 1fr
       grid-gap: 10px
 
-      grid-template-columns: repeat(4, 1fr)
+      grid-template-columns: repeat(4, auto)
+      grid-template-areas: "technology leadership news entertainment"\
+                           "ideas video finance null"
+      .technology
+        grid-area: technology
+      .leadership
+        grid-area: leadership
       li 
-        padding: 0 2em
+        padding: 0 10%
         transition: .3s
         cursor pointer
         letter-spacing: .1em
@@ -70,9 +76,71 @@
     padding: .5em;
     border: none;
     outline: none;
+  @media screen and (max-width: 1086px) 
+    grid-template-columns: auto auto
+    grid-template-rows: 1fr 1fr
+    grid-template-areas: "copyright navbar"\
+                         "followContainer followContainer"
+    &__logoContainer
+      grid-area: copyright                         
+    &__navbar
+      grid-area: navbar
+    &__followContainer
+      grid-area: followContainer
+      display: flex
+      align-items: center
+      justify-content: flex-end
+    &__navbar
+      ul 
 
-    
+        display: grid
+        grid-template-rows: 1fr 1fr
+        grid-gap: 10px
 
+        grid-template-columns: repeat(3, auto)
+        grid-template-areas: "technology leadership news "\
+                            "ideas video finance "\
+                            "entertainment null null"
+        .technology
+          grid-area: technology
+        .entertainment
+          grid-area: entertainment
+    &__followContainer
+      display: flex
+      flex-direction: row-reverse
+      align-items: flex-end
+      .subscribeContaineer
+        display: flex
+  @media screen and (max-width: 672px) 
+    grid-template-columns: auto 
+    grid-template-rows: repeat(3, auto)
+    grid-template-areas: "copyright "\
+                         "followContainer"\
+                         "navbar"
+    &__followContainer
+      margin: 2em 0
+      display: flex
+      flex-direction: column
+      align-items: flex-start
+    &__navbar
+      ul 
+        display: grid
+        grid-template-rows: auto auto
+        grid-gap: 10px
+
+        grid-template-columns: repeat(2, auto)
+        grid-template-areas: "technology video   "\
+                             "ideas news "\
+                             "entertainment finance"\
+                             "leadership null"
+        li 
+          padding: .5em
+        .technology
+          grid-area: technology
+        .entertainment
+          grid-area: entertainment
+  @media screen and (max-width: 423px)
+    padding: .5em
 
 
     

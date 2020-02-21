@@ -41,7 +41,16 @@
     justify-content: center
     i 
       cursor pointer
-
+  @media screen and (max-width: 969px) 
+    grid-template-columns: 30% 70%
+    &__navbar
+      display: none
+    &__hamburgerMenu
+      padding-right: 2em 
+      display: flex
+      align-items: center
+      justify-content: flex-end
+ 
     
 
 
