@@ -38,6 +38,10 @@ module.exports = {
           'stylus-loader',
         ],
       },
+      {
+        test: /\.(woff|ttf|otf|eot|woff2|svg)$/i,
+        loader: 'file-loader',
+      },
     ],
   },
   plugins: [
@@ -46,7 +50,7 @@ module.exports = {
       filename: './index.html',
     }),
     new MiniCssExtractPlugin({
-      filename: 'assets/[name].css',
+      filename: '[name].css',
     }),
   ],
 };

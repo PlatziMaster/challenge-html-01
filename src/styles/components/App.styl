@@ -1,2 +1,223 @@
+@font-face {
+  font-family: 'icomoon-2';
+  src: url('../../../resources/fonts/Oswald/Oswald-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+@font-face {
+  font-family: 'icomoon-3';
+  src: url('../../../resources/fonts/Lato/Lato-Medium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
 body
-  background-color blue
+  margin 0
+  padding 0 
+  background-color: #f9fafc
+
+p
+  font-family: 'icomoon-3'
+  color: #a7a7a7
+  margin: 0
+
+h2
+  font-family: 'icomoon-3'
+
+.container-section
+  display grid
+  grid-template-columns: repeat(auto-fill, 500px)
+  grid-gap: 10px
+  justify-content: center
+  margin 30px 0 30px 0
+
+.item
+  border-radius: 5px
+  background: #f9fafc
+  margin: 0 auto
+
+.item img
+  max-width: 100%
+  width: 100%
+
+.level-1
+  grid-row-end: span 2
+
+.level-2
+  grid-row-end: span 1
+
+.level-3
+  grid-row-end: span 2
+
+.level-4
+  grid-row-end: span 1
+
+.level-5
+  grid-row-end: span 2
+
+.Header__Main
+  padding 20px
+  background: #fff
+  display grid
+  grid-template-columns 1fr 9fr 1fr
+  border-bottom 1px solid #ddd  
+
+.Header__Menu ul
+  list-style none
+  display: flex
+  justify-content: flex-start
+  margin 0
+  padding 0
+  height 100%
+  align-items center
+  font-family: 'icomoon-2'
+
+.Header__Menu ul li
+  color: #EBEBEB
+  margin-right: 70px
+
+.Header__Responsive_menu
+  display flex
+  align-items: center
+  justify-content flex-end
+
+.span-category
+  background-color #FF565C
+  position absolute
+  left 0
+  bottom 20px
+  text-align center
+  width 25%
+  padding 10px 20px 10px 20px
+  font-family: 'icomoon-2'
+  color #fff
+
+.item-img
+  position relative
+  
+.Footer__main
+  background-color: #1e1f24
+  display: grid
+  grid-template: 1fr 3fr 1fr
+  grid-template-areas: "Footer__Logo Footer__Menu Footer__Search"
+  padding: 20px
+
+.Footer__Logo
+  display: grid
+  align-items: center
+
+.Footer__Menu ul
+  display: grid
+  grid-template-columns: 1fr 1fr 1fr 1fr
+  list-style none
+  font-family: 'icomoon-2'
+  color: #EBEBEB
+
+.Footer__Menu ul li
+  padding: 5px
+
+.Footer__input
+  padding: 10px
+  outline: none
+  border none
+
+.Footer__subs
+  background-color: #FF565C
+  color: white
+  border: none
+  padding: 10px
+
+.Footer__text_icon
+  color: #a7a7a7
+  font-family: 'icomoon-3'
+
+.Footer__Reverse_Menu_Search
+  display: grid
+  grid-template-columns: 3fr 2fr
+
+.Footer__Newsletter
+  display flex
+  flex-direction column
+  align-items center
+  justify-content center
+
+.redes
+  margin-left: 20px
+
+@media screen and (max-width: 767px)
+
+  .Header__Responsive_menu
+    display: grid
+    justify-content: flex-end
+  
+  .item
+    margin: 10px 0 10px 0
+
+  .Header__Main
+    display: grid
+    grid-template-columns: 1fr 1fr
+
+  .container-section
+    display block
+    padding: 15px
+    margin: 5px 0 5px 0
+
+  .Header__Menu
+    display: none
+
+  .Footer__main
+    display flex
+    flex-direction column
+
+  .second
+    order 2
+
+  .Footer__Newsletter
+    display: flex
+    flex-direction: column-reverse
+    align-items: flex-start
+    margin-top: 20px
+
+  .Footer__Menu ul
+    display: grid
+    grid-template-columns: 1fr 1fr
+    padding: 0
+
+  .Footer__Social
+    margin-top: 10px
+
+@media (min-width: 768px) and (max-width: 1023px)
+
+  .Header__Menu
+    display: none
+
+  .Header__Main
+    display: grid
+    grid-template-columns: 1fr 1fr
+
+  .container-section
+    display grid
+    grid-template-columns: repeat(auto-fill, 350px)
+    grid-gap: 10px
+
+  .redes
+    margin-left: 30px
+
+  .Footer__main
+    background-color: #1e1f24
+    display: grid
+    grid-template-areas:  "Footer__Logo Footer__Menu"\
+                          "Footer__Newsletter Footer__Newsletter"
+
+  .Footer__Newsletter 
+    display: flex
+    flex-direction: column-reverse
+    align-items: center
+    justify-content: center
+    margin-top: 15px
+
+  .Footer__Newsletter
+    display: block
