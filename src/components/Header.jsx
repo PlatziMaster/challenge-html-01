@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import BurgerButton from '../icons/BurgerButton';
 import '../styles/components/Header.styl';
@@ -6,6 +6,17 @@ import '../styles/components/Header.styl';
 import logo from '../assets/logo.png';
 
 const Header = ({ sections }) => {
+  const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
+
+  const isMobileNavOpenHandler = () => setIsMobileNavOpen(!isMobileNavOpen);
+
+  const mobileNavOpenBurgerStyles = {
+    fill: 'white',
+    position: 'fixed',
+    right: '5vw',
+    top: '10px',
+  };
+
   return (
     <header className="header__container">
       <img className="header__img--logo" alt="Logo" src={logo} />
@@ -14,8 +25,24 @@ const Header = ({ sections }) => {
           {section}
         </a>
       ))}
+      {isMobileNavOpen && (
+        <div className="header__sections-container--mobile">
+          {sections.map(section => (
+            <a
+              key={section}
+              href="/"
+              className="header__sections-container__section--mobile"
+            >
+              {section}
+            </a>
+          ))}
+        </div>
+      )}
       <div className="header__flex-grow" />
-      <BurgerButton />
+      <BurgerButton
+        onClick={isMobileNavOpenHandler}
+        style={isMobileNavOpen ? mobileNavOpenBurgerStyles : null}
+      />
     </header>
   );
 };
