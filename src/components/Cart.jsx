@@ -1,27 +1,33 @@
+/* eslint-disable no-shadow */
 import React from 'react';
-import Image from '../../resources/imgs/dose-media-344938.png';
 import '../styles/components/Cart.styl';
 
-const Cart = () => {
+const Cart = ({ id, subtitle, url, category, title, height }) => {
+  const targetSize = height => {
+    switch (height) {
+      case 'small':
+        return 'cart item level-3';
+      case 'medium':
+        return 'cart item level-2';
+      case 'large':
+        return 'cart item level-1';
+      default:
+        return 'cart item';
+    }
+  };
   return (
-    <div className="cart">
+    <div key={id} className={targetSize(height)}>
       <div className="cart-imgContainer">
         <div className="cart-imgContainer__redTitleContainer">
           <h1 className="imgContainer-redTitleContainer__redTitle">
-            EVO-DE-EVOlucion
+            {category}
           </h1>
         </div>
-        <img src={Image} alt="" className="cart-imgContainer__img" />
+        <img src={url} alt="" className="cart-imgContainer__img" />
       </div>
       <div className="cart-description">
-        <h2 className="cart-description__subtitle">Evolucionas al verlo</h2>
-        <p className="cart-description__paragraph">
-          El electrón tiene una carga eléctrica de −1,6 × 10−19 C y una masa de
-          9,1 × 10-31 kg , que es aproximadamente 1.800 veces menor que la masa
-          del protón o a la del neutrón. El electrón es una partícula elemental
-          (o al menos eso pensamos hoy en día), lo cual significa que no posee
-          ningún tipo de subestructura.
-        </p>
+        <h2 className="cart-description__subtitle">{title}</h2>
+        <p className="cart-description__paragraph">{subtitle}</p>
       </div>
     </div>
   );
