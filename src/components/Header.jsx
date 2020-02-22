@@ -6,9 +6,9 @@ const Header = () => {
   return (
     <div className="header">
       <figure className="header__img">
-        <img src={Logo} alt="logo" />
+        <img src={Logo} alt="" />
       </figure>
-      <nav className="nav" id="nav" alt="menu">
+      <nav className="nav" id="nav">
         <ul className="nav__menu">
           <li className="nav__menu--items">
             <a href="/">TECHNOLOGY</a>
