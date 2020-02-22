@@ -1,0 +1,94 @@
+{
+  "images": [
+    {
+      "id": {
+        "$oid": "5e506406fc13ae0547000000"
+      },
+      "category": "news",
+      "title": "Toxic effect of other metals, undetermined, sequela",
+      "subtitle": "Other operations on retina, choroid, and posterior chamber",
+      "url": "https://firebasestorage.googleapis.com/v0/b/platzi-master-d7573.appspot.com/o/reto1%20html-css%2Faidan-hancock-455440.png?alt=media&token=b2a648a2-3a3e-43c5-96ba-479b1259197f",
+      "height": "small"
+    },
+    {
+      "id": {
+        "$oid": "5e506406fc13ae0547000001"
+      },
+      "category": "leadership",
+      "title": "Nondisp trimalleol fx r low leg, 7thQ",
+      "subtitle": "Other manipulation of lacrimal passage",
+      "url": "https://firebasestorage.googleapis.com/v0/b/platzi-master-d7573.appspot.com/o/reto1%20html-css%2Fannie-spratt-213059.png?alt=media&token=f62dd6bc-405b-4bea-b163-ce0e3fbcc7ae",
+      "height": "small"
+    },
+    {
+      "id": {
+        "$oid": "5e506406fc13ae0547000002"
+      },
+      "category": "leadership",
+      "title": "Disp fx of body of hamate bone, right wrist, init for opn fx",
+      "subtitle": "Reduction of torsion of renal pedicle",
+      "url": "https://firebasestorage.googleapis.com/v0/b/platzi-master-d7573.appspot.com/o/reto1%20html-css%2Fcrew-22235.png?alt=media&token=0cda4e10-68c7-4ddc-8d31-b9d4f9ca86ce",
+      "height": "small"
+    },
+    {
+      "id": {
+        "$oid": "5e506406fc13ae0547000003"
+      },
+      "category": "ideas",
+      "title": "Transverse vaginal septum",
+      "subtitle": "Open biopsy of lung",
+      "url": "https://firebasestorage.googleapis.com/v0/b/platzi-master-d7573.appspot.com/o/reto1%20html-css%2Fdose-media-344938.png?alt=media&token=128495cb-9872-4b2c-bd9c-781273fd2328",
+      "height": "small"
+    },
+    {
+      "id": {
+        "$oid": "5e506406fc13ae054706560004"
+      },
+      "category": "video",
+      "title": "Hypernasality",
+      "subtitle": "Open reduction of alveolar fracture",
+      "url": "https://firebasestorage.googleapis.com/v0/b/platzi-master-d7573.appspot.com/o/reto1%20html-css%2Ffuture.jpg?alt=media&token=f2283ceb-9ced-4358-93b5-e661d6d89819",
+      "height": "medium"
+    },
+    {
+      "id": {
+        "$oid": "5e506406fc13ae0547000005"
+      },
+      "category": "finance",
+      "title": "Type 1 diabetes mellitus with diabetic amyotrophy",
+      "subtitle": "Bone graft, unspecified site",
+      "url": "https://firebasestorage.googleapis.com/v0/b/platzi-master-d7573.appspot.com/o/reto1%20html-css%2Fjeff-sheldon-264920.png?alt=media&token=518b5081-c3d6-4649-8f75-e3db48d2cd1f",
+      "height": "small"
+    },
+    {
+      "id": {
+        "$oid": "5e506406fc13ae05470878003"
+      },
+      "category": "ideas",
+      "title": "Transverse vaginal septum",
+      "subtitle": "Open biopsy of lung",
+      "url": "https://firebasestorage.googleapis.com/v0/b/platzi-master-d7573.appspot.com/o/reto1%20html-css%2Fdose-media-344938.png?alt=media&token=128495cb-9872-4b2c-bd9c-781273fd2328",
+      "height": "small"
+    },
+    {
+      "id": {
+        "$oid": "5e506406fc13ae054700484804"
+      },
+      "category": "video",
+      "title": "Hypernasality",
+      "subtitle": "Open reduction of alveolar fracture",
+      "url": "https://firebasestorage.googleapis.com/v0/b/platzi-master-d7573.appspot.com/o/reto1%20html-css%2Ffuture.jpg?alt=media&token=f2283ceb-9ced-4358-93b5-e661d6d89819",
+      "height": "medium"
+    },
+    {
+      "id": {
+        "$oid": "5e506406fc13ae05asdsa5000001"
+      },
+      "category": "leadership",
+      "title": "Nondisp trimalleol fx r low leg, 7thQ",
+      "subtitle": "Other manipulation of lacrimal passage",
+      "url": "https://firebasestorage.googleapis.com/v0/b/platzi-master-d7573.appspot.com/o/reto1%20html-css%2Fannie-spratt-213059.png?alt=media&token=f62dd6bc-405b-4bea-b163-ce0e3fbcc7ae",
+      "height": "small"
+    }
+  ]
+}

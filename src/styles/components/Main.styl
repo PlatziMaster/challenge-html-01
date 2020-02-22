@@ -1,0 +1,35 @@
+
+.Main 
+  display grid
+  grid-template-columns repeat(auto-fill, 350px)
+  grid-gap 3em
+  justify-content center
+  background: #f9fafc
+  margin: 1em 0
+
+   
+  .item 
+    padding 1em
+    border-radius 5px
+    background #f2f2f2
+    display: flex
+    justify-content: center
+    align-items: center
+    img 
+      max-width 100% 
+  .item.level-1
+    grid-row-end: span 3
+  .item.level-2
+    grid-row-end: span 2
+  .item.level-3
+    grid-row-end: span 1
+
+  
+  
+    
+  // @media screen and (max-width: 768px) 
+  //   grid-template-columns repeat(auti, 250px) 
+  // @media screen and (max-width: 520px) 
+  //   grid-template-columns repeat(1, 250px)
+      
+    

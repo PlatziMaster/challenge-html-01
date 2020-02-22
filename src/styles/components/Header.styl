@@ -1,0 +1,62 @@
+.Header
+  width: 100%
+  padding: 1em
+  font-weight: bold
+  display: grid
+  align-items: center
+  grid-template-columns: 10% 80% 10%
+  border-bottom: 2px solid #d2d2d4
+  overflow-x: hidden
+
+
+  &__logo
+    color #1f1f24
+    display: flex
+    align-items: center
+    justify-content: center
+    font-size: 1.5em
+
+    p 
+      color red
+  &__navbar
+    font-size: .9em
+    display: flex
+    align-items: center
+    color #d2d2d4
+    text-transform: uppercase
+    ul 
+
+      display: flex
+      align-items: center
+      justify-content: space-around
+      li 
+        padding: 0 2em
+        transition: .3s
+        cursor pointer
+        letter-spacing: .1em
+      :hover
+        color #1f1f24
+  &__hamburgerMenu
+    display: flex
+    align-items: center
+    justify-content: center
+    i 
+      cursor pointer
+  @media screen and (max-width: 969px) 
+    grid-template-columns: 30% 70%
+    &__navbar
+      display: none
+    &__hamburgerMenu
+      padding-right: 2em 
+      display: flex
+       
+      align-items: center
+      justify-content: flex-end
+ 
+    
+
+
+
+    
+   
+      
