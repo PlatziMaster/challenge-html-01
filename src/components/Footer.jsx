@@ -15,22 +15,22 @@ const Footer = () => {
           <a href="/">TECHNOLOGY</a>
         </li>
         <li>
-          <a href="/">IDEAS</a>
-        </li>
-        <li>
           <a href="/">LEADERSHIP</a>
-        </li>
-        <li>
-          <a href="/">VIDEO</a>
         </li>
         <li>
           <a href="/">NEWS</a>
         </li>
         <li>
-          <a href="/">FINANCE</a>
+          <a href="/">ENTRETAINMENT</a>
         </li>
         <li>
-          <a href="/">ENTRETAINMENT</a>
+          <a href="/">IDEAS</a>
+        </li>
+        <li>
+          <a href="/">VIDEO</a>
+        </li>
+        <li>
+          <a href="/">FINANCE</a>
         </li>
       </div>
       <div className="footer__contact">
