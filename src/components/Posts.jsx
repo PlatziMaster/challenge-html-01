@@ -1,11 +1,11 @@
 import React from 'react';
-import products from '../constants/products';
+import posts from '../constants/posts';
 import Card from './Card';
 
 const Posts = () => (
   <div className="container">
     <div className="masonry">
-      {products.map(({ id, title, description, image, tag }) => {
+      {posts.map(({ id, title, description, image, tag }) => {
         return (
           <Card
             key={id}
