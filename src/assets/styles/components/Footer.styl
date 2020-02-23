@@ -111,7 +111,20 @@ Footer
     .footer__list-item
      margin 0
 
+  @media only screen and (min-width: 768px)
+    .footer__container
+      grid-template-areas "footer_brand footer__list" "footer__subscribe footer__followus"
+    .footer__followus
+      display inline
+      text-align left
+
+
   @media only screen and (min-width: 1024px)
+    .footer__container
+      grid-template-areas "footer_brand footer__list footer__followus" "footer_brand footer__list footer__subscribe"
+    .footer__followus
+      display inline
+      text-align right
     .footer__followus p
       top -5px
       margin 5px 10px 5px 10px
