@@ -33,11 +33,13 @@ const Footer = () => (
         </ul>
       </div>
       <div className="footer__followus">
-        <p>Follow us: </p>
-        <img src={ig} alt="siguenos en instagram" />
-        <img src={pt} alt="siguenos en pinterest" />
-        <img src={tw} alt="siguenos en twitter" />
-        <img src={fb} alt="siguenos en facebook" />
+        <div className="footer__followus-container">
+          <p>Follow us: </p>
+          <img src={ig} alt="siguenos en instagram" />
+          <img src={pt} alt="siguenos en pinterest" />
+          <img src={tw} alt="siguenos en twitter" />
+          <img src={fb} alt="siguenos en facebook" />
+        </div>
       </div>
       <div className="footer__subscribe">
         <div className="footer__contact">
