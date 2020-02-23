@@ -1,0 +1,79 @@
+.header
+  background-color #ffffff
+  border-bottom 1px solid #dfdfdf
+  margin-bottom 1em
+
+.nav
+  height 3em
+  display grid
+  grid-template-columns: 1fr 40px;
+  padding 1em
+  box-sizing border-box
+  position relative
+
+  @media (min-width: 768px) {
+    grid-template-columns 50px 1fr 40px
+  }
+
+  &-brand
+    cursor pointer
+
+  &-burguer
+    text-align right
+    cursor pointer
+
+  & > .nav-primaryOptions
+    margin 0
+    padding 0
+    display none
+    width 99%
+    overflow-x auto
+    @media (min-width: 768px) {
+      display flex
+    }
+    li
+      list-style none
+      display inline-block
+      flex-shrink 0
+      padding 0 .5em
+  a
+    color #d7d7d9
+    text-transform uppercase
+    text-decoration none
+    font-family 'Oswald', sans-serif
+    font-size .75em
+    transition color .2s ease-out
+    &:hover
+      color #000
+
+  &-primaryOptions,
+  &-secondaryOptions
+    list-style none
+    margin 0
+    padding 0
+
+  &-sidebar
+    .nav-primaryOptions
+      display none
+      @media (max-width: 767px) {
+        display block
+      }
+    &-content
+      position absolute
+      top 3em
+      right 0
+      background-color #ff555b
+      padding 1em
+      box-shadow 0 .25em .35em rgba(29, 31, 36, 0.3)
+      text-align right
+      display none
+      width: 120px;
+      li
+        margin .5em 0;
+
+        a
+          color #fff8
+          &:hover
+            color white
+      &.is-active
+        display block
