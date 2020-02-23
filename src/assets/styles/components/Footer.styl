@@ -1,0 +1,117 @@
+@import './App.styl'
+
+Footer
+  background-color rgb(26, 26, 26)
+  margin 0
+  padding 10px
+  border 0
+  width 100vw
+  bottom 0
+  font-family 'Oswald', sans-serif
+
+  .footer__container
+    display: grid
+    gap 10px
+    grid-template-areas "footer_brand footer__list footer__followus" "footer_brand footer__list footer__subscribe"
+    margin 30px
+
+  .footer_brand
+    grid-area footer_brand
+    color #9b9c9f
+    font 14px / 14px 'Lato', sans-serif
+
+  .footer__brand-paragraph-first
+    color #494a4e
+    font 26px / 26px 'Lato', sans-serif
+    display inline
+
+  .footer__brand-paragraph-second
+    color tags-color
+    font 26px / 26px 'Lato', sans-serif
+    font-weight 900
+    display inline
+
+  .footer__list
+    grid-area footer__list
+    flex-flow row wrap
+    display flex
+
+  .footer__list-item
+    display flex
+    flex-direction column
+    align-items flex-start
+    color rgb(255, 255, 255)
+    text-transform uppercase
+    padding 6px 5px
+    margin 0 20px
+    font 14px / 14px "Oswald", sans-serif
+    transition color 0.25s ease-out 0s
+    list-style none
+    letter-spacing 2px
+
+  .footer__list-item li
+    margin-bottom 20px
+
+  .footer__subscribe
+    grid-area footer__subscribe
+
+  .footer__followus
+    display grid
+    grid-area footer__followus
+    color #bbbabd
+    font 12px / 12px 'Lato', sans-serif
+    font-weight 600
+    text-align right
+    margin 8px 0
+
+  .footer__followus p
+    display inline-block
+    margin 5px 10px 5px 0px
+    position: relative
+
+  .footer__followus img
+    height 20px
+    margin 0 8px
+
+  .footer__followus img:last-child
+    margin 0 0 0 8px
+
+  .footer__contact
+    float right
+
+  .footer__subscribe-input
+    height 35px
+    padding 0 10px
+    border none
+    width 185px
+
+  .footer__subscribe-input::placeholder
+    color #bbbabd
+    letter-spacing 1px
+    font-size 14px
+
+  .footer__subscribe-button
+    background-color tags-color
+    color white
+    border none
+    display inline
+    height 35px
+    font 12px / 12px 'Oswald', sans-serif
+    letter-spacing 2px
+
+  @media only screen and (max-width: 480px)
+    .footer__container
+      grid-template-areas "footer_brand" "footer__subscribe" "footer__followus" "footer__list"
+    .footer__contact
+      float left
+    .footer__followus
+      display inline-flex
+    .footer__list
+      flex-direction column
+    .footer__list-item
+     margin 0
+
+  @media only screen and (min-width: 1024px)
+    .footer__followus p
+      top -5px
+      margin 5px 10px 5px 10px
