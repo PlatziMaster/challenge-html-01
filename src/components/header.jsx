@@ -5,6 +5,7 @@ import Logo from './logo';
 import Toggle from './toggle';
 
 import '../styles/components/Header.styl';
+import '../styles/components/Menu.styl';
 
 const Header = () => (
   <header>

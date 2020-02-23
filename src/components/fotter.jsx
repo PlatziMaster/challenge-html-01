@@ -9,6 +9,7 @@ import twitter from '../assets/images/twitter.svg';
 import facebook from '../assets/images/facebook.svg';
 
 import '../styles/components/Footer.styl';
+import '../styles/components/Menu.styl';
 
 const Footer = () => (
   <footer>
