@@ -1,3 +1,6 @@
+# El despliegue de esta aplicación la podrás ver en
+    https://challenge-html-01-three.now.sh
+
 # Reto desarrollado por:
     - David Behar (@behagoras)
     - Cristian Tovar (@crizy182)
