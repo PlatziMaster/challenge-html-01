@@ -6,7 +6,12 @@ const Header = () => {
   return (
     <header className="header">
       <nav className="nav container">
-        <div className="nav-brand">DEV.</div>
+        <div className="nav-brand">
+          <h1>
+            <img src="/resources/imgs/logo.png" alt="" />
+            Deck.
+          </h1>
+        </div>
 
         <ul className="nav-primaryOptions">
           <li role="menuitem">
