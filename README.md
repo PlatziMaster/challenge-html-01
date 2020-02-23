@@ -9,7 +9,7 @@ Debes desarrollar todo el home de un blog usando html y css, se recomienda usar 
 ## Tareas
 
 - El sitio debe ser responsive con base a las imágenes que están abajo.
-- Se debe dividir y estructurar el proyecto usando componente de React.
+- Se debe dividir y estructurar el proyecto usando componentes de React.
 - Usar CSS Grid.
 - Usar BEM.
 
@@ -37,7 +37,7 @@ https://www.invisionapp.com/inside-design/design-resources/card-ui-kit-deck/
 
 ### Enviar solución de reto
 
-Debes hacer un "Fork" de este proyecto, darle permisos a tu compañefro de trabajo, revolver los problemas y crear un Pull Request hacia este repositorio.
+Debes hacer un "Fork" de este proyecto, darle permisos a tu compañero de trabajo, revolver los problemas y crear un Pull Request hacia este repositorio.
 
 ### Contribuir
 
