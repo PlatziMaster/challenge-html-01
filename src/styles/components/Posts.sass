@@ -1,0 +1,30 @@
+@import "variables"
+
+.container
+  max-width: $breakpoint-sm
+  margin: auto
+
+.masonry
+  column-count: 1
+  column-gap: 1em
+
+  /* large screens */
+@media only screen and (min-width: $breakpoint-l)
+  .container
+    max-width: $breakpoint-l
+  .masonry
+    column-count: 3
+
+/* medium screens */
+@media only screen and (max-width: ($breakpoint-l - 1px)) and (min-width: $breakpoint-md)
+  .container
+    max-width: $breakpoint-md
+  .masonry
+    column-count: 2
+
+/* small screens */
+@media only screen and (max-width: ($breakpoint-md - 1px)) and (min-width: $breakpoint-sm)
+  .container
+    max-width: $breakpoint-sm
+  .masonry
+    column-count: 1

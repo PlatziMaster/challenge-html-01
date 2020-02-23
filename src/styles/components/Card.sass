@@ -1,0 +1,35 @@
+@import "variables"
+
+.item
+  display: inline-block
+  width: 100%
+
+.Card
+  // text-align: center
+  margin: 10px
+  max-width: 300px
+  border: 3px solid $primary-color
+  .Card__image
+    position: relative
+    & img
+      width: 100%
+      max-width: 100%
+    .Card__tag
+      text-transform: uppercase
+      position: absolute
+      left: -10px
+      bottom: 15px
+      color: #ffffff
+      background-color: $primary-color
+      padding: 15px 20px
+  .Card__title
+    padding: 10px
+    font-size: 18px
+    text-transform: capitalize
+    color: $primary-text-color
+  .Card__description
+    padding: 10px
+    color: $secondary-text-color
+    font-size: 14px
+    &::first-letter
+      text-transform: capitalize
