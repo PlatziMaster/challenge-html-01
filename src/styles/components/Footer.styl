@@ -1,3 +1,24 @@
-Footer
-  background-color: #444
-  color: #eee
+.footer
+  color: rgba(fontColor--alternative, 70%)
+  background-color: bgColor--tertiary
+  & .logo__text
+    color: rgba(colorLight--secondary, 20%)
+  & .social-media
+    display: flex
+    justify-content: space-between
+    align-items: center
+    width: 194px
+    height: 22px
+    padding: 2px 0px
+    &__text
+      display: inline-block
+    &__img
+      display: inline-block
+      margin: 0
+      width: fontSize--base
+      height: fontSize--base
+      background-color: rgba(colorLight--secondary, 70%)
+
+.footer
+  & .nav__item
+    color: fontColor--alternative
