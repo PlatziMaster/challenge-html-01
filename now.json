@@ -1,0 +1,24 @@
+{
+  "version": 2,
+  "builds": [{
+      "src": "dist/index.html",
+      "use": "@now/static"
+    },
+    {
+      "src": "dist/bundle.js",
+      "use": "@now/static"
+    },
+    {
+      "src": "dist/assets/*",
+      "use": "@now/static"
+    },
+    {
+      "src": "resources/imgs/*",
+      "use": "@now/static"
+    }
+  ],
+  "routes": [{
+    "src": "/(.*)",
+    "dest": "dist/$1"
+  }]
+}

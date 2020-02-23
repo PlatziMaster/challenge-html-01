@@ -1,0 +1,69 @@
+.header
+  width 100%
+  display grid
+  justify-content: space-between
+  align-content: center
+  position fixed
+  background white
+  z-index 10
+  grid-template-columns: 60px 1fr 60px
+  padding: 0px 16px
+  column-gap: 20px
+  // @media screen and (min-width 1024px)
+    // grid-template-columns: 1fr max-content 1fr
+  justify-content: space-between
+  &__img
+    display grid
+    justify-content: center
+    align-content: center
+  &__hamburger-icon
+    align-self: center;
+  @media screen and (max-width 1024px)
+    .header__hamburger-icon
+      justify-self: end
+
+
+.nav
+  display block
+  right -100%
+  position fixed
+  top 0
+  background #d58184
+  width: 100%
+  max-width 300px
+  height 100%
+  font-size 30px
+  z-index: 10
+  ul
+    float right
+    padding 30px
+    font-family 'Oswald', sans-serif;
+    color #1D1F24
+    list-style none
+    li
+      margin-bottom 30px
+      margin-right 40px
+      a
+        color white
+        text-align right
+        opacity: .8
+        text-decoration: none
+        &:hover
+          opacity: 1
+          text-decoration underline
+
+  @media screen and (min-width 1024px)
+    display block
+    position relative
+    background none
+    font-size 16px
+    position initial
+    ul
+      padding 5px
+      display flex
+      float left
+      li
+        margin-bottom 0
+        a
+          color: #1D1F24
+          opacity: .2

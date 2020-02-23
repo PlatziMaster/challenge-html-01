@@ -1,0 +1,125 @@
+.footer 
+    box-sizing: border-box
+    min-width: 100%
+    background-color:#1D1F24
+    color: white
+    display: grid
+    gap: 30px
+    padding: 32px
+    grid-template-columns: max-content 1fr max-content  
+    font-size: 14px
+    @media screen and (max-width: 974px)
+        grid-template: max-content max-content / max-content 1fr 
+        row-gap: 42px
+        padding: 42px 20px
+        grid-template-areas: "footer_logo footer_links" "footer_contact footer_contact" 
+    @media screen and (max-width: 700px)
+        grid-template: repeat(3, max-content) / 1fr
+        grid-template-areas: "footer_logo" "footer_links" "footer_contact"
+        row-gap: 19px 
+        align-items: center
+
+    &__logo 
+        display: grid
+        grid-template-rows: max-content max-content
+        align-content: center
+        row-gap: 8px
+        @media screen and (max-width: 974px)
+            grid-area: footer_logo
+        @media screen and (max-width : 700px)
+            row-gap: 7px
+
+    &__links
+        display: grid
+        gap: 16px
+        grid-template-columns: repeat(4, 1fr)
+        grid-template-rows: repeat(2, max-content)
+        align-content: center
+        @media screen and (max-width: 974px)
+            grid-area: footer_links
+            grid-template-columns: repeat(3, 1fr)
+        @media screen and (max-width: 700px)
+            grid-row-start: 3
+            grid-row-end: 4
+            padding-top: 16px
+            grid-template-columns: repeat(2, 1fr)
+        li 
+            list-style: none
+            a   
+                text-decoration: none
+                font-family: 'Oswald', sans-serif
+                color: white
+                opacity: 0.6
+                &:hover 
+                    opacity: 1
+                    text-decoration: underline
+    &__contact
+        display: grid
+        grid-template-rows: max-content max-content
+        align-content: center
+        gap: 16px
+        @media screen and (max-width: 974px)
+            gap: 0px
+            grid-area: footer_contact
+            grid-template: max-content / max-content max-content
+            column-gap: 16px
+            align-items: center;
+        @media screen and (max-width: 700px)
+            grid-row-start: 2
+            grid-row-end: 3
+            grid-template: repeat(2, max-content) / 1fr
+            row-gap: 28px
+
+        &-email, &-send-button 
+            box-sizing: border-box
+            height : 35px
+            margin: 0px
+
+        &-email 
+            padding-left: 8px 
+
+        &-send-button 
+            background: #FF565C
+            color: white
+            border: 0
+            font-family: 'Oswald', sans-serif
+            font-size: 12px
+            padding: 0px 25px
+
+    &__contact-form
+        height 35px 
+        display: grid
+        grid-template-columns: max-content max-content
+        @media screen and (max-width: 974px)
+            grid-row-start: 1
+            grid-column-start: 1
+
+    &__social-networks
+        justify-self: end
+        display: grid
+        column-gap: 16px
+        grid-template-columns: repeat(5, max-content)
+        color: #707070
+        @media screen and (max-width: 974px)
+            justify-self: initial
+        
+        a 
+            text-decoration: none
+            color: #707070
+            font-size: 16px
+        &--instagram:hover
+            color: #5851DB
+            transform: scale(1.5)
+            transition: 1s
+         &--pinterest:hover
+            color: #BD081C
+            transform: scale(1.5)
+            transition: 1s
+         &--twitter:hover
+            color: #1DA1F2
+            transform: scale(1.5)
+            transition: 1s
+         &--facebook:hover
+            color: #4267B2
+            transform: scale(1.5)
+            transition: 1s
