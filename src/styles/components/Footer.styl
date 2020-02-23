@@ -1,0 +1,74 @@
+footer 
+    display grid
+    grid-template-columns 1fr 1fr
+    background-color #1E1F24
+    padding: 16px
+    padding-bottom: 32px
+    color white
+    > * 
+        margin-bottom 20px
+    .footer-branding
+        p 
+            font-size 12px
+            opacity 0.7
+        .footer-title
+            font-size 22px
+            opacity .4
+            span 
+                color #FF565B
+    .footer-subscribe
+        grid-column span 2
+        .subscribe-box
+            display grid
+            grid-template-columns repeat(10, 1fr)
+            input 
+                padding 10px 12px
+                grid-column span 6
+            label 
+                background-color #FF565B
+                padding: 10px 12px
+                grid-column span 4
+                text-align: center
+    .footer-socials 
+        grid-column span 2
+        vertical-align middle
+        *
+            display inline-block
+            vertical-align middle
+            margin-right: 25px
+            opacity .7
+            font-size 14px
+        img
+            opacity .4
+            width: 20px
+            height 20px
+    .footer-socials ~ p
+        text-transform uppercase
+
+@media (min-width 600px)
+    footer
+        grid-template-columns repeat(4, 1fr)
+        grid-template-rows repeat(4, 1fr)
+        align-items center
+        .footer-subscribe
+            grid-column 1 / 3
+            grid-row 4 / 5
+        .footer-socials
+            grid-row 4 / 5
+            grid-column 3 / 5
+
+@media (min-width 900px)
+    footer
+        grid-template-columns repeat(8, 1fr)
+        grid-template-rows 1fr 1fr
+        align-items flex-start
+        .footer-branding
+            grid-row span 2
+        .footer-subscribe
+            grid-column 7 / 9
+            grid-row 2 / 3
+        .footer-socials
+            grid-column 7 / 9
+            grid-row 1 / 2
+        p:nth-child(7)
+            grid-column span 2
