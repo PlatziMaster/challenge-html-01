@@ -30,6 +30,27 @@ body{
     padding: 10px;
     background: #f2f2f2;
 }
+.Main__item img{
+    width: 100%;
+    vertical-align: top;
+}
+.Main__item__label{
+    display: flex;
+    background-color: #ff555a;
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Oswald','sans-serif';
+    font-weight: bold;
+    font-size: .7em;
+    letter-spacing: .1em;
+    width: 9em;
+    height: 3em;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 4.5em;
+    left: -4px;
+}
 .Main__item__title {
     /* font-family: 'Oswald','sans-serif';*/
     margin-top: 1em;
@@ -42,10 +63,6 @@ body{
     padding: 1em 0;
     line-height: 1.5em;
     color: #5f5e5e;
-}
-.Main__item img{
-    width: 100%;
-    vertical-align: top;
 }
 .level-1 {
     grid-row-end: span 3;
