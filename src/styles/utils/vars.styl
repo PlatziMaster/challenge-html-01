@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Oswald:500&display=swap');
+
+// primitive fonts
+fontSize--base = 18px
+fontFamily--primary = Lato, sans-serif, Helvetica
+fontFamily--secondary = Oswaldo, Arial, serif, 'Times New Roman'
+
+// Brand colors
+colorBrand--primary = #1D1F24
+colorBrand--secondary = #FF565C
+colorLight--primary = #FFFFFF
+colorLight--secondary = #F9FAFC
+colorDark--primary = colorBrand--primary
+colorGray--primary = #EBEBEB
+
+
+fontSize--smallest = fontSize--base - 6
+fontSize--small = fontSize--base - 4
+fontSize--logo = fontSize--base + 6
+fontSize--titleCard = fontSize--base + 8
+
+fontFamily--base = fontFamily--primary
+fontFamily--alternative = fontFamily--secondary
+fontFamily--logo = fontFamily--primary
+
+fontColor--base = colorDark--primary
+fontColor--alternative = colorLight--primary
+fontColor--logo = colorDark--primary
+
+bgColor--primary = colorLight--secondary
+bgColor--secondary = colorLight--primary
+bgColor--tertiary = colorDark--primary
+bgColor__label-category = colorBrand--secondary
+
+// padding label category
+padTB-labelCategory = 0.68em
+padLR-labelCategory = 1.05em
+
+.labelsAndLinkNav
+  font-family: fontFamily--alternative
+  font-size: fontSize--small
+  text-transform: uppercase
+  line-height: 1.5em
+  letter-spacing: 0.15em

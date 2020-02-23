@@ -38,7 +38,17 @@ module.exports = {
           'stylus-loader',
         ],
       },
+      {
+        test: /\.(png|jpe?g|gif|svg|ico)$/i,
+        loader: 'file-loader',
+        options: {
+          name: '[path][name].[ext]',
+        },
+      },
     ],
+  },
+  devServer: {
+    historyApiFallback: true,
   },
   plugins: [
     new HtmlWebPackPlugin({

@@ -4,9 +4,9 @@ Debes desarrollar todo el home de un blog usando html y css, se recomienda usar 
 
 ## Tareas
 
-- El sitio debe ser responsive con base a las imágenes que están abajo.
+- El sitio debe ser _responsive design_ con base a las imágenes que están abajo.
 - Se debe dividir y estructurar el proyecto usando componentes de React.
-- Usar CSS Grid.
+- Usar CSS Grid Layout.
 - Usar BEM.
 
 ### Desktop
@@ -23,21 +23,22 @@ Debes desarrollar todo el home de un blog usando html y css, se recomienda usar 
 
 ## Recursos
 
-- Lás imágenes para usar el la galería están dentro de `resources/imgs`.
+- Lás imágenes para usar en la galería están dentro de `resources/imgs`.
 - La tipografía esta dentro de `resources/fonts`.
-- El archivo sketch para colores y demás en `resources/Deck UI KIt.sketch`
-
+- El archivo sketch para colores y demás en `resources/Deck UI KIt.sketch`. Para fines prácticos se puede desplegar con ayuda de <www.figma.com>.
 
 ## Recurso original
 
-https://www.invisionapp.com/inside-design/design-resources/card-ui-kit-deck/
-
+<https://www.invisionapp.com/inside-design/design-resources/card-ui-kit-deck/>
 
 ### Enviar solución de reto
+
 Debes hacer un "Fork" de este proyecto, darle permisos a tu compañero de trabajo, revolver los problemas y crear un Pull Request hacia este repositorio.
 
 ### Contribuir
+
 Si alguien quiere agregar o mejorar algo, lo invito a colaborar directamente en este repositorio: [challenge-html-01](https://github.com/platzimaster/challenge-html-01/)
 
 ### Licencia
+
 challenge-html-01 se lanza bajo la licencia [MIT](https://opensource.org/licenses/MIT).
