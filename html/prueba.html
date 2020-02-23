@@ -6,45 +6,472 @@
     <title>Document</title>
 </head>
 <style>
+       @import url('https://fonts.googleapis.com/css?family=Lato:300,400,900i|Oswald&display=swap');
+       body {
+           margin: 0;
+           padding: 0;
+       }
     .container{
-        width: 100%;
-        height: 80vh;
+        background-color: whitesmoke;
+        width: auto;
+        margin-top: 2em;
+        margin-bottom: 2em;
+        margin-left: 4em;
+        margin-right: 4em;
+        grid-gap: 1em;
+        height: 80em;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-        grid-template-areas: "seccion section hola"
-                             "seccion section hola"
-                             "seccion section hola"
-                             ;
+        grid-template-rows: repeat(8, 1fr);
+        grid-template-areas: "article1 article2 article3"
+                             "article1 article2 article3"
+                             "article1 article5 article3"
+                             "article4 article5 article6"
+                             "article4 article5 article6"
+                             "article7 article8 article6"
+                             "article7 article8 article9"
+                             "article7 article8 article9";
         
     }
     .container__element_1 {
-       background-color: black;
-        grid-area: seccion;
+        display: inline-block;
+        grid-area: article1;
     }
+    .container__element_1 p {
+        padding-left: .5em;
+        font-family: 'Lato';
+    }
+    .container__element_1--image img {
+        width: 100%;
+        height: 80%;
+    }
+    .container__element_1--image p {
+        color:white;
+   font-family: 'oswald';
+   font-size: 12px;
+   padding-left: .5em;
+   padding-right: .5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: .3em;
+    padding-left: 10px;
+    padding-bottom: .3em;
+    margin-top: -4em;
+    margin-left: -.3em;
+    background-color: #ff555b;
+    width: 6em;
+    height: 1.4em;
+    position: absolute;
+    letter-spacing: 1px;
+    }
+    .title {
+    font-family: 'Lato';
+    
+}
+    
     .container__element_2 {
-        background-color: blue;
-        grid-area: section;
+        grid-area: article2;
+    }
+
+    .container__element_2 p {
+        padding-left: .5em;
+        font-family: 'Lato';
+    }
+    .container__element_2--image img {
+        width: 100%;
+        height: 80%;
+    }
+    .container__element_2--image p {
+        color:white;
+   font-family: 'oswald';
+   font-size: 12px;
+   padding-left: .5em;
+   padding-right: .5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: .3em;
+    padding-left: 10px;
+    padding-bottom: .3em;
+    margin-top: -4em;
+    margin-left: -.3em;
+    background-color: #ff555b;
+    width: 6em;
+    height: 1.4em;
+    position: absolute;
+    letter-spacing: 1px;
     }
     .container__element_3 {
-        background-color: chocolate;
-        grid-area: hola;
+        grid-area: article3;
     }
+
+    .container__element_3 p {
+        padding-left: .5em;
+        font-family: 'Lato';
+    }
+    .container__element_3--image img {
+        width: 100%;
+        height: 80%;
+    }
+    .container__element_3--image p {
+        color:white;
+   font-family: 'oswald';
+   font-size: 12px;
+   padding-left: .5em;
+   padding-right: .5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: .3em;
+    padding-left: 10px;
+    padding-bottom: .3em;
+    margin-top: -4em;
+    margin-left: -.3em;
+    background-color: #ff555b;
+    width: 6em;
+    height: 1.4em;
+    position: absolute;
+    letter-spacing: 1px;
+    }
+    .container__element_4 {
+
+        grid-area: article4;
+    }
+
+    .container__element_4 p {
+        padding-left: .5em;
+        font-family: 'Lato';
+    }
+    .container__element_4--image img {
+        width: 100%;
+        height: 80%;
+    }
+    .container__element_4--image p {
+        color:white;
+   font-family: 'oswald';
+   font-size: 12px;
+   padding-left: .5em;
+   padding-right: .5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: .3em;
+    padding-left: 10px;
+    padding-bottom: .3em;
+    margin-top: -4em;
+    margin-left: -.3em;
+    background-color: #ff555b;
+    width: 6em;
+    height: 1.4em;
+    position: absolute;
+    letter-spacing: 1px;
+    }
+    .container__element_5 {
+        grid-area: article5;
+    }
+
+    .container__element_5 p {
+        padding-left: .5em;
+        font-family: 'Lato';
+    }
+    .container__element_5--image img {
+        width: 100%;
+        height: 80%;
+    }
+    .container__element_5--image p {
+        color:white;
+   font-family: 'oswald';
+   font-size: 12px;
+   padding-left: .5em;
+   padding-right: .5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: .3em;
+    padding-left: 10px;
+    padding-bottom: .3em;
+    margin-top: -4em;
+    margin-left: -.3em;
+    background-color: #ff555b;
+    width: 6em;
+    height: 1.4em;
+    position: absolute;
+    letter-spacing: 1px;
+    }
+    .container__element_6 {
+        grid-area: article6;
+    }
+
+    .container__element_6 p {
+        padding-left: .5em;
+        font-family: 'Lato';
+    }
+    .container__element_6--image img {
+        width: 100%;
+        height: 80%;
+    }
+    .container__element_6--image p {
+        color:white;
+   font-family: 'oswald';
+   font-size: 12px;
+   padding-left: .5em;
+   padding-right: .5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: .3em;
+    padding-left: 10px;
+    padding-bottom: .3em;
+    margin-top: -4em;
+    margin-left: -.3em;
+    background-color: #ff555b;
+    width: 6em;
+    height: 1.4em;
+    position: absolute;
+    letter-spacing: 1px;
+    }
+    .container__element_7 {
+        grid-area: article7;
+    }
+
+    .container__element_7 p {
+        padding-left: .5em;
+        font-family: 'Lato';
+    }
+    .container__element_7--image img {
+        width: 100%;
+        height: 80%;
+    }
+    .container__element_7--image p {
+        color:white;
+   font-family: 'oswald';
+   font-size: 12px;
+   padding-left: .5em;
+   padding-right: .5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: .3em;
+    padding-left: 10px;
+    padding-bottom: .3em;
+    margin-top: -4em;
+    margin-left: -.3em;
+    background-color: #ff555b;
+    width: 6em;
+    height: 1.4em;
+    position: absolute;
+    letter-spacing: 1px;
+    }
+    .container__element_8 {
+        grid-area: article8;
+    }
+
+    .container__element_8 p {
+        padding-left: .5em;
+        font-family: 'Lato';
+    }
+    .container__element_8--image img {
+        width: 100%;
+        height: 80%;
+    }
+    .container__element_8--image p {
+        color:white;
+   font-family: 'oswald';
+   font-size: 12px;
+   padding-left: .5em;
+   padding-right: .5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: .3em;
+    padding-left: 10px;
+    padding-bottom: .3em;
+    margin-top: -4em;
+    margin-left: -.3em;
+    background-color: #ff555b;
+    width: 6em;
+    height: 1.4em;
+    position: absolute;
+    letter-spacing: 1px;
+    }
+    .container__element_9 {
+        grid-area: article9;
+    }
+
+    .container__element_9 p {
+        padding-left: .5em;
+        font-family: 'Lato';
+    }
+    .container__element_9--image img {
+        width: 100%;
+        height: 80%;
+    }
+    .container__element_9--image p {
+    color:white;
+    font-family: 'oswald';
+    font-size: 12px;
+    padding-left: .5em;
+    padding-right: .5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: .3em;
+    padding-left: 10px;
+    padding-bottom: .3em;
+    margin-top: -4em;
+    margin-left: -.3em;
+    background-color: #ff555b;
+    width: 6em;
+    height: 1.4em;
+    position: absolute;
+    letter-spacing: 1px;
+    }
+    @media screen and (max-width: 980px) and (min-width: 601px){
+       .container {
+        background-color: whitesmoke;
+           margin-left: 1em;
+           margin-right: 1em;
+           display: grid;
+        width: auto;
+        grid-gap: 2em;
+        height: 80em;
+           grid-template-columns: 1fr 1fr;
+           grid-template-rows: repeat(8, 1fr );
+           grid-template-areas: "article1 article2"
+                                "article1 article2"
+                                "article1 article8"
+                                "article9 article8"
+                                "article9 article8"
+                                "article9 article5"
+                                "artcile4 article5"
+                                "article4 article5"
+                                ;
+       }
+        .container__element_6, .container__element_7, .container__element_3{
+           display: none;
+       }
+       .container__element_8--image img {
+           margin-top: 1em;
+       }
+       .container__element_9--image img {
+           margin-top: 6em;
+       }
+    }
+    @media screen and (max-width: 600px) {
+        .container {
+            background-color: whitesmoke;
+            margin: 0;
+            padding: 2em;
+            
+            display: block;
+            width: auto;
+            height: auto;
+        }
     
+    }
 
 </style>
 <body>
     
    <section class="container">
     <article class="container__element_1">
-      
+        <div class="container__element_1--image">
+    
+            <img src="/resources/imgs/dose-media-344938.png" alt="">
+            <p>Technology</p>
+        </div>
+            <p class="title">Using Banner Stands To
+                Increase Trade Show Trafic </p>
+            <p>There is a lot of exciting stuff going on in the stars above us that make astronomy so much fun  </p>
+            
     </article>
     <article class="container__element_2">
-        
+        <div class="container__element_2--image">
+    
+            <img src="/resources/imgs/aidan-hancock-455440.png" alt="">
+            <p>Technology</p>
+        </div>
+            <p class="title">Using Banner Stands To
+                Increase Trade Show Trafic </p>
+            <p>There is a lot of exciting stuff going on in the stars above us that make astronomy so much fun  </p>
     </article>
     <article class="container__element_3">
+        <div class="container__element_3--image">
+    
+            <img src="/resources/imgs/crew-22235.png" alt="">
+            <p>Technology</p>
+        </div>
+            <p class="title">Using Banner Stands To
+                Increase Trade Show Trafic </p>
+            <p>There is a lot of exciting stuff going on in the stars above us that make astronomy so much fun  </p>
   
-
+    
+    </article>
+    <article class="container__element_4">
+        <div class="container__element_4--image">
+    
+            <img src="/resources/imgs/annie-spratt-213059.png" alt="">
+            <p>Technology</p>
+        </div>
+            <p class="title">Using Banner Stands To
+                Increase Trade Show Trafic </p>
+            <p>There is a lot of exciting stuff going on in the stars above us that make astronomy so much fun  </p>
+            
+    </article>
+    <article class="container__element_5">
+        <div class="container__element_5--image">
+    
+            <img src="/resources/imgs/jeff-sheldon-264920.png" alt="">
+            <p>Technology</p>
+        </div>
+            <p class="title">Using Banner Stands To
+                Increase Trade Show Trafic </p>
+            <p>There is a lot of exciting stuff going on in the stars above us that make astronomy so much fun  </p>
+        
+    </article>
+    <article class="container__element_6">
+        <div class="container__element_6--image">
+    
+            <img src="/resources/imgs/dose-media-344938.png" alt="">
+            <p>Technology</p>
+        </div>
+            <p class="title">Using Banner Stands To
+                Increase Trade Show Trafic </p>
+            <p>There is a lot of exciting stuff going on in the stars above us that make astronomy so much fun  </p>
+    </article> 
+    <article class="container__element_7">
+        <div class="container__element_7--image">
+    
+            <img src="/resources/imgs/jeff-sheldon-264920.png" alt="">
+            <p>Technology</p>
+        </div>
+            <p class="title">Using Banner Stands To
+                Increase Trade Show Trafic </p>
+            <p>There is a lot of exciting stuff going on in the stars above us that make astronomy so much fun  </p>
+      
+    </article>
+    <article class="container__element_8">
+        <div class="container__element_8--image">
+    
+            <img src="/resources/imgs/crew-22235.png" alt="">
+            <p>Technology</p>
+        </div>
+            <p class="title">Using Banner Stands To
+                Increase Trade Show Trafic </p>
+            <p>There is a lot of exciting stuff going on in the stars above us that make astronomy so much fun  </p>
+    </article>
+    <article class="container__element_9">
+        <div class="container__element_9--image">
+    
+            <img src="/resources/imgs/aidan-hancock-455440.png" alt="">
+            <p>Technology</p>
+        </div>
+            <p class="title">Using Banner Stands To
+                Increase Trade Show Trafic </p>
+            <p>There is a lot of exciting stuff going on in the stars above us that make astronomy so much fun  </p>
+            
+    </article>
    
    </section>
 
