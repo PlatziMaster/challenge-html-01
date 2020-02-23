@@ -1,4 +1,5 @@
 import React from 'react';
+import '../styles/components/Card.sass';
 
 const Card = ({ id, image, tag, title, description }) => {
   return (

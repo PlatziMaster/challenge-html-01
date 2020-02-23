@@ -1,6 +1,7 @@
 import React from 'react';
-import posts from '../constants/posts';
 import Card from './Card';
+import posts from '../constants/posts';
+import '../styles/components/Posts.sass';
 
 const Posts = () => (
   <div className="container">
