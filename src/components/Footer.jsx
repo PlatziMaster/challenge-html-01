@@ -1,5 +1,5 @@
 import React from 'react';
-import Nav2 from './Nav2';
+import NavFooter from './NavFooter';
 import '../styles/components/Footer.styl';
 import Logo from '../../images/Logo_gray.png';
 
@@ -36,7 +36,7 @@ function Footer() {
           </div>
         </div>
       </div>
-      <Nav2 />
+      <NavFooter />
     </div>
   );
 }

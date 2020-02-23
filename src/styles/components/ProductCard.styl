@@ -1,5 +1,6 @@
-.ProductCard
+.level-1, .level-2
   width 100%
+  height 100%
   margin-top 30px
   z-index -1
   &__imageFigure
@@ -7,18 +8,19 @@
     height 260px
     overflow hidden
     img
+      margin 4px
       width 100%
       height 100%
       object-fit cover
-  &__tag
-    position relative
-    top 230px
-    left -10px
-    background #FF565C
-    color white
-    padding: 9px 24px
-    font-sze 14px
-    text-transform uppercase
+    span
+      position: relative;
+      bottom: 55px;
+      left: -10px;
+      background: #FF565C;
+      color: white;
+      padding: 9px 24px;
+      font-size: 14px;
+      text-transform: uppercase;
   &__title
     display: -webkit-box;
     -webkit-line-clamp: 2;
@@ -35,4 +37,13 @@
     line-height 1.7
 
 
+@media screen and (min-width 767px)
+  .level-1
+    grid-row-end span 9
+    &__imageFigure
+      height 200px
+  .level-2
+    grid-row-end span 12
+    &__imageFigure
+      height 400px
 
