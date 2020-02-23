@@ -1,6 +1,11 @@
 import React from 'react';
-import '../styles/components/App.styl';
+import Posts from './Posts';
+import '../styles/components/App.sass';
 
-const App = () => <h1>Hello React!</h1>;
+const App = () => (
+  <div>
+    <Posts />
+  </div>
+);
 
 export default App;
