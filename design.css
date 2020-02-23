@@ -1,16 +1,60 @@
-body{
+*{
     margin: 0px;
-    /*
-    font-family: 'Lato', ;
-    font-family: 'Oswald', ;
-    */
+    text-decoration: none;
+    list-style: none;
+}
+body {
     font-family: 'Lato','Oswald','sans-serif';
     font-size: 13px;
 }
 .Header{
     margin: 0 30px;
-    display: block;
-    background-color: grey;
+    display: flex;
+    background-color: white;
+    
+}
+.Header__logo{
+    font-size: 1.8em;
+    display: flex;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+    font-weight: bold;
+    line-height: 70px;
+}
+.Header__nav {
+    height: 70px;
+    text-align: right;
+    line-height: 70px;
+    text-transform: uppercase;
+    width: 100%;
+}
+.Header__menu {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 30px 0 0;
+}
+.Header__menu li {
+    clear: right;
+    margin: 0 20px
+}
+.Header__menu li a {
+    color: rgb(170, 170, 170);
+    font-weight: bold;
+    font-size: .9em;
+    letter-spacing: .1em;
+    line-height: 70px;
+    font-family: 'Oswald','sans-serif';
+}
+.Header__nav label {
+    margin: 0 40px 0 0;
+    font-size: 2em;
+    line-height: 70px;
+    float: right;
+    display: none;
+}
+#toggle {
+    display: none;
 }
 .Main{
     display: block;
@@ -76,4 +120,59 @@ body{
 .Footer{
     display: block;
     background-color: green;
+}
+/* Media Queries */
+
+@media only screen and (max-width: 320px) {
+    .Main__container {
+        margin: 0 20px;
+        display: grid;
+        grid-template-columns: minmax(80%, 100%);
+        grid-gap: 0px;
+        justify-content: center;
+        max-width: 100%;
+    }
+}
+
+@media only screen and (min-width: 321px) and (max-width: 720px) {
+    .Main__container {
+        margin: 0 0px;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(40%, 50%));
+        grid-gap: 5px;
+        justify-content: center;
+        max-width: 100%;
+    }
+    .Header{
+        margin: 0;
+    }
+}
+
+@media only screen  and (max-width: 720px) {
+    .Header__nav label {
+        display: block;
+        cursor: pointer;
+        text-align: right;
+        margin: 0 10px 0 0;
+    }
+    .Header__menu {
+        display: none;
+        width: 100%;
+        text-align: center;
+        border-bottom: 1px solid #c2bebe;
+    }
+    .Header__menu li {
+        border-bottom: 1px solid grey;
+    }
+    #toggle:checked + menu {
+        background-color:#FFF;
+        display: block;
+        overflow: hidden;
+        position: relative;
+        z-index: 1;
+    }
+    .Header__logo {
+        margin: 0 0 0 10px;
+    }
+
 }
