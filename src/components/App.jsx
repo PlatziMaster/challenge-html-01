@@ -3,13 +3,22 @@ import Header from './Header';
 import Footer from './Footer';
 import Container from './Cointainer';
 import DeckCard from './DeckCard';
+import initialState from '../initialState';
 import '../assets/styles/components/App.styl';
 
 const App = () => (
   <>
     <Header />
     <Container>
-      <DeckCard />
+      {initialState.map(card => (
+        <DeckCard
+          image={card.image}
+          title={card.title}
+          description={card.description}
+          tag={card.tag}
+          size={card.size}
+        />
+      ))}
     </Container>
     <Footer />
   </>
