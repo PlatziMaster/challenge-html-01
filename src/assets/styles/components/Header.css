@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700|Oswald:200,300,400,500,600,700&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+}
+header {
+  width: 100%;
+  height: 70px;
+  display: grid;
+  grid-template-columns: auto 1fr 1fr;
+  color: #d7d7d8;
+  padding-top: 10px;
+  font-family: 'Oswald', sans-serif;
+}
+.header__logo {
+  margin: auto 20px auto 40px;
+  font-weight: 700;
+  font-size: 24px;
+  font-family: 'Lato', sans-serif;
+}
+.header__logo--color1 {
+  color: #1d1e24;
+}
+.header__logo--color2 {
+  color: #ff555b;
+}
+nav {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding-left: 30px;
+}
+nav ul li {
+  margin-right: 50px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #d7d7d8;
+}
+.nav__icon {
+  font-size: 26px;
+  width: 26px;
+  float: right;
+  color: #1d1e24;
+  margin: auto 20px auto auto;
+  cursor: pointer;
+}
+#toggle {
+  display: none;
+}
+.header--button-close {
+  display: none;
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .nav__icon {
+    display: block;
+    cursor: pointer;
+  }
+  nav {
+    display: block;
+    width: 100%;
+    text-align: center;
+    background-color: #fff;
+  }
+  nav ul {
+    display: block;
+  }
+  nav li {
+    border-bottom: 1px solid #eaeaeb;
+  }
+  #toggle:checked + nav {
+    display: none;
+  }
+  nav {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: #fff;
+    color: #1d1e24;
+  }
+  nav ul {
+    display: block;
+  }
+  nav ul li a {
+    text-decoration: none;
+    color: #1d1e24;
+  }
+  nav li {
+    border-bottom: 1px solid #eaeaeb;
+    margin: 20px 0;
+    padding: 20px 0 30px 0;
+  }
+  .header--button-close {
+    display: block;
+    margin: auto 90%;
+  }
+}

@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700|Oswald:200,300,400,500,600,700&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+}
+.Card {
+  background-color: #f9fafc;
+}
+.Card--imgContainer {
+  position: relative;
+}
+.Card--imgContainer figure {
+  margin: 0;
+}
+.Card--imgContainer figure img {
+  width: 100%;
+  vertical-align: top;
+}
+.Card--tag {
+  position: absolute;
+  text-align: center;
+  background-color: #ff555b;
+  color: #fff;
+  padding: 7px 20px;
+  bottom: 10%;
+  left: -5px;
+  text-transform: uppercase;
+  font-family: 'Oswald', sans-serif;
+  font-size: 14px;
+}
+.Card--title {
+  font-family: 'Lato', sans-serif;
+  font-size: 24px;
+}
+.Card--description {
+  color: #6f7174;
+  margin-right: 10px;
+}
+.big {
+  grid-row-start: span 3;
+}
+.small {
+  grid-row-start: span 2;
+}

@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700|Oswald:200,300,400,500,600,700&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+}
+Footer {
+  background-color: #1a1a1a;
+  margin: 0;
+  padding: 10px;
+  border: 0;
+  width: 100vw;
+  bottom: 0;
+  font-family: 'Oswald', sans-serif;
+}
+Footer .footer__container {
+  display: grid;
+  gap: 10px;
+  grid-template-areas: "footer_brand footer__list footer__follow__us" "footer_brand footer__list footer__subscribe";
+  margin: 30px;
+}
+Footer .footer_brand {
+  grid-area: footer_brand;
+  color: #9b9c9f;
+  font: 14px/14px 'Lato', sans-serif;
+}
+Footer .footer__brand-paragraph-first {
+  color: #494a4e;
+  font: 26px/26px 'Lato', sans-serif;
+  display: inline;
+}
+Footer .footer__brand-paragraph-second {
+  color: #ff555b;
+  font: 26px/26px 'Lato', sans-serif;
+  font-weight: 900;
+  display: inline;
+}
+Footer .footer__list {
+  grid-area: footer__list;
+  flex-flow: row wrap;
+  display: flex;
+}
+Footer .footer__list-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 6px 5px;
+  margin: 0 20px;
+  font: 14px/14px "Oswald", sans-serif;
+  transition: color 0.25s ease-out 0s;
+  list-style: none;
+  letter-spacing: 2px;
+}
+Footer .footer__list-item li {
+  margin-bottom: 20px;
+}
+Footer .footer__subscribe {
+  grid-area: footer__subscribe;
+}
+Footer .footer__follow__us {
+  display: grid;
+  grid-area: footer__follow__us;
+  color: #bbbabd;
+  font: 12px/12px 'Lato', sans-serif;
+  font-weight: 600;
+  text-align: right;
+  margin: 8px 0;
+}
+Footer .footer__follow__us p {
+  display: inline-block;
+  margin: 5px 10px 5px 0;
+  position: relative;
+}
+Footer .footer__follow__us img {
+  height: 20px;
+  margin: 0 8px;
+}
+Footer .footer__follow__us img:last-child {
+  margin: 0 0 0 8px;
+}
+Footer .footer__contact {
+  float: right;
+}
+Footer .footer__subscribe-input {
+  height: 35px;
+  padding: 0 10px;
+  border: none;
+  width: 185px;
+}
+Footer .footer__subscribe-input::placeholder {
+  color: #bbbabd;
+  letter-spacing: 1px;
+  font-size: 14px;
+}
+Footer .footer__subscribe-button {
+  background-color: #ff555b;
+  color: #fff;
+  border: none;
+  display: inline;
+  height: 35px;
+  font: 12px/12px 'Oswald', sans-serif;
+  letter-spacing: 2px;
+}
+@media screen and (min-width: 325px) and (max-width: 425px) {
+  .footer__container {
+    grid-template-areas: "footer_brand" "footer__subscribe" "footer__follow__us" "footer__list";
+  }
+  .footer__contact {
+    float: left;
+  }
+  .footer__follow__us {
+    display: inline-flex;
+  }
+  .footer__follow__us-container {
+    float: left;
+  }
+  .footer__list {
+    flex-direction: column;
+  }
+  .footer__list-item {
+    margin: 0;
+  }
+  .footer__follow__us {
+    display: inline;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .footer__container {
+    grid-template-areas: "footer_brand footer__list" "footer__subscribe footer__follow__us";
+  }
+  .footer__follow__us {
+    display: inline;
+    text-align: left;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .footer__container {
+    grid-template-areas: "footer_brand footer__list footer__follow__us" "footer_brand footer__list footer__subscribe";
+  }
+  .footer__follow__us {
+    display: inline;
+    text-align: right;
+  }
+  .footer__follow__us p {
+    top: -5px;
+    margin: 5px 10px 5px 10px;
+  }
+}
