@@ -1,0 +1,45 @@
+.card
+  background-color #ffffff
+  box-shadow 0 0 .25em rgba(0,0,0,.05)
+  transition box-shadow .2s ease
+  &:hover
+    box-shadow 0 .5em .5em rgba(0,0,0,.1)
+    .card--figure
+      figcaption
+        box-shadow 0 .15em .25em rgba(0,0,0,.2)
+
+  &--figure
+    margin 0
+    position relative
+
+    figcaption
+      transition box-shadow .2s ease
+      background #ff555b
+      position absolute
+      padding .5em 1em
+      color white
+      bottom 1em
+      left -0.5em
+
+  &--content-img
+    width 100%
+
+
+  &--content__description
+    padding 0px 10px 5px 10px
+
+
+
+  .description--title
+    font-size 26px
+    font-weight 600
+    margin-top 0.5em
+    margin-bottom 8px
+    text-transform capitalize
+
+  .description--desc
+    font-size 18px
+    color rgba(29, 31, 36, 0.7)
+    padding 0
+    height 100px
+    overflow hidden
