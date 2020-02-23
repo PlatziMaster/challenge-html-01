@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            --header-color: #ffffff ;
+            --link-color: #dad9dc;
+        }
+
+        html, body{
+            padding: 0;
+            margin: 0;
+        }
+        
+        body{
+            background: #f9fafc;
+            /* #ffffff - fondoHeader */
+            /* #ff565b - bottom y tab */
+            /* #dad9dc color link secciones */
+            /* #1e1f24 background footer */
+        }
+        
+        .container{
+            display: grid;
+            grid-template-columns: repeat(3, 400px);
+            grid-gap: 5px;
+            justify-content: center;
+            margin-top: 5%;
+        }
+        .post__card{
+            padding: 10px;
+        }
+        .post__card img{
+            max-width: 100%;
+        }
+        .post__imgContainer{
+            position: relative;
+        }
+        .post__category{
+            background-color: #FF565C;
+            position: absolute;
+            left: 0;
+            bottom: 20px;
+            text-align: center;
+            width: 25%;
+            padding: 10px 40px 10px 20px;
+            margin-left: -5px;
+            font-family: 'icomoon-2';
+            color: #fff;
+        }
+        .level-1{
+            grid-row-end: span 2;
+        }
+        .level-2{
+            grid-row-end: span 1;
+        }
+        header{
+            background-color: var(--header-color);
+            display: grid;
+            grid-template-columns: repeat(auto-fill, 400px);
+            align-items: center;
+            box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.20);
+        }
+        .nav__items{
+            display: flex;
+            justify-content: space-between;
+        }
+        .nav__items li{
+            list-style: none;
+            margin: 0;
+            padding: 2px 12px;
+            color: var(--link-color);
+            font-weight: bold;
+        }
+
+        p{
+            color: #636368;
+        }
+
+        @media screen and (min-width: 768px){
+            .container{
+                display: grid;
+                grid-template-columns: repeat(auto-fill, 400px);
+                grid-gap: 5px;
+                justify-content: center;
+                margin-top: 5%;
+            }
+        }
+
+        @media screen and (max-width: 1024px){
+            .container{
+                display: grid;
+                grid-template-columns: repeat(auto-fill, 400px);
+                grid-gap: 5px;
+                justify-content: center;
+                margin-top: 5%;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <header class="header">
+        Deck.
+        
+        <nav class="nav">
+            <ul class="nav__items">
+                <li class="nav__item">TECNOLOGY</li>
+                <li class="nav__item">IDEAS</li>
+                <li class="nav__item">LEADERSHIP</li>
+                <li class="nav__item">VIDEO</li>
+                <li class="nav__item">NEW</li>
+                <li class="nav__item">FINANCE</li>
+                <li class="nav__item">ENTERTAIMENT</li> 
+            </ul>
+        </nav>
+       
+    </header>
+    <section class="container">
+        <div class="post__card level-1">
+            <div class="post__imgContainer">
+              <img src="imgs/dose-media-344938.png" alt="">
+                <span class="post__category">TECHNOLOGY</span>  
+            </div>
+            <h2 class="post__title">Using Banner Stands To Increase Trade Show Traffic</h2>
+            <p class="description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est nulla corrupti laborum unde tempore rem nisi nostrum quod accusamus sunt omnis, pariatur, nihil magnam quis dolor dolore eum? Ducimus, repellendus.</p>
+        </div>
+        <div class="post__card .level-2">
+            <div class="post__imgContainer">
+                <span class="post__category">TECHNOLOGY</span> 
+                <img src="imgs/aidan-hancock-455440.png" alt="">
+            </div>
+                        
+            <h2 class="post__title">Using Banner Stands To Increase Trade Show Traffic</h2>
+            <p class="description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est nulla corrupti laborum unde tempore rem nisi nostrum quod accusamus sunt omnis, pariatur, nihil magnam quis dolor dolore eum? Ducimus, repellendus.</p>
+        </div>
+        <div class="post__card level-1">
+            <div class="post__imgContainer">
+                <span class="post__category">FINANCE</span> 
+                <img src="imgs/crew-22235.png" alt="">
+            </div>
+            <h2 class="post__title">Using Banner Stands To Increase Trade Show Traffic</h2>
+            <p class="description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est nulla corrupti laborum unde tempore rem nisi nostrum quod accusamus sunt omnis, pariatur, nihil magnam quis dolor dolore eum? Ducimus, repellendus.</p>
+        </div>
+        <div class="post__card level-1">
+            <div class="post__imgContainer">
+                <span class="post__category">TECHNOLOGY</span> 
+                <img src="imgs/dose-media-344938.png" alt="">
+            </div>
+            <h2 class="post__title">Using Banner Stands To Increase Trade Show Traffic</h2>
+            <p class="description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est nulla corrupti laborum unde tempore rem nisi nostrum quod accusamus sunt omnis, pariatur, nihil magnam quis dolor dolore eum? Ducimus, repellendus.</p>
+        </div>
+        <div class="post__card .level-2">
+            <div class="post__imgContainer">
+                <span class="post__category">TECHNOLOGY</span> 
+                <img src="imgs/aidan-hancock-455440.png" alt="">
+            </div>
+            
+            <h2 class="post__title">Using Banner Stands To Increase Trade Show Traffic</h2>
+            <p class="description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est nulla corrupti laborum unde tempore rem nisi nostrum quod accusamus sunt omnis, pariatur, nihil magnam quis dolor dolore eum? Ducimus, repellendus.</p>
+        </div>
+        <div class="post__card level-1">
+            <div class="post__imgContainer">
+                <span class="post__category">TECHNOLOGY</span> 
+                <img src="imgs/crew-22235.png" alt="">
+            </div>
+            
+            <h2 class="post__title">Using Banner Stands To Increase Trade Show Traffic</h2>
+            <p class="description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est nulla corrupti laborum unde tempore rem nisi nostrum quod accusamus sunt omnis, pariatur, nihil magnam quis dolor dolore eum? Ducimus, repellendus.</p>
+        </div>
+        <div class="post__card level-1">
+            <div class="post__imgContainer">
+                <span class="post__category">TECHNOLOGY</span> 
+                <img src="imgs/dose-media-344938.png" alt="">
+            </div>
+            
+            <h2 class="post__title">Using Banner Stands To Increase Trade Show Traffic</h2>
+            <p class="description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est nulla corrupti laborum unde tempore rem nisi nostrum quod accusamus sunt omnis, pariatur, nihil magnam quis dolor dolore eum? Ducimus, repellendus.</p>
+        </div>
+        <div class="post__card level-1">
+            <div class="post__imgContainer">
+                <span class="post__category">TECHNOLOGY</span> 
+                <img src="imgs/crew-22235.png" alt="">
+            </div>
+            
+            <h2 class="post__title">Using Banner Stands To Increase Trade Show Traffic</h2>
+            <p class="description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est nulla corrupti laborum unde tempore rem nisi nostrum quod accusamus sunt omnis, pariatur, nihil magnam quis dolor dolore eum? Ducimus, repellendus.</p>
+        </div>
+        <div class="post__card .level-2">
+            <div class="post__imgContainer">
+                <span class="post__category">TECHNOLOGY</span> 
+                <img src="imgs/aidan-hancock-455440.png" alt="">
+            </div>
+            <h2 class="post__title">Using Banner Stands To Increase Trade Show Traffic</h2>
+            <p class="description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est nulla corrupti laborum unde tempore rem nisi nostrum quod accusamus sunt omnis, pariatur, nihil magnam quis dolor dolore eum? Ducimus, repellendus.</p>           
+        </div>
+    </section>
+</body>
+</html>
