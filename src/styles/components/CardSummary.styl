@@ -1,0 +1,29 @@
+minWidth-card = fontSize--base * 18.83
+minWidth-card-diff = 4px
+
+.container-card
+  width:100%
+
+.card
+  display: flex
+  justify-content: flex-end
+  width: minWidth-card
+  &__container
+    width: minWidth-card - minWidth-card-diff
+  &-figure
+    position: relative
+    width: 100%
+    &__img
+      width: 100%
+    &__caption
+      position: absolute
+      bottom: 20px + minWidth-card-diff
+      left: -(minWidth-card-diff)
+
+.card-text
+  &__title
+    font-size: fontSize--titleCard
+    line-height: 1.153em
+  &__descrip
+    line-height: 1.55em
+
