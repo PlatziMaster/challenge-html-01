@@ -1,5 +1,6 @@
-.ProductCard
+.level-1, .level-2
   width 100%
+  height 100%
   margin-top 30px
   z-index -1
   &__imageFigure
@@ -36,4 +37,13 @@
     line-height 1.7
 
 
+@media screen and (min-width 767px)
+  .level-1
+    grid-row-end span 9
+    &__imageFigure
+      height 200px
+  .level-2
+    grid-row-end span 12
+    &__imageFigure
+      height 400px
 

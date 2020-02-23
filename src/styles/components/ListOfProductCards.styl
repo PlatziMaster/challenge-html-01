@@ -1,13 +1,6 @@
 .ListOfProductCards
   display grid
-  grid-template-columns 1fr
+  grid-template-columns repeat(auto-fill, 350px)
   grid-gap 16px
   padding 16px
-
-@media screen and (min-width 768px)
-  .ListOfProductCards
-    grid-template-columns 1fr 1fr
-
-@media screen and (min-width 1024px)
-  .ListOfProductCards
-    grid-template-columns: 1fr 1fr 1fr
+  justify-content center
