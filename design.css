@@ -1,0 +1,36 @@
+body{
+    margin: 0px;
+}
+.Header{
+    display: block;
+    background-color: grey;
+}
+.Main{
+    display: block;
+    background-color: honeydew;
+}
+.Main__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 350px);
+    justify-content: center;
+}
+.Main__item{
+    padding: 10px;
+    background: #f2f2f2;
+}
+.Main__item img{
+    max-width: 100%;
+}
+.level-1 {
+    grid-row-end: span 3;
+}
+.level-2 {
+    grid-row-end: span 2;
+}
+.level-3 {
+    grid-row-end: span 3;
+}
+.Footer{
+    display: block;
+    background-color: green;
+}
