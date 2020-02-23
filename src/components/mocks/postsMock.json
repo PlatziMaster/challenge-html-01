@@ -1,0 +1,65 @@
+[
+  {
+    "id": 1,
+    "title": "Budz House",
+    "category": "Comedy",
+    "pictureUrl": "/resources/imgs/dose-media-344938.png",
+    "excerpt": "bibendum imperdiet nullam orci pede venenatis non sodales sed tincidunt eu felis fusce posuere felis sed lacus morbi"
+  },
+  {
+    "id": 2,
+    "title": "God's Pocket",
+    "category": "Drama",
+    "pictureUrl": "/resources/imgs/aidan-hancock-455440.png",
+    "excerpt": "quis turpis eget elit sodales scelerisque mauris sit amet eros suspendisse accumsan tortor quis turpis sed ante vivamus tortor duis"
+  },
+  {
+    "id": 3,
+    "title": "Soldiers of Fortune",
+    "category": "Action|Adventure",
+    "pictureUrl": "/resources/imgs/crew-22235.png",
+    "excerpt": "ipsum aliquam non mauris morbi non lectus aliquam sit amet diam in magna bibendum imperdiet nullam orci pede"
+  },
+  {
+    "id": 4,
+    "title": "Satanic Rites of Dracula, The",
+    "category": "Horror",
+    "pictureUrl": "/resources/imgs/annie-spratt-213059.png",
+    "excerpt": "suspendisse potenti in eleifend quam a odio in hac habitasse platea dictumst maecenas ut massa quis augue luctus tincidunt"
+  },
+  {
+    "id": 5,
+    "title": "Genghis Khan",
+    "category": "Adventure|Drama|War",
+    "pictureUrl": "/resources/imgs/jeff-sheldon-264920.png",
+    "excerpt": "non velit donec diam neque vestibulum eget vulputate ut ultrices vel augue vestibulum ante ipsum primis in faucibus"
+  },
+  {
+    "id": 6,
+    "title": "Smoking/No Smoking",
+    "category": "Comedy",
+    "pictureUrl": "/resources/imgs/dose-media-344938.png",
+    "excerpt": "adipiscing lorem vitae mattis nibh ligula nec sem duis aliquam convallis nunc proin at turpis a pede posuere nonummy integer"
+  },
+  {
+    "id": 7,
+    "title": "Female Trouble",
+    "category": "Comedy|Crime",
+    "pictureUrl": "/resources/imgs/aidan-hancock-455440.png",
+    "excerpt": "nulla dapibus dolor vel est donec odio justo sollicitudin ut suscipit a feugiat et eros vestibulum ac est"
+  },
+  {
+    "id": 8,
+    "title": "Permanent Midnight",
+    "category": "Drama",
+    "pictureUrl": "/resources/imgs/crew-22235.png",
+    "excerpt": "porttitor lorem id ligula suspendisse ornare consequat lectus in est risus auctor sed tristique in tempus sit"
+  },
+  {
+    "id": 9,
+    "title": "Stepmom",
+    "category": "Drama",
+    "pictureUrl": "/resources/imgs/annie-spratt-213059.png",
+    "excerpt": "a ipsum integer a nibh in quis justo maecenas rhoncus aliquam lacus morbi quis tortor id nulla ultrices"
+  }
+]
