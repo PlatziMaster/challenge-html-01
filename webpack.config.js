@@ -21,10 +21,6 @@ module.exports = {
         },
       },
       {
-        test: /\.(svg|png)$/,
-        loader: 'file-loader',
-      },
-      {
         test: /\.html$/,
         use: [
           {
@@ -53,7 +49,7 @@ module.exports = {
         ],
       },
       {
-        test: /\.(png|svg|jpg|jpeg|gif|ico)$/,
+        test: /\.(png|svg|jpg|jpeg|gif|ico|woff|eot|ttf|mp4|webm)$/,
         exclude: /node_modules/,
         use: ['file-loader?name=[name].[contenthash].[ext]'], // ?name=[name].[ext] is only necessary to preserve the original file name
       },
