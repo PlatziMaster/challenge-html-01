@@ -74,3 +74,4 @@ typings/
 # Docs Custom
 .cache/
 yarn-error.log
+.now
