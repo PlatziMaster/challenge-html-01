@@ -1,10 +1,10 @@
 /* eslint-disable jsx-a11y/label-has-for */
 /* eslint-disable jsx-a11y/label-has-associated-control */
 import React from 'react';
-import twitter from "../../resources/imgs/twitter.svg";
-import instagram from "../../resources/imgs/instagram.svg";
-import pinterest from "../../resources/imgs/pinterest.svg";
-import facebook from "../../resources/imgs/facebook.svg";
+import twitter from '../../resources/imgs/twitter.svg';
+import instagram from '../../resources/imgs/instagram.svg';
+import pinterest from '../../resources/imgs/pinterest.svg';
+import facebook from '../../resources/imgs/facebook.svg';
 import '../styles/components/Footer.styl';
 
 const Footer = () => {

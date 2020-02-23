@@ -1,0 +1,83 @@
+// *
+//   margin: 0
+//   padding: 0
+//   border: 0
+//   box-sizing: border-box
+
+$primary-color: #ff565b
+$secondary-color: #1e1f24
+$primary-text-color: #333333
+$secondary-text-color: #5f6064
+$breakpoint-sm: 540px
+$breakpoint-md: 768px
+$breakpoint-l: 1024px
+
+body
+  background-color: rgb(240,240,240)
+
+.container
+  max-width: $breakpoint-sm
+  margin: auto
+
+.masonry
+  column-count: 1
+  column-gap: 1em
+
+.item
+  // background-color: #eee
+  // margin: 0 auto;
+  display: inline-block
+  width: 100%
+
+  /* large screens */
+@media only screen and (min-width: $breakpoint-l)
+  .container
+    max-width: $breakpoint-l
+  .masonry
+    column-count: 3;
+
+
+/* medium screens */
+@media only screen and (max-width: ($breakpoint-l - 1px)) and (min-width: $breakpoint-md)
+  .container
+    max-width: $breakpoint-md
+  .masonry
+    column-count: 2;
+
+
+/* small screens */
+@media only screen and (max-width: ($breakpoint-md - 1px)) and (min-width: $breakpoint-sm)
+  .container
+    max-width: $breakpoint-sm
+  .masonry
+    column-count: 1;
+
+.Card
+  // text-align: center
+  margin: 10px
+  max-width: 300px
+  border: 3px solid $primary-color
+  .Card__image
+    position: relative
+    & img
+      width: 100%
+      max-width: 100%
+    .Card__tag
+      text-transform: uppercase
+      position: absolute
+      left: -10px
+      bottom: 0
+      color: #ffffff
+      background-color: $primary-color
+      padding: 15px 20px
+  .Card__title
+    padding: 0 10px
+    font-size: 18px
+    text-transform: capitalize
+    color: $primary-text-color
+  .Card__description
+    padding: 0 10px
+    color: $secondary-text-color
+    font-size: 14px
+    &::first-letter
+      text-transform: capitalize
