@@ -1,16 +1,20 @@
 import React from 'react';
 
-const InputSubscribe = () => {
+const InputSubscribe = ({ text }) => {
   return (
-    <form>
-      <input
-        type='email'
-        name='emailSubscribe'
-        id='emailSubscribe'
-        className='emailSubscribe'
-        placeholder='Your E-mail'
-      />
-      <button type='submit'>Subscribe</button>
+    <form action='/' method='post'>
+      <div className='email-subscribe'>
+        <input
+          type='email'
+          name='emailSubscribe'
+          id='emailSubscribe'
+          className='email-subscribe__input'
+          placeholder='Your E-mail'
+        />
+        <button type='submit' className='email-subscribe__btn'>
+          {text}
+        </button>
+      </div>
     </form>
   );
 };
