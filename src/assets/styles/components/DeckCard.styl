@@ -2,52 +2,40 @@
 
 .DeckCard
   background-color #F9FAFC
-  padding 0 0 20px 5px
+
+.DeckCard--imgContainer
   position relative
-  margin-bottom 40px
+
+.DeckCard--imgContainer figure 
+  margin 0
+
+.DeckCard--imgContainer figure img 
+  width 100%
+  vertical-align: top;
 
 .DeckCard--tag
+  position: absolute;
+  text-align: center;
   background-color tags-color
   color #ffffff
-  padding 10px 20px
+  padding 7px 20px
   position absolute
-  top 150px
-  left 0
-
+  top 80%
+  left -5px
+  text-transform uppercase
+  font-family font2
+  font-size 14px
 
 .DeckCard--title
-  font-family 'Lato', sans-serif
+  font-family font1
   font-size 24px
 
 .DeckCard--description
   color font-color
   margin-right 10px
 
-.DeckCard img
-  max-width 100%
-  width 100%
-  height 100%
-  object-fit cover
-/* 
-.level-1 {
-      grid-row-end: span 3;
-    }
+.big
+  grid-row-start span 3
 
-.level-2 {
-  grid-row-end: span 2;
-
-}
-
-.level-3 {
-  grid-row-end: span 1;
-
-}
-
-
-.item-1
-  grid-row-end span 2
-  background-color blue
-
-.item-2
-  grid-row-start span 2
-  background-color red */
+.small
+  grid-row-start: span 2 

@@ -1,17 +1,16 @@
 import React from 'react';
 import '../assets/styles/components/DeckCard.styl';
-import image4 from '../assets/static/image4.png';
 
 const DeckCard = props => {
-  const { title, description, tag, size } = props;
+  const { image, title, description, tag, size } = props;
 
   return (
     <article className={`DeckCard ${size}`}>
-      <div>
-        <span className="DeckCard--tag">{tag}</span>
+      <div className="DeckCard--imgContainer">
         <figure>
-          <img src={image4} alt="" />
+          <img src={image} alt="" />
         </figure>
+        <div className="DeckCard--tag">{tag}</div>
       </div>
       <p className="DeckCard--title">{title}</p>
       <p className="DeckCard--description">{description}</p>

@@ -12,6 +12,7 @@ const App = () => (
     <Container>
       {initialState.map(card => (
         <DeckCard
+          key={card.id}
           image={card.image}
           title={card.title}
           description={card.description}
