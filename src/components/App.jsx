@@ -1,6 +1,7 @@
 import React from 'react';
 import '../styles/components/App.styl';
+import Header from './Header';
 
-const App = () => <h1>Hello React!</h1>;
+const App = () => <Header />;
 
 export default App;
