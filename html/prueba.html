@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container{
+        width: 100%;
+        height: 80vh;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: "seccion section hola"
+                             "seccion section hola"
+                             "seccion section hola"
+                             ;
+        
+    }
+    .container__element_1 {
+       background-color: black;
+        grid-area: seccion;
+    }
+    .container__element_2 {
+        background-color: blue;
+        grid-area: section;
+    }
+    .container__element_3 {
+        background-color: chocolate;
+        grid-area: hola;
+    }
+    
+
+</style>
+<body>
+    
+   <section class="container">
+    <article class="container__element_1">
+      
+    </article>
+    <article class="container__element_2">
+        
+    </article>
+    <article class="container__element_3">
+  
+
+   
+   </section>
+
+
+</body>
+</html>
