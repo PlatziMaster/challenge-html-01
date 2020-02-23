@@ -62,5 +62,9 @@
       "npm run lint",
       "git add"
     ]
+  },
+  "repository": {
+    "type": "git",
+    "url":"git://github.com/crizy182/challenge-html-01"
   }
 }
