@@ -10,7 +10,7 @@ const Header = () => {
       </div>
       <nav>
         <img
-          className="header--button-close"
+          className="header__button--closed"
           src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQiIGhlaWdodD0iMTMiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgPGcgc3Ryb2tlPSIjMDAwIiBzdHJva2Utd2lkdGg9IjIiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCIgc3Ryb2tlLWxpbmVjYXA9InNxdWFyZSI+CiAgICA8cGF0aCBkPSJNMTEuNTQ1IDExLjU0NUwyLjIyNyAyLjIyN00yLjQ1NSAxMS41NDVsOS4yNy05LjI3Ii8+CiAgPC9nPgo8L3N2Zz4K"
           alt=""
         />
