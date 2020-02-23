@@ -1,6 +1,7 @@
 import React from 'react';
 import '../styles/components/Header.styl';
 import Logo from '../../resources/imgs/LogoHeader.png';
+import MenuIcon from '../../resources/imgs/Menu-icon.png';
 
 const Header = () => {
   return (
@@ -33,6 +34,7 @@ const Header = () => {
           </li>
         </ul>
       </nav>
+      <img src={MenuIcon} alt="Menu" className="header__hamburger-icon" />
     </div>
   );
 };

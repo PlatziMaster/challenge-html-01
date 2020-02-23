@@ -1,14 +1,11 @@
 .product__container
   display grid
-  grid-template-columns 1fr
+  // grid-template-columns 1fr
   grid-gap 16px
   padding 16px
+  padding-top: 50px
   background-color #f9fafc
-
-@media screen and (min-width 768px)
-  .product__container
-    grid-template-columns 1fr 1fr
-
-@media screen and (min-width 1024px)
-  .product__container
-    grid-template-columns: 1fr 1fr 1fr
+  justify-content center
+  grid-template-columns repeat(auto-fill, 350px)
+  grid-auto-rows: repeat(auto-fill, max-content)
+      

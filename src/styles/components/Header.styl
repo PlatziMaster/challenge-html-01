@@ -5,13 +5,23 @@
   align-content: center
   position fixed
   background white
-  @media screen and (min-width 1024px)
-    grid-template-columns: 1fr 9fr 1fr
-    justify-content: space-between
+  z-index 10
+  grid-template-columns: 60px 1fr 60px
+  padding: 0px 16px
+  column-gap: 20px
+  // @media screen and (min-width 1024px)
+    // grid-template-columns: 1fr max-content 1fr
+  justify-content: space-between
   &__img
     display grid
     justify-content: center
     align-content: center
+  &__hamburger-icon
+    align-self: center;
+  @media screen and (max-width 1024px)
+    .header__hamburger-icon
+      justify-self: end
+
 
 .nav
   display block
