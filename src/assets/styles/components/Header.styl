@@ -1,0 +1,107 @@
+@import './App.styl'
+
+header
+  width 100%
+  height 70px
+  display grid
+  grid-template-columns: auto 1fr 1fr
+  color header-color
+  padding-top 10px
+  font-family font2
+  
+
+.header__logo 
+  margin auto 20px auto 40px
+  font-weight 700
+  font-size 24px
+  font-family font1
+
+.header__logo--color1
+  color footer-bgcolor
+
+.header__logo--color2
+  color tags-color
+
+nav
+  display flex
+  justify-content flex-start
+  align-items center
+
+nav ul 
+  display flex
+  list-style none
+  margin 0
+  padding-left 30px
+
+nav ul li 
+  margin-right 50px
+
+nav ul li a
+  text-decoration none
+  color header-color
+
+nav ul li a:hover
+  color footer-bgcolor
+
+.nav__icon
+  margin 0 30px 0 0
+  font-size 26px
+  width 26px
+  float right
+  color footer-bgcolor
+  margin auto 20px auto auto
+  cursor pointer
+  display none
+
+#toggle
+  display none
+
+.header__button
+  display none
+  
+@media only screen and (max-width 1024px)
+  header
+    display grid
+    grid-template-columns 1fr 1fr
+
+  .nav__icon 
+    display block
+    cursor pointer
+  
+  .header__button
+    display block
+    margin: auto 90%;
+    border 0;
+  
+  nav
+    display block
+    width 100%
+    text-align center
+    background-color white
+    & ul 
+      display block
+    & li 
+      border-bottom 1px solid #EAEAEB  
+  #toggle:checked + nav
+    display none
+
+  nav
+    display none
+    z-index 100
+    position absolute
+    width 100%
+    height 100%
+    text-align center
+    background-color white
+    color footer-bgcolor
+    & ul 
+      display block
+      & li a
+        text-decoration none
+        color font-color
+      & li a:hover
+        color footer-bgcolor
+    & li
+      border-bottom 1px solid #EAEAEB  
+      margin 20px 0
+      padding 20px 0 30px 0
