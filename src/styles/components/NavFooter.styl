@@ -1,0 +1,32 @@
+.NavFooter
+  //display flex
+  grid-area Nav
+  .NavFooter__list
+    font-family 'Oswald', sans-serif;
+    list-style none
+    display grid
+    grid-template-columns repeat(2,1fr)
+    grid-gap 10px
+    z-index 20
+    padding-left 0px
+    li
+      margin-right: 10px
+      a
+        color: white
+        opacity: .5
+        text-decoration: none
+        font-family: Oswald;
+        font-style: normal
+        letter-spacing 1.75px
+        font-size: 14px
+        line-height: 21px
+        font-weight: 500;
+        &:hover
+          opacity: 1
+          text-decoration underline
+
+    @media screen and (min-width 767px)
+      grid-template-columns: repeat(3,1fr)
+
+    @media screen and (min-width 1023px)
+      grid-template-columns: repeat(4,1fr)

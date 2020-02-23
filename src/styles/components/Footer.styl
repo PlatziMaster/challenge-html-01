@@ -1,0 +1,87 @@
+.Footer
+    color gray
+    background #1d1f24
+    display grid
+    padding 20px
+    grid-template-columns: 1fr
+    grid-template-areas "Deck" "Social" "Nav"
+    position: absolute;
+    z-index: -1;
+    width: 97%
+    .Footer__Deck
+        grid-area Deck
+        display flex
+        flex-flow column
+        padding 20px 0px
+    .Footer__Social
+        grid-area Social
+        display: grid
+        grid-template-columns: 180px 1fr
+        grid-gap 30px
+        grid-template-areas: "Social""Network"
+        .Social__form
+            display flex
+            grid-area Social
+            .form__buttom
+                // height 100%
+                border 0px
+                background #FF565C
+                color white
+                font-weight: 500
+                font-size 12px
+                line-height: 18px
+                font-family "Oswald", sans-serif
+                padding: 10px 27px
+                letter-spacing 1.5px
+            .form__email
+                border 0px
+                padding: 10px 3vw
+            input 
+                width: 45vw 
+        .Social__network
+            grid-area Network
+            display flex
+            justify-content space-between
+            height 40px
+            align-items center
+            .network__followUs
+                width 100px
+            .network__iconsContainer
+                display flex
+                width 120px
+                justify-content: space-between
+
+
+@media screen and (min-width 767px)
+    .Footer
+        grid-template-columns: 2fr 3fr 
+        grid-template-areas "Deck Nav" "Social Social"
+        .Footer__Social
+            grid-area Social
+            display grid
+            grid-template-columns: 1fr 1fr 1fr
+            grid-template-areas "Form Network ."
+            .Social__form
+                grid-area Form
+                height 35px
+                .form__email
+                    width 24vw
+            .Social__network
+                grid-area Network
+
+@media screen and (min-width 1024px)
+    .Footer
+        grid-template-columns: 4fr 5fr 4fr;
+        grid-template-areas "Deck Nav Social";
+        align-content: center
+        padding: 10px 20px
+        .Footer__Social
+            grid-template-areas: "Network""Form"
+            grid-gap: 0px
+            .Social__form
+                .form__email
+                    width: 9vw
+                .form__buttom
+                    width: 10vw
+            .Social__network
+                justify-content: flex-end

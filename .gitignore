@@ -1,3 +1,6 @@
+# Bundle
+./dist
+
 # Node template
 
 # Logs
@@ -71,3 +74,4 @@ typings/
 # Docs Custom
 .cache/
 yarn-error.log
+.now
