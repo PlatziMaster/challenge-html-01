@@ -8,6 +8,8 @@ import pinterest from '../assets/images/pinterest.svg';
 import twitter from '../assets/images/twitter.svg';
 import facebook from '../assets/images/facebook.svg';
 
+import '../styles/components/Footer.styl';
+
 const Footer = () => (
   <footer>
     <div className="container">

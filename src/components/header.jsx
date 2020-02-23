@@ -4,6 +4,8 @@ import { Link } from 'react-router-dom';
 import Logo from './logo';
 import Toggle from './toggle';
 
+import '../styles/components/Header.styl';
+
 const Header = () => (
   <header>
     <nav className="container">
