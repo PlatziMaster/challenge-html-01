@@ -23,7 +23,7 @@ Debes desarrollar todo el home de un blog usando html y css, se recomienda usar 
 
 ## Recursos
 
-- Lás imágenes para usar el la galería están dentro de `resources/imgs`.
+- Lás imágenes para usar en la galería están dentro de `resources/imgs`.
 - La tipografía esta dentro de `resources/fonts`.
 - El archivo sketch para colores y demás en `resources/Deck UI KIt.sketch`. Para fines prácticos se puede desplegar con ayuda de <www.figma.com>.
 

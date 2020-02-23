@@ -1,10 +1,10 @@
 import React from 'react';
-import '../styles/components/Header.styl';
+import Logo from './Logo';
 
 const Header = () => {
   return (
     <header>
-      <h2>H E A D E R</h2>
+      <Logo />
     </header>
   );
 };
