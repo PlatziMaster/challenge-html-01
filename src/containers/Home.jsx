@@ -1,16 +1,20 @@
 import React from 'react';
-
-import testImage from '../../resources/imgs/crew-22235.png';
+import CardSummary from '../components/CardSummary';
+import Data from '../__mocks__/initialData';
 
 const Home = () => {
   return (
-    <main className='homeContainer'>
-      <h1>Este es el main</h1>
-      <a href='/'>Pos si</a>
-      <br />
-      <small>Hola</small>
-      <br />
-      <img src={testImage} alt='Foo eating a sandwich.' />
+    <main className='home'>
+      <div className='home-container'>
+        {Data.map(card => (
+          <CardSummary
+            category={card.category}
+            title={card.title}
+            descrip={card.descrip}
+            imageObj={card.imageObj}
+          />
+        ))}
+      </div>
     </main>
   );
 };
