@@ -38,6 +38,21 @@ module.exports = {
           'stylus-loader',
         ],
       },
+      {
+        test: /\.css|.sass|.scss$/,
+        use: [
+          {
+            loader: MiniCssExtractPlugin.loader,
+          },
+          'css-loader',
+          'sass-loader',
+        ],
+      },
+      {
+        test: /\.(png|svg|jpg|jpeg|gif|ico|woff|eot|ttf|mp4|webm)$/,
+        exclude: /node_modules/,
+        use: ['file-loader?name=[name].[contenthash].[ext]'], // ?name=[name].[ext] is only necessary to preserve the original file name
+      },
     ],
   },
   plugins: [

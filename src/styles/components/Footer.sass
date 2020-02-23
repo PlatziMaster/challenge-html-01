@@ -1,0 +1,87 @@
+@import "variables"
+
+@media only screen and (max-width: ($breakpoint-l - 1px)) and (min-width: $breakpoint-md)
+  .Footer
+    flex-wrap: wrap !important
+    .Footer__branding
+      width: 10%
+    .Footer__tags
+      width: 60%
+    .Footer__contact
+      display: flex
+      align-items: center
+      justify-content: flex-end
+      flex-direction: row-reverse
+      width: 100%
+      .Footer__subscribe
+        margin-right: 25px
+
+@media only screen and (max-width: ($breakpoint-md - 1px))
+  .Footer
+    flex-wrap: wrap !important
+  .Footer__branding
+    order: 1
+  .Footer__tags
+    order: 3
+  .Footer__contact
+    order: 2
+    width: 100%
+    .Footer__socials
+      justify-content: flex-start !important
+
+.Footer
+  // display: grid
+  // grid-template-columns: 1fr 3fr 1fr
+  display: flex
+  justify-content: space-between
+  flex-wrap: nowrap
+  background-color: #1E1F24
+  padding: 15px
+  padding-bottom: 35px
+  color: white
+  .Footer__branding
+    margin-right: 25px
+    width: 300px
+    opacity: 0.7
+    .Footer__title
+      opacity: 1
+      font-size: 22px
+      color: #494a4e
+      span
+        font-size: 40px
+        color: $primary-color
+  .Footer__tags
+    max-width: 950px
+    text-transform: uppercase
+    font-weight: bold
+    p
+      padding: 10px 5px
+      width: 200px
+  .Footer__socials
+    margin-top: 20px
+    display: flex
+    justify-content: flex-end
+    align-items: center
+    font-size: 14px
+    p
+      // margin-right: 20px
+    img
+      margin-left: 20px
+      width: 20px
+      height: 
+  .Footer__subscribe
+    // width: 320px
+    margin: 20px 0
+    display: flex
+    flex-wrap: nowrap
+    align-items: center
+    input
+      padding: 10px 12px
+      width: 180px
+    label
+      width: 120px
+      padding: 10px 12px
+      text-align: center
+      background-color: $primary-color
+      text-transform: uppercase
+      font-size: 14px
