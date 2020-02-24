@@ -1,8 +1,8 @@
+/* eslint-disable jsx-a11y/label-has-for */
 import React from 'react';
 import { Link } from 'react-router-dom';
 
 import Logo from './logo';
-import Toggle from './toggle';
 
 import '../styles/components/Header.styl';
 import '../styles/components/Menu.styl';
@@ -13,37 +13,32 @@ const Header = () => (
       <div className="logo">
         <Logo />
       </div>
-      <div className="menu-container">
-        <ul id="top-menu">
-          <li>
-            <Link to="/technology">TECHNOLOGY</Link>
-          </li>
-          <li>
-            <Link to="/ideas">IDEAS</Link>
-          </li>
-          <li>
-            <Link to="/leadership">LEADERSHIP</Link>
-          </li>
-          <li>
-            <Link to="/video">VIDEO</Link>
-          </li>
-          <li>
-            <Link to="/news">NEWS</Link>
-          </li>
-          <li>
-            <Link to="/finance">FINANCE</Link>
-          </li>
-          <li>
-            <Link to="/entertainment">ENTERTAINMENT</Link>
-          </li>
-        </ul>
-      </div>
-      <div className="toggle">
-        <label htmlFor="toggle-checkbox">
-          <input type="checkbox" id="toggle-checkbox" />
-          <Toggle />
-        </label>
-      </div>
+      {/* eslint-disable-next-line jsx-a11y/label-has-associated-control */}
+      <label htmlFor="toggle">&#9776;</label>
+      <input type="checkbox" id="toggle" />
+      <menu>
+        <li>
+          <Link to="/technology">TECHNOLOGY</Link>
+        </li>
+        <li>
+          <Link to="/ideas">IDEAS</Link>
+        </li>
+        <li>
+          <Link to="/leadership">LEADERSHIP</Link>
+        </li>
+        <li>
+          <Link to="/video">VIDEO</Link>
+        </li>
+        <li>
+          <Link to="/news">NEWS</Link>
+        </li>
+        <li>
+          <Link to="/finance">FINANCE</Link>
+        </li>
+        <li>
+          <Link to="/entertainment">ENTERTAINMENT</Link>
+        </li>
+      </menu>
     </nav>
   </header>
 );
