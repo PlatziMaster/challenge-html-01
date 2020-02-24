@@ -52,7 +52,7 @@ const Main = () => {
           make astronomy so much fun.
         </p>
       </div>
-      <div className="Main-item Main-level1">
+      <div className="Main-item Main-level2">
         <img src={imagen2} alt="" />
         <span className="Main-item__category-item">FINANCE</span>
         <h2 className="Main-item__title-item">

@@ -1,15 +1,15 @@
 .Footer
+  marging-top:30px;
   width: 100%
-  heigth:150px
+  height: 150px;
   font-weight: bold
   display: grid
-  align-items: center
   grid-template-columns: repeat(3,1fr);
-  border-bottom: 1px solid #000
+  background-color: #000;
   color:#ffffff
   overflow-x: hidden
 
-  &__logo
+  &-logo
     color #1f1f24
     display: flex
     align-items: center
@@ -17,3 +17,31 @@
     font-size: 28px
     p 
       color red
+  &-links
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    text-transform: uppercase
+    color: #f2f2f2
+    div
+      padding: 10px;
+  &-medias
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    img
+      width:32px;
+
+.spanLogo
+  padding-top:20px
+  color: #f2f2f2
+  font-size: 12px
+@media screen and (max-width: 900px) 
+  grid-template: 3 / 2; 
+  justify-content:space-between;
+
+@media screen and (max-width: 600px) 
+  grid-template-columns: 1fr;
+  justify-content:center;
