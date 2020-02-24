@@ -22,8 +22,8 @@ const Footer = () => (
         <a href="http://platzi.com">Video</a>
         <a href="http://platzi.com">Finances</a>
       </div>
-      <div className="footer--container__social">
-        <div className="container--social__follow">
+      <div className="footer--container--social">
+        <div className="footer--container--social__follow">
           <p>Follow us:</p>
           <div>
             <img src="/resources/imgs/instagram.png" width="" alt="Instagram" />
@@ -32,7 +32,7 @@ const Footer = () => (
             <img src="/resources/imgs/facebook.png" width="" alt="Facebook" />
           </div>
         </div>
-        <div className="container--social__input">
+        <div className="footer--container--social__input">
           <input
             type="email"
             placeholder="Your E-mail"

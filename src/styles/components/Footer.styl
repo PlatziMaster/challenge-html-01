@@ -1,5 +1,4 @@
 .footer
-  display grid
   background #1d1f24
   padding 40px
 
@@ -10,44 +9,64 @@
     &:hover
       color: #ffff
 
-  .button--follow
-    font-family 'Oswald', sans-serif
-    font-weight 500
-    background #ff565c
-    color white
-    border-color #ff565c
-
   &--container
     display grid
-    grid-template-columns 200px 1fr 180px
-    grid-template-areas 'icon categories social'
+    grid-template-columns 200px 1fr
+    grid-template-areas: 'logo categories' 'social social';
     width 100%
+    @media (min-width: 768px)
+      grid-template-areas: 'logo categories social';
 
     &__logo
       color rgba(255, 255, 255, 0.7)
+      grid-area: logo
 
     &__categories
-      display grid
-      grid-template-columns repeat(4, 1fr)
+      display block
       align-items center
       font-family 'Oswald', sans-serif
       font-weight 500
       color white
       letter-spacing 1px
       text-transform uppercase
+      grid-area: categories
 
-    &__social
+      @media (min-width: 768px)
+        display grid
+        grid-template-columns: repeat(4, 1fr)
+
+      a
+        display inline-block
+        margin 0 .5em
+
+    &--social
       color rgba(255, 255, 255, 0.7)
       display grid
+      grid-area social
       grid-template-columns 1fr
-      grid-template-areas 'follow' 'input'
+      grid-gap 1em
+      grid-template-areas 'input follow'
+      @media (min-width: 768px)
+        grid-template-areas 'follow' 'input'
 
       &__follow
         display grid
         grid-template-columns 80px 1fr
         align-items center
+        grid-area: follow
+        p
+          margin: 0
 
       &__input
-        display grid
-        grid-template-columns 60% 40%
-        height 70%
+        display: grid;
+        grid-template-columns: 60% 40%;
+        height: 40px;
+        grid-area: input
+        background: yellow
+
+    .button--follow
+      font-family: 'Oswald', sans-serif;
+      font-weight: 500;
+      background: #ff565c;
+      color: white;
+      border-color: #ff565c;
