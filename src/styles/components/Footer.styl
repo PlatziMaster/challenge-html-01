@@ -1,0 +1,46 @@
+.footer
+  display grid
+  background #1d1f24
+  padding 40px
+
+  .button--follow
+    font-family 'Oswald', sans-serif
+    font-weight 500
+    background #ff565c
+    color white
+    border-color #ff565c
+
+  &--container
+    display grid
+    grid-template-columns 200px 1fr 180px
+    grid-template-areas 'icon categories social'
+    width 100%
+
+    &__logo
+      color rgba(255, 255, 255, 0.7)
+
+    &__categories
+      display grid
+      grid-template-columns repeat(4, 1fr)
+      align-items center
+      font-family 'Oswald', sans-serif
+      font-weight 500
+      color white
+      letter-spacing 1px
+      text-transform uppercase
+
+    &__social
+      color rgba(255, 255, 255, 0.7)
+      display grid
+      grid-template-columns 1fr
+      grid-template-areas 'follow' 'input'
+
+      &__follow
+        display grid
+        grid-template-columns 80px 1fr
+        align-items center
+
+      &__input
+        display grid
+        grid-template-columns 60% 40%
+        height 70%
