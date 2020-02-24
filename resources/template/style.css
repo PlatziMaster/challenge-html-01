@@ -1,0 +1,344 @@
+body {
+  margin: 0;
+  background-color: #f9fafc;
+  font-family: 'Lato', sans-serif;
+}
+.container {
+  max-width: 1040px;
+  margin: 0 auto;
+}
+
+.header {
+  background-color: #ffffff;
+  border-bottom: 1px solid #dfdfdf;
+  margin-bottom: 1em;
+}
+
+.nav {
+  height: 3em;
+  display: grid;
+  grid-template-columns: 50px 1fr 40px;
+  padding: 1em;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.nav-primaryOptions,
+.nav-secondaryOptions {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav > .nav-primaryOptions {
+  margin: 0;
+  padding: 0;
+  overflow: scroll;
+}
+
+.nav > .nav-primaryOptions li {
+  list-style: none;
+  display: inline;
+}
+
+.nav-sidevar-content {
+  position: absolute;
+  top: 3em;
+  right: 0;
+  background-color: #fff;
+  padding: 1em;
+  box-shadow: 0 0.25em 0.35em rgba(29, 31, 36, 0.3);
+  text-align: left;
+}
+
+.nav-sidevar-content {
+  display: none;
+}
+
+.nav-sidevar-content.is-active {
+  display: block;
+}
+
+.nav a {
+  color: #333;
+  text-decoration: none;
+}
+
+.posts.container {
+  display: grid;
+  grid-gap: 1.5em 1em;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-auto-rows: 180px;
+}
+
+.card:nth-child(even) {
+  grid-row-end: span 3;
+}
+
+.card:nth-child(odd) .card--content-img {
+  height: 120px;
+  object-fit: cover;
+}
+
+.card:nth-child(even) .card--content-img {
+  height: 280px;
+  object-fit: cover;
+}
+
+.card:nth-child(odd) {
+  grid-row-end: span 2;
+}
+
+.nav .nav-sidebar .nav-primaryOptions {
+  display: none;
+}
+
+.card {
+  background-color: #ffffff;
+}
+
+.card--content-img {
+  width: 100%;
+}
+
+.card--content__description {
+  padding: 0px 10px 5px 10px;
+}
+
+.description--title {
+  font-size: 26px;
+  font-weight: 600;
+  margin-top: 0.5em;
+  margin-bottom: 8px;
+  text-transform: capitalize;
+}
+
+.description--desc {
+  font-size: 18px;
+  color: rgba(29, 31, 36, 0.7);
+  padding: 0;
+  height: 100px;
+  overflow: hidden;
+}
+
+.footer {
+  display: grid;
+  background: #1d1f24;
+  padding: 40px;
+}
+
+.footer--container__logo {
+  color: rgba(255, 255, 255, 0.7);
+  grid-area: logo;
+}
+
+.footer--container__categories {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 500;
+  color: white;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.button--follow {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 500;
+  background: #ff565c;
+  color: white;
+  border-color: #ff565c;
+}
+
+@media only screen and (min-width: 1025px) {
+  .footer--container {
+    display: grid;
+    grid-template-columns: 200px 1fr 300px;
+    grid-template-areas: 'logo categories social';
+  }
+
+  .footer--container__categories {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    grid-area: categories;
+  }
+
+  .footer--container__social {
+    color: rgba(255, 255, 255, 0.7);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 'follow' 'input';
+    grid-area: social;
+  }
+
+  .container--social__follow {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    align-items: center;
+    grid-area: follow;
+  }
+
+  .container--social__input {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    height: 100%;
+    grid-area: input;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .post.container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer--container {
+    display: grid;
+    grid-template-columns: 200px 1fr 300px;
+    grid-template-areas: 'logo categories social';
+  }
+
+  .footer--container__categories {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    grid-area: categories;
+  }
+
+  .footer--container__social {
+    color: rgba(255, 255, 255, 0.7);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 'follow' 'input';
+    grid-area: social;
+  }
+  .container--social__follow {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    align-items: center;
+    grid-area: follow;
+  }
+
+  .container--social__input {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    height: 100%;
+    grid-area: input;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .post.container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .nav {
+    grid-template-columns: 1fr 40px;
+  }
+
+  .nav {
+    grid-template-columns: 1fr 40px;
+  }
+
+  .nav > .nav-primaryOptions {
+    display: none;
+  }
+
+  .nav .nav-sidebar .nav-primaryOptions {
+    display: block;
+  }
+
+  .footer--container {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-areas:
+      'logo categories'
+      'social social';
+  }
+
+  .footer--container__categories {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    grid-area: categories;
+  }
+
+  .footer--container__social {
+    color: rgba(255, 255, 255, 0.7);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-area: social;
+    width: 75%;
+    align-items: center;
+    grid-template-areas: 'input follow ';
+  }
+
+  .container--social__follow {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    align-items: center;
+    margin-left: 20px;
+    grid-area: follow;
+  }
+
+  .container--social__input {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    height: 70%;
+    grid-area: input;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .post.container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .nav {
+    grid-template-columns: 1fr 40px;
+  }
+
+  .nav > .nav-primaryOptions {
+    display: none;
+  }
+
+  .nav-sidevar-content {
+    max-width: 90vw;
+    width: 100%;
+    height: calc(100vh - 6em);
+  }
+
+  .footer--container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 'logo' 'social' 'categories';
+  }
+
+  .footer--container__categories {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    grid-gap: 10px;
+    grid-area: categories;
+  }
+
+  .footer--container__social {
+    color: rgba(255, 255, 255, 0.7);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-area: social;
+    align-items: center;
+    grid-template-areas: 'input' 'follow ';
+  }
+
+  .container--social__follow {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    align-items: center;
+    grid-area: follow;
+  }
+
+  .container--social__input {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    height: 140%;
+    grid-area: input;
+  }
+}
