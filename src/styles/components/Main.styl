@@ -1,0 +1,63 @@
+@import './styles.styl'
+    
+main
+  margin-bottom 30px
+  padding: 0 10px
+
+  .container
+    columns 3
+    column-gap 0
+
+    .card
+      padding 30px 10px 20px
+      break-inside avoid
+
+      .image
+        position relative
+        margin-bottom 19px
+
+        .category
+          position absolute
+          left 0
+          bottom 0
+          margin-left -4px
+          margin-bottom 20px
+          padding: 8px 22px 8px 25px 
+          background-color $color-5
+          color $color-4
+          font-family $font-family-2
+          font-size 14px
+          line-height 21px
+          letter-spacing 1.75px
+          text-transform uppercase
+          text-align center
+      
+      h2 
+        font-size 26px
+        line-height 30px
+        letter-spacing -0.22px
+        color $color-2
+        margin-bottom 11px
+
+      p 
+        font-size 18px
+        line-height 28px
+        color $color-2
+        opacity .7
+        width 90%
+
+
+
+@media $lg
+  main
+    padding: 0 30px 
+
+@media $xl
+  main
+    .container
+      columns 3
+
+@media $md
+  main
+    .container
+      columns 1

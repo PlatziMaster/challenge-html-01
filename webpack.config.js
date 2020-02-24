@@ -38,6 +38,11 @@ module.exports = {
           'stylus-loader',
         ],
       },
+      {
+        test: /\.(png|jpe?g|gif|svg)$/,
+        exclude: /(node_modules)/,
+        loader: 'file-loader',
+      },
     ],
   },
   plugins: [

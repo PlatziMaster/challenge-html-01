@@ -1,0 +1,87 @@
+@import './styles.styl'
+
+header
+  background-color: $color-4
+  border-bottom 1px solid $border-color
+  padding: 0 20px
+
+  nav
+    height: 70px
+    display: inline-block;
+    align-items: center
+    justify-content: space-between
+
+    .logo
+      margin-right 40px
+      display: inline;
+
+      img 
+        margin-top: 25px;
+
+  label 
+    margin: 0 40px 0 0;
+    font-size: 26px;
+    line-height: 70px;
+    display: none;
+    width: 26px;
+    float: right;
+  
+  #toggle 
+    display: none;
+
+
+  menu 
+    max-width: 680px;
+    float: right;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 30px 0 0;
+
+    li 
+      clear: right;
+      margin: 0 10px;
+
+      a 
+        color: grey;
+        line-height: 70px;
+
+    
+
+@media $lg
+  header
+    padding-left: 40px
+    padding-right: 40px
+    nav
+      .logo
+        margin-right: 60px
+  
+      .toogle
+        margin-left: 60px
+    
+@media $xl
+  header
+    nav
+      menu
+        #top-menu
+          display: flex
+
+@media $md
+  header
+
+    label 
+        display: block;
+        cursor: pointer;
+    
+    menu 
+        display: none;
+        width: 100%;
+        text-align: center;
+        background-color: white;
+        float: none;
+        z-index: 2;
+    
+    menu li 
+        border-bottom: 1px solid #EAEAEB;
+    
+    #toggle:checked + menu 
+        display: block;
