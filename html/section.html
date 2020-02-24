@@ -19,7 +19,7 @@
         margin-left: 4em;
         margin-right: 4em;
         grid-gap: 1em;
-        height: 80em;
+        height: fit-content;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: repeat(8, 1fr);
@@ -34,6 +34,8 @@
         
     }
     .container__element_1 {
+        width: auto;
+        height: auto;
         display: inline-block;
         grid-area: article1;
     }
@@ -44,6 +46,7 @@
     .container__element_1--image img {
         width: 100%;
         height: 80%;
+        margin: 0px;
     }
     .container__element_1--image p {
         color:white;
@@ -81,6 +84,7 @@
     .container__element_2--image img {
         width: 100%;
         height: 80%;
+        margin: 0px;
     }
     .container__element_2--image p {
         color:white;
@@ -113,6 +117,7 @@
     .container__element_3--image img {
         width: 100%;
         height: 80%;
+        margin: 0px;
     }
     .container__element_3--image p {
         color:white;
@@ -146,6 +151,7 @@
     .container__element_4--image img {
         width: 100%;
         height: 80%;
+        margin: 0px;
     }
     .container__element_4--image p {
         color:white;
@@ -178,6 +184,7 @@
     .container__element_5--image img {
         width: 100%;
         height: 80%;
+        margin: 0px;
     }
     .container__element_5--image p {
         color:white;
@@ -210,6 +217,7 @@
     .container__element_6--image img {
         width: 100%;
         height: 80%;
+        margin: 0px;
     }
     .container__element_6--image p {
         color:white;
@@ -242,6 +250,7 @@
     .container__element_7--image img {
         width: 100%;
         height: 80%;
+        margin: 0px;
     }
     .container__element_7--image p {
         color:white;
@@ -274,6 +283,7 @@
     .container__element_8--image img {
         width: 100%;
         height: 80%;
+        margin: 0px;
     }
     .container__element_8--image p {
         color:white;
@@ -306,6 +316,7 @@
     .container__element_9--image img {
         width: 100%;
         height: 80%;
+        margin: 0px;
     }
     .container__element_9--image p {
     color:white;
@@ -334,8 +345,8 @@
            margin-right: 1em;
            display: grid;
         width: auto;
-        grid-gap: 2em;
-        height: 80em;
+        grid-gap: 1em;
+        height: fit-content;
            grid-template-columns: 1fr 1fr;
            grid-template-rows: repeat(8, 1fr );
            grid-template-areas: "article1 article2"
@@ -343,8 +354,8 @@
                                 "article1 article8"
                                 "article9 article8"
                                 "article9 article8"
-                                "article9 article5"
-                                "artcile4 article5"
+                                "article4 article5"
+                                "article4 article5"
                                 "article4 article5"
                                 ;
        }
@@ -353,9 +364,14 @@
        }
        .container__element_8--image img {
            margin-top: 1em;
+           width: 100%;
+        height: 80%;
        }
        .container__element_9--image img {
-           margin-top: 6em;
+        
+        width: 100%;
+        height: 80%;
+       
        }
     }
     @media screen and (max-width: 600px) {
@@ -366,7 +382,7 @@
             
             display: block;
             width: auto;
-            height: auto;
+            height: fit-content;
         }
     
     }
