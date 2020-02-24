@@ -1,0 +1,46 @@
+.Header
+  width: 100%
+  padding: 5px
+  font-weight: bold
+  display: grid
+  align-items: center
+  grid-template-columns: 8% 84% 8%
+  border-bottom: 1px solid #cccccc
+  overflow-x: hidden
+
+  &__logo
+    color #1f1f24
+    display: flex
+    align-items: center
+    justify-content: center
+    font-size: 28px
+    p 
+      color red
+  &__nav
+    font-size: 1x
+    display: flex
+    align-items: center
+    color #cccccc
+    text-transform: uppercase
+    ul 
+      display: flex
+      align-items: center
+      justify-content: space-around
+      li
+        list-style: none
+        padding: 0 20px
+        cursor pointer
+      :hover
+        color: #FF565B
+  &__hamburger
+    display: none
+  @media screen and (max-width: 900px) 
+    grid-template-columns: 70% 30%
+    &__nav
+      display: none
+    &__hamburger
+      display: flex
+      justify-content: center
+      img 
+        cursor pointer
+        width: 32px
