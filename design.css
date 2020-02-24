@@ -120,8 +120,80 @@ body {
 .Footer{
     display: block;
     background-color: #1e1f24;
-    color: #616266;
+    color: #808081;
+    height: 300px;
 }
+
+.Footer__info{
+    display:flex;
+    flex-direction: column;
+}
+.Footer__info--title{
+    font-size: 1.6em;
+    font-weight: bold;
+    color: #3a3a3a;
+    padding: 0 0 10px;
+}
+.Footer__menu{
+    max-width: 60%;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(20%, 25%));
+    grid-template-rows: repeat(2, 50%);
+    grid-gap: 5px;
+    color:white;
+    grid-auto-flow: column;
+    text-transform: uppercase;
+    font-size: .9em;
+    font-weight: bold;
+}
+.Footer__menu a{
+    color:white;
+}
+.Footer__container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.Footer__socialContainer{
+    width: 250px;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.4em;
+
+}
+.Footer__socialContainer img{
+    width: 25px;
+    fill: green;
+}
+.Footer__subscribe {
+    display: inline-block;
+}
+.Footer__subscribe input {
+    display: inline-block;
+    width: 250px;
+    height: 35px;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    outline: none;
+    padding: 0px 20px;
+}
+.Footer__subscribe button {
+    display: inline-block;
+    width: 150px;
+    height: 35px;
+    background-color: #ff555a;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    margin-left: -3px;
+    color: white;
+    text-transform: uppercase;
+}
+
 /* Media Queries */
 
 @media only screen and (max-width: 320px) {
