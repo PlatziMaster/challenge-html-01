@@ -118,15 +118,19 @@ body {
     grid-row-end: span 3;
 }
 .Footer{
-    display: block;
+    display: grid;
+    grid-template-columns: 200px 1fr 300px;
+    grid-gap: 10px;
+    align-items: center;
     background-color: #1e1f24;
     color: #808081;
-    height: 300px;
+    height: 120px;
 }
 
 .Footer__info{
     display:flex;
     flex-direction: column;
+    padding: 0 0 0 25px;
 }
 .Footer__info--title{
     font-size: 1.6em;
@@ -135,11 +139,12 @@ body {
     padding: 0 0 10px;
 }
 .Footer__menu{
-    max-width: 60%;
+    height: 100%;
     display: grid;
     grid-template-columns: repeat(4, minmax(20%, 25%));
     grid-template-rows: repeat(2, 50%);
-    grid-gap: 5px;
+    grid-gap: 8px;
+    align-items: center;
     color:white;
     grid-auto-flow: column;
     text-transform: uppercase;
@@ -156,40 +161,40 @@ body {
 }
 .Footer__socialContainer{
     width: 250px;
-    padding: 20px 0;
+    padding: 20px 0 10px 0;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    font-size: 1.4em;
+    font-size: 1em;
 
 }
 .Footer__socialContainer img{
-    width: 25px;
-    fill: green;
+    width: 15px;
 }
 .Footer__subscribe {
     display: inline-block;
+    padding: 0 15px 0 0;
 }
 .Footer__subscribe input {
-    display: inline-block;
-    width: 250px;
-    height: 35px;
+    width: 150px;
+    height: 25px;
     padding: 0;
     margin: 0;
     border: 0;
     outline: none;
     padding: 0px 20px;
+    font-size: .8em;
 }
 .Footer__subscribe button {
-    display: inline-block;
-    width: 150px;
-    height: 35px;
+    width: 70px;
+    height: 25px;
     background-color: #ff555a;
     padding: 0;
     margin: 0;
     border: 0;
     margin-left: -3px;
+    font-size: .8em;
     color: white;
     text-transform: uppercase;
 }
