@@ -1,9 +1,5 @@
 import React from 'react';
 import InputSubscribe from './InputSubscribe';
-import IconInstagram from '../../resources/imgs/socialMedia/camera-retro-solid.svg';
-import IconPinterest from '../../resources/imgs/socialMedia/pinterest-p-brands.svg';
-import IconTwitter from '../../resources/imgs/socialMedia/twitter-brands.svg';
-import IconFacebook from '../../resources/imgs/socialMedia/facebook-f-brands.svg';
 
 const FollowUs = () => {
   return (
@@ -13,26 +9,10 @@ const FollowUs = () => {
       </div>
       <div className='followUs__social-media social-media-icons'>
         <p className='social-media-icons__callAction'>Follow us: </p>
-        <img
-          className='social-media-icons__icon'
-          src={IconInstagram}
-          alt='Instagram Icon'
-        />
-        <img
-          className='social-media-icons__icon'
-          src={IconPinterest}
-          alt='Pinterest Icon'
-        />
-        <img
-          className='social-media-icons__icon'
-          src={IconTwitter}
-          alt='Twitter Icon'
-        />
-        <img
-          className='social-media-icons__icon'
-          src={IconFacebook}
-          alt='Facebook Icon'
-        />
+        <i className='fab fa-instagram social-media-icons__icon' />
+        <i className='fab fa-pinterest-p social-media-icons__icon' />
+        <i className='fab fa-twitter social-media-icons__icon' />
+        <i className='fab fa-facebook-f social-media-icons__icon' />
       </div>
     </div>
   );
