@@ -124,7 +124,7 @@ body {
     align-items: center;
     background-color: #1e1f24;
     color: #808081;
-    height: 120px;
+    height: 160px;
 }
 
 .Footer__info{
@@ -225,6 +225,95 @@ body {
         margin: 0;
     }
 }
+@media only screen and (min-width: 581px) and (max-width: 880px) {
+    .Footer{
+        grid-template-columns: 200px 1fr;
+        grid-template-rows: 2;
+        grid-gap: 10px;
+        align-items: center;
+        background-color: #1e1f24;
+        color: #808081;
+        height: 200px;
+    }
+    .Footer__menu{
+        height: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        grid-template-rows: repeat(3, auto);
+        grid-gap: 8px;
+        align-items: center;
+        grid-auto-flow: column;
+    }
+    .Footer__container{
+        grid-column: 1 / span 2;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    .Footer__subscribe {
+        display: inline-block;
+        padding: 0 0 0 25px;
+    }
+    .Footer__socialContainer{
+        width: 250px;
+        padding: 0 0 0 30px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 1em;
+    
+    }
+}
+@media only screen  and (max-width: 580px) {
+    .Footer{
+        grid-template-columns: 70px 1fr;
+        grid-template-areas: "info"
+                            "container"
+                            "menu";
+        align-items: center;
+        height: 430px;
+    }
+    .Footer__info{
+        grid-area: info;
+        grid-column: 1 / span 2;
+    }
+    .Footer__menu{
+        grid-area: menu;
+        grid-column: 1 / span 2;
+        height: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(4, auto);
+        align-items: center;
+        grid-gap: 20px;
+        grid-auto-flow: column;
+    }
+    .Footer__container{
+        grid-area: container;
+        grid-column: 1 / span 2;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: flex-start;
+    }
+    .Footer__subscribe {
+        display: inline-block;
+        padding: 0 0 0 25px;
+    }
+    .Footer__socialContainer{
+        width: 250px;
+        padding: 20px 0 0 25px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 1em;
+    
+    }
+}
+
+
 
 @media only screen  and (max-width: 720px) {
     .Header__nav label {
