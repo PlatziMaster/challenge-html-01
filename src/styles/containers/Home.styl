@@ -1,10 +1,27 @@
 .home
   display: flex
   justify-content: center
-  width: 100%
+  width: cover
+  margin: 30px 0 80px 0px
+  padding-left: 16px
+  padding-right: 20px
   background-color: bgColor--primary
   &-container
+    height: 76vh
+    min-width: 339px
+    max-width: 456px
+    overflow-y: auto
+    scroll-behavior: smooth
     display: grid
-    grid-template: auto
-    grid-row-gap: 50px
-    grid-column-gap: 28px
+    grid-template-rows: auto auto auto
+    grid-template-columns: 1fr
+    grid-column-gap: 12px
+    background-color: rgba(colorGray--primary, 40%)
+    &::-webkit-scrollbar
+      display: none;
+    &__col
+      display: flex
+      flex-direction: column
+      justify-content: flex-start
+    & .card
+      margin-bottom: 50px
