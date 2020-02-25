@@ -1,15 +1,21 @@
 .email-subscribe
   position: relative
+  width: 16.666em
   height: fontSize--base * 2
   &__input
+    width: 12.86em
     height: 100%
     padding-left: 1em
-    border: none
     font-size: fontSize--small
+    @extend .resetButtonStyles
+    border: 1px solid colorBrand--secondary
+    &:hover, &:focus
+      border-color: rgba(colorBrand--secondary, 10%)
+      box-shadow: inset 2px 0px 4px 1px colorBrand--secondary
   &__btn
     position: absolute
     height: inherit
-    border: none
     font-size: fontSize--smallest
+    @extend .resetButtonStyles
     @extend .label-category
     @extend .label-category__text
