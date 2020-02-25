@@ -1,4 +1,3 @@
-padding-menuIcon = fontSize--base / 3
 width-menuIcon__bars = fontSize--base * 1.5
 height-menuIcon__bar = fontSize--base / 9
 height-menuIcon__bars = height-menuIcon__bar * 8
@@ -6,14 +5,12 @@ margin-menuIcon-bar--middle = (height-menuIcon__bars - 3 * height-menuIcon__bar)
 
 .menu-icon
   display: inline-block
-  padding: padding-menuIcon
-  width: width-menuIcon__bars + (padding-menuIcon * 2)
-  height: height-menuIcon__bars + (padding-menuIcon * 2)
-
-.menu-icon__bar
   width: width-menuIcon__bars
-  height: height-menuIcon__bar
-  background-color: colorDark--primary
-  &--middle
-    margin: margin-menuIcon-bar--middle 0em
-    @extend .menu-icon__bar
+  height: height-menuIcon__bars
+  &__bar
+    width: width-menuIcon__bars
+    height: height-menuIcon__bar
+    background-color: colorDark--primary
+    &--middle
+      margin: margin-menuIcon-bar--middle 0em
+      @extend .menu-icon__bar

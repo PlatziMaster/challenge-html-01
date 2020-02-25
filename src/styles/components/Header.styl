@@ -1,2 +1,20 @@
-header
+.header
+  display: grid
+  grid-template-rows: auto auto
+  padding: 19px padLR-bodyGen--minTablet 21px padLR-bodyGen--minTablet
+  border-bottom: 1px solid colorGray--primary
   background-color: bgColor--secondary
+  &__container-icons
+    display: flex
+    justify-content: space-between
+  &__menu-icon
+    @extend .resetButtonStyles
+    &:hover
+      cursor: pointer
+      background-color: rgba(colorDark--primary, 20%)
+  &__nav
+    @extend .resetButtonStyles
+    &--hidden
+      display: none
+    &--visible
+      display: block
