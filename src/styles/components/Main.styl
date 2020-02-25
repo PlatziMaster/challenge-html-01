@@ -1,0 +1,71 @@
+.Main
+    display block
+    margin 0px
+    background #f2f2f2
+    max-width 100%
+
+    &__container 
+        margin 0 20px
+        display grid
+        grid-template-columns repeat(3, minmax(25%, 33%))
+        grid-gap 5px
+        justify-content center
+        max-width 100%
+    &__item
+        padding 10px
+        background #f2f2f2
+    &__item img
+        width 100%
+        vertical-align top
+    &__item__label
+        display flex
+        background-color #ff555a
+        color white
+        text-transform uppercase
+        font-family 'Oswald','sans-serif'
+        font-weight bold
+        font-size .7em
+        letter-spacing .1em
+        width 9em
+        height 3em
+        justify-content center
+        align-items center
+        position relative
+        bottom 4.5em
+        left -4px
+    &__item__title 
+        /* font-family 'Oswald','sans-serif'*/
+        margin-top 1em
+        font-family 'Lato'
+        font-size 1.5em
+        width 90%
+    &__item_text
+        width 95%
+        padding 1em 0
+        line-height 1.5em
+        color #5f5e5e
+    
+.level-1 
+    grid-row-end span 3
+
+.level-2 
+    grid-row-end span 2
+
+.level-3 
+    grid-row-end span 3
+@media only screen and (max-width 320px) 
+    .Main__container 
+        margin 0 20px
+        display grid
+        grid-template-columns minmax(80%, 100%)
+        grid-gap 0px
+        justify-content center
+        max-width 100%
+@media only screen and (min-width 321px) and (max-width 720px) 
+    .Main__container 
+        margin 0 0px
+        display grid
+        grid-template-columns repeat(2, minmax(40%, 50%))
+        grid-gap 5px
+        justify-content center
+        max-width 100%

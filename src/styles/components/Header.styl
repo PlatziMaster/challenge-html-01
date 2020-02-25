@@ -1,0 +1,79 @@
+.Header
+    margin 0 30px
+    display flex
+    background-color white
+    font-size 13px
+    text-decoration none
+    &__logo
+        font-size 1.8em
+        display flex
+        align-items center
+        width 70px
+        height 70px
+        font-weight bold
+        line-height 70px
+    &__nav  
+        height 70px
+        text-align right
+        line-height 70px
+        text-transform uppercase
+        width 100%
+    &__menu  
+        display flex
+        justify-content end
+        margin 0 30px 0 0
+    &__menu li  
+        clear right
+        margin 0 20px
+    &__menu li a  
+        color rgb(170, 170, 170)
+        font-weight bold
+        font-size .9em
+        letter-spacing .1em
+        line-height 70px
+        font-family 'Oswald','sans-serif'
+    &__nav label  
+        margin 0 40px 0 0
+        font-size 2em
+        line-height 70px
+        float right
+        display none
+#toggle  
+    display none
+/* Media Queries */
+@media only screen and (min-width: 321px) and (max-width: 720px) 
+    .Header
+        margin 0
+    
+
+
+@media only screen  and (max-width: 720px) 
+    .Header__nav label 
+        display block
+        cursor pointer
+        text-align right
+        margin 0 10px 0 0
+    
+    .Header__menu 
+        display none
+        width 100%
+        text-align center
+        border-bottom 1px solid #c2bebe
+    
+    .Header__menu li 
+        border-bottom 1px solid grey
+    
+    #toggle:checked + menu 
+        background-color #FFF
+        display block
+        overflow hidden
+        position relative
+        left -60px
+        z-index 1
+    
+    .Header__logo 
+        margin 0 0 0 10px
+    
+
+
+ 

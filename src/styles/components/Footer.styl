@@ -1,0 +1,141 @@
+.Footer
+    display grid
+    grid-template-columns 200px 1fr 300px
+    grid-gap 10px
+    align-items center
+    background-color #1e1f24
+    color #808081
+    height 160px
+    &__info
+        display flex
+        flex-direction column
+        padding 0 0 0 25px
+    &__info--title
+        font-size 1.6em
+        font-weight bold
+        color #3a3a3a
+        padding 0 0 10px
+    &__menu
+        height 100%
+        display grid
+        grid-template-columns repeat(4, minmax(20%, 25%))
+        grid-template-rows repeat(2, 50%)
+        grid-gap 8px
+        align-items center
+        color white
+        grid-auto-flow column
+        text-transform uppercase
+        font-size .9em
+        font-weight bold
+    &__menu a
+        color white
+    &__container
+        display flex
+        flex-direction column
+        align-items flex-end
+    &__socialContainer
+        width 250px
+        padding 20px 0 10px 0
+        display flex
+        flex-direction row
+        justify-content space-around
+        align-items center
+        font-size 1em
+    &__socialContainer img
+        width 15px
+    &__subscribe 
+        display inline-block
+        padding 0 15px 0 0
+    &__subscribe input 
+        width 150px
+        height 25px
+        margin 0
+        border 0
+        outline none
+        padding 0px 20px
+        font-size .8em
+    &__subscribe button 
+        width 70px
+        height 25px
+        background-color #ff555a
+        padding 0
+        border 0
+        margin-left -3px
+        font-size .8em
+        color white
+        text-transform uppercase
+@media only screen and (min-width 581px) and (max-width 880px) 
+    .Footer
+        grid-template-columns 200px 1fr
+        grid-template-rows 2
+        grid-gap 10px
+        align-items center
+        background-color #1e1f24
+        color #808081
+        height 200px
+        &__menu
+            height 100%
+            display grid
+            grid-template-columns repeat(3, auto)
+            grid-template-rows repeat(3, auto)
+            grid-gap 8px
+            align-items center
+            grid-auto-flow column
+        &__container
+            grid-column 1 / span 2
+            display flex
+            flex-direction row-reverse
+            align-items center
+            justify-content flex-end
+        &__subscribe 
+            display inline-block
+            padding 0 0 0 25px
+        &__socialContainer
+            width 250px
+            padding 0 0 0 30px
+            display flex
+            flex-direction row
+            justify-content space-around
+            align-items center
+            font-size 1em
+
+@media only screen  and (max-width 580px) 
+    .Footer
+        grid-template-columns 70px 1fr
+        grid-template-areas "info"\
+                            "container"\
+                            "menu"
+        align-items center
+        height 430px
+        &__info
+            grid-area info
+            grid-column 1 / span 2
+        &__menu
+            grid-area menu
+            grid-column 1 / span 2
+            height 100%
+            display grid
+            grid-template-columns repeat(2, auto)
+            grid-template-rows repeat(4, auto)
+            align-items center
+            grid-gap 20px
+            grid-auto-flow column
+        &__container
+            grid-area container
+            grid-column 1 / span 2
+            display flex
+            flex-direction column-reverse
+            align-items flex-start
+        &__subscribe 
+            display inline-block
+            padding 0 0 0 25px
+        &__socialContainer
+            width 250px
+            padding 20px 0 0 25px
+            display flex
+            flex-direction row
+            justify-content space-around
+            align-items center
+            font-size 1em
+        
+    
