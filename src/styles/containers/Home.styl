@@ -1,20 +1,21 @@
 .home
   display: flex
   justify-content: center
-  width: cover
+  // width: cover
   margin: 30px 0 80px 0px
   padding-left: 16px
   padding-right: 20px
   background-color: bgColor--primary
+  @media screen and (min-width: mediaQuery__breakP--desktop)
+    padding-left: 36px
+    padding-right: 40px
   &-container
     height: 76vh
-    min-width: 339px
-    max-width: 456px
     overflow-y: auto
     scroll-behavior: smooth
     display: grid
     grid-template-rows: auto auto auto
-    grid-template-columns: 1fr
+    grid-template-columns: repeat(1, 1fr)
     grid-column-gap: 12px
     background-color: rgba(colorGray--primary, 40%)
     &::-webkit-scrollbar
@@ -23,5 +24,15 @@
       display: flex
       flex-direction: column
       justify-content: flex-start
+      min-width: 339px
+      max-width: 436px
+      @media screen and (min-width: mediaQuery__breakP--desktop)
+        min-width: 360px
+        max-width: 436px
     & .card
       margin-bottom: 50px
+    @media screen and (min-width: mediaQuery__breakP--tablet)
+      grid-template-columns: repeat(2, 1fr)
+    @media screen and (min-width: mediaQuery__breakP--desktop)
+      grid-template-columns: repeat(3, 1fr)
+      grid-column-gap: 28px
