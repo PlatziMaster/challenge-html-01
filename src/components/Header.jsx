@@ -13,21 +13,19 @@ const Header = () => {
 
   return (
     <header className='header'>
-      <div className='header__container-icons'>
-        <div className='header__logo'>
-          <Link to='/'>
-            <Logo />
-          </Link>
-        </div>
-
-        <button
-          type='button'
-          className='header__menu-icon'
-          onClick={doVisibleNav}
-        >
-          <MenuIcon />
-        </button>
+      <div className='header__logo'>
+        <Link to='/'>
+          <Logo />
+        </Link>
       </div>
+
+      <button
+        type='button'
+        className='header__menu-icon'
+        onClick={doVisibleNav}
+      >
+        <MenuIcon />
+      </button>
 
       <button
         type='button'
