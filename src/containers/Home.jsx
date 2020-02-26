@@ -1,8 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import CardSummary from '../components/CardSummary';
 import Data from '../__mocks__/initialData';
 
+const $bodyTag = document.getElementsByTagName('body')[0];
+const BreakPointDesktop = 1439;
+
 const Home = () => {
+  const [clientWidth, setClientWidth] = useState($bodyTag.clientWidth);
+  window.addEventListener('resize', () => setClientWidth($bodyTag.clientWidth));
+
   const DataColFull = Data.map((card, index) => {
     const i = index + 1;
     return (
@@ -16,75 +22,31 @@ const Home = () => {
     );
   });
 
-  const lengthDataColFull = DataColFull.length;
-
-  const indexArrayToPrintCard = (start, step, limit) => {
+  const lengthData = DataColFull.length;
+  const indexesToPrintCard = (start, step, limit) => {
     const amountItems = Math.ceil(limit / step);
     const baseArray = Array(amountItems).fill(0);
     return baseArray.map((v, i) => i * step + start);
   };
 
-  const indexArrayToPrintCardCol1to2 = indexArrayToPrintCard(
-    0,
-    2,
-    lengthDataColFull
-  );
-  const indexArrayToPrintCardCol2to2 = indexArrayToPrintCard(
-    1,
-    2,
-    lengthDataColFull
-  );
-  const indexArrayToPrintCardCol1to3 = indexArrayToPrintCard(
-    0,
-    3,
-    lengthDataColFull
-  );
-  const indexArrayToPrintCardCol2to3 = indexArrayToPrintCard(
-    1,
-    3,
-    lengthDataColFull
-  );
-  const indexArrayToPrintCardCol3to3 = indexArrayToPrintCard(
-    2,
-    3,
-    lengthDataColFull
+  const homeContainerCol = (start, step) => (
+    <div className='home-container__col' key={start + 1}>
+      {DataColFull.filter((card, index) => {
+        return indexesToPrintCard(start, step, lengthData).includes(index);
+      })}
+    </div>
   );
 
   return (
     <main className='home'>
       <div className='home-container'>
-        {document.getElementsByTagName('body')[0].clientWidth < 1439 ? (
-          <>
-            <div className='home-container__col'>
-              {DataColFull.filter((card, index) => {
-                return indexArrayToPrintCardCol1to2.includes(index);
-              })}
-            </div>
-            <div className='home-container__col'>
-              {DataColFull.filter((card, index) => {
-                return indexArrayToPrintCardCol2to2.includes(index);
-              })}
-            </div>
-          </>
-        ) : (
-          <>
-            <div className='home-container__col'>
-              {DataColFull.filter((card, index) => {
-                return indexArrayToPrintCardCol1to3.includes(index);
-              })}
-            </div>
-            <div className='home-container__col'>
-              {DataColFull.filter((card, index) => {
-                return indexArrayToPrintCardCol2to3.includes(index);
-              })}
-            </div>
-            <div className='home-container__col'>
-              {DataColFull.filter((card, index) => {
-                return indexArrayToPrintCardCol3to3.includes(index);
-              })}
-            </div>
-          </>
-        )}
+        {clientWidth <= BreakPointDesktop
+          ? Array(2)
+              .fill(1)
+              .map((item, col) => homeContainerCol(col, 2))
+          : Array(3)
+              .fill(1)
+              .map((item, col) => homeContainerCol(col, 3))}
       </div>
     </main>
   );

@@ -2,6 +2,8 @@
 
 Debes desarrollar todo el home de un blog usando html y css, se recomienda usar la técnica de css grid.
 
+**Challenge solved by: Jorge Humberto Nemogá Pinzón [@jhnemogap]**
+
 ## Tareas
 
 - El sitio debe ser _responsive design_ con base a las imágenes que están abajo.
