@@ -1,0 +1,16 @@
+width-menuIcon__bars = fontSize--base * 1.5
+height-menuIcon__bar = fontSize--base / 9
+height-menuIcon__bars = height-menuIcon__bar * 8
+margin-menuIcon-bar--middle = (height-menuIcon__bars - 3 * height-menuIcon__bar) / 2
+
+.menu-icon
+  display: inline-block
+  width: width-menuIcon__bars
+  height: height-menuIcon__bars
+  &__bar
+    width: width-menuIcon__bars
+    height: height-menuIcon__bar
+    background-color: colorDark--primary
+    &--middle
+      margin: margin-menuIcon-bar--middle 0em
+      @extend .menu-icon__bar
