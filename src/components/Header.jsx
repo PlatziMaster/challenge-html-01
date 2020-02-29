@@ -6,7 +6,7 @@ const Header = () => {
     <div className="header">
       <div className="header__logo">
         <h1>
-          Decks
+          Deck
           <span>.</span>
         </h1>
       </div>
@@ -20,7 +20,7 @@ const Header = () => {
         <a href="/">ENTERTAINMENT</a>
       </div>
       <button className="header__button" type="button">
-        <i className="material-icons">menu</i>
+        <i className="fas fa-bars" />
       </button>
     </div>
   );

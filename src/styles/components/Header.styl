@@ -17,34 +17,37 @@ for_breakpoint(breakpoints)
     display: flex
     justify-content: space-between
     align-items: center
-    background-color: pink
+    border-bottom: 1px solid gray
+    // background-color: pink
 
     &__logo
         font-family Lato
         font-size: 12px
-        padding: 1em 2em
-        background-color: gray
+        padding: 0 2em
+        // background-color: gray
         & h1 span
-            color:red 
+            color:#F25260 
 
     &__navigation
-        background-color: blue
+        // background-color: blue
         font-family: Oswald
-        font-size: 18px
+        font-size: 16px
         display: flex
-        letter-spacing: 1px
-        justify-content: flex-start
+        letter-spacing: 4px
+        justify-content: center
         
         & a
-            color: white
+            color: gray
+            font-weight: 600
             padding: 1em
             text-decoration: none
 
     &__button
-        background-color: green
+        // background-color: green
         display: flex
-        padding: 1em 2em
+        padding: 0 2em
         align-items: center
+        cursor: pointer
 
 +for_breakpoint(mobile tablet)
     .header__navigation
@@ -64,6 +67,10 @@ button
     -webkit-font-smoothing: inherit
     -moz-osx-font-smoothing: inherit
     -webkit-appearance: none
+
+.footer__subscribe
+  color: gray
+  font-family Lato
 
 
 
