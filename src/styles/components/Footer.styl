@@ -1,0 +1,133 @@
+media_queries = {
+  mobile  : "only screen and (max-width: 720px)",
+  tablet  : "only screen and (min-width: 721px) and (max-width: 1024px)",
+  desktop : "only screen and (min-width: 1025px)"
+}
+
+for_breakpoint(breakpoints)
+  conditions = ()
+  for breakpoint in breakpoints
+    push(conditions, media_queries[breakpoint])
+  conditions = join(", ", conditions)
+  @media conditions
+    {block}
+
+.footer
+    // padding-left: 1em
+    display: grid
+    grid-template-columns: 200px 6fr 2fr
+    // justify-content: space-between
+    align-items: center
+    position: absolute
+    bottom: 0
+    width: 99vw
+    background-color: #212226
+    color: gray
+
+    &__logo
+        font-family Lato
+        font-size: 12px
+        padding: 0 2em
+        line-height: 0.4
+        // background-color: gray
+        & h2 span
+            color:#F25260 
+        & h2
+          font-size: 24px
+
+    &__navigation
+        // background-color: magenta 
+        padding: 1em
+        font-family: Oswald
+        font-size: 14px
+        display: grid
+        grid-template-columns: repeat(4, 1fr);
+        justify-content: space-evenly
+        letter-spacing: 2px
+        
+        & a
+            color: white
+            font-weight: 600
+            padding: 0.5em
+            text-decoration: none
+            // background-color yellow
+
+    &__subscribe
+        // background-color: green
+        display: grid
+        // grid-template-columns: 2fr 1fr
+        // vertical-align: baseline
+        padding: 2em 4em
+        // align-items: center
+        cursor: pointer
+
+// reset css button
+button, input 
+    border: none;
+    margin: 0
+    padding: 0
+    width: auto
+    overflow: visible
+    background: transparent
+    color: inherit 
+    font: inherit
+    line-height: normal
+    -webkit-font-smoothing: inherit
+    -moz-osx-font-smoothing: inherit
+    -webkit-appearance: none
+.maillist 
+  display: grid
+  justify-content: center
+  grid-template-columns: 2fr 1fr
+  & input
+    background: white
+
+  & button
+    color: white
+    background-color: #F25260
+    padding: .5em 2em
+    font-family Oswald
+    font-size: 14px
+    letter-spacing: 1px
+
+::placeholder
+  padding-left: 2em !important
+
+.footer__subscribe
+  font-family: Lato
+  display: grid
+  grid-template-columns: 1fr
+  &__social
+    display: grid
+    grid-template-columns: 4fr repeat(4, 1fr)
+    align-items: center
+    justify-items: right 
+    // background-color red
+
+.icon
+  // background-color: orange
+
++for_breakpoint(tablet)
+  .footer
+    grid-template-columns: 1fr auto
+    &__navigation
+      padding: 3em
+      grid-template-columns: repeat(3, 1fr)
+    &__subscribe
+      grid-template-columns: repeat(2, 1fr)
+      grid-column: 1/span 2
+      &__social
+        justify-items: left
+
++for_breakpoint(mobile)
+    .footer
+      grid-template-columns: 1fr
+      &__navigation
+        grid-template-columns: 1fr 1fr
+      &__subscribe
+        padding-top: 0
+        padding-left: 1em
+        &__social
+          justify-items: left
+
+
