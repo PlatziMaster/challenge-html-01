@@ -8,6 +8,7 @@ const Posts = () => {
     <div className="Posts__container">
       {articlesMock.map(item => (
         <Article
+          key={item.id}
           title={item.title}
           size={item.size}
           description={item.description}
