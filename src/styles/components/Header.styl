@@ -1,17 +1,3 @@
-media_queries = {
-  mobile  : "only screen and (max-width: 720px)",
-  tablet  : "only screen and (min-width: 721px) and (max-width: 1024px)",
-  desktop : "only screen and (min-width: 1025px)"
-}
-
-for_breakpoint(breakpoints)
-  conditions = ()
-  for breakpoint in breakpoints
-    push(conditions, media_queries[breakpoint])
-  conditions = join(", ", conditions)
-  @media conditions
-    {block}
-
 .header
     // padding-left: 1em
     display: flex
@@ -49,9 +35,10 @@ for_breakpoint(breakpoints)
         align-items: center
         cursor: pointer
 
-+for_breakpoint(mobile tablet)
+@media (max-width: 768px)
     .header__navigation
         display: none
+
 
 // reset css button
 button

@@ -1,25 +1,11 @@
-media_queries = {
-  mobile  : "only screen and (max-width: 720px)",
-  tablet  : "only screen and (min-width: 721px) and (max-width: 1024px)",
-  desktop : "only screen and (min-width: 1025px)"
-}
-
-for_breakpoint(breakpoints)
-  conditions = ()
-  for breakpoint in breakpoints
-    push(conditions, media_queries[breakpoint])
-  conditions = join(", ", conditions)
-  @media conditions
-    {block}
-
 .footer
     // padding-left: 1em
     display: grid
     grid-template-columns: 200px 6fr 2fr
     // justify-content: space-between
     align-items: center
-    position: absolute
-    bottom: 0
+    /* position: absolute
+    bottom: 0 */
     width: 99vw
     background-color: #212226
     color: gray
@@ -107,24 +93,26 @@ button, input
 .icon
   // background-color: orange
 
-+for_breakpoint(tablet)
+@media (max-width: 728px)
   .footer
     grid-template-columns: 1fr auto
     &__navigation
       padding: 3em
       grid-template-columns: repeat(3, 1fr)
     &__subscribe
-      grid-template-columns: repeat(2, 1fr)
+      padding: 0 3em 3em 3em
+      grid-template-columns: 1fr
       grid-column: 1/span 2
       &__social
         justify-items: left
 
-+for_breakpoint(mobile)
+@media (max-width :500px)
     .footer
       grid-template-columns: 1fr
       &__navigation
         grid-template-columns: 1fr 1fr
       &__subscribe
+        
         padding-top: 0
         padding-left: 1em
         &__social
