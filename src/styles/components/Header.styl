@@ -1,0 +1,63 @@
+.header
+    // padding-left: 1em
+    display: flex
+    justify-content: space-between
+    align-items: center
+    border-bottom: 1px solid gray
+    // background-color: pink
+
+    &__logo
+        font-family Lato
+        font-size: 12px
+        padding: 0 2em
+        // background-color: gray
+        & h1 span
+            color:#F25260 
+
+    &__navigation
+        // background-color: blue
+        font-family: Oswald
+        font-size: 16px
+        display: flex
+        letter-spacing: 4px
+        justify-content: center
+        
+        & a
+            color: gray
+            font-weight: 600
+            padding: 1em
+            text-decoration: none
+
+    &__button
+        // background-color: green
+        display: flex
+        padding: 0 2em
+        align-items: center
+        cursor: pointer
+
+@media (max-width: 768px)
+    .header__navigation
+        display: none
+
+
+// reset css button
+button
+    border: none;
+    margin: 0
+    padding: 0
+    width: auto
+    overflow: visible
+    background: transparent
+    color: inherit
+    font: inherit
+    line-height: normal
+    -webkit-font-smoothing: inherit
+    -moz-osx-font-smoothing: inherit
+    -webkit-appearance: none
+
+.footer__subscribe
+  color: gray
+  font-family Lato
+
+
+
