@@ -1,0 +1,22 @@
+.Posts__container
+    width 90%
+    margin: 50px auto;
+    display: grid
+    grid-template-columns: repeat(3, 1fr)
+    grid-gap: 20px 30px
+    justify-content: center
+    grid-auto-rows: auto
+    
+    .small
+      grid-row-end span 2
+
+    .large 
+      grid-row-end span 3
+
+@media (max-width : 1024px)
+    .Posts__container
+        grid-template-columns: repeat(2, 1fr)
+
+@media(max-width: 650px)
+    .Posts__container
+        grid-template-columns: 1fr
