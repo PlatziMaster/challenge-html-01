@@ -1,0 +1,64 @@
+@font-face {
+  font-family: 'Oswald';
+  src: url(/resources/fonts/Oswald/Oswald-Medium.ttf);
+}
+
+header {
+  width: 100%;
+  max-height: 200px;
+  display: flex;
+  border-bottom: 1px solid #EAEAEB;
+}
+
+header a {
+  padding: 20px;
+}
+
+nav {
+  width: 100%;
+  padding: 0px 20px;
+  text-align: right;
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+
+menu {
+  display: flex;
+  justify-content: flex-start;
+  visibility: collapse;
+  margin-right: 40%;
+}
+
+menu li {
+  padding: 20px;
+}
+
+menu li a {
+  font-family: 'Oswald';
+  color: #1D1F24;
+}
+
+label {
+  margin: 0 35px 0 0;
+  font-size: 26px;
+  line-height: 70px;
+  width: 26px;
+  display: flex;
+  align-items: center;
+  float: right;
+  position: absolute;
+  z-index: 2;
+  background-color: white;
+  cursor: pointer;
+}
+
+#toggle {
+  position: absolute;
+  z-index: 1;
+  margin: 0 42px 0 5px;
+}
+
+#toggle:checked + menu {
+  visibility: visible;
+}
