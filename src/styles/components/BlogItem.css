@@ -1,0 +1,52 @@
+
+@font-face {
+  font-family: 'Lato-Semibold';
+  src: url(/resources/fonts/Lato/Lato-Semibold.ttf);
+
+}
+
+@font-face {
+  font-family: 'Lato-Regular';
+  src: url(/resources/fonts/Lato/Lato-Regular.ttf);
+
+}
+
+
+.item-container {
+  padding: 30px;
+  width: 430px;
+}
+
+.item-img {
+  display: flex;
+  align-items: flex-end;
+}
+
+.item-img label {
+  display: flex;
+  justify-content: center;
+  font-family: 'Oswald';
+  letter-spacing: 1px;
+  color: white;
+  font-size: 14px;
+  width: 140px;
+  height: 40px;
+  background-color: #FF565C;
+  margin: 0px 0px 40px -4px;
+}
+
+.item-img__img {
+  width: 100%;
+}
+
+.item-description h1 {
+  font-family: 'Lato-Semibold';
+  font-size: 26px;
+  font-weight: 500;
+  padding: 15px 0 10px 0;
+}
+
+.item-description p {
+  font-family: 'Lato-Regular';
+  font-size: 18px;
+}

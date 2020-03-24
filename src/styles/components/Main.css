@@ -1,0 +1,8 @@
+
+.main-container {
+  background-color: #F9FAFC;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  max-height: 1800px;
+}
+
