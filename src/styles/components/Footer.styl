@@ -1,8 +1,8 @@
 footer
-  padding: 0 3%
+  padding: 3% 3%
   display: grid
   grid-template-areas: "marca" "SocialMedia" "form" "menu"
-  grid-template-rows: 100px minmax(16px, 40px) 60px auto
+  grid-template-rows: 150px 40px 60px auto
   grid-row-gap: 10px
   background-color dark-color
   color transparentify(shadow-color, 0.8)
@@ -11,13 +11,15 @@ footer
     display: grid
     grid-template-areas: "title" "register"
     &__title
-      grid-area: title
+      font-size: 50px
       padding: 1% 0
+      grid-area: title
       color transparentify(shadow-color, 0.5)
       & > span 
         color primary-color
     &__register
       grid-area: register
+     
       & > span 
         display: block
   & > .SocialMedia
@@ -27,6 +29,7 @@ footer
     align-content: center
     &__text
       grid-area text
+      font-size: 20px
     &__ig
       grid-area: ig
       width: 100%
@@ -62,6 +65,7 @@ footer
     -moz-column-gap: 3rem; /* Firefox */
     column-gap: 3rem;
     padding: 0
+    margin: 0
     & > li
       list-style:none
       padding: 20px 0
