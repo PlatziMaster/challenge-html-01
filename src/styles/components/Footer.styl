@@ -1,0 +1,71 @@
+footer
+  padding: 0 3%
+  display: grid
+  grid-template-areas: "marca" "SocialMedia" "form" "menu"
+  grid-template-rows: 100px minmax(16px, 40px) 60px auto
+  grid-row-gap: 10px
+  background-color dark-color
+  color transparentify(shadow-color, 0.8)
+  .marca
+    grid-area: marca
+    display: grid
+    grid-template-areas: "title" "register"
+    &__title
+      grid-area: title
+      padding: 1% 0
+      color transparentify(shadow-color, 0.5)
+      & > span 
+        color primary-color
+    &__register
+      grid-area: register
+      & > span 
+        display: block
+  & > .SocialMedia
+    display: grid
+    grid-template-areas: "text ig pt tw fb"
+    grid-template-columns: 100px repeat(4, 40px)
+    align-content: center
+    &__text
+      grid-area text
+    &__ig
+      grid-area: ig
+      width: 100%
+      height 100% 
+    &__pt
+      grid-area: pt
+      width: 100%
+      height 100%
+    &__tw
+      grid-area: tw
+      width: 100%
+      height 100%
+    &__fb
+      grid-area: fb
+      width: 100%
+      height 100%
+  & > form
+    grid-area: form
+    display: grid
+    grid-template-areas: "input btn"
+    grid-template-columns: 55% 45%
+    & > input 
+      grid-area: input 
+    & > button 
+      grid-area: btn
+  & > ul
+    grid-area: menu
+    font-size: 30px
+    -webkit-column-count: 2; /* Chrome, Safari, Opera */
+    -moz-column-count: 2; /* Firefox */
+    column-count: 2;
+    -webkit-column-gap: 3rem; /* Chrome, Safari, Opera */
+    -moz-column-gap: 3rem; /* Firefox */
+    column-gap: 3rem;
+    padding: 0
+    & > li
+      list-style:none
+      padding: 20px 0
+      &:hover
+        color: primary-color
+        text-decoration: underline light-color
+    
