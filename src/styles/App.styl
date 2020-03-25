@@ -1,0 +1,10 @@
+@import "variable"
+@import "./components/Header"
+
+body
+  margin: 0
+#app
+  min-height: 100vh
+  display: grid
+  grid-template-areas: "header" "main" "footer"
+  grid-template-rows: minmax(70px,5%) auto minmax(441px, 29%)
