@@ -1,11 +1,10 @@
 footer
-  padding: 3% 3%
   display: grid
   grid-template-areas: "marca" "SocialMedia" "form" "menu"
   grid-template-rows: 150px 40px 60px auto
-  grid-row-gap: 10px
   background-color dark-color
   color transparentify(shadow-color, 0.8)
+  justify-content: center
   .marca
     grid-area: marca
     display: grid
@@ -72,4 +71,35 @@ footer
       &:hover
         color: primary-color
         text-decoration: underline light-color
-    
+
+@media (min-width: 960px)
+  footer
+    grid-template-areas: "marca menu SocialMedia" "marca menu form"
+    grid-template-columns: 20% 50% 25%
+    grid-template-rows: repeat(2, 1fr)
+    max-width 100vw
+    & > .marca
+      align-content: center
+    & > ul
+      font-size: 14px
+      width: -webkit-fill-available;
+      -webkit-column-count: 4; /* Chrome, Safari, Opera */
+      -moz-column-count: 4; /* Firefox */
+      column-count: 4;
+      align-self: center;
+      justify-self: center;
+      & > li
+        padding: 10px 0
+    & > form
+      grid-template-columns: 60% 40%
+      justify-self: right 
+      width 100%
+      & > input 
+        grid-area: input 
+      & > button 
+        grid-area: btn
+    & > .SocialMedia
+      width 100%
+      grid-template-areas: "text ig pt tw fb"
+      justify-items: right 
+      grid-template-columns: auto repeat(4, 40px)

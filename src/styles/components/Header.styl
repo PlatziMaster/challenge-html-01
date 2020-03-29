@@ -5,10 +5,11 @@ header
   grid-template-areas: "name hamburger"
   align-items: center
   justify-content: space-between
-  padding 0 5%
+  padding 0
 
 & > h1
   grid-area: name
+  justify-self: center
   & span
       color: primary-color
 
@@ -55,16 +56,17 @@ header
 
 @media (min-width: 960px)
   header
-    padding 0 2%
+    padding: 0
     grid-template-areas: "name nav hamburger" 
     grid-template-columns: 10% 80% 10%
+    width 100vw
     & > .HamburgerMenu
-      justify-self: right
+      justify-self: center
       width 30px
     & > nav
       grid-area: nav
-      width 100%
       padding: 0% 1%
+      width: fit-content;
       height -webkit-fill-available
       position relative
       grid-template-areas: "menu"

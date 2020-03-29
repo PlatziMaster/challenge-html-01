@@ -7,10 +7,11 @@ body
   margin: 0
 #app
   min-height: 100vh
+  max-width: 100vw
   display: grid
   grid-template-areas: "header" "main" "footer"
   grid-template-rows: minmax(70px,5%) auto minmax(441px, 29%)
 
 @media (min-width: 960px)
   #app
-    grid-template-rows: minmax(90px,5%) auto minmax(441px, 29%)
+    grid-template-rows: minmax(90px,5%) auto minmax(100px, 20%)
