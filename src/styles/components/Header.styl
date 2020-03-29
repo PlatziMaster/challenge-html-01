@@ -53,3 +53,30 @@ header
         color: primary-color
         text-decoration: underline light-color
 
+@media (min-width: 960px)
+  header
+    padding 0 2%
+    grid-template-areas: "name nav hamburger" 
+    grid-template-columns: 10% 80% 10%
+    & > .HamburgerMenu
+      justify-self: right 
+    & > nav
+      grid-area: nav
+      width 100%
+      padding: 0% 1%
+      height -webkit-fill-available
+      position relative
+      grid-template-areas: "menu"
+      grid-template-columns: 100%
+      grid-template-rows: minmax(90px, 5%) auto
+      justify-content: center;
+      align-items: center
+      background-color: light-color;
+      color: dark-color;
+      & > ul
+        flex-direction: row
+        justify-content: space-around
+        padding: 0%
+        font-size: 25px
+        & > li
+          padding: 0% 5px;

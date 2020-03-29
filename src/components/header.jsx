@@ -3,8 +3,13 @@ import iconHamburger from '../assets/icons/hamburger.svg';
 import iconClose from '../assets/icons/close.svg';
 
 const Header = () => {
-  const [menu, setMenu] = useState(false);
+  const [menu, setMenu] = useState(window.screen.width > 959);
+  const viewScreen = () =>
+    window.addEventListener('resize', () =>
+      window.screen.width > 959 ? setMenu(true) : setMenu(false)
+    );
 
+  viewScreen();
   const viewMenu = () => (menu ? setMenu(false) : setMenu(true));
   return (
     <header>
