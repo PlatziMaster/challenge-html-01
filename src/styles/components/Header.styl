@@ -11,7 +11,8 @@ header
 
 & > h1
   grid-area: name
-  justify-self: center
+  padding-left: 5%
+  justify-self: left
   & span
       color: primary-color
 
@@ -68,6 +69,8 @@ header
     grid-template-areas: "name nav hamburger" 
     grid-template-columns: 10% 80% 10%
     justify-items: center;
+    & > h1
+      padding-left: 15%
     & > .HamburgerMenu
       justify-self: center
       width 30px
