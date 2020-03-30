@@ -9,10 +9,10 @@ const Home = () => {
   };
 
   return (
-    <>
+    <section className="Home">
       {InicialState.Article.map(art => (
         <Card
-          type="s"
+          type="Card"
           key={art.id}
           img={art.img}
           title={art.title}
@@ -20,7 +20,7 @@ const Home = () => {
           tag={filterTag(art.tag)}
         />
       ))}
-    </>
+    </section>
   );
 };
 

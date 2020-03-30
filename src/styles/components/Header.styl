@@ -3,9 +3,11 @@ header
   position relative
   display: grid
   grid-template-areas: "name hamburger"
+  grid-template-columns: 100%
   align-items: center
   justify-content: space-between
   padding 0
+  background-color: ligth-color
 
 & > h1
   grid-area: name
@@ -59,7 +61,7 @@ header
     padding: 0
     grid-template-areas: "name nav hamburger" 
     grid-template-columns: 10% 80% 10%
-    width 100vw
+    justify-items: center;
     & > .HamburgerMenu
       justify-self: center
       width 30px

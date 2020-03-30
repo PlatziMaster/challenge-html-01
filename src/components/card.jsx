@@ -3,10 +3,14 @@ import React from 'react';
 const card = ({ type, size, img, tag, title, description }) => {
   return (
     <section className={`${type} ${type}-${size}`}>
-      <img src={img} alt={tag} />
-      <h4>{tag}</h4>
-      <h3>{title}</h3>
-      <p>{description}</p>
+      <div className={`${type}__img`}>
+        <img src={img} alt={tag} />
+        <h6 className={`${type}__img-tag`}>
+          {String(tag).toLocaleUpperCase()}
+        </h6>
+      </div>
+      <h2 className={`${type}__title`}>{title}</h2>
+      <p className={`${type}__description`}>{description}</p>
     </section>
   );
 };
