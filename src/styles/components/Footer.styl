@@ -74,6 +74,10 @@ footer
       &:hover
         color: primary-color
         text-decoration: underline light-color
+@media (min-width: 768px)
+  footer
+    grid-template-areas: "marca menu menu" "form form SocialMedia"
+
 
 @media (min-width: 960px)
   footer
@@ -106,3 +110,17 @@ footer
       grid-template-areas: "text ig pt tw fb"
       justify-items: right 
       grid-template-columns: auto repeat(4, 40px)
+
+@media (min-width: 1280px)
+  footer
+   & > ul
+    -webkit-column-gap: 15%; /* Chrome, Safari, Opera */
+    -moz-column-gap: 15%; /* Firefox */
+    column-gap: 15%;
+
+@media (min-width: 1600px)
+  footer
+   & > ul
+    -webkit-column-gap: 10rem; /* Chrome, Safari, Opera */
+    -moz-column-gap: 10rem; /* Firefox */
+    column-gap: 10rem;
