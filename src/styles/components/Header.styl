@@ -3,9 +3,9 @@ header
   position relative
   display: grid
   grid-template-areas: "name hamburger"
-  grid-template-columns: 100%
+  grid-template-columns: 80% 20%
   align-items: center
-  justify-content: space-between
+  justify-items: center;
   padding 0
   background-color: ligth-color
 
@@ -17,23 +17,25 @@ header
 
 & > .HamburgerMenu
     grid-area: hamburger
-    width 50px
+    width 30px
   .HamburgerMenu > img
   color: primary-color
   width 100%
 
 & > nav
-  position: absolute
+  position: fixed
   top 0%
   right 0%
   bottom 0%
   width 80vw
   height 100vh
+  font-size: 20px
   display: grid
   grid-template-areas: "close" "menu"
   grid-template-rows: minmax(70px, 5%) auto
   background-color: dark-color
   color: light-color
+  z-index: 1
   & > .HamburgerMenu 
     grid-area: close
     padding-right: 5%
@@ -48,7 +50,6 @@ header
     flex-direction: column
     justify-content: baseline
     align-items: center
-    font-size: 30px
     & > li
       list-style:none
       padding: 10%
@@ -56,6 +57,11 @@ header
         color: primary-color
         text-decoration: underline light-color
 
+@media (min-width: 769px)
+  header
+    grid-template-columns: 90% 10%
+  & > .HamburgerMenu
+    width 50px
 @media (min-width: 960px)
   header
     padding: 0
@@ -68,6 +74,7 @@ header
     & > nav
       grid-area: nav
       padding: 0% 1%
+      font-size: 14px
       width: fit-content;
       height -webkit-fill-available
       position relative
@@ -83,6 +90,5 @@ header
         justify-content: space-around
         padding: 0%
         margin: 0%
-        font-size: 14px
         & > li
           padding: 0% 5px;

@@ -2,10 +2,11 @@ footer
   display: grid
   grid-template-areas: "marca" "SocialMedia" "form" "menu"
   grid-template-rows: 150px 40px 60px auto
-  grid-template-columns: 100%
+  grid-template-columns: 90%
   background-color dark-color
   color transparentify(shadow-color, 0.8)
   justify-content: center
+  align-items: center
   .marca
     grid-area: marca
     display: grid
@@ -57,8 +58,11 @@ footer
     & > button 
       grid-area: btn
   & > ul
+    align-self: center
+    justify-items: center
     grid-area: menu
-    font-size: 30px
+    font-size: 14px
+    width: min-content;
     -webkit-column-count: 2; /* Chrome, Safari, Opera */
     -moz-column-count: 2; /* Firefox */
     column-count: 2;
@@ -77,9 +81,23 @@ footer
 @media (min-width: 768px)
   footer
     grid-template-areas: "marca menu menu" "form form SocialMedia"
+    grid-template-rows: repeat(2, 1fr)
+    grid-template-columns: 30% 30% 40%
+    justify-items: center
+    grid-row-gap: 10%
+    & > .marca, & > ul
+      align-self: end
+    & > form, & > .SocialMedia
+      align-self: start
+    & > ul
+      justify-self: center;
+      -webkit-column-count: 3; /* Chrome, Safari, Opera */
+      -moz-column-count: 3; /* Firefox */
+      column-count: 3;
+    & > form
+      width 80%
 
-
-@media (min-width: 960px)
+@media (min-width: 980px)
   footer
     grid-template-areas: "marca menu SocialMedia" "marca menu form"
     grid-template-columns: 20% 50% 25%
@@ -88,7 +106,6 @@ footer
     & > .marca
       align-content: center
     & > ul
-      font-size: 14px
       width: -webkit-fill-available;
       -webkit-column-count: 4; /* Chrome, Safari, Opera */
       -moz-column-count: 4; /* Firefox */
@@ -108,7 +125,8 @@ footer
     & > .SocialMedia
       width 100%
       grid-template-areas: "text ig pt tw fb"
-      justify-items: right 
+      justify-items: right
+      align-self: end
       grid-template-columns: auto repeat(4, 40px)
 
 @media (min-width: 1280px)
