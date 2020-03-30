@@ -1,0 +1,34 @@
+.Header
+  width 100%
+  height auto
+  padding 2% 0
+  background-color #fff
+  display grid
+  grid-template-columns 58% 38%
+  justify-content center
+  border-bottom 1px solid gainsboro
+  &__nav
+      display flex
+      align-items center
+      justify-content space-between
+      h1
+        margin 0
+        span
+          color #e81e61
+      a
+        color #c5c5c5
+        font-size 12px
+        font-weight bold
+        text-decoration none
+        text-transform uppercase
+        letter-spacing 2px
+  &__nav--icon
+      align-self center
+      text-align end
+      i
+        font-style normal
+        font-size 20px  
+  @media screen and (max-width: 768px)
+    .Header__nav
+      a
+        display none
