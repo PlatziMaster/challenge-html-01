@@ -1,4 +1,5 @@
 import React from 'react';
+import InitialState from '../inicialState';
 import iconFB from '../assets/icons/facebook.png';
 import iconIG from '../assets/icons/instagram.png';
 import iconPT from '../assets/icons/pinterest.png';
@@ -31,13 +32,9 @@ const Footer = () => {
         </button>
       </form>
       <ul>
-        <li>TECHNOLOGY</li>
-        <li>IDEAS</li>
-        <li>LEADERSHIP</li>
-        <li>ENTERTAINMENT</li>
-        <li>VIDEO</li>
-        <li>NEWS</li>
-        <li>FINANCE</li>
+        {InitialState.tags.map(item => (
+          <li key={item.id}>{item.name.toLocaleUpperCase()}</li>
+        ))}
       </ul>
     </footer>
   );

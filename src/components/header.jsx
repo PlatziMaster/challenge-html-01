@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import InitialState from '../inicialState';
 import iconHamburger from '../assets/icons/hamburger.svg';
 import iconClose from '../assets/icons/close.svg';
 
@@ -38,13 +39,9 @@ const Header = () => {
             <img src={iconClose} alt="menu close" />
           </div>
           <ul>
-            <li>TECHNOLOGY</li>
-            <li>IDEAS</li>
-            <li>LEADERSHIP</li>
-            <li>VIDEO</li>
-            <li>NEWS</li>
-            <li>FINANCE</li>
-            <li>ENTERTAINMENT</li>
+            {InitialState.tags.map(item => (
+              <li key={item.id}>{item.name.toLocaleUpperCase()}</li>
+            ))}
           </ul>
         </nav>
       )}
