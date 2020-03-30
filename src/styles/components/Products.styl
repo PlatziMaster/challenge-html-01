@@ -1,0 +1,19 @@
+.Products
+  background #f7f7f7
+  &__card
+    max-width 96%
+    margin auto
+    padding 2em 0
+    display grid
+    grid-template-columns repeat(3, 32%)
+    grid-template-rows repeat(3, 1fr)
+    grid-gap 1.5em
+
+@media screen and (max-width: 768px)
+  .Products__card
+    grid-template-columns repeat(2, 1fr)
+
+@media screen and (max-width: 600px) 
+  .Products__card
+    grid-template-columns 1fr
+    justify-content center
