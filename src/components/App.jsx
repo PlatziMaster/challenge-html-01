@@ -12,7 +12,7 @@ const App = () => {
       <Section />
       <Footer />
     </div>
-  )
-}
+  );
+};
 
 export default App;
