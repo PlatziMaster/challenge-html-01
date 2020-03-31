@@ -11,12 +11,11 @@
       height 100%
       display: grid
       grid-template-areas: "tag" "title" "description" "action"
-      justify-content: center
       justify-items: center
       background-color: transparentify(dark-color, 0.5)
       color: light-color
       &-tag
-        align-self: end
+        align-self: center
         grid-area: tag
         background-color: primary-color
         width:150px
@@ -27,13 +26,38 @@
       &-title
         grid-area: title
         align-self: end
+        justify-content: center
+        width 80%
       &-description
         grid-area: description
+        width 80%
       &-actions
         grid-area: action
         width 40%
         display: flex
-        justify-content: space-evenly
+        justify-content: center
+        align-items: center
+        &-icon
+          margin: 3%
         &-icon:hover
           color: primary-color
+.Cover-sm > .Cover__content
+  & > .Cover__content-tag
+    margin-top: 2%
+    justify-self: left
+    width:150px
+    height 40px
+  & > .Cover__content-title
+    align-self: center
+  & > .Cover__content-description
+    grid-area: description
+  & > .Cover__content-actions
+    grid-area: action
+    width 40%
+    display: flex
+    justify-content: space-evenly
+    &-icon:hover
+      color: primary-color
 
+.Cover-Carrusel > .Cover__content
+  text-align: center

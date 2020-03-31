@@ -3,6 +3,7 @@
    margin: 3px 0 ;
    width: 90%;
    text-align: start
+   margin-top: 8%
    &__img
        position relative
        & > img
@@ -12,11 +13,28 @@
         width 150px
         height 30px
         position absolute
-        bottom:5%
+        bottom: 8%
         display: flex
         justify-content: center
         align-items: center
         background-color: primary-color
         color: light-color
 
+
+.Infography
+  height 93%
+  padding: 5%
+  font-size: 18px
+  border: 1px solid transparentify(dark-color, 0.2);
+  & > ol
+    list-style none
+    height 90%
+    padding: 2%
+    margin: 0
+    font-size: 18px
+    display: grid
+    grid-template-columns: 30px auto;
+    align-items: center
+    & > span 
+      color: transparentify(dark-color, 0.5)
 

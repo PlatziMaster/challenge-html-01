@@ -11,17 +11,21 @@ const HomeB = () => {
 
   return (
     <section className="HomeB">
-      <Cover
-        img={carrusel.img}
-        tag={filterTag(carrusel.tag)}
-        title={carrusel.title}
-        description={carrusel.description}
-        share={carrusel.share}
-        view={carrusel.view}
-        comment={carrusel.comment}
-      />
+      <div className="HomeB__carrusel">
+        <Cover
+          type="Carrusel"
+          img={carrusel.img}
+          tag={filterTag(carrusel.tag)}
+          title={carrusel.title}
+          description={carrusel.description}
+          share={carrusel.share}
+          view={carrusel.view}
+          comment={carrusel.comment}
+        />
+      </div>
       <div className="HomeB__sm">
         <Cover
+          type="sm"
           img={InicialState.Article[1].img}
           tag={filterTag(InicialState.Article[1].tag)}
           title={InicialState.Article[1].title}
@@ -32,6 +36,7 @@ const HomeB = () => {
       </div>
       <div className="HomeB__sm1">
         <Cover
+          type="sm"
           img={InicialState.Article[2].img}
           tag={filterTag(InicialState.Article[2].tag)}
           title={InicialState.Article[2].title}
@@ -42,6 +47,7 @@ const HomeB = () => {
       </div>
       <div className="HomeB__sm2">
         <Cover
+          type="sm"
           img={InicialState.Article[3].img}
           tag={filterTag(InicialState.Article[3].tag)}
           title={InicialState.Article[3].title}
@@ -52,6 +58,7 @@ const HomeB = () => {
       </div>
       <div className="HomeB__sm3">
         <Cover
+          type="sm"
           img={InicialState.Article[4].img}
           tag={filterTag(InicialState.Article[4].tag)}
           title={InicialState.Article[4].title}
@@ -62,6 +69,7 @@ const HomeB = () => {
       </div>
       <div className="HomeB__md">
         <Cover
+          type="sm"
           img={InicialState.Article[5].img}
           tag={filterTag(InicialState.Article[5].tag)}
           title={InicialState.Article[5].title}
@@ -82,13 +90,21 @@ const HomeB = () => {
         <button type="button">READ MORE</button>
       </div>
       <div className="HomeB__info">
-        <ol start="1">
-          <li>Compare Prices: Find The Best Computer Accessory</li>
-          <li>Why You Should Use External IT Support</li>
-          <li>Why You Should Use In-House IT Support</li>
-          <li>Choosing The Best Audio Player Software</li>
-          <li>Addiction When Gambling Becomes A Problem</li>
-        </ol>
+        <section className="Infography">
+          <h3>FEATURED STORIES</h3>
+          <ol>
+            <span>1.</span>
+            <li>Compare Prices: Find The Best Computer Accessory</li>
+            <span>2.</span>
+            <li>Why You Should Use External IT Support</li>
+            <span>3.</span>
+            <li>Why You Should Use In-House IT Support</li>
+            <span>4.</span>
+            <li>Choosing The Best Audio Player Software</li>
+            <span>5.</span>
+            <li>Addiction When Gambling Becomes A Problem</li>
+          </ol>
+        </section>
       </div>
     </section>
   );

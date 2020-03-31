@@ -2,10 +2,10 @@
   display: grid
   grid-template-areas: "carrusel" "info" "md" "sm" "bgcard" "sm1" "sm2" "sm3"
   grid-template-columns: 100%
-  grid-template-rows: 75vh 50vh 25vh 50vh 25vh 50vh 25vh 25vh 
+  grid-template-rows: 50vh 45vh 35vh 35vh 50vh 35vh 35vh 35vh 
   height 350vh
   grid-gap: 1%
-  & > .Cover
+  &__carrusel
     grid-area: carrusel
     z-index: 1
   &__sm
@@ -39,3 +39,4 @@
     grid-template-areas: "carrusel carrusel carrusel sm" "carrusel carrusel carrusel bgcard" "info md md bgcard" "info sm1 sm2 sm3"
     grid-template-columns: repeat(4, 1fr)
     grid-template-rows: repeat(4, 25vh)
+      
