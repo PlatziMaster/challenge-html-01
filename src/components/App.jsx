@@ -1,6 +1,18 @@
 import React from 'react';
-import '../styles/components/App.styl';
+import '../styles/components/App.css';
 
-const App = () => <h1>Hello React!</h1>;
+import NavBar from './Navbar';
+import Section from './Section';
+import Footer from './Footer';
+
+const App = () => {
+  return (
+    <div>
+      <NavBar />
+      <Section />
+      <Footer />
+    </div>
+  );
+};
 
 export default App;
