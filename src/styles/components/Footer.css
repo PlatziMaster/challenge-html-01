@@ -1,0 +1,116 @@
+.footer {
+  background-color: #1D1F24;
+  height: 60px;
+  display: grid;
+  grid-template-columns: 200px 1fr 300px;
+  grid-gap: 6px;
+  padding: 50px;
+}
+  .footer__copyright-year {
+    font-size: 14px;
+    font-family: 'Lato', sans-serif;
+    color: #ffffff;
+    opacity: 0.7;
+  }
+
+  .footer__menu {
+    color: #ffffff;
+  }
+  .footer__menu ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding-inline-start: 0;
+  }
+  .footer__menu ul li {
+    list-style: none;
+    margin-left: 20px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  .footer__menu ul li a {
+    color: #ffffff;
+  }
+
+  .footer__social {
+    text-align: right;
+    display: grid;
+  }
+  .footer__social-follow {
+    color: #ffffff;
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    opacity: 0.7;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .footer__social-follow a {
+    width: 20px;
+    text-align: center;
+    cursor: pointer;
+  }
+  .footer__social-follow a:hover > svg path {
+    fill: #ffffff;
+  }
+  .footer__social-subscribe {
+    display: flex;
+  }
+  .footer__social-subscribe input {
+    height: 35px;
+    width: 160px;
+    box-sizing: border-box;
+    font-size: 14px;
+    padding: 0 8px;
+  }
+  .footer__social-subscribe-red {
+    background-color: #FF565C;
+    height: 35px;
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    font-family: 'Oswald', sans-serif;
+    color: #ffffff;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+  }
+@media (max-width: 1000px) {
+  .footer {
+    grid-template-columns: 200px 1fr;
+    height: 160px;
+  }
+  .footer__social {
+    grid-template-columns: 300px 300px;
+    grid-template-areas: "subscribe follow";
+  }
+  .footer__social-subscribe {
+    grid-area: subscribe;
+  }
+  .footer__social-follow {
+    grid-area: follow;
+  }
+}
+@media (max-width: 700px) {
+  .footer {
+    display: block;
+    padding: 15px;
+    height: 260px;
+  }
+  .footer__menu ul {
+    grid-template-columns: 1fr 1fr;
+    padding-inline-start: 0;
+  }
+  .footer__menu ul li {
+    margin-left: 0;
+  }
+  .footer__social {
+    display: grid;
+    grid-template-columns: 300px;
+    grid-template-areas: "follow" "subscribe";
+    grid-gap: 8px;
+  }
+}

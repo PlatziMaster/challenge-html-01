@@ -1,5 +1,8 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { render } from 'react-dom';
 import App from './components/App';
 
-ReactDOM.render(<App />, document.getElementById('app'));
+import data from './api.json';
+
+const homeContainer = document.getElementById('app');
+render(<App data={data} />, homeContainer);
