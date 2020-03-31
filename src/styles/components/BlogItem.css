@@ -1,0 +1,72 @@
+
+@font-face {
+  font-family: 'Lato-Semibold';
+  src: url(/resources/fonts/Lato/Lato-Semibold.ttf);
+
+}
+
+@font-face {
+  font-family: 'Lato-Regular';
+  src: url(/resources/fonts/Lato/Lato-Regular.ttf);
+
+}
+
+
+.item-container {
+  padding: 30px;
+  width: 430px;
+  justify-self: center;
+}
+
+.item-img {
+  display: flex;
+  align-items: flex-end;
+  max-width: 430px;
+}
+
+.item-img label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: 2;
+  font-family: 'Oswald';
+  letter-spacing: 1px;
+  color: white;
+  font-size: 14px;
+  width: 140px;
+  height: 40px;
+  background-color: #FF565C;
+  margin: -20px 0px 0px -4px;
+  
+}
+
+.item-img__img {
+  width: 100%;
+}
+
+.item-description h1 {
+  font-family: 'Lato-Semibold';
+  font-size: 26px;
+  font-weight: 500;
+  padding: 15px 0 10px 0;
+}
+
+.item-description p {
+  font-family: 'Lato-Regular';
+  font-size: 18px;
+}
+
+
+@media screen and (max-width: 720px) {
+ .main-container {
+   grid-template-columns: 1fr 1fr;
+ }
+}
+
+
+@media only screen and (max-width: 380px) {
+.main-container {
+  grid-template-columns: 1fr;
+}
+}

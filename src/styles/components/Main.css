@@ -1,0 +1,22 @@
+
+.main-container {
+  width: 100%;
+  max-height: 1800px;
+  background-color: #F9FAFC;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+@media screen and (max-width: 1024px) {
+  .main-container {
+    max-height: 3000px;
+  }
+ }
+ 
+ @media screen and (max-width: 500px) {
+  .main-container {
+    max-height: none;
+  }
+ }
