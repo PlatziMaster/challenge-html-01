@@ -15,16 +15,21 @@
 .item-container {
   padding: 30px;
   width: 430px;
+  justify-self: center;
 }
 
 .item-img {
   display: flex;
   align-items: flex-end;
+  max-width: 430px;
 }
 
 .item-img label {
   display: flex;
   justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: 2;
   font-family: 'Oswald';
   letter-spacing: 1px;
   color: white;
@@ -32,7 +37,8 @@
   width: 140px;
   height: 40px;
   background-color: #FF565C;
-  margin: 0px 0px 40px -4px;
+  margin: -20px 0px 0px -4px;
+  
 }
 
 .item-img__img {
@@ -49,4 +55,18 @@
 .item-description p {
   font-family: 'Lato-Regular';
   font-size: 18px;
+}
+
+
+@media screen and (max-width: 720px) {
+ .main-container {
+   grid-template-columns: 1fr 1fr;
+ }
+}
+
+
+@media only screen and (max-width: 380px) {
+.main-container {
+  grid-template-columns: 1fr;
+}
 }

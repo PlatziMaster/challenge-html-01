@@ -24,10 +24,22 @@ const Footer = () => (
     <div className="footer-social">
       <div className="footer-social__media">
         <p>Follow us:</p>
-        <img src="" alt="" />
-        <img src="" alt="" />
-        <img src="" alt="" />
-        <img src="" alt="" />
+        <img
+          src="https://img.icons8.com/cute-clipart/64/000000/instagram-new.png"
+          alt="instagram"
+        />
+        <img
+          src="https://img.icons8.com/cute-clipart/64/000000/pinterest.png"
+          alt="pinterest"
+        />
+        <img
+          src="https://img.icons8.com/cute-clipart/64/000000/twitter.png"
+          alt="twitter"
+        />
+        <img
+          src="https://img.icons8.com/cute-clipart/64/000000/facebook.png"
+          alt="facebook"
+        />
       </div>
       <div className="footer-social__subscribe">
         <input type="email" placeholder="Your E-mail" />

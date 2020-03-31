@@ -2,14 +2,14 @@ import React from 'react';
 import '../styles/components/Header.css';
 
 const Header = () => (
-  <header>
-    <a href="/">
+  <div className="header">
+    <a className="header-logo" href="/">
       <img src="../../resources/imgs/Logo.png" alt="logo" />
     </a>
-    <nav>
+    <nav className="header-menu">
       <label htmlFor="toggle">&#9776;</label>
       <input type="checkbox" id="toggle" />
-      <menu>
+      <menu className="header-menu__items">
         <li>
           <a href="/">TECHNOLOGY</a>
         </li>
@@ -33,7 +33,7 @@ const Header = () => (
         </li>
       </menu>
     </nav>
-  </header>
+  </div>
 );
 
 export default Header;
