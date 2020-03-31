@@ -1,0 +1,39 @@
+.Cover
+  width 100%
+  height 100%
+  position relative
+  &__img
+    width 100%
+    height 100%
+    position: absolute
+    z-index -1
+  &__content
+      height 100%
+      display: grid
+      grid-template-areas: "tag" "title" "description" "action"
+      justify-content: center
+      justify-items: center
+      background-color: transparentify(dark-color, 0.5)
+      color: light-color
+      &-tag
+        align-self: end
+        grid-area: tag
+        background-color: primary-color
+        width:150px
+        height 40px
+        display: flex
+        justify-content: center
+        align-items: center
+      &-title
+        grid-area: title
+        align-self: end
+      &-description
+        grid-area: description
+      &-actions
+        grid-area: action
+        width 40%
+        display: flex
+        justify-content: space-evenly
+        &-icon:hover
+          color: primary-color
+

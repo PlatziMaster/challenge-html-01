@@ -43,6 +43,9 @@ const inicialState = {
         'There is a lot of exciting stuff going on in the stars above us that makes astronomy so much fun.',
       tag: 1,
       img: imgCam,
+      share: 200,
+      view: 320,
+      comment: 110,
     },
     {
       id: 2,
@@ -52,6 +55,9 @@ const inicialState = {
         'There is a lot of exciting stuff going on in the stars above us that makes astronomy so much fun.',
       tag: 1,
       img: imgDron,
+      share: 200,
+      view: 320,
+      comment: 110,
     },
     {
       id: 3,
@@ -60,6 +66,9 @@ const inicialState = {
         'There is a lot of exciting stuff going on in the stars above us that makes astronomy so much fun.',
       tag: 7,
       img: imgTablet,
+      share: 200,
+      view: 320,
+      comment: 110,
     },
     {
       id: 4,
@@ -68,6 +77,9 @@ const inicialState = {
         'There is a lot of exciting stuff going on in the stars above us that makes astronomy so much fun.',
       tag: 1,
       img: imgMovil,
+      share: 200,
+      view: 320,
+      comment: 110,
     },
     {
       id: 5,
@@ -76,6 +88,9 @@ const inicialState = {
         'There is a lot of exciting stuff going on in the stars above us that makes astronomy so much fun.',
       tag: 6,
       img: imgSmarWach,
+      share: 200,
+      view: 320,
+      comment: 110,
     },
     {
       id: 6,
@@ -84,6 +99,9 @@ const inicialState = {
         'There is a lot of exciting stuff going on in the stars above us that makes astronomy so much fun.',
       tag: 2,
       img: imgCam,
+      share: 200,
+      view: 320,
+      comment: 110,
     },
     {
       id: 7,
@@ -93,6 +111,9 @@ const inicialState = {
         'There is a lot of exciting stuff going on in the stars above us that makes astronomy so much fun.',
       tag: 3,
       img: imgDron,
+      share: 200,
+      view: 320,
+      comment: 110,
     },
     {
       id: 8,
@@ -101,6 +122,9 @@ const inicialState = {
         'There is a lot of exciting stuff going on in the stars above us that makes astronomy so much fun.',
       tag: 4,
       img: imgTablet,
+      share: 200,
+      view: 320,
+      comment: 110,
     },
     {
       id: 9,
@@ -109,6 +133,9 @@ const inicialState = {
         'There is a lot of exciting stuff going on in the stars above us that makes astronomy so much fun.',
       tag: 5,
       img: imgMovil,
+      share: 200,
+      view: 320,
+      comment: 110,
     },
     {
       id: 10,
@@ -117,6 +144,9 @@ const inicialState = {
         'There is a lot of exciting stuff going on in the stars above us that makes astronomy so much fun.',
       tag: 6,
       img: imgSmarWach,
+      share: 200,
+      view: 320,
+      comment: 110,
     },
   ],
 };

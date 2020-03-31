@@ -1,0 +1,41 @@
+.HomeB
+  display: grid
+  grid-template-areas: "carrusel" "info" "md" "sm" "bgcard" "sm1" "sm2" "sm3"
+  grid-template-columns: 100%
+  grid-template-rows: 75vh 50vh 25vh 50vh 25vh 50vh 25vh 25vh 
+  height 350vh
+  grid-gap: 1%
+  & > .Cover
+    grid-area: carrusel
+    z-index: 1
+  &__sm
+    grid-area: sm
+  &__sm1
+    grid-area: sm1
+  &__sm2
+    grid-area: sm2
+  &__sm3
+    grid-area: sm3
+  &__md
+    grid-area: md
+  &__cardBg
+    grid-area: bgcard
+    display: grid
+    grid-template-areas: 60% 20% 10%
+    background-color: primary-color
+    height 100%
+  &__info
+    grid-area: info
+
+@media (min-width: 768px)
+  .HomeB
+    height 190vh
+    grid-template-areas: "carrusel carrusel" "info md" "info sm" "bgcard bgcard" "sm2 sm3" "sm1 sm1"
+    grid-template-columns: repeat(2, 1fr)
+    grid-template-rows: 50vh repeat(5, 25vh)
+@media (min-width: 980px)
+  .HomeB
+    height auto
+    grid-template-areas: "carrusel carrusel carrusel sm" "carrusel carrusel carrusel bgcard" "info md md bgcard" "info sm1 sm2 sm3"
+    grid-template-columns: repeat(4, 1fr)
+    grid-template-rows: repeat(4, 25vh)

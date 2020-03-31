@@ -1,8 +1,8 @@
 import React from 'react';
 
-const card = ({ type, size, img, tag, title, description }) => {
+const card = ({ type, img, tag, title, description }) => {
   return (
-    <section className={`${type} ${type}-${size}`}>
+    <section className={`${type}`}>
       <div className={`${type}__img`}>
         <img src={img} alt={tag} />
         <h6 className={`${type}__img-tag`}>

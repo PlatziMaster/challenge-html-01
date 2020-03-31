@@ -66,15 +66,16 @@ footer
     -webkit-column-count: 2; /* Chrome, Safari, Opera */
     -moz-column-count: 2; /* Firefox */
     column-count: 2;
-    -webkit-column-gap: 3rem; /* Chrome, Safari, Opera */
-    -moz-column-gap: 3rem; /* Firefox */
-    column-gap: 3rem;
+    -webkit-column-gap: 2rem; /* Chrome, Safari, Opera */
+    -moz-column-gap: 2rem; /* Firefox */
+    column-gap: 2rem;
     padding: 0
     margin: 0
     & > li
       display: inline-block;
       list-style:none
-      padding: 20px 0
+      padding: 1px 0
+      width 100%
       &:hover
         color: primary-color
         text-decoration: underline light-color
@@ -86,7 +87,7 @@ footer
     justify-items: center
     grid-row-gap: 10%
     & > .marca, & > ul
-      align-self: end
+      align-self: center
     & > form, & > .SocialMedia
       align-self: start
     & > ul
@@ -132,9 +133,9 @@ footer
 @media (min-width: 1280px)
   footer
    & > ul
-    -webkit-column-gap: 15%; /* Chrome, Safari, Opera */
-    -moz-column-gap: 15%; /* Firefox */
-    column-gap: 15%;
+    -webkit-column-gap: 6%; /* Chrome, Safari, Opera */
+    -moz-column-gap: 6%; /* Firefox */
+    column-gap: 6%;
 
 @media (min-width: 1600px)
   footer
