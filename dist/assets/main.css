@@ -1,0 +1,240 @@
+.header {
+  justify-content: space-between;
+  -webkit-box-shadow: 0px 1px 4px 0px #9e9e9e;
+  -moz-box-shadow: 0px 3px 4px 0px #9e9e9e;
+  box-shadow: 0px 1px 4px 0px #9e9e9e;
+  margin-bottom: 25px;
+  width: 100%;
+/* position: fixed; */
+/* background-color: #ffffff; */
+/* height: 100px; */
+}
+.header div {
+  width: 100%;
+/* border-bottom: 1px solid rgb(160, 160, 160); */
+}
+.header div h1 {
+  margin-left: 30px;
+  cursor: pointer;
+}
+.header div h1 span {
+  color: #ff565b;
+}
+.header,
+.header--divideMenu,
+.header--list {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+.header div li {
+  margin: 3%;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #9c9c9c;
+  cursor: pointer;
+}
+.header--menu {
+  width: 30px;
+  margin-right: 30px;
+  cursor: pointer;
+}
+
+.articles {
+  max-width: 1080px;
+  margin: auto;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(3, 300px);
+  grid-gap: 25px;
+}
+
+.articles--item {
+  display: flex;
+  flex-direction: column;
+  grid-row-end: auto;
+  position: relative;
+}
+.articles--item img {
+  width: 100%;
+}
+/* .articles--item h2 {
+	margin: 15px;
+} */
+.large {
+  grid-row-end: span 3;
+}
+.short {
+  grid-row-end: span 2;
+}
+.articles--item-box {
+  position: absolute;
+/* top: 100px; */
+  bottom: 211px;
+  left: -5px;
+  width: 130px;
+  background-color: #ff565c;
+  padding: 15px;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/*  end articles grid */
+.footer {
+  color: #fff;
+  margin-top: 25px;
+  background-color: #1e1f24;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px;
+}
+.footer--logo {
+  flex-direction: column;
+/* margin-left: 25px; */
+}
+.footer--logo h2 {
+  color: #494a4e;
+  margin: 0;
+}
+.footer--logo h2 span {
+  color: #ff565b;
+  margin: 0;
+}
+.footer .links {
+  display: flex;
+  flex-direction: column;
+}
+.footer .links a {
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  margin: 5px;
+}
+.footer .social {
+  flex-direction: column;
+}
+.footer .social form input {
+  padding: 8px;
+  border: none;
+}
+.footer .social form button {
+  padding: 8px;
+  margin-left: -5px;
+  background-color: #ff565b;
+  border: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #fff;
+}
+.footer--social-icons {
+  display: flex;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+.footer--social-icons p {
+  padding: 5px;
+}
+.footer--social-icons svg {
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 13px;
+}
+.footer--social-icons .svg-inline--fa {
+/* height: 25px; */
+  width: 2em;
+  height: 2em;
+  color: #808080;
+}
+/* .footer--social-icons .instagram {
+	background-image: url(../icons/icons8-instagram.svg);
+} */
+
+/* Responsive */
+.responsive-desktop {
+  display: flex;
+}
+.responsive-tablet {
+  display: none;
+}
+.responsive-phone {
+  display: none;
+}
+/* Tablets */
+@media only screen and (max-width: 1000px) {
+  .header div li {
+    display: none;
+  }
+  .articles {
+    grid-template-columns: repeat(2, 350px);
+    grid-gap: 25px;
+  }
+  .responsive-desktop {
+    display: none;
+  }
+  .responsive-phone {
+    display: none;
+  }
+  .responsive-tablet {
+    display: flex;
+    flex-direction: column;
+  }
+  .responsive-tablet div {
+    width: 100%;
+/* justify-content: space-between; */
+    display: flex;
+  }
+  .responsive-tablet .social div {
+    display: flex;
+    justify-content: initial;
+    margin-top: 15px;
+  }
+  .responsive-tablet .social div form {
+    display: flex;
+    margin-right: 30px;
+  }
+  .responsive-tablet .social div p {
+    margin-left: 15px;
+  }
+}
+/* Phones */
+@media only screen and (max-width: 760px) {
+  .articles {
+    grid-template-columns: repeat(1, 80%);
+    grid-gap: 25px;
+  }
+  .responsive-tablet {
+    display: none;
+  }
+  .responsive-desktop {
+    display: none;
+  }
+  .responsive-phone {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .links--group-phone {
+    margin-top: 10px;
+    display: -webkit-inline-box;
+  }
+  .links--group-phone .links:nth-last-child(1) {
+    margin-left: 20px;
+  }
+  .responsive-phone .social form input {
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+p {
+  margin: 0;
+  padding: 0;
+}
+
