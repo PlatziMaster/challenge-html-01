@@ -13,23 +13,19 @@
     "react",
     "webpack"
   ],
-  "author": "Oscar Barajas <oscar@dragons.mx>",
-  "license": "ISC",
+  "author": "Andres Campuzano <campuxano88@gmail.com>",
+  "license": "MIT",
   "dependencies": {
-    "@babel/core": "^7.7.2",
-    "@babel/preset-env": "^7.7.1",
-    "@babel/preset-react": "^7.7.0",
-    "babel-loader": "^8.0.6",
-    "html-loader": "^0.5.5",
-    "html-webpack-plugin": "^3.2.0",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
-    "webpack": "^4.41.2",
-    "webpack-cli": "^3.3.10",
     "webpack-dev-server": "^3.9.0"
   },
   "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.0",
+    "@babel/preset-react": "^7.9.4",
     "babel-eslint": "^10.0.3",
+    "babel-loader": "^8.1.0",
     "css-loader": "^3.2.0",
     "eslint": "^5.16.0",
     "eslint-config-airbnb": "^17.1.1",
@@ -38,13 +34,18 @@
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-prettier": "^3.1.1",
     "eslint-plugin-react": "^7.16.0",
+    "file-loader": "^6.0.0",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
     "husky": "^2.7.0",
     "lint-staged": "^8.2.1",
     "mini-css-extract-plugin": "^0.7.0",
     "prettier": "^1.19.1",
     "style-loader": "^0.23.1",
     "stylus": "^0.54.7",
-    "stylus-loader": "^3.0.2"
+    "stylus-loader": "^3.0.2",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11"
   },
   "husky": {
     "hooks": {
@@ -57,5 +58,13 @@
       "npm run lint",
       "git add"
     ]
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AndresCampuzano/challenge-html-01.git"
+  },
+  "bugs": {
+    "url": "https://github.com/AndresCampuzano/challenge-html-01/issues"
+  },
+  "homepage": "https://github.com/AndresCampuzano/challenge-html-01#readme"
 }

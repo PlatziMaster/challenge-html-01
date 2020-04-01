@@ -1,0 +1,34 @@
+.articles--item {
+  display: flex;
+  flex-direction: column;
+  grid-row-end: auto;
+  position: relative;
+}
+.articles--item img {
+  width: 100%;
+}
+
+/* .articles--item-image {
+  position: relative;
+} */
+
+.large {
+  grid-row-end: span 3;
+}
+
+.short {
+  grid-row-end: span 2;
+}
+
+.articles--item-label {
+  position: absolute;
+  /* top: 1em; */
+  bottom: 14em;
+  left: -5px;
+  padding: 5px;
+  background-color: #ff565c;
+  padding: 15px;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+}

@@ -1,0 +1,84 @@
+/*  end articles grid */
+
+.footer {
+  color: white;
+  margin-top: 25px;
+  background-color: #1e1f24;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px;
+}
+
+.footer--logo {
+  flex-direction: column;
+  /* margin-left: 25px; */
+}
+
+.footer--logo h2 {
+  color: #494a4e;
+  margin: 0;
+}
+
+.footer--logo h2 span {
+  color: #ff565b;
+  margin: 0;
+}
+
+.footer .links {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer .links a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  margin: 5px;
+}
+
+.footer .social {
+  flex-direction: column;
+}
+
+.footer .social form input {
+  padding: 8px;
+  border: none;
+}
+
+.footer .social form button {
+  padding: 8px;
+  margin-left: -5px;
+  background-color: #ff565b;
+  border: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+}
+
+.footer--social-icons {
+  display: flex;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+.footer--social-icons p {
+  padding: 5px;
+}
+
+.footer--social-icons svg {
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 13px;
+}
+.footer--social-icons .svg-inline--fa {
+  /* height: 25px; */
+
+  width: 2em;
+  height: 2em;
+  color: grey;
+}
+
+/* .footer--social-icons .instagram {
+	background-image: url(../icons/icons8-instagram.svg);
+} */

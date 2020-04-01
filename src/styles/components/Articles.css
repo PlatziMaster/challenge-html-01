@@ -1,0 +1,8 @@
+.articles {
+  max-width: 1080px;
+  margin: auto;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(3, 300px);
+  grid-gap: 25px;
+}
