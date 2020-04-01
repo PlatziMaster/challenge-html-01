@@ -1,0 +1,46 @@
+.header {
+  justify-content: space-between;
+  -webkit-box-shadow: 0px 1px 4px 0px rgba(158, 158, 158, 1);
+  -moz-box-shadow: 0px 3px 4px 0px rgba(158, 158, 158, 1);
+  box-shadow: 0px 1px 4px 0px rgba(158, 158, 158, 1);
+  margin-bottom: 25px;
+  width: 100%;
+  /* position: fixed; */
+  /* background-color: #ffffff; */
+  /* height: 100px; */
+}
+
+.header div {
+  width: 100%;
+  /* border-bottom: 1px solid rgb(160, 160, 160); */
+}
+
+.header div h1 {
+  margin-left: 30px;
+  cursor: pointer;
+}
+
+.header div h1 span {
+  color: #ff565b;
+}
+.header,
+.header--divideMenu,
+.header--list {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+.header div li {
+  margin: 3%;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: rgb(156, 156, 156);
+  cursor: pointer;
+}
+
+.header--menu {
+  width: 30px;
+  margin-right: 30px;
+  cursor: pointer;
+}
