@@ -9,12 +9,12 @@ I've made a whole home page using React, props and CSS Grid.
 
 ## Desktop
 
-![Desktop image](https://raw.githubusercontent.com/AndresCampuzano/React-HomeBlog-Webpack/master/imagesScreenshot/screencapture-andrescampuzano-github-io-challenge-html-01-2020-04-01-09_10_02.png)
+![Desktop image](https://raw.githubusercontent.com/PlatziMaster/challenge-html-01/master/images/Desktop/1%20%E2%80%94%20Homepage%20A.jpg)
 
 ## Tablet
 
-![Tablet image](https://raw.githubusercontent.com/AndresCampuzano/React-HomeBlog-Webpack/master/imagesScreenshot/screencapture-andrescampuzano-github-io-challenge-html-01-2020-04-01-09_10_32.png)
+![Tablet image](https://raw.githubusercontent.com/PlatziMaster/challenge-html-01/master/images/Tablet/1%20%E2%80%94%20Homepage%20A.jpg)
 
 ## Phone
 
-![Phone image](https://raw.githubusercontent.com/AndresCampuzano/React-HomeBlog-Webpack/master/imagesScreenshot/screencapture-andrescampuzano-github-io-challenge-html-01-2020-04-01-09_10_51.png)
+![Phone image](https://raw.githubusercontent.com/PlatziMaster/challenge-html-01/master/images/Mobile/1%20%E2%80%94%20Homepage%20A.jpg)
