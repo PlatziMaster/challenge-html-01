@@ -1,20 +1,20 @@
 import React from 'react';
 import '../styles/components/ArticleItem.css';
 
-const ArticleItem = ({ image, title, text, sizeGrid }) => {
+const ArticleItem = ({ image, title, text, sizeGrid, label }) => {
   return (
     <>
       {sizeGrid === true ? (
         <div className="articles--item large">
-          <img src={image} alt={image} />
-          {/* <span className="articles--item-box">Test label</span> */}
+          <img className="articles--item-image" src={image} alt={image} />
+          <div className="articles--item-label">{label}</div>
           <h2>{title}</h2>
           <p>{text}</p>
         </div>
       ) : (
         <div className="articles--item short">
-          <img src={image} alt={image} />
-          {/* <span className="articles--item-box">Test label</span> */}
+          <img className="articles--item-image" src={image} alt={image} />
+          <div className="articles--item-label">{label}</div>
           <h2>{title}</h2>
           <p>{text}</p>
         </div>

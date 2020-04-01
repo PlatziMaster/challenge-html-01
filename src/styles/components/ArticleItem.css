@@ -8,8 +8,8 @@
   width: 100%;
 }
 
-/* .articles--item h2 {
-	margin: 15px;
+/* .articles--item-image {
+  position: relative;
 } */
 
 .large {
@@ -20,12 +20,12 @@
   grid-row-end: span 2;
 }
 
-.articles--item-box {
+.articles--item-label {
   position: absolute;
-  /* top: 100px; */
-  bottom: 211px;
+  /* top: 1em; */
+  bottom: 14em;
   left: -5px;
-  width: 130px;
+  padding: 5px;
   background-color: #ff565c;
   padding: 15px;
   color: white;

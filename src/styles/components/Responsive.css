@@ -94,7 +94,10 @@
     margin-bottom: 25px;
   }
 
-  /* .footer--social-icons {
-		display: flex;
-	} */
+  /* ArticleItem.js */
+  .articles--item-label {
+    bottom: 12em;
+    left: -5px;
+    background-color: #ff565c;
+  }
 }
