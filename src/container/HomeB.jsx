@@ -79,15 +79,17 @@ const HomeB = () => {
         />
       </div>
       <div className="HomeB__cardBg">
-        <h3>
+        <h3 className="HomeB__cardBg-title">
           This tie brand is bucking the retail apocalypse with a massive store
         </h3>
-        <p>
+        <p className="HomeB__cardBg-text">
           The universe is constantly changing, moving. Some would say it’s a
           “living” thing because you never know what you are going to see on any
           given night.
         </p>
-        <button type="button">READ MORE</button>
+        <button className="HomeB__cardBg-btn btn-trasnparent" type="button">
+          READ MORE
+        </button>
       </div>
       <div className="HomeB__info">
         <section className="Infography">

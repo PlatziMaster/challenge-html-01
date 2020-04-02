@@ -19,11 +19,25 @@
   &__md
     grid-area: md
   &__cardBg
+    height 100%
+    padding 1% 0
     grid-area: bgcard
     display: grid
-    grid-template-areas: 60% 20% 10%
+    grid-template-areas: "title" "content" "btn"
+    grid-template-rows: 50% 35% 10%
+    justify-content: center
+    grid-template-columns: 80%
     background-color: primary-color
-    height 100%
+    color: light-color
+    &-title
+      grid-area: title
+      font-family: 'Oswald', sans-serif;
+      font-size: 1.5em
+    &-text
+      grid-area: content
+    &-btn
+      grid-area: btn
+      width 60%
   &__info
     grid-area: info
 
