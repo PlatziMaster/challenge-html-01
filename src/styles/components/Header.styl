@@ -68,7 +68,7 @@ header
     grid-template-areas: "name nav hamburger" 
     grid-template-columns: 10% 80% 10%
     justify-items: center;
-    & > h1
+    & > a
       padding-left: 15%
     & > .HamburgerMenu
       justify-self: center
@@ -90,7 +90,9 @@ header
       & > ul
         flex-direction: row
         justify-content: space-around
+        align-items: center
         padding: 0%
         margin: 0%
-        & > li
+        & > a
           padding: 0% 5px;
+          color: dark-color
