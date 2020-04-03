@@ -1,0 +1,16 @@
+.CategoryA
+  display: grid
+  grid-template-areas: "cards infografia"
+  grid-template-columns: 60% 40%
+  &__content
+    height 80vh
+    grid-area: cards
+    @extend .styleScroll
+    &-cards
+      text-align: center
+      -webkit-column-count: 2; /* Chrome, Safari, Opera */
+      -moz-column-count: 2; /* Firefox */
+      column-count: 2;
+      -webkit-column-gap: 1em; /* Chrome, Safari, Opera */
+      -moz-column-gap: 1em; /* Firefox */
+      column-gap: 1em;
