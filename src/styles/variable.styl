@@ -57,6 +57,26 @@ p
   &-icon:hover
     color: light-color
 
+.styleScroll {
+  overflow-y: scroll;
+  &::-webkit-scrollbar {
+    width: 2px;
+    height: 2px;
+  }
+  &::-webkit-scrollbar-thumb {
+    border-radius: 30px;
+    width: 2px;
+    height: 2px;
+    background: fade-out(primary-color, 0.8);
+  }
+  &::-webkit-scrollbar-thumb:hover {
+    display: block;
+    box-shadow: 0 0 2px 1px fade-out(primary-color, 0.5);
+    background: primary-color;
+  }
+}
+
+
 @media (min-width: 960px)
   h1
     font-size: 30px
