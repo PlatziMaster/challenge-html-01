@@ -14,17 +14,17 @@ const inicialState = {
     {
       id: 2,
       name: 'Ideas',
-      url: '/C',
+      url: '/Ca',
     },
     {
       id: 3,
       name: 'Leadership',
-      url: '/',
+      url: '/C',
     },
     {
       id: 4,
       name: 'Video',
-      url: '/B',
+      url: '/',
     },
     {
       id: 5,
@@ -34,12 +34,12 @@ const inicialState = {
     {
       id: 6,
       name: 'Finance',
-      url: '/',
+      url: '/Ca',
     },
     {
       id: 7,
       name: 'Entretainment',
-      url: '/B',
+      url: '/',
     },
   ],
   Article: [

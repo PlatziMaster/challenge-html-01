@@ -13,7 +13,9 @@ const Header = () => {
 
   viewScreen();
 
-  const viewMenu = () => (menu ? setMenu(false) : setMenu(true));
+  const viewMenu = () =>
+    window.screen.width < 959 && (menu ? setMenu(false) : setMenu(true));
+  const viewMenuHamburger = () => (menu ? setMenu(false) : setMenu(true));
   return (
     <header>
       <Link to="/">
@@ -26,7 +28,7 @@ const Header = () => {
         className="HamburgerMenu"
         role="menu"
         onKeyPress={() => {}}
-        onClick={() => viewMenu()}
+        onClick={() => viewMenuHamburger()}
         tabIndex={0}
       >
         <img src={iconHamburger} alt="menu hamburger" />

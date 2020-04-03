@@ -33,7 +33,9 @@
         width 80%
       &-actions
         grid-area: action
-        width 40%
+        width 100%
+        display: flex;
+        justify-content: space-around;
         @extends .action
 .Cover-sm > .Cover__content
   & > .Cover__content-tag
@@ -48,8 +50,9 @@
     grid-area: description
   & > .Cover__content-actions
     grid-area: action
-    width 40%
-    display: flex
+    width 100%
+    display: flex;
+    justify-content: space-around;
     justify-content: space-evenly
     &-icon:hover
       color: primary-color
