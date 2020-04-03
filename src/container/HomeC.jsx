@@ -95,13 +95,11 @@ const HomeC = () => {
       </div>
       <div className="HomeC-card5">
         <Card
-          type="Card2"
-          tag={filterTag(InicialState.Article[1].tag)}
-          title={InicialState.Article[1].title}
-          description={InicialState.Article[1].description}
-          share={InicialState.Article[1].share}
-          view={InicialState.Article[1].view}
-          comment={InicialState.Article[1].comment}
+          type="avatar-Portada"
+          img={InicialState.Article[1].img}
+          title={InicialState.Article[6].title}
+          description={InicialState.Article[6].description}
+          avatar={InicialState.Article[6].avatar}
         />
       </div>
     </section>

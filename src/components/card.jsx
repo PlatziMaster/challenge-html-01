@@ -20,9 +20,11 @@ const card = ({
       {img ? (
         <div className={`${type}__img`}>
           <img src={img} alt={tag} />
-          <h6 className={`${type}__img-tag`}>
-            {String(tag).toLocaleUpperCase()}
-          </h6>
+          {tag && (
+            <h6 className={`${type}__img-tag`}>
+              {String(tag).toLocaleUpperCase()}
+            </h6>
+          )}
         </div>
       ) : (
         <div className={`${type}__img`}>
@@ -37,8 +39,12 @@ const card = ({
         <div className={`${type}__user`}>
           <img src={avatar} alt={name} />
           <div className={`${type}__user-name`}>
-            <p>Autor</p>
-            <h6>{String(name).toLocaleUpperCase()}</h6>
+            {name && (
+              <>
+                <p>Autor</p>
+                <h6>{String(name).toLocaleUpperCase()}</h6>
+              </>
+            )}
           </div>
         </div>
       )}

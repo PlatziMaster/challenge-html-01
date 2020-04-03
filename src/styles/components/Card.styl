@@ -101,6 +101,61 @@
         font-size: 12px
         color: transparentify(dark-color, 0.5)
       
+.avatar-Portada
+  min-width 330px
+  display: grid
+  grid-template-areas: "img" "user" "title" "description" "action"
+  grid-template-rows: auto auto auto auto  minmax(auto, 44px)
+  justify-content: center
+  background-color: light-color
+  border-left: 1px solid shadow-color
+  position: relative
+  &__img
+    grid-area: img
+    & > img 
+      width 100%
+    &-tag
+      padding-left: 5%
+      color: primary-color
+      justify-self: left 
+  &__title
+    margin-top: 5%
+    font-size: 1rem
+    width 90%
+    grid-area: title
+    justify-self: center
+  &__description
+    grid-area: description
+    width 90%
+    margin-bottom: 3%
+    justify-self: center
+  &__actions
+    grid-area: action
+    border-top: 1px solid shadow-color
+    justify-content: left 
+    width 100%
+    padding-left: 5%
+    @extends .action
+    & > .actions-icon
+      padding: 0 2%
+  &__user
+    position: absolute
+    bottom: -12px;
+    left: 40%;
+    grid-area: user
+    border-radius: 50%
+    border: 1px solid primary-color
+    display: flex
+    align-items: center
+    background-color: light-color
+    & > img 
+      border-radius: 50%
+      height 80%
+    &-name
+      & > p
+        font-size: 12px
+        color: transparentify(dark-color, 0.5)
+      
 .bgPrimary
   width 90%
   display: grid
