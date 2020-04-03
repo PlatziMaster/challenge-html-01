@@ -42,26 +42,28 @@ const card = ({
           </div>
         </div>
       )}
-      <div className={`${type}__actions`}>
-        {share && (
-          <div className="action-icon">
-            <img src={iconShare} alt="Icon Shared" />
-            <p>{share}</p>
-          </div>
-        )}
-        {view && (
-          <div className="action-icon">
-            <img src={iconView} alt="Icon viewed" />
-            <p>{view}</p>
-          </div>
-        )}
-        {comment && (
-          <div className="action-icon">
-            <img src={iconComment} alt="Icon commented" />
-            <p>{comment}</p>
-          </div>
-        )}
-      </div>
+      {share && (
+        <div className={`${type}__actions`}>
+          {share && (
+            <div className="action-icon">
+              <img src={iconShare} alt="Icon Shared" />
+              <p>{share}</p>
+            </div>
+          )}
+          {view && (
+            <div className="action-icon">
+              <img src={iconView} alt="Icon viewed" />
+              <p>{view}</p>
+            </div>
+          )}
+          {comment && (
+            <div className="action-icon">
+              <img src={iconComment} alt="Icon commented" />
+              <p>{comment}</p>
+            </div>
+          )}
+        </div>
+      )}
     </section>
   );
 };

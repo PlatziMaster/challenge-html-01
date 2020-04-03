@@ -46,12 +46,15 @@
     grid-template-areas: "card1 bgcard" " card2 card3" "comment comment" "card4 card5"
     grid-template-columns: repeat(2, 1fr)
     grid-template-rows: 50vh repeat(4, 1fr)
+    &-avatar
+      width 93%
 @media (min-width: 980px)
   .HomeC
     grid-template-areas: "card1 bgcard card2" "comment comment comment" "card3 card4 card5"
     grid-template-columns: repeat(3, 1fr)
-    grid-template-rows: 50% repeat(2, 1fr)
     justify-content: center
     &-avatar
-      width 95%
+      margin: 1% 0
+      width 96%
+      height 92%
       

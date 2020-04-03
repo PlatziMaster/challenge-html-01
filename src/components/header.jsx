@@ -12,6 +12,7 @@ const Header = () => {
     );
 
   viewScreen();
+
   const viewMenu = () => (menu ? setMenu(false) : setMenu(true));
   return (
     <header>
@@ -43,8 +44,14 @@ const Header = () => {
           </div>
           <ul>
             {InitialState.tags.map(item => (
-              <Link to={item.url} onClick={() => viewMenu()}>
-                <li key={item.id}>{item.name.toLocaleUpperCase()}</li>
+              <Link
+                to={item.url}
+                key={item.id}
+                onClick={() => {
+                  viewMenu();
+                }}
+              >
+                <li>{item.name.toLocaleUpperCase()}</li>
               </Link>
             ))}
           </ul>
