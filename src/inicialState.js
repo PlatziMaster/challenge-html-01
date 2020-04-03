@@ -9,30 +9,37 @@ const inicialState = {
     {
       id: 1,
       name: 'Tecnology',
+      url: '/B',
     },
     {
       id: 2,
       name: 'Ideas',
+      url: '/C',
     },
     {
       id: 3,
       name: 'Leadership',
+      url: '/',
     },
     {
       id: 4,
       name: 'Video',
+      url: '/B',
     },
     {
       id: 5,
       name: 'News',
+      url: '/c',
     },
     {
       id: 6,
       name: 'Finance',
+      url: '/',
     },
     {
       id: 7,
       name: 'Entretainment',
+      url: '/B',
     },
   ],
   Article: [

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import InitialState from '../inicialState';
 import iconHamburger from '../assets/icons/hamburger.svg';
 import iconClose from '../assets/icons/close.svg';
@@ -14,10 +15,12 @@ const Header = () => {
   const viewMenu = () => (menu ? setMenu(false) : setMenu(true));
   return (
     <header>
-      <h1>
-        Deck
-        <span>.</span>
-      </h1>
+      <Link to="/">
+        <h1>
+          Deck
+          <span>.</span>
+        </h1>
+      </Link>
       <div
         className="HamburgerMenu"
         role="menu"
@@ -40,7 +43,9 @@ const Header = () => {
           </div>
           <ul>
             {InitialState.tags.map(item => (
-              <li key={item.id}>{item.name.toLocaleUpperCase()}</li>
+              <Link to={item.url} onClick={() => viewMenu()}>
+                <li key={item.id}>{item.name.toLocaleUpperCase()}</li>
+              </Link>
             ))}
           </ul>
         </nav>

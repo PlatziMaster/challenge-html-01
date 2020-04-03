@@ -8,12 +8,12 @@ header
   justify-items: center;
   padding 0
   background-color: ligth-color
-
-& > h1
-  grid-area: name
-  padding-left: 5%
-  justify-self: left
-  & span
+  & > a 
+    grid-area: name
+    padding-left: 5%
+    justify-self: left
+    color: dark-color
+    & > h1 span
       color: primary-color
 
 & > .HamburgerMenu
@@ -50,8 +50,7 @@ header
     display: flex
     flex-direction: column
     justify-content: baseline
-    align-items: center
-    & > li
+    & > a > li
       list-style:none
       padding: 10%
       &:hover
