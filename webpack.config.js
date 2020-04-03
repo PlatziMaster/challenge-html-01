@@ -11,6 +11,7 @@ module.exports = {
   resolve: {
     extensions: ['.js', '.jsx'],
   },
+  devtool: 'inline-source-map',
   module: {
     rules: [
       {
@@ -52,8 +53,6 @@ module.exports = {
     ],
   },
   devServer: {
-    contentBase: path.join(__dirname, './dist'),
-    compress: true,
     historyApiFallback: true,
   },
   plugins: [
