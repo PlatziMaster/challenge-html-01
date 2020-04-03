@@ -1,0 +1,204 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700|Oswald:400,700&display=swap);
+.card--container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+  justify-content: center;
+  padding: 42px;
+  margin: 0 auto;
+}
+.card {
+  cursor: pointer;
+}
+.card .card--image--container {
+  width: 100%;
+}
+.card .card--image--container img {
+  width: 100%;
+}
+.card .card--image--container p {
+  position: relative;
+  color: #fff;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-family: 'Oswald', sans-serif;
+  top: -50px;
+  left: -5px;
+  background-color: var(--tag-color);
+  margin: 0;
+  display: inline-block;
+  padding: 0 20px;
+}
+.card .card--title {
+  margin-top: -20px;
+  font-family: 'Lato', sans-serif;
+}
+.card .card--description {
+  font-family: 'Lato', sans-serif;
+  color: var(--gray-color);
+}
+
+header {
+  display: flex;
+  width: calc(100vw - 40px);
+  font-family: 'Lato', sans-serif;
+  justify-content: space-between;
+  padding: 0 20px;
+  font-size: 24px;
+  border-bottom: 1px solid var(--border-color);
+}
+header p {
+  font-weight: 800;
+  color: var(--dark-color);
+}
+header p span,
+footer p span {
+  color: var(--red-color);
+}
+header .header--left {
+  display: flex;
+}
+header .header--left--menu {
+  display: grid;
+  align-content: center;
+}
+header .header--left--menu ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-evenly;
+}
+header .header--left--menu ul li {
+  padding-right: 50px;
+  padding-left: 20px;
+  font-size: 14px;
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--light-color);
+}
+header .header--left--menu ul li:hover {
+  color: var(--dark-color);
+  transition: 0.2s;
+}
+header .header--right {
+  display: grid;
+  color: var(--dark-color);
+  align-content: center;
+}
+header .header--right img {
+  height: 35px;
+  cursor: pointer;
+}
+
+footer {
+  background: var(--dark-color);
+  display: flex;
+  color: #fff;
+  justify-content: space-evenly;
+  align-items: center;
+  color: var(--light-color);
+  font-size: 16px;
+  font-family: 'Lato', sans-serif;
+  padding-bottom: 12px;
+}
+footer .menu--container ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  list-style: none;
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  column-gap: 40px;
+  row-gap: 5px;
+  letter-spacing: 2px;
+}
+footer .disclaimer--container {
+  font-size: 12px;
+}
+footer .social--container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+footer .social--container p {
+  padding-right: 15px;
+}
+footer .social--container img {
+  height: 15px;
+  padding: 0 5px;
+  color: #fff;
+}
+footer .suscribe--container {
+  display: flex;
+}
+footer .suscribe--container input {
+  width: 120px;
+  height: 20px;
+  border: none;
+  padding: 1px 5px;
+  font-size: 12px;
+}
+footer .suscribe--container button {
+  background-color: var(--red-color);
+  border: none;
+  height: 22px;
+  color: #fff;
+  font-size: 8px;
+  text-transform: uppercase;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 300;
+  padding: 0 15px;
+  letter-spacing: 1px;
+}
+
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+:root {
+  --light-color: #cfcfcf;
+  --dark-color: #1d2025;
+  --gray-color: #606166;
+  --tag-color: #ff565c;
+  --red-color: #ee5455;
+  --border-color: #ebebeb;
+  --background-color: #f9fafc;
+}
+
+@media only screen and (max-width: 1100px) {
+  .col-3 {
+    display: none;
+  }
+  header .header--left--menu {
+    display: none;
+  }
+  .card--container {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 20px 5%;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .col-2 {
+    display: none;
+  }
+  .card--container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  footer .menu--container ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 600px) {
+  footer .menu--container ul {
+    display: none;
+  }
+}
+

@@ -1,0 +1,67 @@
+footer{
+  background: var(--dark-color);
+  display: flex;
+  color: white;
+  justify-content: space-evenly;
+  align-items: center;
+  color: var(--light-color);
+  font-size: 16px;
+  font-family: 'Lato', sans-serif;
+  padding-bottom: 12px;
+}
+
+footer .menu--container ul{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  list-style: none;
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  column-gap: 40px;
+  row-gap: 5px;
+  letter-spacing: 2px;
+}
+
+footer .disclaimer--container{
+  font-size: 12px;
+}
+
+footer .social--container{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+footer .social--container p{
+  padding-right: 15px;
+}
+
+footer .social--container img{
+  height: 15px;
+  padding: 0 5px;
+  color: white;
+}
+
+footer .suscribe--container{
+  display: flex;
+}
+
+footer .suscribe--container input{
+  width: 120px;
+  height: 20px;
+  border: none;
+  padding: 1px 5px;
+  font-size: 12px;
+}
+
+footer .suscribe--container button{
+  background-color: var(--red-color);
+  border: none;
+  height: 22px;
+  color: white;
+  font-size: 8px;
+  text-transform: uppercase;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 300;
+  padding: 0 15px;
+  letter-spacing: 1px;
+}

@@ -1,0 +1,44 @@
+.card--container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+  justify-content: center;
+  padding: 42px;
+  margin: 0 auto;
+}
+
+.card {
+  cursor: pointer;
+}
+
+.card .card--image--container {
+  width: 100%;
+}
+
+.card .card--image--container img{
+  width: 100%;
+}
+
+.card .card--image--container p{
+  position: relative;
+  color: white;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-family: 'Oswald', sans-serif;
+  top: -50px;
+  left: -5px;
+  background-color: var(--tag-color);
+  margin: 0;
+  display: inline-block;
+  padding: 0 20px;
+}
+
+.card .card--title {
+  margin-top: -20px;
+  font-family: 'Lato', sans-serif;
+}
+
+.card .card--description{
+  font-family: 'Lato', sans-serif;
+  color: var(--gray-color);
+}
