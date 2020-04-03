@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import InitialState from '../inicialState';
 import iconFB from '../assets/icons/facebook.png';
 import iconIG from '../assets/icons/instagram.png';
@@ -33,7 +34,9 @@ const Footer = () => {
       </form>
       <ul>
         {InitialState.tags.map(item => (
-          <li key={item.id}>{item.name.toLocaleUpperCase()}</li>
+          <Link to={item.url} key={item.id}>
+            <li>{item.name.toLocaleUpperCase()}</li>
+          </Link>
         ))}
       </ul>
     </footer>
