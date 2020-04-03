@@ -41,6 +41,9 @@ const inicialState = {
       title: 'Using Banners Will Increase Trade Show Traffic',
       description:
         'There is a lot of exciting stuff going on in the stars above us that makes astronomy so much fun.',
+      avatar:
+        'https://robohash.org/utvoluptatumquisquam.png?size=50x50&set=set1/',
+      name: 'Town',
       tag: 1,
       img: imgCam,
       share: 200,
@@ -53,6 +56,8 @@ const inicialState = {
         '6 Powerful Tips For Creating Testimonials That Sell Your Products Fast',
       description:
         'There is a lot of exciting stuff going on in the stars above us that makes astronomy so much fun.',
+      avatar: 'https://robohash.org/eumquimollitia.bmp?size=50x50&set=set1/',
+      name: '	Guenevere',
       tag: 1,
       img: imgDron,
       share: 200,
@@ -64,6 +69,9 @@ const inicialState = {
       title: '15 Tips To Increase Your Adwords Profits',
       description:
         'There is a lot of exciting stuff going on in the stars above us that makes astronomy so much fun.',
+      avatar:
+        'https://robohash.org/ullamautemexercitationem.bmp?size=50x50&set=set1/',
+      name: 'Tymon',
       tag: 7,
       img: imgTablet,
       share: 200,
@@ -75,6 +83,8 @@ const inicialState = {
       title: 'Search Engine Optimization And Advertising',
       description:
         'There is a lot of exciting stuff going on in the stars above us that makes astronomy so much fun.',
+      avatar: 'https://robohash.org/eumquimollitia.bmp?size=50x50&set=set1/',
+      name: '	Guenevere',
       tag: 1,
       img: imgMovil,
       share: 200,
@@ -86,6 +96,9 @@ const inicialState = {
       title: 'How to Write A Good Headline For Facebook Ads',
       description:
         'There is a lot of exciting stuff going on in the stars above us that makes astronomy so much fun.',
+      avatar:
+        'https://robohash.org/utvoluptatumquisquam.png?size=50x50&set=set1/',
+      name: 'Town',
       tag: 6,
       img: imgSmarWach,
       share: 200,
@@ -97,6 +110,9 @@ const inicialState = {
       title: 'Using Banners Will Increase Trade Show Traffic',
       description:
         'There is a lot of exciting stuff going on in the stars above us that makes astronomy so much fun.',
+      avatar:
+        'https://robohash.org/utvoluptatumquisquam.png?size=50x50&set=set1/',
+      name: 'Town',
       tag: 2,
       img: imgCam,
       share: 200,
@@ -109,6 +125,9 @@ const inicialState = {
         '6 Powerful Tips For Creating Testimonials That Sell Your Products Fast',
       description:
         'There is a lot of exciting stuff going on in the stars above us that makes astronomy so much fun.',
+      avatar:
+        'https://robohash.org/ullamautemexercitationem.bmp?size=50x50&set=set1/',
+      name: 'Tymon',
       tag: 3,
       img: imgDron,
       share: 200,
@@ -120,6 +139,9 @@ const inicialState = {
       title: '15 Tips To Increase Your Adwords Profits',
       description:
         'There is a lot of exciting stuff going on in the stars above us that makes astronomy so much fun.',
+      avatar:
+        'https://robohash.org/utvoluptatumquisquam.png?size=50x50&set=set1/',
+      name: 'Town',
       tag: 4,
       img: imgTablet,
       share: 200,
@@ -131,6 +153,8 @@ const inicialState = {
       title: 'Search Engine Optimization And Advertising',
       description:
         'There is a lot of exciting stuff going on in the stars above us that makes astronomy so much fun.',
+      avatar: 'https://robohash.org/eumquimollitia.bmp?size=50x50&set=set1/',
+      name: '	Guenevere',
       tag: 5,
       img: imgMovil,
       share: 200,
@@ -142,6 +166,9 @@ const inicialState = {
       title: 'How to Write A Good Headline For Facebook Ads',
       description:
         'There is a lot of exciting stuff going on in the stars above us that makes astronomy so much fun.',
+      avatar:
+        'https://robohash.org/utvoluptatumquisquam.png?size=50x50&set=set1/',
+      name: 'Town',
       tag: 6,
       img: imgSmarWach,
       share: 200,

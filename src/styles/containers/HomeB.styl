@@ -1,4 +1,5 @@
 .HomeB
+  padding-top: 2%
   display: grid
   grid-template-areas: "carrusel" "info" "md" "sm" "bgcard" "sm1" "sm2" "sm3"
   grid-template-columns: 100%
@@ -10,14 +11,19 @@
     z-index: 1
   &__sm
     grid-area: sm
+    z-index: 1
   &__sm1
     grid-area: sm1
+    z-index: 1
   &__sm2
     grid-area: sm2
+    z-index: 1
   &__sm3
     grid-area: sm3
+    z-index: 1
   &__md
-    grid-area: md
+    grid-area: md    
+    z-index: 1
   &__cardBg
     height 100%
     padding 1% 0
@@ -29,6 +35,7 @@
     grid-template-columns: 80%
     background-color: primary-color
     color: light-color
+    z-index: 1
     &-title
       grid-area: title
       font-family: 'Oswald', sans-serif;
@@ -40,6 +47,7 @@
       width 60%
   &__info
     grid-area: info
+    z-index: 1
 
 @media (min-width: 768px)
   .HomeB

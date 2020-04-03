@@ -4,6 +4,7 @@
    width: 90%;
    text-align: start
    margin-top: 8%
+   background-color: light-color
    &__img
        position relative
        & > img
@@ -20,6 +21,128 @@
         background-color: primary-color
         color: light-color
 
+.Card2
+  width 90%
+  display: grid
+  grid-template-areas: "img" "title" "description" "action"
+  grid-template-rows: auto auto auto
+  justify-content: center
+  background-color: light-color
+  &__img
+    grid-area: img
+    & > img 
+      width 100%
+    &-tag
+      padding-left: 5%
+      color: primary-color
+      justify-self: left 
+  &__title
+    width 90%
+    font-size: 1rem
+    grid-area: title
+    justify-self: center
+  &__description
+    width 90%
+    margin-bottom: 3%
+    justify-self: center
+  &__actions
+    grid-area: action
+    border-top: 1px solid shadow-color
+    justify-content: left 
+    width 100%
+    padding-left: 5%
+    @extends .action
+    & > .actions-icon
+      padding: 0 2%
+
+.avatar
+  width 100%
+  display: grid
+  grid-template-areas: "img" "title" "description" "action"
+  grid-template-rows: auto auto auto
+  justify-content: center
+  background-color: light-color
+  border-left: 1px solid shadow-color
+  &__img
+    grid-area: img
+    & > img 
+      width 100%
+    &-tag
+      padding-left: 5%
+      color: primary-color
+      justify-self: left 
+  &__title
+    font-size: 1rem
+    width 90%
+    grid-area: title
+    justify-self: center
+  &__description
+    width 90%
+    margin-bottom: 3%
+    justify-self: center
+  &__actions
+    grid-area: action
+    border-top: 1px solid shadow-color
+    justify-content: left 
+    width 100%
+    padding-left: 5%
+    @extends .action
+    & > .actions-icon
+      padding: 0 2%
+  &__user
+    padding-left: 5%
+    height: 98%;
+    display: flex
+    align-items: center
+    & > img 
+      border-radius: 50%
+      height 80%
+    &-name
+      & > p
+        font-size: 12px
+        color: transparentify(dark-color, 0.5)
+      
+.bgPrimary
+  width 90%
+  display: grid
+  grid-template-areas: "img" "title" "description" "action"
+  grid-template-rows: auto auto auto
+  justify-content: center
+  background-color: primary-color
+  color: light-color
+  &__img
+    grid-area: img
+    & > img 
+      width 100%
+    &-tag
+      padding-left: 5%
+      color: primary-color
+      justify-self: left 
+  &__title
+    width 90%
+    font-size: 1rem
+    grid-area: title
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.5em
+    justify-self: center
+  &__description
+    width 90%
+    grid-area: description
+    margin-bottom: 3%
+    justify-self: center
+  &__actions
+    grid-area: action
+    border-top: 1px solid shadow-color
+    justify-content: left 
+    width 100%
+    padding-left: 5%
+    @extends .action-white
+    & > .actions-icon
+      padding: 0 2%
+    &-btn
+      grid-area: btn
+      width 60%
+    z-index: 1
 
 .Infography
   height 93%

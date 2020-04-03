@@ -23,15 +23,15 @@ const Cover = ({
         <h3 className="Cover__content-title">{title}</h3>
         <p className="Cover__content-description">{description}</p>
         <div className="Cover__content-actions">
-          <div className="Cover__content-actions-icon">
+          <div className="actions-icon">
             <img src={iconShare} alt="Icon Shared" />
             <p>{share}</p>
           </div>
-          <div className="Cover__content-actions-icon">
+          <div className="actions-icon">
             <img src={iconView} alt="Icon Shared" />
             <p>{view}</p>
           </div>
-          <div className="Cover__content-actions-icon">
+          <div className="actions-icon">
             <img src={iconComment} alt="Icon Comment" />
             <p>{comment}</p>
           </div>
