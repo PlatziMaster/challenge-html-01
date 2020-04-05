@@ -16,9 +16,7 @@ const Footer = () => (
       </div>
       <div className="disclaimer--container">
         <p>
-          © 2018 Deck 
-          {' '}
-          <br />
+          © 2018 Deck <br />
           Component based UI Kit
         </p>
       </div>
