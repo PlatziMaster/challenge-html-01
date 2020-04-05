@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700|Oswald:400,700&display=swap');
+
+*{ 
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+:root {
+  --light-color: #CFCFCF;
+  --dark-color: #1D2025;
+  --gray-color: #606166;
+  --tag-color: #FF565C;
+  --red-color: #EE5455;
+  --border-color: #EBEBEB;
+  --background-color: #F9FAFC;
+}
