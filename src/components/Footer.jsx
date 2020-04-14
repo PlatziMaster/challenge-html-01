@@ -25,7 +25,12 @@ const Footer = () => {
           <div className="follow">
             <p>Follow Us:</p>
           </div>
-          <div className="social" />
+          <div className="social">
+            <img src="../resources/imgs/instagram-logo.png" alt="" />
+            <img src="../resources/imgs/twitter-icon.png" alt="" />
+            <img src="../resources/imgs/pinterest-logo.png" alt="" />
+            <img src="../resources/imgs/facebook-icon.png" alt="" />
+          </div>
           <div className="input">
             <input type="text" placeholder="Your Email" />
             <button type="button" className="button">
