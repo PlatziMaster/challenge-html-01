@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Oswald:wght@500&display=swap')
+
+.Header
+	width: 1129px
+	height: 80px
+	display: grid
+	color: hsl(240, 1%, 85%)
+	justify-content: space-between
+	align-items: center
+	grid-template-columns: 120.833px 768.681px 389.375px
+	grid-template-rows: 70px
+	margin-bottom: 30px
+	border-bottom: 1px solid #EBEBEB
+	padding: 10px 0px 0px
+	h1
+		margin: 20px
+		text-align: center
+		color: #1D1F24
+		font-size: 24px
+		font-weight: 500
+		line-height: 30px
+		font-family: 'Oswald'
+	span
+		color: #FF565C
+	@media screen and (max-width 800px)
+		display: grid
+		width: auto
+		grid-template-columns: repeat(2, 1fr)
+		.Nav
+			display: none
+.Nav
+	ul
+		display: flex
+		list-style: none
+	&__links
+		display: flex
+		justify-content: center
+		li
+			color: #1D1F24
+			font-size: 21px
+			font-family: 'Oswald'
+			margin-right: 1.2em
+			text-transform: uppercase
+			letter-spacing: 1.75px
+			font-weight: 500
+			opacity: 0.2
+
+.Nav__menu
+	display: flex
+	justify-content: flex-end

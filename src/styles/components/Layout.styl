@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Oswald:wght@500&display=swap')
+
+
+.Layout
+	display: grid
+	grid-template-columns: repeat(3, auto)
+	grid-template-rows: 1.1fr 1fr 1fr 1fr 1.1fr 0.8fr 2.6fr
+	justify-content: center
+	gap: 23px
+	padding: 30px
+	&__item
+		width: 436px
+		height: 546px
+		background-color: hsl(220, 33%, 98%)
+	h1
+		font-size: 30px
+		line-height: 30px
+		font-family: 'Lato'
+		margin: 24px 0
+	p
+		font-weight: 400
+		line-height: 19px
+		margin: 16px 10px 16px 0
+		font-family: 'Lato'
+	&__item-img
+		width: 100%
+
+.item__red-desc
+	position: absolute
+	text-align: center
+	background-color: #ff555b
+	color: #fff
+	padding: 7px 20px
+	bottom: 46%
+	left: -5px
+	text-transform: uppercase
+	font-family: 'Oswald', sans-serif
+	font-size: 14px
+
+.item__type1
+	grid-area: span 3 / auto / auto / auto
+
+.item__type2
+	grid-area: span 2 / auto / auto / auto
+
+
+@media screen and (max-width 800px)
+	.Layout
+		display: grid
+		gap: 20px
+		grid-template-columns: repeat(2, 1fr)
+		grid-template-rows: 167.465px 167.465px 144.549px 144.566px 144.566px 167.465px 167.465px 						144.549px 144.566px 144.566px 167.465px 167.465px
+		justify-content: center
+
+@media screen and (max-width 500px)
+		.Layout__item
+			display: grid
+			grid-auto-columns: 1fr
