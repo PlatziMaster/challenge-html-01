@@ -1,0 +1,32 @@
+@import 'App.styl'
+.header
+    width 100%
+    display: flex
+    align-items: center
+    justify-content: space-around
+    &__nav
+        width: 80%
+        display flex
+        align-items center
+        &--title
+            & span
+                color secondary-color
+        & ul
+            letter-spacing: 2px
+            width 100%
+            list-style none
+            display: flex
+            justify-content: space-around
+            & li
+                color: link-color
+                text-transform: uppercase
+                padding 0 10px
+                display inline
+                font-weight: bold
+                &:hover
+                    color: third-color
+                    cursor: pointer
+        &--icon img
+            width: 30px
+            height 30px
+

@@ -1,6 +1,19 @@
 import React from 'react';
 import '../styles/components/App.styl';
 
-const App = () => <h1>Hello React!</h1>;
+// Componentes
+import Header from './Header';
+import Cards from './Cards';
+import Footer from './Footer';
+
+const App = () => {
+  return (
+    <>
+      <Header />
+      <Cards />
+      <Footer />
+    </>
+  );
+};
 
 export default App;
