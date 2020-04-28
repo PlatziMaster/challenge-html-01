@@ -23,28 +23,26 @@ const Footer = () => {
           <li>Entertainment</li>
         </ul>
       </div>
-      <div className="footer__contact">
-        <div className="footer__contact--socialMedia">
-          <ul>
-            <li>Follow us:</li>
-            <li>
-              <img src="../../resources/imgs/instagram.png" alt="" />
-            </li>
-            <li>
-              <img src="../../resources/imgs/pinterest.png" alt="" />
-            </li>
-            <li>
-              <img src="../../resources/imgs/twitter.png" alt="" />
-            </li>
-            <li>
-              <img src="../../resources/imgs/facebook.png" alt="" />
-            </li>
-          </ul>
-        </div>
-        <div className="footer__contact--subscribe">
-          <input type="text" name="" id="" placeholder="Your E-mail" />
-          <button type="submit">Subscribe</button>
-        </div>
+      <div className="footer__socialMedia">
+        <ul>
+          <li>Follow us:</li>
+          <li>
+            <img src="../../resources/imgs/instagram.png" alt="" />
+          </li>
+          <li>
+            <img src="../../resources/imgs/pinterest.png" alt="" />
+          </li>
+          <li>
+            <img src="../../resources/imgs/twitter.png" alt="" />
+          </li>
+          <li>
+            <img src="../../resources/imgs/facebook.png" alt="" />
+          </li>
+        </ul>
+      </div>
+      <div className="footer__subscribe">
+        <input type="text" name="" id="" placeholder="Your E-mail" />
+        <button type="submit">Subscribe</button>
       </div>
     </footer>
   );

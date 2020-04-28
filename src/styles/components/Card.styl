@@ -1,8 +1,7 @@
-@import 'App.styl'
+@import 'Variables.styl'
 .card
     width: 92.5%
-    margin-top: 40px
-    margin-left: 20px
+    margin 40px 0 60px 20px
     &:hover
         cursor pointer
     &.level-1
@@ -14,12 +13,20 @@
         & img
             width 100%
         &--categorie
-            padding: 10px 15px
+            padding: 15px 20px
             font-weight: bold
             width: 150px
             text-transform: uppercase
             background-color: secondary-color
             color white
             position: absolute
-            left: -5px
-            bottom 0
+            font-size: 16px
+            letter-spacing: 2px
+            text-align: center
+            left: -10px
+            bottom 10px
+    @media screen and (min-width: 768px)
+        &__img--categorie
+            font-size: 16px
+            padding: 10px 15px
+            width: 150px

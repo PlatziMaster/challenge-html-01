@@ -1,4 +1,4 @@
-@import 'App.styl'
+@import 'Variables.styl'
 .header
     width 100%
     display: flex
@@ -9,6 +9,7 @@
         display flex
         align-items center
         &--title
+            font-size: 36px
             &:hover
                 cursor pointer
             & span
@@ -17,8 +18,7 @@
             letter-spacing: 2px
             width 100%
             list-style none
-            display: flex
-            justify-content: space-around
+            display: none
             & li
                 color: link-color
                 text-transform: uppercase
@@ -29,8 +29,20 @@
                     color: third-color
                     cursor: pointer
         &--icon img
-            width: 30px
-            height 30px
+            width: 40px
+            height 40px
             &:hover
                 cursor pointer
-
+    @media screen and (min-width: 768px)
+        &__nav
+            &--title
+                font-size: 32px
+    @media screen and (min-width: 1024px)
+        &__nav
+            & ul
+                display: block
+                & li
+                    font-size: 14px
+            &--icon img
+                width: 40px
+                height 40px
