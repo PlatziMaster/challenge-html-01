@@ -1,0 +1,48 @@
+@import 'Variables.styl'
+.header
+    width 100%
+    display: flex
+    align-items: center
+    justify-content: space-around
+    &__nav
+        width: 80%
+        display flex
+        align-items center
+        &--title
+            font-size: 36px
+            &:hover
+                cursor pointer
+            & span
+                color secondary-color
+        & ul
+            letter-spacing: 2px
+            width 100%
+            list-style none
+            display: none
+            & li
+                color: link-color
+                text-transform: uppercase
+                padding 0 10px
+                display inline
+                font-weight: bold
+                &:hover
+                    color: third-color
+                    cursor: pointer
+        &--icon img
+            width: 40px
+            height 40px
+            &:hover
+                cursor pointer
+    @media screen and (min-width: 768px)
+        &__nav
+            &--title
+                font-size: 32px
+    @media screen and (min-width: 1024px)
+        &__nav
+            & ul
+                display: block
+                & li
+                    font-size: 14px
+            &--icon img
+                width: 40px
+                height 40px

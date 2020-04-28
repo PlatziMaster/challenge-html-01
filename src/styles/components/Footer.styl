@@ -1,0 +1,167 @@
+@import 'Variables.styl'
+.footer
+    width: 100%
+    background-color: footer-color
+    padding: 30px 0;
+    color: white
+    display: flex
+    justify-content: space-around
+    flex-direction: column;
+    &__company
+        padding-left: 20px
+        order: 1
+        font-size: 18px
+        &--title
+            margin-bottom: 5px
+            color: footer-title-color
+            & span
+                color: secondary-color
+        &--text
+            font-size: 16px
+            margin 0
+            color: link-color
+    &__nav
+        order: 4
+        padding-left: 20px
+        display: flex
+        align-content: flex-end
+        & ul
+            width: 100%
+            display: flex
+            justify-content: flex-start
+            align-items: center
+            flex-wrap: wrap
+            list-style: none
+            & li
+                width: 50%
+                font-size: 16px
+                height 50px
+                text-transform: uppercase
+                font-weight: bold
+                letter-spacing: 2px
+                &:hover
+                    text-decoration: underline
+                    text-decoration-color: white
+                    cursor pointer
+    &__socialMedia
+        order: 3
+        & ul
+            list-style: none
+            display: flex
+            align-items: center
+            justify-content: flex-start
+            & li
+                font-size: 18px
+                color link-color
+                margin 0 10px
+                & img
+                    cursor pointer
+                    filter: invert(0.4);
+                    width: 20px
+                    height 20px
+    &__subscribe
+        order: 2
+        margin: 20px
+        display: flex
+        align-items: center
+        & input
+            border none
+            padding: 15px 15px
+            width: 40%
+            &::placeholder
+                font-size: 18px
+        & button
+            padding: 13.5px 15px
+            width: 150px
+            font-size: 16px
+            font-weight: bold
+            text-transform: uppercase
+            background-color: secondary-color
+            border none
+            color: white
+            cursor pointer
+            letter-spacing: 2px
+    @media screen and (min-width: 768px)
+        display grid
+        grid-template-columns: repeat(4, 1fr)
+        &__company
+            font-size: 20px
+            &--text
+                font-size: 16px
+        &__nav
+            grid-column-start: 2;
+            grid-column-end: 5;
+            order: 2
+            & ul li
+                width: 33.3%
+                font-size: 14px
+        &__socialMedia
+            grid-column-start: 3;
+            grid-column-end: 5;
+            & ul li
+                &:nth-child(1)
+                    width: 65px
+                    font-size: 14px
+                & img
+                    width: 25px
+                    height 25px
+        &__subscribe
+            grid-column-start: 1;
+            grid-column-end: 3;
+            & input
+                padding: 13px 15px
+                width: 65%
+                &::placeholder
+                    font-size: 12px
+            & button
+                font-size: 12px
+                width: 35%
+                padding: 13.5px 15px
+    @media screen and (min-width: 1024px)
+        display: grid
+        grid-template-columns: 15% 50% 35%
+        width: 100%
+        &__company
+            grid-row-end: span 2
+            &--title
+                font-size: 20px
+            &--text
+                font-size: 14px
+        &__nav
+            grid-row-end: span 2
+            grid-column-start: 2;
+            grid-column-end: 3;
+            & ul
+                & li
+                    font-size: 10px
+                    width: 25%
+        &__socialMedia
+            grid-column-start: auto;
+            grid-column-end: auto;
+            grid-row-end: span 1
+            order: 3
+            & ul
+                display: flex
+                justify-content: flex-end
+                align-items: center
+                margin-right: 5px
+                & li
+                    font-size: 14px
+        &__subscribe
+            grid-column-start: auto;
+            grid-column-end: auto;
+            grid-row-end: span 1
+            order 4
+            display: flex
+            justify-content: flex-end
+            align-items: center
+            & input
+                padding: 8.5px 5px
+                width: 240px
+                &::placeholder
+                    font-size: 12px
+            & button
+                padding: 9px 10px
+                font-size: 12px
+
+

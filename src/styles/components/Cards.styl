@@ -1,0 +1,27 @@
+@import 'Variables.styl'
+.cards__container
+    width: 100%
+    background-color: #EEE
+    border-top: 1px solid #BBB
+    padding:  0
+    display: block
+    :nth-child(n+3)
+        display: none
+    @media screen and (min-width: 768px)
+        :nth-child(n)
+            display: block
+        :nth-child(3)
+            display: none
+        :nth-child(6)
+            display: none
+        :nth-child(7)
+            display: none
+        display grid
+        grid-template-columns: repeat(2, 1fr)
+        grid-gap: 5px
+    @media screen and (min-width: 1024px)
+        display grid
+        grid-template-columns: repeat(3, 1fr)
+        grid-gap: 5px
+        :nth-child(n)
+            display: block

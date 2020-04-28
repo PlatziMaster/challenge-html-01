@@ -1,0 +1,32 @@
+@import 'Variables.styl'
+.card
+    width: 92.5%
+    margin 40px 0 60px 20px
+    &:hover
+        cursor pointer
+    &.level-1
+        grid-row-end: span 2
+    &.level-2
+        grid-row-end: span 1
+    &__img
+        position relative
+        & img
+            width 100%
+        &--categorie
+            padding: 15px 20px
+            font-weight: bold
+            width: 150px
+            text-transform: uppercase
+            background-color: secondary-color
+            color white
+            position: absolute
+            font-size: 16px
+            letter-spacing: 2px
+            text-align: center
+            left: -10px
+            bottom 10px
+    @media screen and (min-width: 768px)
+        &__img--categorie
+            font-size: 16px
+            padding: 10px 15px
+            width: 150px
