@@ -1,1 +1,25 @@
 @import 'App.styl'
+.card
+    width: 92.5%
+    margin-top: 40px
+    margin-left: 20px
+    &:hover
+        cursor pointer
+    &.level-1
+        grid-row-end: span 2
+    &.level-2
+        grid-row-end: span 1
+    &__img
+        position relative
+        & img
+            width 100%
+        &--categorie
+            padding: 10px 15px
+            font-weight: bold
+            width: 150px
+            text-transform: uppercase
+            background-color: secondary-color
+            color white
+            position: absolute
+            left: -5px
+            bottom 0
