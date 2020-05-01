@@ -16,3 +16,17 @@
   position: relative;
   text-transform: uppercase;
 }
+
+@media (max-width: 900px) {
+  .cards__container {
+    display: grid;
+    column-gap: 20px;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 750px) {
+  .cards__container {
+    grid-template-columns: 1fr;
+  }
+}

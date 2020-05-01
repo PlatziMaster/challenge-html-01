@@ -4,7 +4,7 @@ footer {
   color: #97999b;
   display: grid;
   grid-template-columns: 15% 65% 20%;
-  height: 160px;
+  height: auto;
   padding: 40px 30px;
 }
 .footer__info h1 {
@@ -60,4 +60,17 @@ footer {
   letter-spacing: 2px;
   padding: 0 15px;
   text-transform: uppercase;
+}
+
+@media (max-width: 900px) {
+  footer {
+    display: grid;
+    grid-template-columns: 2fr 4fr;
+  }
+  .footer__menu {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .footer__contact {
+    display: inline-block;
+  }
 }
