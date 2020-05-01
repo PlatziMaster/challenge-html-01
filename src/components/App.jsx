@@ -6,11 +6,11 @@ import Content from './Content';
 import Footer from './Footer';
 
 const App = () => (
-  <>
+  <div className="container">
     <Header />
     <Content />
     <Footer />
-  </>
+  </div>
 );
 
 export default App;

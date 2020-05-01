@@ -18,13 +18,13 @@ function Header() {
           <li className="nav__item">Finance</li>
           <li className="nav__item">Entertainment</li>
         </ul>
+        <div id="nav__hamburg">
+          <label htmlFor="hamburg">
+            &#9776;
+            <input type="checkbox" id="hamburg" />
+          </label>
+        </div>
       </nav>
-      <div id="hamburg">
-        <label htmlFor="hamburg">
-          &#9776;
-          <input type="checkbox" id="hamburg" />
-        </label>
-      </div>
     </header>
   );
 }
