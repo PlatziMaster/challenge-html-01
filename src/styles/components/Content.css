@@ -1,0 +1,32 @@
+.cards__container {
+  background-color: #f9fafc;
+  column-gap: 25px;
+  column-count: 3;
+  padding: 40px 30px;
+}
+.card img {
+  width: 100%;
+}
+.card__category {
+  background-color: #ff555b;
+  bottom: 50px;
+  color: white;
+  left: -5px;
+  padding: 10px 25px;
+  position: relative;
+  text-transform: uppercase;
+}
+
+@media (max-width: 900px) {
+  .cards__container {
+    display: grid;
+    column-gap: 20px;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 750px) {
+  .cards__container {
+    grid-template-columns: 1fr;
+  }
+}
