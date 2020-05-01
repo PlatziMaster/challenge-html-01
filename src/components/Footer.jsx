@@ -1,13 +1,14 @@
 import React from 'react';
+import '../styles/components/Footer.css';
 
 function Footer() {
   return (
     <footer className="footer">
       <div className="footer__info">
-        <h2>
+        <h1>
           Deck
           <span>.</span>
-        </h2>
+        </h1>
         <p>
           2018 Deck
           <br />
@@ -27,8 +28,21 @@ function Footer() {
       </div>
       <div className="footer__contact">
         <div className="footer__socials">
-          <p>Follows us:</p>
-          inst pint tweet face
+          <p>
+            Follows us:
+            <a href="/">
+              <img src="../../resources/imgs/instagram.png" alt="Instagram" />
+            </a>
+            <a href="/">
+              <img src="../../resources/imgs/pinterest.png" alt="Pinterest" />
+            </a>
+            <a href="/">
+              <img src="../../resources/imgs/twitter.png" alt="Twitter" />
+            </a>
+            <a href="/">
+              <img src="../../resources/imgs/facebook.png" alt="Facebook" />
+            </a>
+          </p>
         </div>
         <div className="footer__form">
           <form>

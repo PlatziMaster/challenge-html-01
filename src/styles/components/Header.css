@@ -4,8 +4,8 @@
   display: grid;
   grid-template-columns: 15% 85%;
   height: 90px;
-  padding: 0 30px;
   margin: 0 auto;
+  padding: 0 30px;
 }
 .header h1 {
   font-family: 'Lato-Bold';
@@ -15,11 +15,11 @@
   color: red;
 }
 .header__nav {
-  width: 100%;
   align-items: center;
   color: #d8d8d8;
   display: flex;
   justify-content: space-between;
+  width: 100%;
 }
 .header__nav ul {
   display: flex;
@@ -31,6 +31,10 @@
   letter-spacing: 1.75px;
   padding-right: 50px;
   text-transform: uppercase;
+}
+.nav__item a {
+  color: #d8d8d8;
+  text-decoration: none;
 }
 #nav__hamburg {
   color: black;

@@ -10,13 +10,27 @@ function Header() {
       </h1>
       <nav className="header__nav">
         <ul>
-          <li className="nav__item">Technology</li>
-          <li className="nav__item">Ideas</li>
-          <li className="nav__item">Leadership</li>
-          <li className="nav__item">Video</li>
-          <li className="nav__item">News</li>
-          <li className="nav__item">Finance</li>
-          <li className="nav__item">Entertainment</li>
+          <li className="nav__item">
+            <a href="/">Technology</a>
+          </li>
+          <li className="nav__item">
+            <a href="/">Ideas</a>
+          </li>
+          <li className="nav__item">
+            <a href="/">Leadership</a>
+          </li>
+          <li className="nav__item">
+            <a href="/">Video</a>
+          </li>
+          <li className="nav__item">
+            <a href="/">News</a>
+          </li>
+          <li className="nav__item">
+            <a href="/">Finance</a>
+          </li>
+          <li className="nav__item">
+            <a href="/">Entertainment</a>
+          </li>
         </ul>
         <div id="nav__hamburg">
           <label htmlFor="hamburg">
