@@ -4,7 +4,7 @@
   display: grid;
   grid-template-columns: 15% 85%;
   height: 90px;
-  padding: 0 20px;
+  padding: 0 30px;
   margin: 0 auto;
 }
 .header h1 {

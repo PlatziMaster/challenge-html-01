@@ -1,0 +1,18 @@
+.cards__container {
+  background-color: #f9fafc;
+  column-gap: 25px;
+  column-count: 3;
+  padding: 30px;
+}
+.card img {
+  width: 100%;
+}
+.card__category {
+  background-color: #ff555b;
+  bottom: 50px;
+  color: white;
+  left: -5px;
+  padding: 10px 25px;
+  position: relative;
+  text-transform: uppercase;
+}
