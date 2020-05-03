@@ -1,0 +1,96 @@
+footer 
+  background: #1e1f24
+  display: grid
+  grid-template-columns: 2fr 5fr 3fr
+  padding: 2rem
+  @media screen and (max-width: 768px)
+      grid-template-columns: 2fr 4fr
+      grid-template-rows: 4fr 2.5fr
+      grid-template-areas: "deck section""social social" 
+      @media screen and (max-device-width: 375px)
+        grid-template-rows: 1.5fr 1fr 2fr
+        grid-template-columns: 1fr
+        grid-template-areas: "deck""social""section" 
+
+
+.footer__brand
+  h1
+    color #48494d
+    padding-bottom: 1rem
+    span
+      color: #ff565b
+  p
+    color #a5a6a8
+    font-weight: 300
+  @media screen and (max-width: 375px)
+    grid-area: deck
+    width: 100%
+    p
+      font-size: 12px
+
+.footer__section
+  display: flex
+  align-items: center
+  ul
+    display: grid
+    grid-template-columns: repeat(4, 1fr)
+    gap: 1rem 4rem
+    align-items: center
+    list-style none
+    font-family: 'Oswald', sans-serif;
+    color #d5d5d6
+    @media screen and (max-width: 768px)
+      grid-template-columns: repeat(3, 1fr)  
+      @media screen and (max-width: 375px)
+        grid-template-columns: repeat(2, 1fr)  
+
+.footer__social
+  display: flex
+  flex-direction: column
+  align-items: flex-end
+  justify-content: center
+  p
+    padding-bottom 1rem
+    color #a5a6a8
+  @media screen and (max-width: 768px)
+    grid-area: social
+    flex-direction: row-reverse
+    p
+      width 100%
+      padding-left: 25px
+    @media screen and (max-width: 375px)
+      width: 100%
+      display: flex
+      flex-direction: column-reverse
+      p
+        font-size: 12px
+        padding-top 10px
+  
+
+.footer__social-input
+  input 
+    margin none
+    padding none
+    height 3em
+    outline: none
+    border: none 
+    width: 60%
+  button
+    height 3em
+    width: 40%
+    background: #ff565b
+    border: none 
+    outline: none 
+    margin none
+    padding none
+    color #feeff0
+  @media screen and (max-width: 768px)
+    width: 70%
+    @media screen and (max-width: 375px)
+      width 100%
+      input 
+        height 2em
+        width: 30%
+      button
+        height 2em
+        width: 28%
