@@ -1,36 +1,34 @@
-*{
-    margin: 0;
-    padding: 0;
-}
-
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap');
-
 .Card{
-    width: 300px;
+    margin-top: 20px;
+    width: 100%;
     // border: 1px solid red;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: black;
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center;
+    // color: black;
+    overflow: hidden;
 
     &__imgContainer{
         position: relative;
-        
-        & figcaption{
-            position: absolute;
-            margin-top: -50px;
-            margin-left: -3px;
-            max-width: 100px;
-            text-align: center;
-            color: white;
-            font-family: 'Oswald', sans-serif;;
-            font-size: .6em;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            background-color: #FF565B;
-            padding: 10px 15px;
+
+        & img{
+            width: 100%;
+            height: auto;
         }
+    }
+    
+    &__category{
+        position: absolute;
+        margin-top: -50px;
+        margin-left: -4px;
+        font-family: 'Oswald', sans-serif;
+        font-weight: 500;
+        font-size: .6em;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        background-color: #FF565B;
+        color: white;
+        padding: 10px 15px;
     }
 
     &__title{

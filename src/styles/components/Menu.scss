@@ -1,0 +1,21 @@
+
+.menu{
+    grid-column: 1 / 4;
+    list-style: none;
+    width: 100%;
+    max-width: 800px;
+
+    &__list{
+        display: inline-block;
+        text-align: center;
+
+        & a{
+            text-decoration: none;
+            color: #E0E0E2;
+            font-size: .7em;
+            text-transform: uppercase;
+            padding: 20px;
+            display: block;
+        }
+    }
+}
