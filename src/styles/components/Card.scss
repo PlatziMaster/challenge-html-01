@@ -1,0 +1,49 @@
+.Card{
+    width: 100%;
+
+    &__imgContainer{
+        position: relative;
+
+        & img{
+            max-width: 100%;
+        }
+    }
+    
+    &__category{
+        position: absolute;
+        margin-top: -50px;
+        margin-left: -4px;
+        font-family: 'Oswald', sans-serif;
+        font-weight: 500;
+        font-size: .6em;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        background-color: #FF565B;
+        color: white;
+        padding: 10px 15px;
+    }
+
+    &__title{
+        font-family: 'Lato', sans-serif;
+        font-weight: 900;
+        color: 46464B;
+        font-size: 1.3em;
+        
+    }
+
+    &__description{
+        margin-top: 8px;
+        font-family: 'Lato', sans-serif;
+        font-weight: 400;
+        color: #7D7F83;
+        font-size: .8em;
+    }
+}
+
+.level1{
+    grid-row-end: span 2;
+}
+
+.level2{
+    grid-row-end: span 3;
+}

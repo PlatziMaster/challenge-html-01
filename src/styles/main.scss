@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: #F9FAFC;
+}
+
+.main__container{
+    width: 1200px;
+    margin: 0 auto;
+
+    @media screen and (max-width:1200px) {
+        width: 90%;
+    }
+}
+
+.card__container{
+    margin: 50px auto;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: auto;
+
+    @media screen and (max-width:1024px) {
+        grid-template-columns: repeat(2, minmax(320px, 1fr));
+    }
+
+    @media screen and (max-width:720px) {
+        grid-template-columns: repeat(2, minmax(200px, 1fr));
+    }
+
+    @media screen and (max-width:458px) {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 100%));
+    }
+}
+
+

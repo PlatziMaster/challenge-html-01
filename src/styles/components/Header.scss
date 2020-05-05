@@ -1,0 +1,33 @@
+.Header{
+    width: 100%;
+    background-color: white;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    font-family: 'Oswald', sans-serif;
+
+    &__logo{
+        font-size: 1.6em;
+
+        & span{
+            color: red;
+        }
+
+    }
+
+    &__icon{
+
+        &:hover{
+            cursor: pointer;
+        }
+    }
+
+}
+
+.active{
+    display: none;
+}

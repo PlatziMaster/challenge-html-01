@@ -1,0 +1,111 @@
+.Footer{
+    width: 100%;
+    background-color: black;
+}
+
+.footer{
+    display: grid;
+    grid-template-columns: 200px 1fr 300px;
+    align-items: center;
+    background-color: black;
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    height: auto;
+    padding: 20px 0; 
+
+    @media screen and (max-width:968px) {
+        grid-template-columns: 200px 1fr;
+        grid-template-rows: 2;
+        align-items: initial;
+    }
+
+    @media screen and (max-width:459px) {
+        grid-template-columns: 1fr;
+        grid-template-rows: 3;
+        align-items: initial;
+    }
+    
+    &__logo{
+        font-size: .7em;
+        color: #47484D;
+
+        @media screen and (max-width:459px) {
+            grid-column: 1 / 3;
+        }
+
+        &--logo{
+            font-size: 1.5em;
+
+            & span{
+                color: red;
+            }
+        }
+
+        &--year, &--description{
+            color: #97989C;
+        }
+
+
+    }
+
+    
+    &__contact{
+        display: flex;
+        flex-direction: column;
+        
+        @media screen and (max-width:968px) {
+            margin-top: 20px;
+            grid-column: 1 / 3;
+            flex-direction: row-reverse;
+            justify-content: flex-end;
+        }
+
+        @media screen and (max-width:560px) {
+            display: flex;
+            flex-direction: column-reverse;
+        }
+
+        @media screen and (max-width:459px) {
+            grid-row: 2 / 3;
+        }
+        
+        &__follow{
+            @media screen and (max-width:968px) {
+                margin-left: 30px;
+            }
+
+            @media screen and (max-width:560px) {
+                margin: 20px 0px;
+            }
+        }
+
+        &__follow{
+
+            & span{
+                color: #47484D;
+                margin-left: 20px;
+            }
+        }
+        
+        &__form{
+            display: flex;
+            
+            & [type='text'], & [type='submit']{
+                border: none;
+            }
+            
+            & [type='text']{
+                padding: 10px 10px;
+                outline: none;
+                font-family: 'Lato', sans-serif;
+            }
+            
+            & [type='submit']{
+                color: white;
+                background-color: #FF565B;
+                text-transform: uppercase;
+                padding: 10px 20px;
+            }
+        }
+    }
+}
