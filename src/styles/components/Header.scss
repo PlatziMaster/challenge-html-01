@@ -1,6 +1,9 @@
-
 .Header{
-    // border: 1px solid red;
+    width: 100%;
+    background-color: white;
+}
+
+.header{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -17,11 +20,14 @@
     }
 
     &__icon{
-        width: 20px;
 
         &:hover{
             cursor: pointer;
         }
     }
 
+}
+
+.active{
+    display: none;
 }

@@ -3,7 +3,7 @@ import '../styles/components/Menu.scss';
 
 function Menu(props) {
     return(
-        <nav className="menu">
+        <nav className="menu" id="menu">
             <ul>
                 <li className="menu__list"><a href="#">Technology</a></li>
                 <li className="menu__list"><a href="#">Ideas</a></li>

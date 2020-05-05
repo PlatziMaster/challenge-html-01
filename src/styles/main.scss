@@ -13,12 +13,30 @@ body{
 .main__container{
     width: 1200px;
     margin: 0 auto;
-    // border: 1px solid red;
+
+    @media screen and (max-width:1200px) {
+        width: 90%;
+    }
 }
 
 .card__container{
+    margin: 50px auto;
     display: grid;
     grid-gap: 20px;
     grid-template-columns: repeat(3, 1fr);
-    justify-content: space-between;
+    grid-auto-rows: auto;
+
+    @media screen and (max-width:1024px) {
+        grid-template-columns: repeat(2, minmax(320px, 1fr));
+    }
+
+    @media screen and (max-width:720px) {
+        grid-template-columns: repeat(2, minmax(200px, 1fr));
+    }
+
+    @media screen and (max-width:458px) {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 100%));
+    }
 }
+
+

@@ -1,6 +1,5 @@
 
 .menu{
-    grid-column: 1 / 4;
     list-style: none;
     width: 100%;
     max-width: 800px;
@@ -17,5 +16,9 @@
             padding: 20px;
             display: block;
         }
+    }
+
+    @media screen and (max-width:968px) {
+        display: none;
     }
 }
