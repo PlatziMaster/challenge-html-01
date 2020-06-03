@@ -1,0 +1,46 @@
+.header {
+    height: 90px;
+    display: grid;
+    grid-template-columns: 50px 4fr 2fr;
+    align-items: center;
+    padding: 0 2%;
+    font-family: 'Lato', sans-serif;
+    background-color: white;
+}
+
+.header__logo {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.header__logo span {
+    color: var(--pink-color);
+    letter-spacing: 1px;
+}
+
+.header__nav {
+    text-transform: uppercase;
+    color: rgba(112,112,112,.4);
+    font-size: 14px;
+    letter-spacing: 3px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.header__nav ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.header__nav ul li {
+    padding: 10px;
+}
+
+.header__burger {
+    justify-self: flex-end;
+}
+
+@media screen and (max-width: 767px) {
+    .header__nav {
+        display: none;
+    }
+}
