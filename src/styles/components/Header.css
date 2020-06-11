@@ -8,16 +8,6 @@
   background-color: white;
 }
 
-.header__logo {
-  font-size: 20px;
-  font-weight: bold;
-}
-
-.header__logo span {
-  color: var(--pink-color);
-  letter-spacing: 1px;
-}
-
 .header__nav {
   display: initial;
   text-transform: uppercase;
