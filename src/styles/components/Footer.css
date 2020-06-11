@@ -44,6 +44,7 @@
   color: white;
   font-family: 'Oswald', sans-serif;
   letter-spacing: 3px;
+  font-size: 14px;
 }
 
 .footer__nav ul li {
@@ -90,4 +91,57 @@
   padding: 10px 20px;
   letter-spacing: 3px;
   cursor: pointer;
+  height: 38px;
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    grid-template-columns: 196px 1fr;
+    grid-row: 1fr;
+    grid-gap: 5px;
+    height: 267px;
+  }
+  .footer__nav ul {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .footer__social {
+    display: grid;
+    grid-template-areas: 'subscribe follow-us';
+    grid-column-end: span 2;
+    justify-self: flex-start;
+    align-self: flex-start;
+    align-items: center;
+  }
+
+  .footer__follow-us {
+    grid-area: 'follow-us';
+  }
+
+  .footer__subscribe {
+    grid-area: subscribe;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .footer {
+    grid-template-columns: 1fr;
+    height: 441px;
+  }
+  .footer__social {
+    display: grid;
+    grid-template-areas: 'subscribe' 'follow-us';
+    grid-column-end: span 1;
+    justify-self: flex-start;
+    align-self: flex-start;
+  }
+  .footer__nav ul {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: flex-start;
+    padding: 0;
+    margin: 0;
+  }
+  .footer__follow-us {
+    justify-content: flex-start;
+    margin-top: 10px;
+  }
 }
