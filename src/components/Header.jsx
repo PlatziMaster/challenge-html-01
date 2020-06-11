@@ -19,7 +19,9 @@ const Header = () => {
           <li>Entertainment</li>
         </ul>
       </nav>
-      <div className="header__burger">burger</div>
+      <div className="header__burger">
+        <i className="fa fa-bars" aria-hidden="true" />
+      </div>
     </header>
   );
 };
