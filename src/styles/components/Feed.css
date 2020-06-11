@@ -4,6 +4,18 @@
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 160px;
   grid-gap: 20px;
-  max-width: 1440px;
+  max-width: 2560px;
   margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+  .feed {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .feed {
+    grid-template-columns: 1fr;
+  }
 }
