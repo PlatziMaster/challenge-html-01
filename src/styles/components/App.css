@@ -1,15 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Oswald:wght@300;400;500;700&display=swap');
 :root {
-    --gray-color: #707070;
-    --pink-color: #FF565C;
+  --gray-color: #f9fafc;
+  --pink-color: #ff565c;
+  --gray-text: rgba(112, 112, 112, 0.4);
+  --dark-text: #24262B;
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    background-color: var(--gray-color);
+  margin: 0;
+  padding: 0;
+  background-color: var(--gray-color);
+  font-family: 'Lato', sans-serif;
+  color: var(--dark-text);
 }
 
 ul li {
-    list-style: none;
+  list-style: none;
 }

@@ -21,7 +21,7 @@
 .header__nav {
   display: initial;
   text-transform: uppercase;
-  color: rgba(112, 112, 112, .4);
+  color: var(--gray-text);
   font-size: 14px;
   letter-spacing: 3px;
   font-family: 'Oswald', sans-serif;
