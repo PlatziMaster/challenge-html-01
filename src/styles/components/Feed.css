@@ -2,5 +2,8 @@
   padding: 25px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 160px;
   grid-gap: 20px;
+  max-width: 1440px;
+  margin: 0 auto;
 }
