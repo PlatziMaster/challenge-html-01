@@ -9,7 +9,7 @@ module.exports = {
     filename: 'bundle.js',
   },
   resolve: {
-    extensions: ['.js', '.jsx'],
+    extensions: ['.jsx', '.js'],
   },
   module: {
     rules: [
@@ -36,6 +36,17 @@ module.exports = {
           },
           'css-loader',
           'stylus-loader',
+        ],
+      },
+      {
+        test: /\.(png|jpg|gif)$/i,
+        use: [
+          {
+            loader: 'url-loader',
+            options: {
+              limit: 8192,
+            },
+          },
         ],
       },
     ],
