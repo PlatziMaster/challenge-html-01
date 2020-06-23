@@ -1,0 +1,126 @@
+.footer
+  width 100%
+  height 160px
+  display grid
+  grid-template-columns: 1fr 4fr 2fr
+  grid-template-rows: 1fr
+  align-items: center 
+  background-color #1D1F24
+  color white
+  &__logo
+    width: 80%
+    justify-self: center
+    display: flex
+    flex-direction: column
+    &-brand
+      margin-bottom: 10px
+      color: #616266
+      font-size: 1.5rem
+    &-dot
+      color #FF565C
+      font-size: 1.5rem
+    &-mr
+      color #BBBCBD
+      font-size: .7rem
+  &__nav
+    &-list
+      display: grid
+      align-items: center
+      grid-template-rows: repear(2, 1fr)
+      grid-template-columns: repeat(4, 1fr)
+      grid-auto-flow: rows
+      list-style none
+      li
+        margin-bottom: 10px
+        text-transform: uppercase
+        font-size .8rem
+  &__contact
+    width: 90%
+    display grid
+    grid-template-rows: 1fr 1fr
+    &-socialmedia 
+      display: flex
+      align-items: center
+      color #BBBCBD
+      span
+        width: 60%
+        padding-right: 20px
+        text-align: right 
+      ul
+        width 40%
+        display: flex
+        list-style none
+        justify-content: space-between
+    &-suscribe
+      width: 100%
+      height 30px
+      input
+        width 60%
+        height 100%
+        padding-left: 10px
+        color: #A5A6A8
+      button
+        width 40%
+        height 100%
+        border none 
+        text-transform: uppercase
+        color white
+        background-color: #FF565C
+        cursor pointer
+
+@media screen and (max-width: 780px)
+  .footer
+    height 267px
+    grid-template-columns: 1fr 2fr
+    grid-template-rows: 2fr 1fr
+    &__nav
+      &-list
+        grid-template-rows: repear(3, 1fr)
+        grid-template-columns: repeat(3, 1fr)
+    &__contact
+      height 35px
+      align-self:flex-start
+      padding-left: 20px
+      grid-column: 1 / span 2
+      grid-template-rows 1fr
+      grid-template-columns: 45% 55%
+      grid-template-areas: "subscribe social"
+      &-socialmedia 
+        grid-area social
+        text-align: left
+        width 50%
+      &-suscribe
+        height 100%
+        grid-area subscribe
+
+@media screen and (max-width: 480px)
+  .footer
+    height 441px
+    grid-template-columns: 1fr
+    grid-template-rows: 30% 30% 40%
+    grid-template-areas: "logo" "contact" "nav"
+    align-items: center
+    &__logo
+      grid-area logo
+    &__nav
+      padding-left: 20px
+      grid-area nav
+      &-list
+        grid-template-rows: repear(4, 1fr)
+        grid-template-columns: repeat(2, 1fr)
+    &__contact
+      height 60%
+      align-self: center
+      grid-area contact
+      grid-column: 1 / 2
+      grid-template-rows 2fr
+      grid-template-columns: 1fr
+      grid-template-areas: "subscribe" "social"
+      grid-row-gap: 20px
+      &-socialmedia 
+        width 100%
+        span
+          width: initial
+          padding-right: 20px
+          text-align: left
+      

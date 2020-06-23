@@ -1,0 +1,38 @@
+.header
+  height 90px
+  display: grid
+  grid-template-columns: 10% 80% 10%
+  grid-template-rows: 100%
+  align-items center
+  &__logo
+    padding-left 30px
+    font-weight 700
+    font-size 1.2rem
+    &-dot
+      color red
+      font-size 1.5rem
+  &__nav
+    width 80%
+    &-list
+      display: flex
+      list-style none
+      justify-content space-evenly
+      li
+        text-transform uppercase
+        font-size .8rem
+        color #D2D3D4
+  &__menu
+    width 40px
+    height 40px
+    display flex
+    justify-self flex-end
+    img
+      width 100%
+      height 100%
+      padding-right 20px
+
+@media screen and (max-width 780px)
+  .header
+    grid-template-columns 50% 50%
+    &__nav
+      display none
