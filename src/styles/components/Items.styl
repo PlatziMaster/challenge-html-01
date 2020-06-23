@@ -1,0 +1,16 @@
+.itemsContainer
+  width: 100%
+  padding 30px 30px 100px 30px
+  background-color: #F9FAFC
+  display: grid
+  grid-template-columns: repeat(3, 1fr)
+  grid-gap 40px
+
+@media screen and (max-width 780px)
+  .itemsContainer
+    grid-template-columns: repeat(2, 1fr)
+
+@media screen and (max-width 480px)
+  .itemsContainer 
+    grid-template-columns: 1fr
+  
