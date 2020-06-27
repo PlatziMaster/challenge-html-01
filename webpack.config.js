@@ -15,7 +15,7 @@ module.exports = {
     rules: [
       {
         test: /\.(js|jsx)$/,
-        exclude: /node_modules/,
+        exclude: /\.node_modules/,
         use: {
           loader: 'babel-loader',
         },
@@ -38,7 +38,21 @@ module.exports = {
           'stylus-loader',
         ],
       },
+      {
+        test: /\.(png|gif|jpg|jpge|svg)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: 'assets/[hash].[ext]',
+            },
+          },
+        ],
+      },
     ],
+  },
+  devServer: {
+    historyApiFallback: true,
   },
   plugins: [
     new HtmlWebPackPlugin({
