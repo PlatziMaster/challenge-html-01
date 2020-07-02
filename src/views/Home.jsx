@@ -11,46 +11,64 @@ const Home = () => {
   return (
     <section className="container">
       <Card
-        img={img1}
+        img={img4}
         area="Tecnology"
-        title="Solid sdfsdfsdf sdf sdfdsdsdsfds dsf fsd sd fdstyrtyrtytrf"
-        description="Patrones solid sdjkdsbfbkjhfdsbfds"
-        classname="card"
+        title="Using Banner Stands To Increase Trade Show Traffic"
+        description="There is a lot of exciting stuff going on in the stars above us that make astronomy so much fun"
       />
       <Card
-        img={img2}
+        img={img1}
         area="Tecnology"
-        title="Solid"
-        description="Patrones solid sdjkdsbfbkjhfdsbfds"
-        classname="card"
+        title="Search Engine Optimization And Advertising"
+        description="There is a lot of exciting stuff going on in the stars above us that make astronomy so much fun"
       />
       <Card
         img={img3}
         area="Tecnology"
-        title="Solid"
-        description="Patrones solid"
-        classname="card"
+        title="Writing A Good Headline For your Advertisement"
+        description="There is a lot of exciting stuff going on in the stars above us that make astronomy so much fun"
       />
       <Card
-        img={img4}
+        img={img2}
         area="Tecnology"
-        title="Solid"
-        description="Patrones solid"
-        classname="card"
+        title="6 Powerful Tips To Creating Testimonials That Sell Your Products Fast"
+        description="There is a lot of exciting stuff going on in the stars above us that make astronomy so much fun"
       />
       <Card
         img={img5}
         area="Tecnology"
-        title="Solid"
-        description="Patrones solid sdjkdsbfbkjhfdsbfds"
-        classname="card"
+        title="15 Tips To Increase Your Adwords Profits"
+        description="There is a lot of exciting stuff going on in the stars above us that make astronomy so much fun"
       />
       <Card
-        img="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTP07VDV4gEhA5xmPwm5hJh8tYkcEOtpjCbHg&usqp=CAU"
+        img={img4}
         area="Tecnology"
-        title="Solid"
-        description="Patrones solid"
-        classname="card"
+        title="Using Banner Stands To Increase Trade Show Traffic"
+        description="There is a lot of exciting stuff going on in the stars above us that make astronomy so much fun"
+      />
+      <Card
+        img={img1}
+        area="Tecnology"
+        title="Search Engine Optimization And Advertising"
+        description="There is a lot of exciting stuff going on in the stars above us that make astronomy so much fun"
+      />
+      <Card
+        img={img3}
+        area="Tecnology"
+        title="Writing A Good Headline For your Advertisement"
+        description="There is a lot of exciting stuff going on in the stars above us that make astronomy so much fun"
+      />
+      <Card
+        img={img2}
+        area="Tecnology"
+        title="6 Powerful Tips To Creating Testimonials That Sell Your Products Fast"
+        description="There is a lot of exciting stuff going on in the stars above us that make astronomy so much fun"
+      />
+      <Card
+        img={img5}
+        area="Tecnology"
+        title="15 Tips To Increase Your Adwords Profits"
+        description="There is a lot of exciting stuff going on in the stars above us that make astronomy so much fun"
       />
     </section>
   );

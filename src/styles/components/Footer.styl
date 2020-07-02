@@ -1,6 +1,6 @@
 .footer
     width: 100%
-    max-height: 150px
+    height: 100%
     background-color #1e1f24
     display: grid
     grid-template-columns: 30% 40% 30%
@@ -9,7 +9,6 @@
 
 .footer__brand 
     padding: 20px
-    grid-column: 1/2
     place-self: center
     color: #bbbcbe
 
@@ -18,7 +17,6 @@
     padding-left: 5px
 
 .footer__navbar
-    grid-column: 2/3
     font-family: 'Oswald', sans-serif
     display: flex;
     justify-content: flex-start
@@ -29,6 +27,7 @@
     display: flex
     flex-direction: row
     flex-wrap: wrap
+    box-sizing: border-box
 
 .footer__navbar--list li
     padding: 10px
@@ -43,7 +42,6 @@
 
 .footer__subscrite
     width 80%
-    grid-column: 3/4
     color white
     place-self: center
 
@@ -74,3 +72,38 @@
     font-family: 'Oswald', sans-serif
     outline: none
     border: none
+
+@media (max-width: 768px)
+    .footer
+        grid-template-columns: 30% 70%
+
+    .footer__subscrite
+        grid-column: 1/3
+        display: flex
+        flex-direction: row-reverse
+        justify-content: center
+        align-items: center;
+
+
+@media (max-width: 480px)
+    .footer
+        grid-template-columns: auto
+        grid-template-rows: 30% 30% auto
+        box-sizing: border-box;
+
+    .footer__brand
+        grid-row: 1/2
+        place-self: center
+        padding: 50px 0 30px 0
+        
+    .footer__subscrite
+        grid-row: 2/3
+        place-self: center
+        padding-top: 20px
+
+
+    .footer__navbar
+        grid-row: 3/4
+        place-self: center
+        padding: 0px 50px 0px 50px
+        
