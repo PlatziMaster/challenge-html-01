@@ -1,0 +1,64 @@
+.footer
+  display: grid
+  grid-template-columns: 20% 50% 30%
+  background-color #1e1f24
+  padding: 1em
+  color white
+  position relative
+  bottom: 0
+  width: 100%
+
+.brand--info > h1
+  color: darken(gray, 20%)
+  margin-bottom 8px
+
+.brand--info > p
+  margin: 0
+  color: lighten(gray, 40%)
+
+.footer--items
+  &__list
+    display grid
+    grid-template-columns: repeat(4, 1fr)
+    grid-template-rows: 1fr 1fr
+    list-style-type none
+    font-size 1.1em
+    & > li
+      margin-bottom: 10px
+      text-transform uppercase
+
+.footer--form
+  display: grid
+  gap: 5px
+  grid-template-rows: 1fr 1fr
+  align-content: center
+  margin-right: 1em
+
+.footer--form__social
+  align-self: end
+  justify-self: end
+  margin-bottom: 1em
+
+.footer--form__subscribe
+  width: 89%
+  justify-self: end
+
+.footer--input
+  height: 40px
+  width: 100%
+
+.footer--input input
+  border: none
+  outline: none
+  width: 75%
+  height 100%
+  padding-left: 1em
+
+.footer--input button 
+  width: 25%
+  height: 100%
+  background-color: #ff565b
+  text-transform uppercase
+  color: white 
+  border: none
+  outline: none
