@@ -1,6 +1,6 @@
 import React from 'react';
 import '../styles/components/App.styl';
-import '../styles/media.styl';
+import '../styles/components/media.styl';
 import Header from './Header'
 import Footer from './Footer'
 import Layout from './Layout';
