@@ -1,6 +1,16 @@
 import React from 'react';
 import '../styles/components/App.styl';
+import '../styles/media.styl';
+import Header from './Header'
+import Footer from './Footer'
+import Layout from './Layout';
 
-const App = () => <h1>Hello React!</h1>;
+const App = () => (
+  <React.Fragment>
+    <Header />
+    <Layout />
+    <Footer />
+  </React.Fragment>
+)
 
 export default App;
