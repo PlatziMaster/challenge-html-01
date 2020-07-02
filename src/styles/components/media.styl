@@ -1,0 +1,38 @@
+@media (max-width 1024px)
+  body
+    .layout
+      grid-template-columns: repeat(2, 400px)
+    .navbar
+      display: none
+    .footer
+      grid-template-columns: 30% 65%
+      &--form
+        grid-template-rows: 1fr
+        grid-template-columns: 1fr 1fr
+        grid-column-end: span 2
+        margin-top: 1.3em
+        &__social
+          grid-column-start: 2
+          grid-row: 1
+          justify-self: start
+          padding-left: 1em
+          display: flex
+          font-size 1.3em
+        &__subscribe
+          grid-column-start: 1
+
+@media screen and (max-width 500px)
+  body
+    .container
+      height: 200px
+      font-size 3em
+    .layout
+      grid-template-columns: 1fr
+      grid-template-rows: 2fr
+    .footer
+      grid-template-columns: 1fr
+      &--items
+        grid-column: span 2
+        font-size .8em
+    .brand--info
+      grid-column: span 2
