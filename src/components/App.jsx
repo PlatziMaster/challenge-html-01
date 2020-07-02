@@ -1,6 +1,19 @@
 import React from 'react';
-import '../styles/components/App.styl';
+import '../styles/App.styl';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import Home from '../views/Home';
+import Layout from './Layout';
 
-const App = () => <h1>Hello React!</h1>;
+const App = () => (
+  <>
+    <BrowserRouter>
+      <Layout>
+        <Switch>
+          <Route exact path="/" component={Home} />
+        </Switch>
+      </Layout>
+    </BrowserRouter>
+  </>
+);
 
 export default App;
