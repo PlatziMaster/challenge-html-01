@@ -1,0 +1,49 @@
+.footer
+  display grid
+  grid-template-columns: 170px 3fr 1fr
+  align-items center
+  background-color #1D1F24
+  height 100px
+  &__nav
+    ul
+      display grid
+      grid-template-columns repeat(4, 1fr)
+      color: #ffffff
+      font-family font2
+      font-size 12px
+      text-transform uppercase
+      letter-spacing 2px
+      line-height 2
+  &__social
+    position relative
+  &__follow-us
+    display flex
+    justify-content flex-end
+    *
+      color #707070
+      font-size 16px
+      padding 0 20px 0 0
+  &__subscribe
+    display flex
+    padding 0 20px 0 0
+    input
+      outline none
+      border none
+      width 150px
+    button
+      background-color #ff565c
+      outline none
+      border none
+      color #ffffff
+      font-family font2
+      text-transform uppercase
+      font-size 10px
+      letter-spacing 1px
+      width 90px
+      height 25px
+      cursor pointer
+  .logo
+    padding 0 0 0 20px
+    font-size 16px
+    p
+      font-size 12px
