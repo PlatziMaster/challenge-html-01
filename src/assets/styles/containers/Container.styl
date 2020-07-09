@@ -1,0 +1,40 @@
+.container
+  display grid
+  grid-template-columns repeat(3, minmax(150px, 1fr))
+  grid-gap 20px
+  max-width 2560px
+  padding 0 30px
+  &__card
+    background-color #F9FAFC
+  &__card-image
+    position relative
+    figure
+      margin 0
+      img
+        width 100%
+        vertical-align top
+    span
+      text-align center
+      background-color #ff565c
+      color #ffffff
+      padding 7px 20px
+      position absolute
+      text-transform uppercase
+      font-family 'Oswald', sans-serif
+      letter-spacing 2px
+      font-size 14px
+  &__card-title
+    font-family 'Lato', sans-serif
+    font-size 24px
+  &__card-description
+    color #6F7174
+    margin-right 10px
+.big
+  grid-row-start span 3
+  span
+    top 85%
+
+.small
+  grid-row-start span 2
+  span
+    top 70%

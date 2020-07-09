@@ -1,0 +1,92 @@
+@media only screen and (max-width: 968px)
+  .header
+    grid-template-columns 1fr 1fr
+    &__nav
+      display none
+  .container
+    grid-template-columns repeat(2, 1fr)
+    &__card-title
+      font-size 22px
+    &__card-description
+      margin-right 8px
+    &__card-image
+      span
+        letter-spacing 2px
+  .footer
+    grid-template-columns 170px 2fr
+    grid-template-rows 130px 1fr
+    height 200px
+    .logo
+      font-size 20px
+      p
+        font-size 11px
+    &__nav 
+      ul
+        grid-template-columns repeat(3, 1fr)
+        grid-template-rows repeat(2, 1fr)
+        font-size 10px
+        line-height 3
+        padding-top 20px
+    &__social
+      display flex
+      flex-direction row-reverse
+      justify-content flex-end
+      font-size 10px
+    &__subscribe
+      padding-left 20px
+      input
+        width 125px
+        height 22px
+      button 
+        width 90px
+    &__follow-us
+      justify-content center
+      span
+        width 70px
+
+@media only screen and (max-width: 698px)
+  .header
+    .logo
+      font-size 18px
+  .container
+    grid-template-columns 1fr
+    padding 0 20px
+    &__card-image
+      img
+        width 50%
+  .big
+    span
+      top 87%
+  .small
+    span
+      top 75%
+  .footer
+    display grid
+    grid-template-columns 1fr
+    grid-template-rows 80px 70px 200px
+    height 440px
+    .logo
+      margin-top 10px
+      p
+        margin 0
+        font-size 11px
+    &__social
+      display grid
+      grid-auto-columns 1fr
+      grid-template-rows 1fr 1fr
+      grid-row 2 / span 1
+      width 100%
+    &__subscribe
+      input
+        width 160px
+    &__follow-us
+      grid-row 2 / span 1
+      margin 10px 0 0 20px
+      justify-content flex-start
+    &__nav
+      ul
+        margin 0
+        padding 0 0 0 20px
+        grid-template-columns 1fr 1fr
+        li
+          font-size 10px
