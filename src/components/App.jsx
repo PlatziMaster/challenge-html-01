@@ -1,6 +1,18 @@
 import React from 'react';
-import '../styles/components/App.styl';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import Layout from './Layout';
+import Home from '../pages/Home';
 
-const App = () => <h1>Hello React!</h1>;
+function App() {
+  return (
+    <BrowserRouter>
+      <Layout>
+        <Switch>
+          <Route exact path="/" component={Home} />
+        </Switch>
+      </Layout>
+    </BrowserRouter>
+  );
+}
 
 export default App;

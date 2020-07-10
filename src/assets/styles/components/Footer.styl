@@ -1,0 +1,165 @@
+/***
+ *    ███████╗.██████╗..██████╗.████████╗███████╗██████╗.
+ *    ██╔════╝██╔═══██╗██╔═══██╗╚══██╔══╝██╔════╝██╔══██╗
+ *    █████╗..██║...██║██║...██║...██║...█████╗..██████╔╝
+ *    ██╔══╝..██║...██║██║...██║...██║...██╔══╝..██╔══██╗
+ *    ██║.....╚██████╔╝╚██████╔╝...██║...███████╗██║..██║
+ *    ╚═╝......╚═════╝..╚═════╝....╚═╝...╚══════╝╚═╝..╚═╝
+ *    ...................................................
+ */
+@import '../Vars.styl';
+
+
+.Footer
+  position: fixed
+  bottom: 0
+  left 0
+  width: 100%
+  background: color-secondary
+  height 160px
+  display flex
+  &__content
+    color: textcolor
+    display flex
+    width 100%
+    align-items center
+    padding-left 38px
+    padding-right: 40px
+  &__brand
+      display: block
+      width: max-content
+      &--logo
+        color: rgba(249,250,2532,.2)
+        margin: 0
+        font-size 24px
+        letter-spacing: -0.37px
+        &-decorate
+          color: color-brand
+      &--text
+        margin 0
+        color:color-white
+        opacity 0.7
+        margin-top: 6px
+        font-size: 14px
+  &__menu
+      display inline-flex 
+      flex-direction row-reverse
+      width 90% 
+      &--icon
+        color: textcolor
+      &--list
+        font-family font2
+        list-style  none
+        color color-white
+        display grid
+        grid-template-columns 1fr 1fr 1fr 1fr
+        grid-template-rows: 1fr 1fr
+        gap 12px
+        width 100%
+        letter-spacing 1.75px
+        font-size 14px
+        margin 0
+        &__item
+          text-decoration: none
+          margin-right 47px
+  &__actions
+    color: color-white
+    width: fit-content
+    display: flex
+    flex-wrap: wrap
+    justify-content: flex-end
+    &--social
+      display: flex
+      margin-top: 0
+      margin-bottom: 15px
+      opacity: 0.7
+      svg
+        width: 16px
+        height 16px
+        margin-left: 18px
+      p
+        margin 0
+        font-size: 14px
+    &--contact
+      display: flex
+      width 100%
+      justify-content: inherit
+      &-1
+        height 34px
+        width: 180px
+        margin 0
+        padding-left 15px
+        color: color-secondary
+        font-size: 14px
+        border none
+      &-2
+        font-family: font2
+        color: color-white
+        border none
+        height 36px
+        width: 120px
+        background-color: color-brand
+        margin 0
+        font-size: 12px
+  @media screen and (max-width: 781px) 
+    padding: 40px 20px
+    &__content
+      display: grid
+      grid-template-areas: "brand menu""actions actions"
+      grid-template-columns: 1fr 1fr
+      grid-template-rows: 1fr 1fr
+      row-gap: 45px
+    &__brand
+      grid-area: brand 
+    &__menu
+      grid-area: menu
+      flex-direction: unset
+      &--list
+        grid-template-columns repeat(3, 1fr)
+        grid-template-rows: repeat(3, 1fr)
+    &__actions
+      grid-area: actions
+      flex-wrap: nowrap
+      flex-direction: row-reverse
+      justify-content: left
+      white-space: nowrap
+      align-items: center
+      &--social
+        margin-left: 29px
+        margin-bottom: 0
+  @media screen and (max-width: 500px)
+    position: relative
+    bottom: 0
+    left 0
+    width: 100%
+    background: color-secondary
+    height 441px
+    display flex 
+    padding: 0
+    &__content
+      padding: 40px 20px
+      display: grid
+      grid-template-areas: "brand""actions""menu"
+      grid-template-columns: 1fr
+      grid-template-rows: 1fr 1fr 2fr
+      row-gap: 20px
+    &__brand
+      grid-area: brand 
+    &__menu
+      grid-area: menu
+      flex-direction: left
+      &--list
+        grid-template-columns repeat(2, 1fr)
+        grid-template-rows: repeat(4, 1fr)
+        padding: 0
+    &__actions
+      grid-area: actions
+      flex-wrap: wrap
+      flex-direction: column-reverse
+      justify-content: left
+      white-space: nowrap
+      &--social
+        margin-bottom: 0
+        margin-top: 25px
+        width: 100%
+        margin-left: 0
