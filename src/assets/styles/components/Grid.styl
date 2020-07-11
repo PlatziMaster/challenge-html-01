@@ -1,0 +1,29 @@
+/***
+ *    .██████╗.██████╗.██╗██████╗.
+ *    ██╔════╝.██╔══██╗██║██╔══██╗
+ *    ██║..███╗██████╔╝██║██║..██║
+ *    ██║...██║██╔══██╗██║██║..██║
+ *    ╚██████╔╝██║..██║██║██████╔╝
+ *    .╚═════╝.╚═╝..╚═╝╚═╝╚═════╝.
+ *    ............................
+ */
+@import '../Vars.styl';
+
+.CardList
+  padding-left: 38px
+  padding-right: 40px
+  padding-top: 42px
+  width: auto
+  &__grid
+    column-count: 3
+    column-gap: 32px
+  @media screen and (max-width: 781px) 
+    padding: 40px 20px
+    &__grid
+      column-count: 2
+      column-gap: 16px
+      flex-grow: rev
+  @media screen and (max-width: 500px) 
+    padding: 30px 20px
+    &__grid
+      column-count: 1

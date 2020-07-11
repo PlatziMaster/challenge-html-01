@@ -1,0 +1,56 @@
+/***
+ *    ██╗..██╗███████╗.█████╗.██████╗.███████╗██████╗.
+ *    ██║..██║██╔════╝██╔══██╗██╔══██╗██╔════╝██╔══██╗
+ *    ███████║█████╗..███████║██║..██║█████╗..██████╔╝
+ *    ██╔══██║██╔══╝..██╔══██║██║..██║██╔══╝..██╔══██╗
+ *    ██║..██║███████╗██║..██║██████╔╝███████╗██║..██║
+ *    ╚═╝..╚═╝╚══════╝╚═╝..╚═╝╚═════╝.╚══════╝╚═╝..╚═╝
+ *    ................................................
+ */
+@import '../Vars.styl';
+
+.Header
+  background: color-white
+  height 90px
+  display flex
+  border-bottom: solid 1px rgba(color-black,0.2)
+  &__content
+    color: textcolor
+    display flex
+    width 100%
+    align-items center
+    padding-left 38px
+    padding-right: 40px
+  &__logo
+    color: textcolor
+    margin: 0
+    font-size 24px
+    letter-spacing: -0.37px
+    &--decorate
+      color: color-brand
+  &__menu
+    display inline-flex 
+    flex-direction row-reverse
+    width 100% 
+    &--icon
+      color: textcolor
+    &--list
+      font-family font2
+      list-style  none
+      color textcolor
+      display inline-flex
+      width 100%
+      letter-spacing 1.75px
+      font-size 14px
+      margin 0
+      padding-left: 58px
+      &__item
+        text-decoration: none
+        margin-right 47px
+        filter opacity(0.2)
+  @media screen and (max-width: 781px) 
+    &__menu--list
+      display: none
+  @media screen and (max-width: 500px) 
+    height 70px
+
