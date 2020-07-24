@@ -1,6 +1,7 @@
 import React from 'react';
 import '../styles/components/App.styl';
 
-const App = () => <h1>Hello React!</h1>;
+import Blog from '../pages/Blog';
 
+const App = () => <Blog />;
 export default App;

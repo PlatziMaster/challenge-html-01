@@ -1,0 +1,126 @@
+@import "Default"
+
+
+/*menu desplegable */
+
+styleContainerOfLinks()
+  position: fixed
+  background-color: PrimaryColor
+  height 95vh
+  top: 0
+  left 100vw
+  right 0
+styleListOfUl()
+  display: flex
+  color LightColor
+  flex-direction: column
+  justify-content: space-evenly
+  height 90%
+borderOfLinks()
+  border-bottom: 2px solid LightColor
+colorOfLinks()
+  color: LightColor
+  font-family: Family
+
+/* styles*/
+
+.header
+  width 100vw
+  display grid
+  background-color: LightColor
+  grid-template-columns: 50% 60% 50% 50%
+  align-items: center
+  overflow hidden
+  grid-template-rows: 3em
+  justify-content: space-between
+  border-bottom: 2px solid HeaderColor
+  grid-template-areas: "logo icon menu"
+  .header__logo
+    grid-area: logo
+    padding-left: 10%
+    width: 20%
+  &__links
+    styleContainerOfLinks()
+    ul
+      styleListOfUl()
+      li
+        borderOfLinks()
+        a
+          colorOfLinks()
+  &__links--despegable
+    styleContainerOfLinks()
+    ul
+      styleListOfUl()
+      li
+        borderOfLinks()
+        a
+          colorOfLinks()
+  .header__menu
+    grid-area: icon
+    cursor pointer
+    background-color: transparent
+    margin-right: 10%
+    justify-self: end
+    width 60%
+    height: 60%
+    z-index 4
+  & img
+    margin-left: 10%
+    width: 60%
+    height 60%
+    z-index: 4
+
+.show-menu
+  transition-property: left
+  transition-duration: 1s
+  position absolute 
+  padding-top: 10%
+  z-index: 2
+  left 56vw
+  width 65vw
+
+/*Media Queries*/
+
+@media screen and (min-width 100px)
+  .header
+    .header__logo
+      width: 40%
+  .header__links
+    height 75vh
+
+@media screen and (min-width 650px)
+  .header
+    .header__logo
+      width 20%
+    height 3em
+    .header__links
+      height 85vh
+  & img
+    height 100%
+
+@media screen and (min-width 767px)
+  .header
+    .header__logo
+      width 20%
+    .header__links
+      height 64vh
+
+
+@media screen and (min-width 1023px)
+  .header
+    grid-template-areas: "logo menu icon"
+    grid-template-columns: 20% 60% 20%
+    .header__logo
+      width 30%
+      grid-area: logo
+    .header__links
+      grid-area: menu
+      height 90vh
+      position relative
+      background-color: white
+      height auto
+      left 0
+      ul
+        flex-direction: row
+        a
+          color: HeaderColor
