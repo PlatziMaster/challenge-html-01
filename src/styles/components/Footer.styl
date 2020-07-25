@@ -1,0 +1,122 @@
+@import "Default"
+
+.footer
+  display: grid
+  grid-template-columns: 80vw
+  grid-template-rows: 20% 15% 15% auto
+  grid-template-areas: "logo"\
+                        "social"\
+                        "contact"\
+                        "secciones"
+  width: 95vw
+  height 450px
+  align-content: space-between
+  padding-left: 5%
+  margin-top: 10%
+  padding-top: 3rem
+  overflow-x: hidden
+  font-family: Family2
+  background-color: FooterBackground
+  &__logo
+    grid-area: logo
+    &--img
+      height: 30%
+    & p
+      color: HeaderColor
+  &__social-media
+    grid-area: social
+    display: flex
+    width: 80vw
+    justify-content: space-between
+    align-items: center
+    & p
+      color HeaderColor
+    & img
+      width 30px
+      height 30px
+  &__contact-us
+    display: grid
+    grid-area: contact
+    grid-template-columns: 1fr 1fr
+    width: 60rem
+    &--input
+      height 40px
+      width: 30%
+    &--input::placeholder
+      padding-left: 10px
+    &--button
+      height 40px
+      width: 25%
+      background-color: PrimaryColor
+      text-transform: uppercase
+      cursor pointer
+  &__sections
+    width: 90%
+    grid-area: secciones
+    font-family: Family
+    & ul
+      height 12rem
+      display: grid
+      grid-column-gap: 3rem
+      align-items: space-between
+      grid-template-columns: 50% 50%
+    & li a
+      text-transform: uppercase
+      color HeaderColor
+
+@media screen and (min-width 650px)
+  .footer
+    width: 95vw
+    grid-template-areas: "logo secciones"\
+                          "contacto social"
+    overflow-x: hidden
+    grid-template-columns: 40vw auto
+    grid-template-rows: 50% 50%
+    &__marca
+      grid-area: logo
+    &__social-media
+      grid-area: social
+      height 100%
+      width: 40vw
+    &__contact-us
+      width: 60rem
+      grid-area: contacto
+      align-items: center
+    &__sections
+      grid-area: secciones
+      width: 80%
+      & ul
+        grid-template-columns: repeat(3, 1fr)
+
+@media screen and (min-width 1023px)
+  .footer
+    grid-template-areas: "logo sections social"\
+                          ". . contact"
+    grid-template-columns: 20vw 50vw 15vw
+    grid-template-rows: 90% 10%
+    justify-items: space-between
+    overflow hidden
+    align-items: center
+    &__logo
+      grid-area: logo
+      & img
+        width: 40%
+    &__social-media
+      grid-area: social
+      padding-bottom: 40%
+      width: max-content
+      & p
+        margin-right: 20px
+      & img
+        margin-right: 20px
+    &__contact-us
+      grid-area: contact
+      & form
+        padding-bottom: 80%
+    &__sections
+      grid-area: sections
+      & ul
+        grid-template-rows: 1fr 1fr
+        grid-template-columns: repeat(4, 1fr)
+        box-sizing: border-box
+        align-items:  center

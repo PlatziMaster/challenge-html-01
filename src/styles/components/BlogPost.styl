@@ -1,0 +1,86 @@
+@import "Default.styl"
+
+.main
+  display: grid
+  width: 100vw
+  justify-content: center
+  overflow hidden
+  font-family: Family2
+  background-color: BackgroundColor
+  .container
+    display: grid
+    width: 90vw
+    grid-template-columns: 90vw
+    justify-content: center
+    grid-row-gap:  20px
+    margin-top: 4%
+    .post-1 
+      grid-row-end: span 1
+      &__container--category
+        display: flex
+        width: 50%
+        height 35%
+        position: relative
+        right 2%
+        align-items: center
+        justify-content: center
+        bottom: 4rem
+        font-family: Family
+        background-color: PrimaryColor 
+        color LigthColor
+      &__container--category:hover
+        background-color: ColorHover
+      &__container--category a
+        color LightColor 
+      & img
+        width: 100%
+        height 100%
+    .post-2
+      grid-row-end: span 1
+      &__container--category
+        display: flex
+        width: 50%
+        height 35%
+        align-items: center
+        justify-content: center
+        position: relative
+        right 2%
+        bottom: 3rem
+        background-color: PrimaryColor 
+        color LigthColor
+      &__container--category:hover
+        background-color: ColorHover
+      &__container--category a
+        color LightColor 
+      & img 
+        width: 100%
+        height 100%
+
+/* Hovers */
+
+
+@media screen and (min-width 650px)
+  .main
+    width: 100vw
+    .container
+      grid-template-columns: repeat(2, 45vw)
+      grid-column-gap: 2em
+      .post-1
+        grid-row span 2
+        &__description
+          width auto 
+      .post-2
+        grid-row span 1
+
+@media screen and (min-width 1023px)
+  .main
+    width: 100vw
+    .container
+      grid-template-columns: repeat(3, 30vw)
+      grid-column-gap: 3em
+      .post-1
+        grid-row span 3
+        &__description
+          width: auto
+      .post-2
+        grid-row span 2

@@ -1,0 +1,15 @@
+@import "Default"
+
+body
+  display: grid
+  grid-template-rows: auto auto auto
+  grid-template-areas: "header"\
+                        "body"\
+                        "footer"
+  .header
+    grid-area: header
+  .main
+    grid-area: body
+  
+  .footer
+    grid-area: footer
