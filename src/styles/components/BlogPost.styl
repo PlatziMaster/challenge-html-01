@@ -2,14 +2,14 @@
 
 .main
   display: grid
-  font-family: Family2
   width: 100vw
-  background-color: BackgroundColor
   justify-content: center
   overflow hidden
+  font-family: Family2
+  background-color: BackgroundColor
   .container
-    width: 90vw
     display: grid
+    width: 90vw
     grid-template-columns: 90vw
     justify-content: center
     grid-row-gap:  20px
@@ -17,17 +17,17 @@
     .post-1 
       grid-row-end: span 1
       &__container--category
-        font-family: Family
-        position: relative
         display: flex
+        width: 50%
+        height 35%
+        position: relative
+        right 2%
         align-items: center
         justify-content: center
         bottom: 4rem
-        right 2%
+        font-family: Family
         background-color: PrimaryColor 
         color LigthColor
-        width: 50%
-        height 35%
       &__container--category:hover
         background-color: ColorHover
       &__container--category a
@@ -38,16 +38,16 @@
     .post-2
       grid-row-end: span 1
       &__container--category
-        position: relative
         display: flex
-        align-items: center
-        justify-content: center
-        bottom: 3rem
-        right 2%
-        background-color: PrimaryColor 
-        color LigthColor
         width: 50%
         height 35%
+        align-items: center
+        justify-content: center
+        position: relative
+        right 2%
+        bottom: 3rem
+        background-color: PrimaryColor 
+        color LigthColor
       &__container--category:hover
         background-color: ColorHover
       &__container--category a

@@ -4,18 +4,18 @@
 /*menu desplegable */
 
 styleContainerOfLinks()
-  position: fixed
-  background-color: PrimaryColor
   height 95vh
+  position: fixed
   top: 0
   left 100vw
   right 0
+  background-color: PrimaryColor
 styleListOfUl()
   display: flex
-  color LightColor
   flex-direction: column
-  justify-content: space-evenly
   height 90%
+  justify-content: space-evenly
+  color LightColor
 borderOfLinks()
   border-bottom: 2px solid LightColor
 colorOfLinks()
@@ -25,20 +25,20 @@ colorOfLinks()
 /* styles*/
 
 .header
-  width 100vw
   display grid
-  background-color: LightColor
-  grid-template-columns: 50% 60% 50% 50%
+  width 100vw
   align-items: center
   overflow hidden
-  grid-template-rows: 3em
+  grid-template-columns: 50% 60% 50% 50%
   justify-content: space-between
-  border-bottom: 2px solid HeaderColor
   grid-template-areas: "logo icon menu"
+  grid-template-rows: 3em
+  background-color: LightColor
+  border-bottom: 2px solid HeaderColor
   .header__logo
     grid-area: logo
-    padding-left: 10%
     width: 20%
+    padding-left: 10%
   &__links
     styleContainerOfLinks()
     ul
@@ -57,9 +57,9 @@ colorOfLinks()
           colorOfLinks()
   .header__menu
     grid-area: icon
-    cursor pointer
-    background-color: transparent
     margin-right: 10%
+    background-color: transparent
+    cursor pointer
     justify-self: end
     width 60%
     height: 60%
@@ -71,13 +71,13 @@ colorOfLinks()
     z-index: 4
 
 .show-menu
-  transition-property: left
-  transition-duration: 1s
-  position absolute 
-  padding-top: 10%
-  z-index: 2
-  left 56vw
   width 65vw
+  transition-duration: 1s
+  padding-top: 10%
+  left 56vw
+  z-index: 2
+  position absolute 
+  transition-property: left
 
 /*Media Queries*/
 
@@ -116,10 +116,10 @@ colorOfLinks()
     .header__links
       grid-area: menu
       height 90vh
+      // height auto
       position relative
-      background-color: white
-      height auto
       left 0
+      background-color: white
       ul
         flex-direction: row
         a
