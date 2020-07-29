@@ -1,28 +1,32 @@
-$globalcolor = #F9FAFC
+
+$globalcolor = #F5F6F7
+
 
 .container__news
-  border 1px solid blue
-  display: flex
-  justify-content: center
-
+  margin 0 auto
+  display flex
+  justify-content center
+  //border 1px solid blue
   &__cards
-    margin: 2em
-    display grid
-    grid-template-columns repeat(auto-fill, minmax(432px, 1fr))
-    border 1px solid red
-    width: 90%
-    justify-content: center
-    align-content: center
-    
+    columns 3 432px
+    margin:  0 auto
+    width 100%
+    gap 1em
+    background-color $globalcolor
+    //border 1px solid red
 
 .container__item
-  width: 432px
-  background-color: navy
-  margin 0 auto
+  display inline-block
+  border-radius 5px
+  padding .5em
+  margin 1em
 
- //   display grid
- // gap 2em
- // grid-template-columns repeat(auto-fill, minmax(432px, 1fr))
- // grid-auto-rows: row-dense
- // border 1px solid orange
- // background-color $globalcolor
+  &--img
+    margin-top: .1em
+    width: 100%
+
+  &--title
+    width: 100%
+
+  &--description
+    width: 100%
