@@ -1,0 +1,88 @@
+
+.footer__container
+  display flex
+  justify-content: space-around
+  align-items center
+  flex-wrap wrap
+  //border 1px solid orange
+  width 100%
+  background-color #1e1f24
+
+  &__section1
+    display flex
+    flex-direction column
+    //border 1px solid red
+    span
+      color #98999B
+      padding-bottom 1em
+
+  &__section2
+    padding-top 1em
+    //border 1px solid yellow
+    input
+      width 200px
+      height 2em
+      border none
+
+    button
+      width 120px
+      height 2.16em
+      color #FFFFFF
+      background-color:#ff565b
+      border none
+
+  &__section2__social
+    display flex
+    align-content center
+    //border 1px solid red
+    align-items: center
+    p
+      color #98999B
+    span
+      color #98999B
+      margin: .5em
+
+  &__navegador
+    width 900px
+    //border 1px solid green
+    color #FFFFFF
+
+    ul
+      height: 50px;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+    li
+      margin 0
+      padding 0
+      list-style none
+
+
+@media screen and (max-width 1200px )
+  .footer__container__navegador
+    width: 600px
+    //border 1px solid red
+    ul
+      height: 70px;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+
+@media screen and (max-width 800px)
+  .footer__container
+    justify-content: left
+
+  .footer__container__section1
+    padding-left 1em
+
+  .footer__container__section2
+    padding-left 1em
+
+  .footer__container__navegador
+    padding-left: 1em
+    width: 400px
+    ul
+      padding 0
+      height: 100px;
+      li
+        margin-top 10px

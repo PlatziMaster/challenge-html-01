@@ -13,6 +13,17 @@ const Header = () => {
         />
         <h2 className="header__container__logo--title">RedTech</h2>
       </div>
+      <div className="header__container__nav">
+        <ul className="header__container__nav--u">
+          <li>TECHNOLOGY</li>
+          <li>IDEAS</li>
+          <li>LEADERSHIP</li>
+          <li>VIDEO</li>
+          <li>NEWS</li>
+          <li>FINANCE</li>
+          <li>ENTERTAINMENT</li>
+        </ul>
+      </div>
       <div className="header__container__menu">
         <h2 className="header__container__menu--icon">
           <RiMenu3Line />
