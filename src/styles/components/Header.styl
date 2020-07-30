@@ -1,0 +1,38 @@
+.header__container
+	display flex
+	justify-content: space-between
+	align-items: center
+	width: 100%
+	//border: 1px solid red
+
+	&__logo
+		margin: .5em
+		display: flex
+		justify-content: space-evenly
+		align-items: center
+		//border: 1px solid blue
+
+		img
+			width: 80px
+	&__nav--u
+		font-weight: 800
+		font-size: 14px
+		display flex
+		padding 0
+		//border 1px solid red
+
+		li
+			list-style none
+			margin 1em
+
+
+	&__menu--icon
+		margin .5em
+		//border 1px solid green
+		cursor pointer
+		color red
+
+
+@media screen and (max-width 1200px)
+	.header__container__nav--u
+		display none
