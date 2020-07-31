@@ -1,0 +1,47 @@
+.container
+    display: grid
+    grid-template-columns: repeat(3, 1fr)
+    gap: 5px
+    padding: 20px 30px 0 30px
+    justify-content: center
+    background-color: #f9fafc
+
+
+.item
+    border-radius: 5px
+    padding: 10px
+    img 
+        max-width 100%
+
+.level-1
+    grid-row-end: span 3
+
+.level-2
+    grid-row-end: span 2
+
+.level-3
+    grid-row-end: span 1
+
+.item__tag 
+    height 0
+    width: 150px
+    p
+        color: white
+        background-color: #f9565b
+        margin: 0
+        padding: 5px 2px
+        width: auto
+        text-align: center
+        text-transform: uppercase
+        position: relative
+        top: -45px
+
+.item__content h3
+    margin-top: 2px
+    margin-bottom: 2px
+
+.item__content p 
+    margin-top: 2px
+    margin-bottom: 2px
+    color: #747578
+    font-size: 14px
