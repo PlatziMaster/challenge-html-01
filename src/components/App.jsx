@@ -1,6 +1,7 @@
 import React from 'react';
-import '../styles/components/App.styl';
 
-const App = () => <h1>Hello React!</h1>;
+import Container from './Container';
+
+const App = () => <Container />;
 
 export default App;

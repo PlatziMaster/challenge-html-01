@@ -1,0 +1,66 @@
+.CardList
+  padding-left: 38px
+  padding-right: 40px
+  padding-top: 42px
+  width: auto
+  &__grid
+    column-count: 3
+    column-gap: 32px
+  @media screen and (max-width: 781px) 
+    
+    padding: 40px 20px
+    &__grid
+      column-count: 2
+      column-gap: 16px
+      flex-grow: rev
+    &__label
+      // width fit-content
+      padding 10px 25px
+      background-color: #ff565c
+      color: white
+      font-family: 'Oswald', sans-serif
+      position: absolute
+      margin-top: -14%
+      margin-left: -6px
+  @media screen and (max-width: 500px) 
+    padding: 30px 20px
+    &__grid
+      column-count: 1
+    &__label
+      width fit-content
+      padding 10px 25px
+      background-color: #ff565c
+      color: color-white
+      font-family: font2
+      position: absolute
+      margin-top: -14%
+      margin-left: -6px
+.Card
+  display: inline-block
+  width 100%
+  margin-bottom 60px
+  &__image
+    img
+      width: 100%
+  &__label
+    width fit-content
+    padding 10px 25px
+    background-color: #ff565c
+    color: color-white
+    font-family: font2
+    position: absolute
+    margin-top: -5%
+    margin-left: -6px
+    p
+      font-size 14px
+      margin 0
+      letter-spacing: 1.75px
+  &__title
+    letter-spacing: -0.22px
+    line-height: 1.15
+  &__description
+    opacity 0.7
+    font-size: 18px
+    letter-spacing: 1.56
+    p
+      margin-bottom 0px
