@@ -1,0 +1,85 @@
+.footer
+  font-family 'Oswald', sans-serif
+  display: flex
+  justify-content space-around
+  align-items center
+  width 100%
+  background-color #1d1f24
+  height 160px
+  font-size 1em
+  letter-spacing 1px
+  .footer_item
+    color white
+    p
+      margin-top 10px
+    span 
+      margin-bottom: 10px
+ion-icon
+  margin-left 10px
+  font-size 16px
+.icons
+  display: flex
+  justify-content flex-end
+form
+  margin-top 10px
+  .contact-1
+        height 34px
+        width: 180px
+        margin 0
+        padding-left 15px
+        color: #1d1f24
+        font-size: 14px
+        border none
+  .contact-2
+      font-family 'Oswald', sans-serif
+      color white
+      border none
+      height 34px
+      width: 120px
+      background-color #ff565c
+      margin 0
+      font-size 12px
+    
+@media screen and (max-width: 950px)
+  .footer
+    padding: 40px 20px
+    display: grid
+    grid-template-columns: 1fr 1fr 1fr 1fr
+    grid-template-rows: 1fr 1fr
+    row-gap: 20px
+    height auto
+    .footer_item
+      padding: 0px 15px
+    .icons
+      display: block
+    form
+      display: flex
+@media screen and (max-width: 650px)
+  .footer
+    padding: 40px 20px
+    display: grid
+    grid-template-columns: 1fr 1fr
+    grid-template-rows: repeat(6, 1fr)
+    row-gap: 20px
+    height 320px
+    .footer_item
+      padding: 0px 15px
+    .icons
+      display: block
+    form
+      display: flex
+@media screen and (max-width: 480px)
+  .footer
+    font-size: 12px
+    padding: 10px 10px
+    display: grid
+    grid-template-columns: 1fr
+    grid-template-rows: repeat(6, 1fr)
+    row-gap: 5px
+    height auto
+    .footer_item
+      padding: 0px 10px
+    .icons
+      display: block
+    form
+      display: flex
