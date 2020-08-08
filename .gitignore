@@ -71,3 +71,10 @@ typings/
 # Docs Custom
 .cache/
 yarn-error.log
+
+dist/
+.now
+now.json
+.firebaserc
+firebase.json
+*.cache

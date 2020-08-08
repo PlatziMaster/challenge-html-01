@@ -1,0 +1,98 @@
+header
+  grid-area: header
+  position relative
+  display: grid
+  grid-template-areas: "name hamburger"
+  grid-template-columns: 80% 20%
+  align-items: center
+  justify-items: center;
+  padding 0
+  background-color: ligth-color
+  & > a 
+    grid-area: name
+    padding-left: 5%
+    justify-self: left
+    color: dark-color
+    & > h1 span
+      color: primary-color
+
+& > .HamburgerMenu
+    grid-area: hamburger
+    width 30px
+  .HamburgerMenu > img
+  color: primary-color
+  width 100%
+
+& > nav
+  position: fixed
+  top 0%
+  right 0%
+  bottom 0%
+  width 80vw
+  height 100vh
+  font-size: 20px
+  display: grid
+  grid-template-areas: "close" "menu"
+  grid-template-rows: minmax(70px, 5%) auto
+  background-color: dark-color
+  color: light-color
+  z-index: 5
+  & > .HamburgerMenu 
+    grid-area: close
+    padding-right: 5%
+    padding-top: 5%
+    justify-self: end
+    width 10%
+    height 100%
+  & > ul
+    grid-area: menu
+    height 100%
+    display: flex
+    flex-direction: column
+    justify-content: baseline
+    & > a > li
+      list-style:none
+      padding: 10%
+      &:hover
+        color: primary-color
+        text-decoration: underline light-color
+
+@media (min-width: 769px)
+  header
+    grid-template-columns: 90% 10%
+  & > .HamburgerMenu
+    width 50px
+@media (min-width: 960px)
+  header
+    padding: 0
+    grid-template-areas: "name nav hamburger" 
+    grid-template-columns: 10% 80% 10%
+    justify-items: center;
+    & > a
+      padding-left: 15%
+    & > .HamburgerMenu
+      justify-self: center
+      width 30px
+    & > nav
+      grid-area: nav
+      padding: 0% 1%
+      font-size: 14px
+      width: fit-content;
+      height -webkit-fill-available
+      position relative
+      grid-template-areas: "menu"
+      grid-template-columns: 100%
+      grid-template-rows: 100%
+      justify-content: center;
+      align-items: center
+      background-color: light-color;
+      color: transparentify(dark-color, 0.5);
+      & > ul
+        flex-direction: row
+        justify-content: space-around
+        align-items: center
+        padding: 0%
+        margin: 0%
+        & > a
+          padding: 0% 5px;
+          color: dark-color

@@ -1,0 +1,7 @@
+{
+	"name": "blog-react",
+	"version": 2,
+	"builds": [
+		{ "src": "dist", "use": "@now/static" }
+	]
+}

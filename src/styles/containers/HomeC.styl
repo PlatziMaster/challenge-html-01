@@ -1,0 +1,62 @@
+.HomeC
+  padding-top: 2%
+  display: grid
+  grid-template-areas: "card1" "bgcard" "card2" "card3"  "comment" "card4" "card5"
+  grid-template-columns: 100%
+  &-card1
+    grid-area: card1
+    padding: 2%
+    display: flex;
+    justify-content: center;
+  &-card2
+    padding: 2%
+    display: flex;
+    justify-content: center;
+    grid-area: card2
+  &-card3
+    padding: 2%
+    grid-area: card3
+    display: flex;
+    justify-content: center;
+  &-card4
+    padding: 2%
+    grid-area: card4
+    display: flex;
+    justify-content: center;
+  &-card5
+    width 80%
+    padding: 2%
+    grid-area: card5
+    display: flex;
+    justify-content: center;
+    justify-self: center
+  &-avatar
+    width 90%
+    grid-area: comment
+    display: grid
+    grid-template-columns: repeat(3, 1fr)
+    display: flex;
+    justify-self: center
+    @extends .styleScroll
+  &-bgcard
+    grid-area: bgcard
+    display: flex;
+    justify-content: center;
+
+@media (min-width: 768px)
+  .HomeC
+    grid-template-areas: "card1 bgcard" " card2 card3" "comment comment" "card4 card5"
+    grid-template-columns: repeat(2, 1fr)
+    grid-template-rows: 50vh repeat(4, 1fr)
+    &-avatar
+      width 93%
+@media (min-width: 980px)
+  .HomeC
+    grid-template-areas: "card1 bgcard card2" "comment comment comment" "card3 card4 card5"
+    grid-template-columns: repeat(3, 1fr)
+    justify-content: center
+    &-avatar
+      margin: 1% 0
+      width 96%
+      height 92%
+      
