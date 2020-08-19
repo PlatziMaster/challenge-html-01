@@ -29,6 +29,17 @@ module.exports = {
         ],
       },
       {
+        test: /\.png|ttf$/,
+        use: [
+          {
+            loader: 'url-loader',
+            options: {
+              limit: 90000,
+            },
+          },
+        ],
+      },
+      {
         test: /\.css|.styl$/,
         use: [
           {
