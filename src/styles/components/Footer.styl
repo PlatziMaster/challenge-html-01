@@ -1,0 +1,48 @@
+.footer
+  width 100%
+  height auto
+  font-family lato
+  color gray
+  padding 20px 30px
+  display flex
+  justify-content space-between
+  align-items center
+  background #1D1F24
+  ul
+    display flex
+    height 100%
+    justify-content center
+    li
+      margin 0 10px
+      list-style none
+      align-self center
+      cursor pointer 
+    :hover
+      color black   
+
+.footer__input  
+  width 280px
+  height 40px
+  input
+    width 70%
+    height 100%
+    border none
+  button
+    border none 
+    width 30%
+    height 100%
+    background #FF565C
+    color: white
+    text-transform uppercase
+
+@media (max-width: 767px) {
+  .footer {
+    display flex
+    flex-direction column
+    
+  }
+  .footer ul {
+    margin 20px 0  
+  }
+
+}
