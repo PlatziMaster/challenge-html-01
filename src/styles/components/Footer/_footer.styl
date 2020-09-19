@@ -1,0 +1,83 @@
+.footerContainer
+  width: 100%;
+  // height 150px
+  display: grid;
+  grid-template-columns: 15% 60% 25%;
+  align-content: center;
+  align-items: center;
+  background: #1d1f24;
+  color: white;
+  &-image 
+    justify-self: center;
+    & img 
+      width: 100px
+      height 40px
+  &_nav
+    &-list
+      display: grid;
+      grid-template-columns: repeat(4, auto);
+      width: 80%;
+      font-size: 0.9em;
+      grid-template-rows: 1fr 1fr;
+      gap: 10px;
+      & .element
+        list-style: none
+        color: white
+  &_contact
+    margin: auto;
+    & nav 
+      margin-bottom: .5em
+      width: 260px
+    &-listSocial
+      list-style: none;
+      display: flex;
+      // align-items: center;
+      justify-content: flex-end;
+      & .items
+        margin-left: 20px;
+    &-formText
+      height: 35px;
+      border: none;
+      font-size: .8em;
+      padding-left: 5px;
+    &-formButton
+      height: 35px;
+      border: none;
+      background: #FF565C;
+      color: white;
+      font-size: 1em;
+      padding: .5em 1em;
+      font-weight: 600;
+
+@media (max-width: 768px)
+  .footerContainer
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 1fr 1fr;
+    height: auto
+    &_contact
+      display: flex;
+      flex-direction: row-reverse;
+      margin-left: 2.5em;
+    &-listSocial
+      width: 260px;
+    
+@media (max-width: 480px)
+  .footerContainer
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(3, 140px);
+    justify-items: left;  
+    &-image
+      margin-left: 1em;
+      justify-self: left 
+    &_nav
+      margin-left: 1em;
+      &-list
+        grid-template-columns: repeat(2, auto);
+        width: 100%;
+        gap: 15px 30px;
+        & .items
+          margin: 0 20px 0 0 
+    &_contact
+      margin-left: 1em;
+      grid-row: 2/3;
+      display: block
