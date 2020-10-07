@@ -1,0 +1,124 @@
+
+:root {
+
+    --color-fondo1: rgb(23, 25, 29);
+    --color-letra: #F9F7F7;
+    --color-button: #f93475;
+    --size: 12px;
+
+}
+
+.Footer {
+
+    display: flex;
+    background: var(--color-fondo1);
+    color: var(--color-letra);
+    padding: 10px 0px;
+    width: 100%;
+    height: 80px;
+    justify-content: space-between;
+    font-size: var(--size);
+}
+
+/* ------ Figure -------*/
+
+.Footer__fig {
+
+    margin-left: 30px;
+
+}
+
+.Footer__ul {
+
+    display: flex;
+    list-style: none;
+    font-size: var(--size);
+
+}
+
+
+.Footer__li-a, .Footer__li-a1 {
+    display: flex;
+    color: var(--color-letra);
+    margin-right: 50px;
+    text-decoration: none;
+
+}
+
+.Footer__li-a1 {
+    margin-top: 25px;
+
+}
+
+.Footer__social {
+
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin: 0 10px;
+    background-size: 20px 20px;
+
+}
+
+/* ----- Medios sociales -----*/
+
+.Footer__container-social {
+
+    margin-right: 30px;
+
+}
+
+
+.Footer__media {
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+}
+
+
+/* ----- inputs y boton -----*/ 
+
+.input {
+
+    display: flex;
+    align-items: center;
+
+}
+
+.input__email {
+
+    height: 24px;
+    outline: none;
+
+}
+
+.input__button {
+
+    background-color: var(--color-button);
+    color: var(--color-letra);
+    height: 30px;
+    border:none;
+
+}
+
+.Footer__social.facebook {
+
+    background-image: url('/imgs/facebook.svg');
+
+}
+
+.Footer__social.instagram {
+
+    background-image: url('/imgs/instagram.svg');
+
+}
+
+
+.Footer__social.github {
+
+    background-image: url('/imgs/github.svg');
+
+}
+
