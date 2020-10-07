@@ -1,0 +1,46 @@
+:root {
+
+  --fondo: #F9F7F7;
+  --color: #9aa0a6;
+
+}
+
+
+.Navbar {
+
+  background-color: var(--fondo);
+  padding: 10px 0;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.Navbar__ul {
+
+  display: flex;
+  list-style: none;
+
+}
+
+.Navbar__li-a {
+
+  color: var(--color);
+  text-decoration: none;
+  margin: 10px;
+
+}
+
+.Navbar__img {
+
+  margin-right: 10px;
+
+}
+
+.Navbar__menu {
+
+  display: flex;
+  align-items: center;
+  
+}

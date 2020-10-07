@@ -1,0 +1,299 @@
+:root {
+
+    --color-letra: #F9F7F7;
+    --color-etiqueta: #f93475;
+    --size: 12px;
+    --color-fondo: #E5E5E5;
+
+}
+
+.Main {
+
+    margin: 40px;
+    background: var(--color-fondo);
+
+}
+
+/* -----------------------------------------  bloque 1 -----------------------------------*/
+
+.Main__container1 {
+
+    width: 100%;
+    margin: 0 auto;
+    height: 80%;
+    margin-bottom: -55px;
+    display: grid;
+    grid-template-columns: 13% 20% 2% 10% 20% 2% 13% 20%;
+    grid-template-rows: 15% 7% 3% 15%;
+
+}
+
+/* ---- Main Cards -----*/
+
+.Main__card1 {
+
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 6;
+    overflow: hidden;
+
+}
+
+.Main__text1 {
+
+    display: grid;
+    grid-column: 1 / span 1;
+    grid-row: 6 / span 1;
+    
+
+}
+
+.Main__text1, .Main__text2, .Main__text3, .Main__text4, 
+.Main__text5, .Main__text6, .Main__text7,
+.Main__text8, .Main__text9 {
+
+    color: var(--color-letra);
+    font-size: var(--size);
+    background: var(--color-etiqueta);
+    text-align: center;
+    align-items: center;
+    font-weight: bold;
+
+}
+
+
+.Main__card2 {
+
+    grid-column: 4 / span 2 ;
+    grid-row: 1 / span 6 ;
+    overflow: hidden;
+
+}
+
+.Main__description {
+
+    grid-column: 4 / span 2 ;
+    grid-row: 5 / span 3 ;
+    margin-top: 30px;
+    overflow: hidden;
+
+}
+
+.Main__text2 {
+
+    display: grid;
+    grid-column: 4 / span 1;
+    grid-row: 2 / span 3;
+
+}
+
+.Main__card3 {
+
+    grid-column: 7 / span 2;
+    grid-row: 1 / span 6;
+    overflow: hidden;
+
+}
+
+.Main__text3 {
+
+    display: grid;
+    grid-column: 7 / span 1;
+    grid-row: 6 / span 1;
+    color: var(--color-letra);
+
+}
+
+/* -----------------------------------------  bloque 2 -----------------------------------*/
+
+.Main__container2 {
+
+    width: 100%;
+    padding-top: -50px;
+    margin: 0 auto;
+    margin-bottom: -235px;
+    height: 80%;
+    display: grid;
+    grid-template-columns: 13% 20% 2% 10% 20% 2% 13% 20%;
+    grid-template-rows: 17% 0% 17% 7% 3% 20%;
+
+}
+
+.Main__description2 {
+
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2;
+    overflow: hidden;
+    margin-bottom: 10px;
+
+}
+
+.Main__description3 {
+
+    grid-column: 1 / span 2;
+    grid-row: 6 / span 2;
+    overflow: hidden;
+
+}
+
+.Main__card4 {
+
+    grid-column: 1 / span 2;
+    grid-row: 3 / span 3;
+    overflow: hidden;
+
+}
+
+.Main__text4 {
+
+    
+    display: grid;
+    grid-column: 1 / span 1;
+    grid-row: 4 / span 2;
+    
+
+}
+
+.Main__card5 {
+
+    grid-column: 4 / span 2;
+    grid-row: 1 / span 4;
+    overflow: hidden;
+
+}
+
+.Main__description4 {
+
+    grid-column: 4 / span 2;
+    grid-row: 6 / span 2;
+    overflow: hidden;
+
+}
+
+.Main__text5 {
+    
+    display: grid;
+    grid-column: 4 / span 1;
+    grid-row: 1 / span 2;
+
+}
+
+.Main__description5 {
+
+    grid-column: 7 / span 2;
+    grid-row: 1 / span 4;
+    overflow: hidden;
+
+}
+
+.Main__card6 {
+
+    grid-column: 7 / span 2;
+    grid-row: 3 / span 4;
+    overflow: hidden;
+    margin-top: 10px;
+
+}
+
+.Main__text6 {
+
+    display: grid;
+    grid-column: 7 / span 1;
+    grid-row: 4 / span 2;
+
+}
+
+
+/* -----------------------------------------  bloque 3 -----------------------------------*/
+
+.Main__container3 {
+
+    width: 100%;
+    padding-top: -50px;
+    margin: 0 auto;
+    height: 80%;
+    display: grid;
+    grid-template-columns: 13% 20% 2% 10% 20% 2% 13% 20%;
+    grid-template-rows: 5% 20% 25% 7% 3% 25%;
+
+}
+
+.Main__card7 {
+
+    grid-column: 1 / span 2;
+    grid-row: 2 / span 4;
+    overflow: hidden;
+
+}
+
+.Main__description6 {
+    
+    grid-column: 1 / span 2;
+    grid-row: 6 / span 1;
+    overflow: hidden;
+
+}
+
+.Main__text7 {
+
+    display: grid;
+    grid-column: 1 / span 1;
+    grid-row: 4 / span 2;
+
+}
+
+.Main__card8 {
+
+    grid-column: 4 / span 2;
+    grid-row: 1 / span 4;
+    overflow: hidden;
+
+}
+
+.Main__description7 {
+
+    grid-column: 4 / span 2;
+    grid-row: 6 / span 1;
+    overflow: hidden;
+
+}
+
+.Main__text8 {
+
+    display: grid;
+    grid-column: 4 / span 1;
+    grid-row: 2 / span 1;
+
+}
+
+.Main__description8 {
+
+    grid-column: 7 / span 2;
+    grid-row: 1 / span 2;
+    overflow: hidden;
+
+}
+
+.Main__description9 {
+
+    grid-column: 7 / span 2;
+    grid-row: 5 / span 2;
+    overflow: hidden;
+
+}
+
+
+.Main__card9 {
+
+    grid-column: 7 / span 2;
+    grid-row: 3 / span 4;
+    overflow: hidden;
+
+}
+
+.Main__text9 {
+
+    display: grid;
+    grid-column: 7 / span 1;
+    grid-row: 4 / span 1;
+
+}
